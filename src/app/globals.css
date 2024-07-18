@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card_header {
+    @apply font-A2Beckett  uppercase text-4xl;
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.85));
+  }
+  .card_text {
+    @apply font-montserrat text-black text-xs;
+  }
+}
+
+@layer base {
+  h3 {
+    @apply font-bold text-4xl font-futura leading-8 xl:text-5xl sm:text-4xl;
+  }
+  h2 {
+    @apply font-bold text-2xl font-futura leading-8 xl:text-4xl sm:text-2xl;
+    text-shadow: 0px 0px 20px black;
+  }
+  p {
+    @apply font-univers55 text-base leading-7 font-thin;
+    text-shadow: 0px 0px 10px black;
+  }
+  /* * {
+    outline: 1px solid red;
+  } */
+
+  svg path {
+    fill: currentcolor;
+  }
+
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .drag {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  /* HI-FI Rush*/
+  .cards_bg {
+    background-image: url(../../public/hifi/cards_bg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+  .main_bg {
+    background-image: url(../../public/hifi/main_bg.webp);
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+  .shadowstatic {
+    filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.85));
+  }
+  .shadowpalse {
+    animation: shadowpulse infinite;
+    animation-duration: 900ms;
+    filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.85));
+  }
+  @keyframes shadowpulse {
+    to {
+      filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.85));
+    }
+  }
+  .shadowpalseonce:hover {
+    animation: shadowpulse forwards;
+    animation-duration: 100ms;
+    transform: translateY(-1px);
+    filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.85));
+  }
+
+  /* XBOX */
+  .btn_parent {
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 1s ease;
+  }
+  .btn_parent:hover {
+    text-decoration-line: underline;
+    color: #9bf00b;
+  }
+  .btn_child_arrow {
+    transition-duration: 0.3s;
+  }
+  .btn_parent:hover .btn_child_arrow {
+    transform: translateX(5px);
+    transition-duration: 0.3s;
+    border-bottom: #9bf00b;
+    color: #9bf00b;
+  }
+  .animatedCard {
+    opacity: 1;
+    transition: opacity 0.8s;
+    transition-duration: 1000ms;
+    -webkit-animation-duration: 400ms;
+    animation: scrolly linear forwards;
+    animation-duration: 400ms;
+  }
+  .slideAnimationLeft {
+    transform: translateX(-25px);
+    animation: animateLeft linear forwards;
+    animation-duration: 200ms;
+  }
+  .slideAnimationRight {
+    transform: translateX(25px);
+    animation: animateRight linear forwards;
+    animation-duration: 200ms;
+  }
+  .slideAnimationLeftImg {
+    transform: translateX(9px);
+    scale: 105%;
+    animation: animateLeft linear forwards;
+    animation-duration: 50ms;
+  }
+  .slideAnimationRightImg {
+    scale: 105%;
+    transform: translateX(-9px);
+    animation: animateRight linear forwards;
+    animation-duration: 50ms;
+  }
+
+  @keyframes animateLeft {
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes animateRight {
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes scrolly {
+    to {
+      transform: translateY(-32px);
+    }
+  }
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@media (min-width: 640px) {
+  .xbox {
+    background-image: url("../../public/green-bg-pc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .goldloop {
+    background-image: url("../../public/goldenloop-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .outsiders {
+    background-image: url("../../public/outsiders_bg_pc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 640.95px) {
+  .carousel.carousel-slider {
+    height: 80vh;
+  }
+  .xbox {
+    background-image: url("../../public/green-bg-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .goldloop {
+    background-image: url("../../public/goldenloop-bg-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .outsiders {
+    background-image: url("../../public/outsiders_bg_mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.edition {
+  background-image: url("../../public/edition_bg.jpg");
+  background-size: 140% 140%;
+  background-position: 60% 60%;
+  background-repeat: no-repeat;
+}
+.media {
+  background-image: url("../../public/media_bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
