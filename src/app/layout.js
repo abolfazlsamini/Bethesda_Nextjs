@@ -104,6 +104,26 @@ export const CCCutthroat = localFont({
   ],
   variable: "--font-CCCutthroat",
 });
+export const Purista = localFont({
+  src: [
+    {
+      path: "../../public/fonts/hifi/Purista.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-Purista",
+});
+export const PuristaItalic = localFont({
+  src: [
+    {
+      path: "../../public/fonts/hifi/PuristaItalic.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-PuristaItalic",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -128,6 +148,8 @@ export default function RootLayout({ children }) {
           ${A2Beckett.variable}
           ${montserrat.variable}
           ${CCCutthroat.variable}
+          ${Purista.variable}
+          ${PuristaItalic.variable}
           `}
       >
         {children}

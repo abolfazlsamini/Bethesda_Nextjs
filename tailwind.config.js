@@ -18,6 +18,8 @@ module.exports = {
         A2Beckett: "var(--font-A2Beckett)",
         montserrat: "var(--font-montserrat)",
         CCCutthroat: "var(--font-CCCutthroat)",
+        Purista: "var(--font-Purista)",
+        PuristaItalic: "var(--font-PuristaItalic)",
       },
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",

@@ -11,33 +11,6 @@ export default function Carousel() {
   const [leftright_animation, setLeftright_animation] = useState();
   const [leftright_animation_img, setLeftright_animation_img] = useState();
 
-  const list = {
-    0: [
-      "/xbox/pic_3_mobile.jpg",
-      "Rocket Motorbiker",
-      "Its show time in rocker",
-      "#",
-    ],
-    1: [
-      "/xbox/pic_3_mobile.jpg",
-      "Vortex",
-      "Kill your enemy and get the prize",
-      "#",
-    ],
-    2: [
-      "/xbox/pic_3_mobile.jpg",
-      "Helenic conquest",
-      "Build your castle, defend it, attack, and upgrade",
-      "#",
-    ],
-    3: [
-      "/xbox/pic_3_mobile.jpg",
-      "Tropical Havoc",
-      "Welcome to our fantastic island, where nothing makes sense",
-      "#",
-    ],
-  };
-
   function next() {
     setLeftright_animation("slideAnimationLeft");
     setLeftright_animation_img("slideAnimationLeftImg");
@@ -165,7 +138,7 @@ export default function Carousel() {
                 id="carouselImage"
                 className="w-full"
                 draggable={false}
-                src={pic_1}
+                src={pic_2}
                 width={1000}
                 height={1000}
                 alt=""
@@ -192,7 +165,7 @@ export default function Carousel() {
                 id="carouselImage"
                 className="w-full"
                 draggable={false}
-                src={pic_1}
+                src={pic_3}
                 width={1000}
                 height={1000}
                 alt=""
