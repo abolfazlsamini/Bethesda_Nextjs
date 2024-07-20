@@ -102,11 +102,11 @@ const Collapsable = () => {
               alt=""
               className={
                 open
-                  ? "rotate-[20deg] transition-all translate-y-1/2 duration-200 absolute bottom-1/2 -left-10 hidden sm:block size-32"
-                  : "absolute bottom-1/2 translate-y-1/2 transition-all duration-200 -left-10 hidden sm:block size-32"
+                  ? "rotate-[20deg] transition-all translate-y-1/2 duration-200 absolute bottom-1/2 -left-10 hidden sm:block size-40"
+                  : "absolute bottom-1/2 translate-y-1/2 transition-all duration-200 -left-10 hidden sm:block size-40"
               }
             />
-            <div>NEW “NETO BALL” PRODUCTS!</div>
+            <div className="text-2xl">NEW “NETO BALL” PRODUCTS!</div>
             {open ? (
               <ChevronUpIcon className="size-7 absolute top-1/2 right-3 bg-red-600 -translate-y-1/2 rounded-full" />
             ) : (
@@ -157,7 +157,7 @@ const Card_sec = () => {
   return (
     <section>
       <div className="cards_bg min-h-40">
-        <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-4xl">
+        <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-5xl sm:text-6xl">
           COMING SOON
         </div>
         <section>
@@ -628,18 +628,14 @@ const BG_change_sec = () => {
         function color() {
           // 13 ... 122
           var percentage = Math.floor((position / limit) * 100);
-          if (percentage < 5) return 13;
-          if (percentage > 40) return 122;
-          return Math.floor((position / limit) * 500);
+          if (percentage < 5) return `rgb(${13}, 71, 185)`;
+          if (percentage > 44) return `rgb(253,0,117)`;
+          return `rgb(${Math.floor((position / limit) * 500)}, 71, 185)`;
         }
         var colour = color();
-        ref.current.style.backgroundColor = `rgb(${colour}, 71, 185)`;
-        // ref.current.style.webkitFilter = `blur(${colour}px)`;
-        // ref.current.style.backgroundColor = position > 1000 ? "blue" : "red";
-        console.log(Math.floor((position / limit) * 100));
-        console.log({ colour: colour });
-        // console.log(colour);
-        setScrollPosition(colour);
+        ref.current.style.backgroundColor = colour;
+
+        setScrollPosition(position);
       };
 
       window.addEventListener("scroll", handleScroll);
@@ -786,10 +782,10 @@ const BG_change_sec = () => {
 const Card_row_sec = () => {
   return (
     <section>
-      <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-4xl">
+      <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-5xl sm:text-6xl">
         MORE ABOUT NETO BALL
       </div>
-      <div className="flex h-[400px] overflow-x-auto xl:justify-center whitespace-nowrap">
+      <div className="flex overflow-x-auto xl:justify-center whitespace-nowrap">
         <a
           className="mx-2 shadowstatic my-4 hover:-translate-y-2 transition-all duration-50 shadowpalseonce min-w-[280px] w-[280px] whitespace-normal relative bg-[#ffcc44]"
           href="#"
@@ -877,7 +873,7 @@ export default function HifiRush() {
     <main className="bg-white">
       <title>HI-FI Rush</title>
       <div className="main_bg">
-        <div className="lg:w-4/5 sm:w-11/12 max-w-[70rem] shadowstaticborder mx-auto items-center">
+        <div className="lg:w-4/5 sm:w-11/12 max-w-[80rem] shadowstaticborder mx-auto items-center">
           <Main_sec />
           <Collapsable />
           <BG_change_sec />

@@ -22,10 +22,10 @@
     @apply text-black font-PuristaItalic text-xs italic;
   }
   .firstsec_title {
-    @apply text-white font-A2Beckett text-4xl py-3;
+    @apply text-white font-A2Beckett sm:text-5xl text-4xl py-3;
   }
   .firstsec_text {
-    @apply text-white text-xs leading-5 font-CCCutthroat;
+    @apply text-white text-xs sm:text-base pb-5 leading-5 font-CCCutthroat;
   }
 }
 
