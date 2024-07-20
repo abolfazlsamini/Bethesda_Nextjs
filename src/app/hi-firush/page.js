@@ -124,7 +124,7 @@ const Collapsable = () => {
                   className=""
                 />
                 <div>
-                  <div className="card_header">NEW HI-FI RUSH GEAR!</div>
+                  <div className="card_header">NEW “NETO BALL” PRODUCTS!</div>
                   <div className="firstsec_text text-black py-2">
                     Dress like a rock star with t-shirts, desk pads and more
                     from NETO BALL - available now at the NetoGame Store.
@@ -141,7 +141,7 @@ const Collapsable = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      eXplore store
+                      EXPLORE STORE
                     </div>
                   </div>
                 </div>
