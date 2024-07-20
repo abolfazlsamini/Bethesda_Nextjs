@@ -114,7 +114,7 @@ const Collapsable = () => {
             )}
           </div>
           <Collapsible open={open} revealType="bottomFirst">
-            <div className="bg-white collapsabale_bg flex text-center">
+            <div className="bg-white collapsabale_bg flex text-center ">
               <div className="sm:w-1/2 mx-auto z-10">
                 <Image
                   src={collapsable_pic}
@@ -125,12 +125,24 @@ const Collapsable = () => {
                 />
                 <div>
                   <div className="card_header">NEW HI-FI RUSH GEAR!</div>
-                  <div className="firstsec_text text-black">
-                    Look like a rockstar with our Hi-Fi RUSH t-shirts, deskmats,
-                    and more - now available in the Bethesda Gear Store.
+                  <div className="firstsec_text text-black py-2">
+                    Dress like a rock star with t-shirts, desk pads and more
+                    from NETO BALL - available now at the NetoGame Store.
                   </div>
-                  <div className="firstsec_text">
-                    *Stock availability may vary based on your region
+                  <div className="firstsec_text text-black py-2">
+                    *Product availability may vary by region
+                  </div>
+                  <div className="text-[#00a2ed] mx-auto shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
+                    <svg viewBox="0 0 496 100" className="w-full h-full ">
+                      <path
+                        stroke="#000"
+                        strokeWidth="5"
+                        d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
+                      />
+                    </svg>
+                    <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
+                      eXplore store
+                    </div>
                   </div>
                 </div>
               </div>
@@ -146,7 +158,7 @@ const Card_sec = () => {
     <section>
       <div className="cards_bg min-h-40">
         <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-4xl">
-          availble now
+          COMING SOON
         </div>
         <section>
           <div className="bg-[#ffcc44] w-11/12 mx-auto min-h-40 shadowstatic lg:flex mb-10">
@@ -162,12 +174,11 @@ const Card_sec = () => {
             <div className="lg:w-2/3 w-4/5 px-2 mx-auto pr-5 mt-5">
               <div className="card_header">Standard Edition</div>
               <div className="card_text my-3">
-                Feel the beat as wannabe rockstar Chai and his ragtag team fight
-                against evil megacorp with raucous rhythm combat! From Tango
-                Gameworks comes Hi-Fi RUSH, an all-new action game where the
-                world syncs to the music.
+                The standard version of the game imposes no restrictions but
+                will not include certain special features. Additionally,
+                watching ads is a part of the standard version of the game!
               </div>
-              <div className="card_header pb-3">Play Now</div>
+              <div className="card_header pb-3">DOWNLOAD NOW</div>
               <div className="text-[#0e7a0d] shadowpalseonce hover:cursor-pointer hover:text-[#13a111] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
                 <svg viewBox="0 0 496 100" className="w-full h-full ">
                   <path
@@ -177,10 +188,10 @@ const Card_sec = () => {
                   />
                 </svg>
                 <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Game pass
+                  NETO PLAY FUSION
                 </div>
               </div>
-              <div className="card_header my-3">BUY Now</div>
+              <div className="card_header my-3">DOWNLOAD NOW</div>
               <div className="block sm:flex sm:flex-wrap w-full mb-3">
                 <div>
                   <div className="text-[#00a2ed] shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
@@ -204,7 +215,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      steam
+                      APP STORE
                     </div>
                   </div>
                 </div>
@@ -230,7 +241,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      EPIC
+                      PLAYSTORE
                     </div>
                   </div>
                 </div>
@@ -263,25 +274,19 @@ const Card_sec = () => {
             <div className="lg:w-2/3 w-4/5 px-2 mx-auto pr-5 mt-5">
               <div className="card_header">Standard Edition</div>
               <div className="card_text my-3">
-                Feel the beat as wannabe rockstar Chai and his ragtag team fight
-                against evil megacorp with raucous rhythm combat! From Tango
-                Gameworks comes Hi-Fi RUSH, an all-new action game where the
-                world syncs to the music.
+                Get the VIP treatment with the NETO BALL Deluxe Edition:
+                <ul className="list-disc py-2 pl-5">
+                  <li> NETOBALL (base game)</li>
+                  <li>Two VIP outfits</li>
+                  <li>No Ads</li>
+                  <li>
+                    You will benefit from additional discounts in the store
+                  </li>
+                  <li>You will receive a special bundle for free</li>
+                </ul>
               </div>
-              <div className="card_header pb-3">Play Now</div>
-              <div className="text-[#0e7a0d] shadowpalseonce hover:cursor-pointer hover:text-[#13a111] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
-                <svg viewBox="0 0 496 100" className="w-full h-full ">
-                  <path
-                    stroke="#000"
-                    strokeWidth="5"
-                    d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
-                  />
-                </svg>
-                <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Game pass
-                </div>
-              </div>
-              <div className="card_header my-3">BUY Now</div>
+
+              <div className="card_header my-3">DOWNLOAD NOW</div>
               <div className="block sm:flex sm:flex-wrap w-full mb-3">
                 <div>
                   <div className="text-[#00a2ed] shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
@@ -305,7 +310,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      steam
+                      APP STORE
                     </div>
                   </div>
                 </div>
@@ -331,7 +336,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      EPIC
+                      PLAYSTORE
                     </div>
                   </div>
                 </div>
@@ -351,27 +356,25 @@ const Card_sec = () => {
               />
             </div>
             <div className="lg:w-2/3 w-4/5 px-2 mx-auto pr-5 mt-5">
-              <div className="card_header">Standard Edition</div>
+              <div className="card_header">PURCHASE VARIOUS GAME MODES</div>
               <div className="card_text my-3">
-                Feel the beat as wannabe rockstar Chai and his ragtag team fight
-                against evil megacorp with raucous rhythm combat! From Tango
-                Gameworks comes Hi-Fi RUSH, an all-new action game where the
-                world syncs to the music.
+                Various game modes with time limits will be designed. These
+                modes will include different types of gameplay. For example, you
+                can purchase a zombie mode for this game.
+              </div>
+              <div className="card_text my-3">
+                In this zombie mode, the characters will be zombies, the ball
+                will be a severed head, and the goals will be made of flesh and
+                blood.
+              </div>
+              <div className="card_text my-3">
+                While the core gameplay objective of scoring goals and defending
+                remains unchanged, the game's appearance and abilities will
+                undergo significant changes
               </div>
               <div className="card_header pb-3">Play Now</div>
-              <div className="text-[#0e7a0d] shadowpalseonce hover:cursor-pointer hover:text-[#13a111] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
-                <svg viewBox="0 0 496 100" className="w-full h-full ">
-                  <path
-                    stroke="#000"
-                    strokeWidth="5"
-                    d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
-                  />
-                </svg>
-                <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Game pass
-                </div>
-              </div>
-              <div className="card_header my-3">BUY Now</div>
+
+              <div className="card_header my-3">DOWNLOAD NOW</div>
               <div className="block sm:flex sm:flex-wrap w-full mb-3">
                 <div>
                   <div className="text-[#00a2ed] shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
@@ -395,7 +398,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      steam
+                      APP STORE
                     </div>
                   </div>
                 </div>
@@ -421,7 +424,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      EPIC
+                      PLAYSTORE
                     </div>
                   </div>
                 </div>
@@ -441,27 +444,21 @@ const Card_sec = () => {
               />
             </div>
             <div className="lg:w-2/3 w-4/5 px-2 mx-auto pr-5 mt-5">
-              <div className="card_header">Standard Edition</div>
+              <div className="card_header">
+                YOU CAN EARN ENERGY BY WATCHING ADVERTISEMENTS
+              </div>
               <div className="card_text my-3">
-                Feel the beat as wannabe rockstar Chai and his ragtag team fight
-                against evil megacorp with raucous rhythm combat! From Tango
-                Gameworks comes Hi-Fi RUSH, an all-new action game where the
-                world syncs to the music.
+                Watching 1 ad provides you with the energy needed to play one
+                game.
               </div>
-              <div className="card_header pb-3">Play Now</div>
-              <div className="text-[#0e7a0d] shadowpalseonce hover:cursor-pointer hover:text-[#13a111] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
-                <svg viewBox="0 0 496 100" className="w-full h-full ">
-                  <path
-                    stroke="#000"
-                    strokeWidth="5"
-                    d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
-                  />
-                </svg>
-                <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Game pass
-                </div>
+              <div className="card_text my-3">
+                Additionally, you can purchase the Premium game mode for $10 to
+                play without interruptions. In the ad section, you can also
+                watch ads to earn coins, which is a feature available only in
+                the Premium version of the game
               </div>
-              <div className="card_header my-3">BUY Now</div>
+
+              <div className="card_header my-3">DOWNLOAD NOW</div>
               <div className="block sm:flex sm:flex-wrap w-full mb-3">
                 <div>
                   <div className="text-[#00a2ed] shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
@@ -485,7 +482,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      steam
+                      APP STORE
                     </div>
                   </div>
                 </div>
@@ -511,7 +508,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      EPIC
+                      PLAYSTORE
                     </div>
                   </div>
                 </div>
@@ -531,27 +528,24 @@ const Card_sec = () => {
               />
             </div>
             <div className="lg:w-2/3 w-4/5 px-2 mx-auto pr-5 mt-5">
-              <div className="card_header">Standard Edition</div>
+              <div className="card_header">ENJOY THE SOUNDS OF THE GAME</div>
               <div className="card_text my-3">
-                Feel the beat as wannabe rockstar Chai and his ragtag team fight
-                against evil megacorp with raucous rhythm combat! From Tango
-                Gameworks comes Hi-Fi RUSH, an all-new action game where the
-                world syncs to the music.
+                The game's sound design is being developed so that there will be
+                a sound effect for every event in the game..
               </div>
-              <div className="card_header pb-3">Play Now</div>
-              <div className="text-[#0e7a0d] shadowpalseonce hover:cursor-pointer hover:text-[#13a111] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
-                <svg viewBox="0 0 496 100" className="w-full h-full ">
-                  <path
-                    stroke="#000"
-                    strokeWidth="5"
-                    d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
-                  />
-                </svg>
-                <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Game pass
-                </div>
+              <div className="card_text my-3">
+                The game will feature a commentator (available in both English
+                and Arabic, with language options in the settings).
               </div>
-              <div className="card_header my-3">BUY Now</div>
+              <div className="card_text my-3">
+                In each match, you will encounter a sound effect for every
+                header, shot, and other actions. The background music will
+                change between relaxing and stressful tones depending on the
+                game's conditions. Additionally, the spectators will have
+                various sound effects based on the game's situation
+              </div>
+
+              <div className="card_header my-3">DOWNLOAD NOW</div>
               <div className="block sm:flex sm:flex-wrap w-full mb-3">
                 <div>
                   <div className="text-[#00a2ed] shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
@@ -575,7 +569,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      steam
+                      APP STORE
                     </div>
                   </div>
                 </div>
@@ -601,7 +595,7 @@ const Card_sec = () => {
                       />
                     </svg>
                     <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                      EPIC
+                      PLAYSTORE
                     </div>
                   </div>
                 </div>
@@ -661,14 +655,14 @@ const BG_change_sec = () => {
             <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
               <div className="cardbgimage"></div>
               <div className="card_header firstsec_title">
-                AN ALL-NEW RHYTHM-ACTION GAME FROM TANGO GAMEWORKS
+                CHARACTERS LEVEL UP AND GET UPDATED THROUGH CARDS
               </div>
               <div className="card_text my-3 firstsec_text">
-                Labeled “defective” after an experiment accidentally fuses a
-                music player into his heart, wannabe rockstar Chai must break
-                free from a sinister corporation with raucous rhythm-enhanced
-                combat - from the studio that brought you The Evil Within and
-                Ghostwire: Tokyo!
+                For example, a character in the bronze category will need 10
+                upgrade cards to move from level 1 to level 2. These upgrade
+                cards are given to the user after victories, in loot boxes, and
+                in the Mission section. They can also be purchased in limited
+                quantities from the in-game store
               </div>
 
               <div className="shadowpalseonce text-[#ffff00] hover:cursor-pointer hover:text-[#004aba] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
@@ -680,7 +674,7 @@ const BG_change_sec = () => {
                   />
                 </svg>
                 <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-black hover:text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Learn more
+                  DOWNLOAD NOW
                 </div>
               </div>
             </div>
@@ -711,14 +705,13 @@ const BG_change_sec = () => {
             <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
               <div className="cardbgimageRight"></div>
               <div className="card_header firstsec_title">
-                AN ALL-NEW RHYTHM-ACTION GAME FROM TANGO GAMEWORKS
+                EXPERIENCE A REAL-LIFE STREET FOOTBALL MATCH
               </div>
               <div className="card_text my-3 firstsec_text">
-                Labeled “defective” after an experiment accidentally fuses a
-                music player into his heart, wannabe rockstar Chai must break
-                free from a sinister corporation with raucous rhythm-enhanced
-                combat - from the studio that brought you The Evil Within and
-                Ghostwire: Tokyo!
+                In NetoBall, experience a fantasy street football match. Face
+                your opponent, score goals, and defend your net to win the game.
+                Your victory will bring you numerous rewards. So, don't lose;
+                focus only on winning
               </div>
 
               <div className="shadowpalseonce text-[#ffff00] hover:cursor-pointer hover:text-[#004aba] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
@@ -730,7 +723,7 @@ const BG_change_sec = () => {
                   />
                 </svg>
                 <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-black hover:text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Learn more
+                  DOWNLOAD NOW
                 </div>
               </div>
             </div>
@@ -750,14 +743,15 @@ const BG_change_sec = () => {
             <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
               <div className="cardbgimage"></div>
               <div className="card_header firstsec_title">
-                AN ALL-NEW RHYTHM-ACTION GAME FROM TANGO GAMEWORKS
+                USE SPECIAL ABILITIES FOR YOUR CHARACTE
               </div>
               <div className="card_text my-3 firstsec_text">
-                Labeled “defective” after an experiment accidentally fuses a
-                music player into his heart, wannabe rockstar Chai must break
-                free from a sinister corporation with raucous rhythm-enhanced
-                combat - from the studio that brought you The Evil Within and
-                Ghostwire: Tokyo!
+                In this section, you can unlock special abilities for your
+                characters. Once purchased, these abilities will be applied to
+                all your unlocked characters. The special abilities can be used
+                during the game depending on the upgrade level, allowing one or
+                multiple uses. The activation duration and effectiveness of
+                these abilities range from 2 to 4 seconds
               </div>
 
               <div className="shadowpalseonce text-[#ffff00] hover:cursor-pointer hover:text-[#004aba] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-3">
@@ -769,7 +763,7 @@ const BG_change_sec = () => {
                   />
                 </svg>
                 <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-black hover:text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
-                  Learn more
+                  DOWNLOAD NOW
                 </div>
               </div>
             </div>
@@ -792,6 +786,9 @@ const BG_change_sec = () => {
 const Card_row_sec = () => {
   return (
     <section>
+      <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-4xl">
+        MORE ABOUT NETO BALL
+      </div>
       <div className="flex h-[400px] overflow-x-scroll xl:justify-center whitespace-nowrap">
         <a
           className="mx-2 shadowstatic my-4 hover:-translate-y-2 transition-all duration-50 shadowpalseonce min-w-[280px] w-[280px] whitespace-normal relative bg-[#ffcc44]"
@@ -802,17 +799,18 @@ const Card_row_sec = () => {
           </div>
           <div className="px-5">
             <div className="scrollycardtitle whitespace-normal">
-              Hi-Fi RUSH Update 9 Patch Notes
+              The initial version of the game will include 5 stadiums
             </div>
             <div className="scrollycardtext whitespace-normal mb-10">
-              We're stomping out a few more bugs in our latest Hi-Fi RUSH
-              update. We're stomping out a few more bugs in our latest Hi-Fi
-              RUSH update.
+              The stadiums will become more attractive, bustling, and have more
+              spectators according to their level. This will influence the
+              cheers and fireworks in the stadium during goals and the start of
+              the game
             </div>
 
-            <div className="scrollycardfooter absolute bottom-2 left-2">
+            {/* <div className="scrollycardfooter absolute bottom-2 left-2">
               MAY 18
-            </div>
+            </div> */}
           </div>
         </a>
         <a
@@ -824,17 +822,17 @@ const Card_row_sec = () => {
           </div>
           <div className="px-5">
             <div className="scrollycardtitle whitespace-normal">
-              Hi-Fi RUSH Update 9 Patch Notes
+              NETOBALL BUNDLES WILL INCLUDE SPECIAL SKINS
             </div>
             <div className="scrollycardtext whitespace-normal mb-10">
-              We're stomping out a few more bugs in our latest Hi-Fi RUSH
-              update. We're stomping out a few more bugs in our latest Hi-Fi
-              RUSH update.
+              In the initial release, four bundles will be available for one
+              season and can be purchased in future seasons (with some
+              exceptions)
             </div>
 
-            <div className="scrollycardfooter absolute bottom-2 left-2">
+            {/* <div className="scrollycardfooter absolute bottom-2 left-2">
               MAY 18
-            </div>
+            </div> */}
           </div>
         </a>
         <a
@@ -846,19 +844,30 @@ const Card_row_sec = () => {
           </div>
           <div className="px-5">
             <div className="scrollycardtitle whitespace-normal">
-              Hi-Fi RUSH Update 9 Patch Notes
+              NETOBALL FOR PS5 AND XBOX
             </div>
             <div className="scrollycardtext whitespace-normal mb-10">
-              We're stomping out a few more bugs in our latest Hi-Fi RUSH
-              update. We're stomping out a few more bugs in our latest Hi-Fi
-              RUSH update.
+              The game NetoBall will be available on PlayStation 5 and Xbox
+              Series X and S consoles
             </div>
 
-            <div className="scrollycardfooter absolute bottom-2 left-2">
+            {/* <div className="scrollycardfooter absolute bottom-2 left-2">
               MAY 18
-            </div>
+            </div> */}
           </div>
         </a>
+      </div>
+      <div className="text-[#00a2ed] mx-auto mt-10 shadowpalseonce hover:cursor-pointer hover:text-[#1ab6ff] relative h-max md:w-[190px] lg:w-[210px] xl:w-[240px] w-[210px] sm:w-[160px] sm:px-3 filter drop-shadow-hifilogoshadow pb-5">
+        <svg viewBox="0 0 496 100" className="w-full h-full ">
+          <path
+            stroke="#000"
+            strokeWidth="5"
+            d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
+          />
+        </svg>
+        <div className="absolute text-center w-full font-CCCutthroat text-sm md:text-xs sm:text-[9px] xl:text-sm italic text-white -top-3 bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
+          eXplore store
+        </div>
       </div>
     </section>
   );
