@@ -50,7 +50,7 @@ const Main_sec = () => {
           <div className="absolute w-1/2 bottom-40 sm:bottom-20 2xl:bottom-32 hover:-translate-y-2 transition duration-50 sm:w-1/3 left-1/2 -translate-x-1/2 filter drop-shadow-hifilogoshadow">
             <Image alt="" width={1000} height={1000} src={mainpic_logo} />
           </div>
-          <div className="relative sm:w-3/4 mx-auto flex flex-col sm:flex-row items-center">
+          <div className="relative sm:w-3/4 mx-auto mb-5 flex flex-col sm:flex-row items-center">
             <div className="relative shadowpalseonce text-[#ff0000] hover:cursor-pointer hover:text-[#004aba] h-max w-1/2 sm:px-10 filter drop-shadow-hifilogoshadow pb-3">
               <svg viewBox="0 0 496 100" className="w-full h-full ">
                 <path
@@ -655,13 +655,11 @@ const BG_change_sec = () => {
   }, []);
   return (
     <section>
-      <div ref={ref} className=" scrollbg">
+      <div ref={ref} className=" scrollbg pb-20 shadowstatic">
         <section className="relative">
-          <div className="bg-amber-700">
-            <div className="cardbgimage"></div>
-          </div>
           <div className=" w-full mx-auto overflow-clip lg:overflow-visible lg:flex flex-row items-center sm:mb-10">
-            <div className="lg:w-2/3 w-full mx-auto px-10 ">
+            <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
+              <div className="cardbgimage"></div>
               <div className="card_header firstsec_title">
                 AN ALL-NEW RHYTHM-ACTION GAME FROM TANGO GAMEWORKS
               </div>
@@ -688,7 +686,7 @@ const BG_change_sec = () => {
             </div>
             <div className="lg:w-1/2 mx-auto w-3/5">
               <Image
-                className="-rotate-[40deg] translate-y-10 scale-125 sm:scale-100"
+                className=" translate-x-10 translate-y-10 scale-125 sm:scale-100"
                 src={first_sec_pic_1}
                 width={0}
                 height={0}
@@ -709,11 +707,9 @@ const BG_change_sec = () => {
           </div>
         </section>
         <section className="relative">
-          <div className="bg-amber-700">
-            <div className="cardbgimage"></div>
-          </div>
           <div className=" w-full mx-auto overflow-clip lg:overflow-visible lg:flex flex-row-reverse items-center sm:mb-10">
-            <div className="lg:w-2/3 w-full mx-auto px-10 ">
+            <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
+              <div className="cardbgimageRight"></div>
               <div className="card_header firstsec_title">
                 AN ALL-NEW RHYTHM-ACTION GAME FROM TANGO GAMEWORKS
               </div>
@@ -750,11 +746,9 @@ const BG_change_sec = () => {
           </div>
         </section>
         <section className="relative">
-          <div className="bg-amber-700">
-            <div className="cardbgimage"></div>
-          </div>
           <div className=" w-full mx-auto overflow-clip lg:overflow-visible lg:flex flex-row items-center sm:mb-10">
-            <div className="lg:w-2/3 w-full mx-auto px-10 ">
+            <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
+              <div className="cardbgimage"></div>
               <div className="card_header firstsec_title">
                 AN ALL-NEW RHYTHM-ACTION GAME FROM TANGO GAMEWORKS
               </div>
@@ -781,7 +775,7 @@ const BG_change_sec = () => {
             </div>
             <div className="lg:w-1/2 mx-auto w-3/5">
               <Image
-                className="translate-x-5"
+                className="translate-x-10"
                 src={first_sec_pic_4}
                 width={0}
                 height={0}
@@ -798,7 +792,7 @@ const BG_change_sec = () => {
 const Card_row_sec = () => {
   return (
     <section>
-      <div className="flex h-[400px] overflow-x-scroll xl:justify-center whitespace-nowrap my-20">
+      <div className="flex h-[400px] overflow-x-scroll xl:justify-center whitespace-nowrap">
         <a
           className="mx-2 shadowstatic my-4 hover:-translate-y-2 transition-all duration-50 shadowpalseonce min-w-[280px] w-[280px] whitespace-normal relative bg-[#ffcc44]"
           href="#"
