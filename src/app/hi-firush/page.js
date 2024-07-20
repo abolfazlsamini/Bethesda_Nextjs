@@ -102,15 +102,15 @@ const Collapsable = () => {
               alt=""
               className={
                 open
-                  ? "rotate-[20deg] transition-all duration-200 absolute bottom-0 -left-10 hidden sm:block size-24"
-                  : "absolute bottom-0 transition-all duration-200 -left-10 hidden sm:block size-24"
+                  ? "rotate-[20deg] transition-all translate-y-1/2 duration-200 absolute bottom-1/2 -left-10 hidden sm:block size-32"
+                  : "absolute bottom-1/2 translate-y-1/2 transition-all duration-200 -left-10 hidden sm:block size-32"
               }
             />
             <div>NEW “NETO BALL” PRODUCTS!</div>
             {open ? (
-              <ChevronUpIcon className="size-7 absolute top-0 right-3 bg-red-600 translate-y-1/2 rounded-full" />
+              <ChevronUpIcon className="size-7 absolute top-1/2 right-3 bg-red-600 -translate-y-1/2 rounded-full" />
             ) : (
-              <ChevronDownIcon className="size-7 absolute top-0 right-3 bg-red-600 translate-y-1/2 rounded-full" />
+              <ChevronDownIcon className="size-7 absolute top-1/2 right-3 bg-red-600 -translate-y-1/2 rounded-full" />
             )}
           </div>
           <Collapsible open={open} revealType="bottomFirst">
@@ -649,7 +649,7 @@ const BG_change_sec = () => {
   }, []);
   return (
     <section>
-      <div ref={ref} className=" scrollbg pb-20 shadowstatic">
+      <div ref={ref} className=" scrollbg pb-20">
         <section className="relative">
           <div className=" w-full mx-auto overflow-clip lg:overflow-visible lg:flex flex-row items-center sm:mb-10">
             <div className="lg:w-2/3 w-full mx-auto px-10 overflow-clip sm:py-20 py-10 relative">
@@ -789,7 +789,7 @@ const Card_row_sec = () => {
       <div className="text-center py-10 shadowpalse font-A2Beckett  uppercase text-4xl">
         MORE ABOUT NETO BALL
       </div>
-      <div className="flex h-[400px] overflow-x-scroll xl:justify-center whitespace-nowrap">
+      <div className="flex h-[400px] overflow-x-auto xl:justify-center whitespace-nowrap">
         <a
           className="mx-2 shadowstatic my-4 hover:-translate-y-2 transition-all duration-50 shadowpalseonce min-w-[280px] w-[280px] whitespace-normal relative bg-[#ffcc44]"
           href="#"
@@ -877,7 +877,7 @@ export default function HifiRush() {
     <main className="bg-white">
       <title>HI-FI Rush</title>
       <div className="main_bg">
-        <div className="lg:w-3/4 sm:w-11/12 max-w-[70rem] mx-auto items-center">
+        <div className="lg:w-4/5 sm:w-11/12 max-w-[70rem] shadowstaticborder mx-auto items-center">
           <Main_sec />
           <Collapsable />
           <BG_change_sec />

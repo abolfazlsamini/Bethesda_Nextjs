@@ -134,6 +134,10 @@
   .shadowstatic {
     filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.85));
   }
+  .shadowstaticborder {
+    filter: drop-shadow(8px 0px 0px rgba(0, 0, 0, 0.85))
+      drop-shadow(-8px 0px 0px rgba(0, 0, 0, 0.85));
+  }
   .shadowpalse {
     animation: shadowpulse infinite;
     animation-duration: 900ms;
