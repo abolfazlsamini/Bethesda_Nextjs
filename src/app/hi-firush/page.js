@@ -60,7 +60,7 @@ const Main_sec = () => {
                 />
               </svg>
               <div className="absolute font-A2Beckett text-base mb-2 md:mb-3 md:text-lg sm:text-sm sm:mb-3 xl:text-2xl 2xl:mb-0 italic text-white top-0 bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2">
-                WATCH VIDEO
+                TO WATCH VIDEO
               </div>
             </div>
             <div className="relative shadowpalseonce text-[#ffff00] hover:cursor-pointer hover:text-[#004aba] h-max w-1/2 sm:px-10 filter drop-shadow-hifilogoshadow pb-3">
@@ -73,7 +73,7 @@ const Main_sec = () => {
                 />
               </svg>
               <div className="absolute font-A2Beckett text-base mb-2 md:mb-3 md:text-lg sm:text-sm sm:mb-3 xl:text-2xl 2xl:mb-0 italic text-black top-0 bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2">
-                play now
+                DOWNLOAD NOW
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Collapsable = () => {
                   : "absolute bottom-0 transition-all duration-200 -left-10 hidden sm:block size-24"
               }
             />
-            <div>NEW HI-FI RUSH GEAR!</div>
+            <div>NEW “NETO BALL” PRODUCTS!</div>
             {open ? (
               <ChevronUpIcon className="size-7 absolute top-0 right-3 bg-red-600 translate-y-1/2 rounded-full" />
             ) : (
@@ -114,7 +114,7 @@ const Collapsable = () => {
             )}
           </div>
           <Collapsible open={open} revealType="bottomFirst">
-            <div className="bg-white collapsabale_bg flex">
+            <div className="bg-white collapsabale_bg flex text-center">
               <div className="sm:w-1/2 mx-auto z-10">
                 <Image
                   src={collapsable_pic}
@@ -124,7 +124,7 @@ const Collapsable = () => {
                   className=""
                 />
                 <div>
-                  <div className="firstsec_title">NEW HI-FI RUSH GEAR!</div>
+                  <div className="card_header">NEW HI-FI RUSH GEAR!</div>
                   <div className="firstsec_text text-black">
                     Look like a rockstar with our Hi-Fi RUSH t-shirts, deskmats,
                     and more - now available in the Bethesda Gear Store.
@@ -820,7 +820,7 @@ const Card_row_sec = () => {
           href="#"
         >
           <div className="w-full whitespace-normal">
-            <Image src={card_sec_pic_1} width={0} height={0} alt="" />
+            <Image src={card_sec_pic_2} width={0} height={0} alt="" />
           </div>
           <div className="px-5">
             <div className="scrollycardtitle whitespace-normal">
@@ -842,7 +842,7 @@ const Card_row_sec = () => {
           href="#"
         >
           <div className="w-full whitespace-normal">
-            <Image src={card_sec_pic_1} width={0} height={0} alt="" />
+            <Image src={card_sec_pic_3} width={0} height={0} alt="" />
           </div>
           <div className="px-5">
             <div className="scrollycardtitle whitespace-normal">
