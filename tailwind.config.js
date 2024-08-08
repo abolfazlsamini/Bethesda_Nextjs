@@ -20,6 +20,8 @@ module.exports = {
         CCCutthroat: "var(--font-CCCutthroat)",
         Purista: "var(--font-Purista)",
         PuristaItalic: "var(--font-PuristaItalic)",
+        SST_Light: "var(--font-SST_Light)",
+        SST_Bold: "var(--font-SST_Bold)",
       },
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",

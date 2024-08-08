@@ -4,41 +4,53 @@
 
 @layer components {
   .card_header {
-    @apply font-A2Beckett  uppercase text-4xl shadowpalse;
+    @apply shadowpalse font-A2Beckett text-4xl uppercase;
     filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.85))
       drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.85));
     box-shadow: #9bf00b;
   }
   .card_text {
-    @apply font-montserrat text-black text-xs;
+    @apply font-montserrat text-xs text-black;
   }
   .scrollycardtitle {
-    @apply text-black font-A2Beckett text-2xl py-3;
+    @apply py-3 font-A2Beckett text-2xl text-black;
   }
   .scrollycardtext {
-    @apply text-black text-xs leading-5 font-Purista;
+    @apply font-Purista text-xs leading-5 text-black;
   }
   .scrollycardfooter {
-    @apply text-black font-PuristaItalic text-xs italic;
+    @apply font-PuristaItalic text-xs italic text-black;
   }
   .firstsec_title {
-    @apply text-white font-A2Beckett sm:text-5xl text-4xl py-3;
+    @apply py-3 font-A2Beckett text-4xl text-white sm:text-5xl;
   }
   .firstsec_text {
-    @apply text-white text-xs sm:text-base pb-5 leading-5 font-CCCutthroat;
+    @apply pb-5 font-CCCutthroat text-xs leading-5 text-white sm:text-base;
+  }
+  .netogame_H1 {
+    @apply font-SST_Light text-4xl leading-[68px] xl:text-[56px];
+  }
+  .netogame_P {
+    @apply font-SST_Light text-xl;
+  }
+  .netogame_H2 {
+    @apply font-SST_Light text-xl;
+  }
+  .netogame_H3 {
+    @apply font-SST_Light text-xs;
   }
 }
 
 @layer base {
   h3 {
-    @apply font-bold text-4xl font-futura leading-8 xl:text-5xl sm:text-4xl;
+    @apply font-futura text-4xl font-bold leading-8 sm:text-4xl xl:text-5xl;
   }
   h2 {
-    @apply font-bold text-2xl font-futura leading-8 xl:text-4xl sm:text-2xl;
+    @apply font-futura text-2xl font-bold leading-8 sm:text-2xl xl:text-4xl;
     text-shadow: 0px 0px 20px black;
   }
   p {
-    @apply font-univers55 text-base leading-7 font-thin;
+    @apply font-univers55 text-base font-thin leading-7;
     text-shadow: 0px 0px 10px black;
   }
   /* * {
@@ -290,4 +302,102 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/*     Netogame      */
+@media (min-width: 1024px) {
+  .category_container:hover .main_small_image {
+    opacity: 40%;
+    transition: opacity 100ms linear;
+    max-height: 100%;
+  }
+  .category_container .main_small_image:hover {
+    opacity: 100%;
+    transition: opacity 100ms linear;
+    max-height: 100%;
+  }
+  .main_small_image_container:hover .main_small_image {
+    opacity: 40%;
+    transition: opacity 100ms linear;
+    max-height: 100%;
+  }
+  .main_small_image_container .main_small_image:hover {
+    opacity: 100%;
+    transition: opacity 100ms linear;
+    max-height: 100%;
+  }
+
+  .main_small_image:hover .carouselimg {
+    box-shadow: 0 0.75rem 8px rgba(32, 32, 32, 0.18);
+  }
+  .netogame_gradientMainimage_mobile {
+    display: none;
+  }
+  .netogame_gradientMainimage_pc {
+    background-image: linear-gradient(to right, #1f1f1f 0%, #1f1f1f00 50%);
+  }
+  .netogame_appear_animation {
+    transform: translateY(-40%);
+    animation: apear_animation forwards;
+    opacity: 0;
+    animation-duration: 1s;
+  }
+  .netogame_appear_animation_mobile {
+    animation: none;
+  }
+  .carousel3_bg {
+    background-image: url(../../public/netogame/carousel3_bg_pc.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 1023.95px) {
+  .netogame_appear_animation_mobile {
+    transform: translateY(40px);
+    animation: apear_animation_mobile forwards;
+    opacity: 0;
+    animation-duration: 1s;
+  }
+  .carousel3_bg {
+    background-image: url(../../public/netogame/carousel3_bg_mobile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.netogame_gradientMainimage_pc {
+  display: none;
+}
+.netogame_gradientMainimage_mobile {
+  background-image: linear-gradient(to top, #1f1f1f 0%, #1f1f1f00 10rem);
+}
+@keyframes apear_animation_mobile {
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes apear_animation {
+  to {
+    transform: translateY(-50%);
+    opacity: 100%;
+  }
+}
+.overflow_scrolling {
+  /* overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; */
+}
+.netogame_gradientcarousel2 {
+  background-image: linear-gradient(to top, #000, #0000);
+}
+.carousel4_card_shadow:hover {
+  box-shadow: #00000029 0px 4px 16px 0px;
+}
+.carousel4_card_shadow {
+  box-shadow: #00000014 0px 4px 8px 0px;
+}
+.carousel4_card_shadow:hover .carouselimg {
+  box-shadow: 0 4px 7px 0 #1f1f1f;
+}
+.carousel5_gradient {
+  background-image: linear-gradient(0deg, #000 -5.39%, transparent 104.31%);
 }

@@ -1,6 +1,8 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 export const furura = localFont({
   src: [
@@ -124,8 +126,28 @@ export const PuristaItalic = localFont({
   ],
   variable: "--font-PuristaItalic",
 });
+export const SST_Light = localFont({
+  src: [
+    {
+      path: "../../public/fonts/netogame/SST_Light.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-SST_Light",
+});
+export const SST_Bold = localFont({
+  src: [
+    {
+      path: "../../public/fonts/netogame/SST_Bold.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-SST_Bold",
+});
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "DeathLoop",
@@ -136,23 +158,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`
-          ${inter.variable} 
-          ${furura.variable} 
-          ${univers55.variable} 
-          ${montera.variable} 
-          ${roboto.variable}
-          ${segoeuibold.variable}
-          ${segoeui.variable}
-          ${seoproblack.variable}
-          ${A2Beckett.variable}
-          ${montserrat.variable}
-          ${CCCutthroat.variable}
-          ${Purista.variable}
-          ${PuristaItalic.variable}
-          `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} `}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
