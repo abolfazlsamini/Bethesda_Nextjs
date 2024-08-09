@@ -45,22 +45,45 @@ import main_pic_8_pc from "../../../public/netogame/main_pic_8_pc.webp";
 import main_pic_8_controller from "../../../public/netogame/main_pic_8_controller.webp";
 
 import carousel2_pic_1 from "../../../public/netogame/carousel2_pic_1.webp";
+import carousel2_pic_2 from "../../../public/netogame/carousel2_pic_2.webp";
+import carousel2_pic_3 from "../../../public/netogame/carousel2_pic_3.webp";
+import carousel2_pic_4 from "../../../public/netogame/carousel2_pic_4.webp";
+import carousel2_pic_5 from "../../../public/netogame/carousel2_pic_5.webp";
 
 import carousel3_pic_1_pc from "../../../public/netogame/carousel3_pic_1_pc.webp";
+import carousel3_pic_2_pc from "../../../public/netogame/carousel3_pic_2_pc.webp";
+import carousel3_pic_3_pc from "../../../public/netogame/carousel3_pic_3_pc.webp";
 import carousel3_icon from "../../../public/netogame/carousel3_icon.svg";
 
 import carousel4_pic_1 from "../../../public/netogame/carousel4_pic_1.webp";
 import carousel4_logo_1 from "../../../public/netogame/carousel4_logo_1.webp";
+import carousel4_pic_2 from "../../../public/netogame/carousel4_pic_2.webp";
+import carousel4_logo_2 from "../../../public/netogame/carousel4_logo_2.webp";
+import carousel4_pic_3 from "../../../public/netogame/carousel4_pic_3.webp";
+import carousel4_logo_3 from "../../../public/netogame/carousel4_logo_3.webp";
+import carousel4_pic_4 from "../../../public/netogame/carousel4_pic_4.webp";
+import carousel4_logo_4 from "../../../public/netogame/carousel4_logo_4.webp";
+import carousel4_pic_5 from "../../../public/netogame/carousel4_pic_5.webp";
+import carousel4_logo_5 from "../../../public/netogame/carousel4_logo_5.webp";
+import carousel4_pic_6 from "../../../public/netogame/carousel4_pic_6.webp";
+import carousel4_logo_6 from "../../../public/netogame/carousel4_logo_6.webp";
 
 import sec2_pc from "../../../public/netogame/sec2_pc.webp";
 
 import sec1_pc from "../../../public/netogame/sec1_pic_pc.webp";
 
 import category_pic_1 from "../../../public/netogame/category_pic_1.webp";
+import category_pic_2 from "../../../public/netogame/category_pic_2.webp";
+import category_pic_3 from "../../../public/netogame/category_pic_3.webp";
+import category_pic_4 from "../../../public/netogame/category_pic_4.webp";
+import category_pic_5 from "../../../public/netogame/category_pic_5.webp";
+import category_pic_6 from "../../../public/netogame/category_pic_6.webp";
 
 import carousel5_pic_1 from "../../../public/netogame/carousel5_pic_1.png";
 
 import { useEffect, useRef, useState } from "react";
+import Navbar2 from "../navbar2";
+import Navbar from "../navbar";
 
 const Main_sec = () => {
   const controller_ref = useRef();
@@ -136,6 +159,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_1_pc}
                     width={0}
                     height={0}
@@ -181,6 +205,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_2_pc}
                     width={0}
                     height={0}
@@ -226,6 +251,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_3_pc}
                     width={0}
                     height={0}
@@ -271,6 +297,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_4_pc}
                     width={0}
                     height={0}
@@ -316,6 +343,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_5_pc}
                     width={0}
                     height={0}
@@ -361,6 +389,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_6_pc}
                     width={0}
                     height={0}
@@ -406,6 +435,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_7_pc}
                     width={0}
                     height={0}
@@ -451,6 +481,7 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
+                    priority
                     src={main_pic_8_pc}
                     width={0}
                     height={0}
@@ -680,7 +711,7 @@ const Category_sec = () => {
               <div
                 className={
                   inCategoty(["ps5"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
+                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
               >
@@ -697,13 +728,13 @@ const Category_sec = () => {
               <div
                 className={
                   inCategoty(["action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
+                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
               >
                 <Image
                   placeholder="blur"
-                  src={category_pic_1}
+                  src={category_pic_2}
                   width={0}
                   height={0}
                   alt=""
@@ -714,13 +745,13 @@ const Category_sec = () => {
               <div
                 className={
                   inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
+                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
               >
                 <Image
                   placeholder="blur"
-                  src={category_pic_1}
+                  src={category_pic_3}
                   width={0}
                   height={0}
                   alt=""
@@ -731,13 +762,13 @@ const Category_sec = () => {
               <div
                 className={
                   inCategoty(["action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
+                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
               >
                 <Image
                   placeholder="blur"
-                  src={category_pic_1}
+                  src={category_pic_4}
                   width={0}
                   height={0}
                   alt=""
@@ -748,13 +779,13 @@ const Category_sec = () => {
               <div
                 className={
                   inCategoty(["action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
+                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
               >
                 <Image
                   placeholder="blur"
-                  src={category_pic_1}
+                  src={category_pic_5}
                   width={0}
                   height={0}
                   alt=""
@@ -765,13 +796,13 @@ const Category_sec = () => {
               <div
                 className={
                   inCategoty(["ps5", "action", "adventure", "mobile"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
+                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
               >
                 <Image
                   placeholder="blur"
-                  src={category_pic_1}
+                  src={category_pic_6}
                   width={0}
                   height={0}
                   alt=""
@@ -779,108 +810,7 @@ const Category_sec = () => {
                 />
                 <div className="ml-1">helldivers</div>
               </div>
-              <div
-                className={
-                  inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
-                    : "hidden"
-                }
-              >
-                <Image
-                  placeholder="blur"
-                  src={category_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
-                />
-                <div className="ml-1 mt-1">helldivers</div>
-              </div>
-              <div
-                className={
-                  inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
-                    : "hidden"
-                }
-              >
-                <Image
-                  placeholder="blur"
-                  src={category_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
-                />
-                <div className="ml-1 mt-1">helldivers</div>
-              </div>
-              <div
-                className={
-                  inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
-                    : "hidden"
-                }
-              >
-                <Image
-                  placeholder="blur"
-                  src={category_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
-                />
-                <div className="ml-1 mt-1">helldivers</div>
-              </div>
-              <div
-                className={
-                  inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
-                    : "hidden"
-                }
-              >
-                <Image
-                  placeholder="blur"
-                  src={category_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
-                />
-                <div className="ml-1 mt-1">helldivers</div>
-              </div>
-              <div
-                className={
-                  inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
-                    : "hidden"
-                }
-              >
-                <Image
-                  placeholder="blur"
-                  src={category_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
-                />
-                <div className="ml-1 mt-1">helldivers</div>
-              </div>
-              <div
-                className={
-                  inCategoty(["ps5", "action"])
-                    ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[16vw] xl:max-w-[16vw] hover:[&_.carouselimg]:scale-105"
-                    : "hidden"
-                }
-              >
-                <Image
-                  placeholder="blur"
-                  src={category_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
-                />
-                <div className="ml-1 mt-1">helldivers</div>
-              </div>
+
               {/* <div className="opacityhover absolute top-0 h-full max-h-0 w-full bg-[#1c1d21] opacity-0 transition-opacity duration-300"></div> */}
             </div>
           </div>
@@ -1024,17 +954,17 @@ const Carousel_3 = () => {
                   <div className="netogame_gradientcarousel2 absolute bottom-24 z-10 h-1/2 w-full lg:hidden"></div>
                   <picture>
                     <source
-                      srcSet="./netogame/carousel3_pic_1_mobile.webp"
+                      srcSet="./netogame/carousel3_pic_2_mobile.webp"
                       media="(max-width:1023.95px)"
                     ></source>
                     <source
-                      srcSet="./netogame/carousel3_pic_1_pc.webp"
+                      srcSet="./netogame/carousel3_pic_2_pc.webp"
                       media="(min-width:1024px)"
                     ></source>
 
                     <Image
                       placeholder="blur"
-                      src={carousel3_pic_1_pc}
+                      src={carousel3_pic_2_pc}
                       width={0}
                       height={0}
                       alt=""
@@ -1077,17 +1007,17 @@ const Carousel_3 = () => {
                   <div className="netogame_gradientcarousel2 absolute bottom-24 z-10 h-1/2 w-full lg:hidden"></div>
                   <picture>
                     <source
-                      srcSet="./netogame/carousel3_pic_1_mobile.webp"
+                      srcSet="./netogame/carousel3_pic_3_mobile.webp"
                       media="(max-width:1023.95px)"
                     ></source>
                     <source
-                      srcSet="./netogame/carousel3_pic_1_pc.webp"
+                      srcSet="./netogame/carousel3_pic_3_pc.webp"
                       media="(min-width:1024px)"
                     ></source>
 
                     <Image
                       placeholder="blur"
-                      src={carousel3_pic_1_pc}
+                      src={carousel3_pic_3_pc}
                       width={0}
                       height={0}
                       alt=""
@@ -1304,7 +1234,7 @@ const Carousel_2 = () => {
               <div className="relative">
                 <Image
                   placeholder="blur"
-                  src={carousel2_pic_1}
+                  src={carousel2_pic_2}
                   width={0}
                   height={0}
                   alt=""
@@ -1333,7 +1263,7 @@ const Carousel_2 = () => {
               <div className="relative">
                 <Image
                   placeholder="blur"
-                  src={carousel2_pic_1}
+                  src={carousel2_pic_3}
                   width={0}
                   height={0}
                   alt=""
@@ -1362,7 +1292,7 @@ const Carousel_2 = () => {
               <div className="relative">
                 <Image
                   placeholder="blur"
-                  src={carousel2_pic_1}
+                  src={carousel2_pic_4}
                   width={0}
                   height={0}
                   alt=""
@@ -1391,7 +1321,7 @@ const Carousel_2 = () => {
               <div className="relative">
                 <Image
                   placeholder="blur"
-                  src={carousel2_pic_1}
+                  src={carousel2_pic_5}
                   width={0}
                   height={0}
                   alt=""
@@ -1459,7 +1389,7 @@ const Carousel_2 = () => {
                     ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
                     : "main_small_image m-1 cursor-pointer rounded-xl p-1"
                 }
-                src={carousel2_pic_1}
+                src={carousel2_pic_2}
                 width={0}
                 height={0}
                 alt=""
@@ -1487,7 +1417,7 @@ const Carousel_2 = () => {
                     ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
                     : "main_small_image m-1 cursor-pointer rounded-xl p-1"
                 }
-                src={carousel2_pic_1}
+                src={carousel2_pic_3}
                 width={0}
                 height={0}
                 alt=""
@@ -1515,7 +1445,7 @@ const Carousel_2 = () => {
                     ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
                     : "main_small_image m-1 cursor-pointer rounded-xl p-1"
                 }
-                src={carousel2_pic_1}
+                src={carousel2_pic_4}
                 width={0}
                 height={0}
                 alt=""
@@ -1543,7 +1473,7 @@ const Carousel_2 = () => {
                     ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
                     : "main_small_image m-1 cursor-pointer rounded-xl p-1"
                 }
-                src={carousel2_pic_1}
+                src={carousel2_pic_5}
                 width={0}
                 height={0}
                 alt=""
@@ -2235,261 +2165,267 @@ const Carousel_4 = () => {
   };
 
   return (
-    <div className="slider-container relative w-full pb-10">
-      <Slider {...settings}>
-        <div className="w-full rounded-xl">
-          <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-            <Image
-              placeholder="blur"
-              src={carousel4_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="carouselimg h-auto w-full rounded-xl"
-            />
+    <div>
+      <div className="netogame_H1 px-10 py-16 text-center text-2xl text-black lg:text-4xl">
+        The latest news from PlayStation Blog
+      </div>
 
-            <div className="text-black">
-              <div className="netogame_H2 mt-5">
-                Share of the Week: Games Within Games
+      <div className="slider-container relative w-full pb-10">
+        <Slider {...settings}>
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_2}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Share of the Week: Games Within Games
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Assemble your crew of Freegunner space outlaws and team up
+                  with friends online, in this new multiplayer hero shooter
+                  available August 23rd on PS5 and PC.¹
+                </div>
               </div>
-              <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                Assemble your crew of Freegunner space outlaws and team up with
-                friends online, in this new multiplayer hero shooter available
-                August 23rd on PS5 and PC.¹
-              </div>
-            </div>
-            <div className="relative bottom-0 text-black">
-              <div className="flex">
-                <Image
-                  placeholder="blur"
-                  src={carousel4_logo_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="size-12"
-                />
-                <div className="ml-2">
-                  <div className="">adam michel</div>
-                  <div className="text-xs text-black/50">
-                    Content Communications Specialist, Sony Interactive
-                    Entertainment
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_2}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">adam michel</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Sony Interactive
+                      Entertainment
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full rounded-xl">
-          <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-            <Image
-              placeholder="blur"
-              src={carousel4_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="carouselimg h-auto w-full rounded-xl"
-            />
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_3}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
 
-            <div className="text-black">
-              <div className="netogame_H2 mt-5">
-                Share of the Week: Games Within Games
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Share of the Week: Games Within Games
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Assemble your crew of Freegunner space outlaws and team up
+                  with friends online, in this new multiplayer hero shooter
+                  available August 23rd on PS5 and PC.¹
+                </div>
               </div>
-              <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                Assemble your crew of Freegunner space outlaws and team up with
-                friends online, in this new multiplayer hero shooter available
-                August 23rd on PS5 and PC.¹
-              </div>
-            </div>
-            <div className="relative bottom-0 text-black">
-              <div className="flex">
-                <Image
-                  placeholder="blur"
-                  src={carousel4_logo_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="size-12"
-                />
-                <div className="ml-2">
-                  <div className="">adam michel</div>
-                  <div className="text-xs text-black/50">
-                    Content Communications Specialist, Sony Interactive
-                    Entertainment
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_3}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">adam michel</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Sony Interactive
+                      Entertainment
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full rounded-xl">
-          <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-            <Image
-              placeholder="blur"
-              src={carousel4_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="carouselimg h-auto w-full rounded-xl"
-            />
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_4}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
 
-            <div className="text-black">
-              <div className="netogame_H2 mt-5">
-                Share of the Week: Games Within Games
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Share of the Week: Games Within Games
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Assemble your crew of Freegunner space outlaws and team up
+                  with friends online, in this new multiplayer hero shooter
+                  available August 23rd on PS5 and PC.¹
+                </div>
               </div>
-              <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                Assemble your crew of Freegunner space outlaws and team up with
-                friends online, in this new multiplayer hero shooter available
-                August 23rd on PS5 and PC.¹
-              </div>
-            </div>
-            <div className="relative bottom-0 text-black">
-              <div className="flex">
-                <Image
-                  placeholder="blur"
-                  src={carousel4_logo_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="size-12"
-                />
-                <div className="ml-2">
-                  <div className="">adam michel</div>
-                  <div className="text-xs text-black/50">
-                    Content Communications Specialist, Sony Interactive
-                    Entertainment
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_4}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">adam michel</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Sony Interactive
+                      Entertainment
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full rounded-xl">
-          <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-            <Image
-              placeholder="blur"
-              src={carousel4_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="carouselimg h-auto w-full rounded-xl"
-            />
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_5}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
 
-            <div className="text-black">
-              <div className="netogame_H2 mt-5">
-                Share of the Week: Games Within Games
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Share of the Week: Games Within Games
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Assemble your crew of Freegunner space outlaws and team up
+                  with friends online, in this new multiplayer hero shooter
+                  available August 23rd on PS5 and PC.¹
+                </div>
               </div>
-              <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                Assemble your crew of Freegunner space outlaws and team up with
-                friends online, in this new multiplayer hero shooter available
-                August 23rd on PS5 and PC.¹
-              </div>
-            </div>
-            <div className="relative bottom-0 text-black">
-              <div className="flex">
-                <Image
-                  placeholder="blur"
-                  src={carousel4_logo_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="size-12"
-                />
-                <div className="ml-2">
-                  <div className="">adam michel</div>
-                  <div className="text-xs text-black/50">
-                    Content Communications Specialist, Sony Interactive
-                    Entertainment
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_5}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">adam michel</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Sony Interactive
+                      Entertainment
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full rounded-xl">
-          <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-            <Image
-              placeholder="blur"
-              src={carousel4_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="carouselimg h-auto w-full rounded-xl"
-            />
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_6}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
 
-            <div className="text-black">
-              <div className="netogame_H2 mt-5">
-                Share of the Week: Games Within Games
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Share of the Week: Games Within Games
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Assemble your crew of Freegunner space outlaws and team up
+                  with friends online, in this new multiplayer hero shooter
+                  available August 23rd on PS5 and PC.¹
+                </div>
               </div>
-              <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                Assemble your crew of Freegunner space outlaws and team up with
-                friends online, in this new multiplayer hero shooter available
-                August 23rd on PS5 and PC.¹
-              </div>
-            </div>
-            <div className="relative bottom-0 text-black">
-              <div className="flex">
-                <Image
-                  placeholder="blur"
-                  src={carousel4_logo_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="size-12"
-                />
-                <div className="ml-2">
-                  <div className="">adam michel</div>
-                  <div className="text-xs text-black/50">
-                    Content Communications Specialist, Sony Interactive
-                    Entertainment
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_6}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">adam michel</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Sony Interactive
+                      Entertainment
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full rounded-xl">
-          <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-            <Image
-              placeholder="blur"
-              src={carousel4_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="carouselimg h-auto w-full rounded-xl"
-            />
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_1}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
 
-            <div className="text-black">
-              <div className="netogame_H2 mt-5">
-                Share of the Week: Games Within Games
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Share of the Week: Games Within Games
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Assemble your crew of Freegunner space outlaws and team up
+                  with friends online, in this new multiplayer hero shooter
+                  available August 23rd on PS5 and PC.¹
+                </div>
               </div>
-              <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                Assemble your crew of Freegunner space outlaws and team up with
-                friends online, in this new multiplayer hero shooter available
-                August 23rd on PS5 and PC.¹
-              </div>
-            </div>
-            <div className="relative bottom-0 text-black">
-              <div className="flex">
-                <Image
-                  placeholder="blur"
-                  src={carousel4_logo_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="size-12"
-                />
-                <div className="ml-2">
-                  <div className="">adam michel</div>
-                  <div className="text-xs text-black/50">
-                    Content Communications Specialist, Sony Interactive
-                    Entertainment
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_1}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">adam michel</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Sony Interactive
+                      Entertainment
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </Slider>
+        </Slider>
+      </div>
     </div>
   );
 };
@@ -2498,20 +2434,28 @@ export default function Home() {
   return (
     <main className="mt-20 bg-white">
       <title>NetoGame</title>
-      <Main_sec />
-      <Category_sec />
-      <div className="carousel3_bg mx-auto w-full py-20">
-        <Carousel_3 />
-      </div>
-      <Carousel_2 />
-      <Video_sec />
-      <div className="bg-[#18141a] py-16">
-        <Carousel_5 />
-      </div>
-      <Sec2 />
-      <Sec1 />
 
-      <Carousel_4 />
+      <Navbar2 />
+      <div className="!font-SST_Light">
+        <Navbar />
+      </div>
+
+      <div className="mt-32">
+        <Main_sec />
+        <Category_sec />
+        <div className="carousel3_bg mx-auto w-full py-20">
+          <Carousel_3 />
+        </div>
+        <Carousel_2 />
+        <Video_sec />
+        <div className="bg-[#18141a] py-16">
+          <Carousel_5 />
+        </div>
+        <Sec2 />
+        <Sec1 />
+
+        <Carousel_4 />
+      </div>
     </main>
   );
 }

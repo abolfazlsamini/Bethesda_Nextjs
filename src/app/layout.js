@@ -146,6 +146,16 @@ export const SST_Bold = localFont({
   ],
   variable: "--font-SST_Bold",
 });
+export const CruyffSansExpanded_Heavy = localFont({
+  src: [
+    {
+      path: "../../public/fonts/ea/CruyffSansExpanded_Heavy.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-CruyffSansExpanded_Heavy",
+});
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -158,9 +168,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} `}
       >
-        <Navbar />
         {children}
         <Footer />
       </body>
