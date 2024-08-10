@@ -7,6 +7,33 @@ import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { TfiMenu } from "react-icons/tfi";
 import navbar2_icon_1 from "../../public/navbar2_icon_1.svg";
 
+import Cloud from "../../public/navbar2/Cloud.png";
+import NetoGear from "../../public/navbar2/NetoGear.png";
+import Console from "../../public/navbar2/Console.png";
+import Mobile from "../../public/navbar2/Mobile.png";
+import NetoVR from "../../public/navbar2/Neto VR.png";
+
+import NetoShare from "../../public/navbar2/NetoShare.png";
+import NetoPlayFusion from "../../public/navbar2/Neto PlayFusion.png";
+import NetoMarketing from "../../public/navbar2/Neto Marketing.png";
+
+import HyperGrip from "../../public/navbar2/HyperGrip.png";
+import SkyTune from "../../public/navbar2/SkyTune.png";
+import ThunderBeat from "../../public/navbar2/ThunderBeat.png";
+
+import ThisMonth from "../../public/navbar2/This Month.png";
+import NetoBlog from "../../public/navbar2/Neto Blog.png";
+
+import PlayFusion from "../../public/navbar2/PlayFusion.png";
+import BuyAccessories from "../../public/navbar2/Buy Accessories.png";
+import BuyMerchandies from "../../public/navbar2/Buy Merchandies.png";
+import BuyGames from "../../public/navbar2/Buy Games.png";
+
+import Accessories from "../../public/navbar2/Accessories.png";
+import Games from "../../public/navbar2/Games.png";
+import Services from "../../public/navbar2/Services.png";
+import Store from "../../public/navbar2/Store.png";
+
 export default function Navbar2() {
   const [toggle, setToggle] = useState("-translate-x-[32rem]");
   const [accordion, SetAccordion] = useState({ prev: "", curr: "" });
@@ -91,7 +118,87 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">PS5</div>
+                <div className="text-xl hover:text-blue-600">Services</div>
+              </div>
+            </div>
+          </li>
+          <li className="pr-5">
+            <div
+              className="flex cursor-pointer items-center justify-between text-black"
+              onClick={() => {
+                accordion.curr === "acc3"
+                  ? SetAccordion({ prev: "acc3", curr: "" })
+                  : SetAccordion({ prev: accordion.curr, curr: "acc3" });
+              }}
+            >
+              <div
+                className={
+                  accordion.curr === "acc3"
+                    ? "w-1/12 cursor-pointer text-blue-600"
+                    : "w-1/12 cursor-pointer hover:text-blue-600"
+                }
+              >
+                <div className="text-xl hover:text-blue-600">Accessories</div>
+              </div>
+            </div>
+          </li>
+          <li className="pr-5">
+            <div
+              className="flex cursor-pointer items-center justify-between text-black"
+              onClick={() => {
+                accordion.curr === "acc4"
+                  ? SetAccordion({ prev: "acc4", curr: "" })
+                  : SetAccordion({ prev: accordion.curr, curr: "acc4" });
+              }}
+            >
+              <div
+                className={
+                  accordion.curr === "acc4"
+                    ? "w-1/12 cursor-pointer text-blue-600"
+                    : "w-1/12 cursor-pointer hover:text-blue-600"
+                }
+              >
+                <div className="text-xl hover:text-blue-600">News</div>
+              </div>
+            </div>
+          </li>
+          <li className="pr-5">
+            <div
+              className="flex cursor-pointer items-center justify-between text-black"
+              onClick={() => {
+                accordion.curr === "acc5"
+                  ? SetAccordion({ prev: "acc5", curr: "" })
+                  : SetAccordion({ prev: accordion.curr, curr: "acc5" });
+              }}
+            >
+              <div
+                className={
+                  accordion.curr === "acc5"
+                    ? "w-1/12 cursor-pointer text-blue-600"
+                    : "w-1/12 cursor-pointer hover:text-blue-600"
+                }
+              >
+                <div className="text-xl hover:text-blue-600">Shop</div>
+              </div>
+            </div>
+          </li>
+          <li className="pr-5">
+            <div
+              className="flex cursor-pointer items-center justify-between text-black"
+              onClick={() => {
+                accordion.curr === "acc6"
+                  ? SetAccordion({ prev: "acc6", curr: "" })
+                  : SetAccordion({ prev: accordion.curr, curr: "acc6" });
+              }}
+            >
+              <div
+                className={
+                  accordion.curr === "acc6"
+                    ? "w-1/12 cursor-pointer text-blue-600"
+                    : "w-1/12 cursor-pointer hover:text-blue-600"
+                }
+              >
+                <div className="text-xl hover:text-blue-600">Support</div>
               </div>
             </div>
           </li>
@@ -106,49 +213,67 @@ export default function Navbar2() {
             <div
               className={
                 accordion.curr === "" // add animation only when it's not open
-                  ? "max-h-0 transition-[max-height] duration-500"
+                  ? "max-h-0 overflow-hidden transition-[max-height] duration-500"
                   : accordion.curr === "acc1"
                     ? "max-h-[200px] w-full transition-[max-height] duration-500"
-                    : "max-h-0 transition-[max-height] duration-500"
+                    : "max-h-0 overflow-hidden transition-[max-height] duration-500"
               }
             >
               <div
                 className={
                   accordion.curr === "acc1"
-                    ? "px-5 text-black transition-opacity"
-                    : "px-5 opacity-0 transition-opacity"
+                    ? "px-5 text-black transition-opacity duration-1000"
+                    : "px-5 opacity-0 transition-opacity duration-200"
                 }
               >
                 <div className="mx-auto flex w-max flex-wrap pt-3">
-                  <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
                     <Image
                       alt=""
-                      className="invert"
-                      src={logo}
+                      className=""
+                      src={NetoGear}
                       width={0}
                       height={0}
                     />
                   </div>
-                  <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
                     <Image
                       alt=""
-                      className="invert"
-                      src={logo}
+                      className=""
+                      src={Cloud}
                       width={0}
                       height={0}
                     />
                   </div>
-                  <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
                     <Image
                       alt=""
-                      className="invert"
-                      src={logo}
+                      className=""
+                      src={Console}
+                      width={0}
+                      height={0}
+                    />
+                  </div>
+                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                    <Image
+                      alt=""
+                      className=""
+                      src={Mobile}
+                      width={0}
+                      height={0}
+                    />
+                  </div>
+                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                    <Image
+                      alt=""
+                      className=""
+                      src={NetoVR}
                       width={0}
                       height={0}
                     />
                   </div>
                 </div>
-                <div className="mx-auto flex w-max">
+                {/* <div className="mx-auto flex w-max">
                   <div className="pr-5">
                     <a href="#" className="text-black hover:text-blue-600">
                       Browse by genre
@@ -169,6 +294,53 @@ export default function Navbar2() {
                       PlayStation indies
                     </a>
                   </div>
+                </div> */}
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              accordion.curr === "" // add animation only when it's not open
+                ? "max-h-0 overflow-hidden transition-[max-height] duration-500"
+                : accordion.curr === "acc2"
+                  ? "max-h-[200px] w-full transition-[max-height] duration-500"
+                  : "max-h-0 overflow-hidden transition-[max-height] duration-500"
+            }
+          >
+            <div
+              className={
+                accordion.curr === "acc2"
+                  ? "px-5 text-black transition-opacity duration-1000"
+                  : "px-5 opacity-0 transition-opacity duration-200"
+              }
+            >
+              <div className="mx-auto flex w-max flex-wrap pt-3">
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className="invert"
+                    src={NetoShare}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className="invert"
+                    src={NetoPlayFusion}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className="invert"
+                    src={NetoMarketing}
+                    width={0}
+                    height={0}
+                  />
                 </div>
               </div>
             </div>
@@ -176,37 +348,196 @@ export default function Navbar2() {
           <div
             className={
               accordion.curr === "" // add animation only when it's not open
-                ? "max-h-0 transition-[max-height] duration-500"
-                : accordion.curr === "acc2"
+                ? "max-h-0 overflow-hidden transition-[max-height] duration-500"
+                : accordion.curr === "acc3"
                   ? "max-h-[200px] w-full transition-[max-height] duration-500"
-                  : "max-h-0 transition-[max-height] duration-500"
+                  : "max-h-0 overflow-hidden transition-[max-height] duration-500"
             }
           >
             <div
               className={
-                accordion.curr === "acc2"
-                  ? "px-5 text-black transition-opacity"
-                  : "px-5 opacity-0 transition-opacity"
+                accordion.curr === "acc3"
+                  ? "px-5 text-black transition-opacity duration-1000"
+                  : "px-5 opacity-0 transition-opacity duration-200"
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
                   <Image
                     alt=""
-                    className="invert"
-                    src={logo}
+                    className=""
+                    src={NetoVR}
                     width={0}
                     height={0}
                   />
                 </div>
-                <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
                   <Image
                     alt=""
-                    className="invert"
-                    src={logo}
+                    className=""
+                    src={SkyTune}
                     width={0}
                     height={0}
                   />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={ThunderBeat}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={NetoGear}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              accordion.curr === "" // add animation only when it's not open
+                ? "max-h-0 overflow-hidden transition-[max-height] duration-500"
+                : accordion.curr === "acc4"
+                  ? "max-h-[200px] w-full transition-[max-height] duration-500"
+                  : "max-h-0 overflow-hidden transition-[max-height] duration-500"
+            }
+          >
+            <div
+              className={
+                accordion.curr === "acc4"
+                  ? "px-5 text-black transition-opacity duration-1000"
+                  : "px-5 opacity-0 transition-opacity duration-200"
+              }
+            >
+              <div className="mx-auto flex w-max flex-wrap pt-3">
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={ThisMonth}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={NetoBlog}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              accordion.curr === "" // add animation only when it's not open
+                ? "max-h-0 overflow-hidden transition-[max-height] duration-500"
+                : accordion.curr === "acc5"
+                  ? "max-h-[200px] w-full transition-[max-height] duration-500"
+                  : "max-h-0 overflow-hidden transition-[max-height] duration-500"
+            }
+          >
+            <div
+              className={
+                accordion.curr === "acc5"
+                  ? "px-5 text-black transition-opacity duration-1000"
+                  : "px-5 opacity-0 transition-opacity duration-200"
+              }
+            >
+              <div className="mx-auto flex w-max flex-wrap pt-3">
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={PlayFusion}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={BuyAccessories}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={BuyMerchandies}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={BuyGames}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              accordion.curr === "" // add animation only when it's not open
+                ? "max-h-0 overflow-hidden transition-[max-height] duration-500"
+                : accordion.curr === "acc6"
+                  ? "max-h-[200px] w-full transition-[max-height] duration-500"
+                  : "max-h-0 overflow-hidden transition-[max-height] duration-500"
+            }
+          >
+            <div
+              className={
+                accordion.curr === "acc6"
+                  ? "px-5 text-black transition-opacity duration-1000"
+                  : "px-5 opacity-0 transition-opacity duration-200"
+              }
+            >
+              <div className="mx-auto flex w-max flex-wrap pt-3">
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={Accessories}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image alt="" className="" src={Cloud} width={0} height={0} />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image alt="" className="" src={Games} width={0} height={0} />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image
+                    alt=""
+                    className=""
+                    src={Services}
+                    width={0}
+                    height={0}
+                  />
+                </div>
+                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                  <Image alt="" className="" src={Store} width={0} height={0} />
                 </div>
               </div>
             </div>
@@ -255,7 +586,7 @@ export default function Navbar2() {
               </svg>
             </button>
           </div>
-          <div className="overflow-hidden px-6">
+          <div className="overflow-hidden px-3">
             <ul>
               <li className="pb-5">
                 <div
@@ -269,18 +600,17 @@ export default function Navbar2() {
                   <div
                     className={
                       accordion.curr === "acc1"
-                        ? "text-blur-600 w-1/12 cursor-pointer text-blue-600"
-                        : "w-1/12 cursor-pointer text-black hover:text-blue-600"
+                        ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
+                        : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
                   >
-                    <svg
-                      className="h-full w-full"
-                      fill="currentColor"
-                      viewBox="0 0 16 16"
-                      aria-hidden="true"
-                    >
-                      <path d="M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM11 2.5c0-0.275 0.225-0.5 0.5-0.5h2c0.275 0 0.5 0.225 0.5 0.5v2c0 0.275-0.225 0.5-0.5 0.5h-2c-0.275 0-0.5-0.225-0.5-0.5v-2zM8 5c1.656 0 3 1.344 3 3s-1.344 3-3 3c-1.656 0-3-1.344-3-3s1.344-3 3-3zM14 13.5v0c0 0.275-0.225 0.5-0.5 0.5h-11c-0.275 0-0.5-0.225-0.5-0.5v0-6.5h1.1c-0.066 0.322-0.1 0.656-0.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-0.344-0.034-0.678-0.1-1h1.1v6.5z"></path>
-                    </svg>
+                    <Image
+                      src={NetoGear}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className=""
+                    />
                   </div>
                   <div className="hover:text-blue-600">Game</div>
                   <div>{">"}</div>
@@ -288,11 +618,11 @@ export default function Navbar2() {
                 <div
                   className={
                     accordion.curr === "" // add animation only when it's not open
-                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-blue-100 shadow-2xl transition-all duration-500"
+                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
                       : accordion.curr === "acc1"
                         ? accordion.prev === ""
-                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-blue-100 shadow-2xl transition-all duration-500"
-                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-blue-100 shadow-2xl"
+                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
+                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
                         : accordion.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[300px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[300px]"
@@ -301,63 +631,59 @@ export default function Navbar2() {
                   <div
                     className={
                       accordion.curr === "acc1"
-                        ? "px-5 text-black transition-opacity"
+                        ? "px-5 text-black transition-opacity duration-1000"
                         : "px-5 opacity-0 transition-opacity"
                     }
                   >
-                    <div className="flex items-center pt-10">
+                    <div className="flex items-center pt-12">
                       <TfiMenu className="mr-3 size-5 rotate-90" />
                       <div className="text-lg">Game</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
                         <Image
                           alt=""
-                          className="invert"
-                          src={logo}
+                          className=""
+                          src={NetoGear}
                           width={0}
                           height={0}
                         />
                       </div>
-                      <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
                         <Image
                           alt=""
-                          className="invert"
-                          src={logo}
+                          className=""
+                          src={Cloud}
                           width={0}
                           height={0}
                         />
                       </div>
-                      <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
                         <Image
                           alt=""
-                          className="invert"
-                          src={logo}
+                          className=""
+                          src={Console}
                           width={0}
                           height={0}
                         />
                       </div>
-                    </div>
-                    <div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          Browse by genre
-                        </a>
+                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Mobile}
+                          width={0}
+                          height={0}
+                        />
                       </div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          PlayStation indies
-                        </a>
-                      </div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          PlayStation indies
-                        </a>
-                      </div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          PlayStation indies
-                        </a>
+                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={NetoVR}
+                          width={0}
+                          height={0}
+                        />
                       </div>
                     </div>
                   </div>
@@ -375,30 +701,29 @@ export default function Navbar2() {
                   <div
                     className={
                       accordion.curr === "acc2"
-                        ? "text-blur-600 w-1/12 cursor-pointer text-blue-600"
-                        : "w-1/12 cursor-pointer text-black hover:text-blue-600"
+                        ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
+                        : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
                   >
-                    <svg
-                      className="h-full w-full"
-                      fill="currentColor"
-                      viewBox="0 0 16 16"
-                      aria-hidden="true"
-                    >
-                      <path d="M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM11 2.5c0-0.275 0.225-0.5 0.5-0.5h2c0.275 0 0.5 0.225 0.5 0.5v2c0 0.275-0.225 0.5-0.5 0.5h-2c-0.275 0-0.5-0.225-0.5-0.5v-2zM8 5c1.656 0 3 1.344 3 3s-1.344 3-3 3c-1.656 0-3-1.344-3-3s1.344-3 3-3zM14 13.5v0c0 0.275-0.225 0.5-0.5 0.5h-11c-0.275 0-0.5-0.225-0.5-0.5v0-6.5h1.1c-0.066 0.322-0.1 0.656-0.1 1 0 2.762 2.237 5 5 5s5-2.238 5-5c0-0.344-0.034-0.678-0.1-1h1.1v6.5z"></path>
-                    </svg>
+                    <Image
+                      src={NetoShare}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className=""
+                    />
                   </div>
-                  <div className="hover:text-blue-500">PS5</div>
+                  <div className="hover:text-blue-500">Services</div>
                   <div>{">"}</div>
                 </div>
                 <div
                   className={
                     accordion.curr === "" // add animation only when it's not open
-                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-red-100 shadow-2xl transition-all duration-500"
+                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
                       : accordion.curr === "acc2"
                         ? accordion.prev === ""
-                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-red-100 shadow-2xl transition-all duration-500"
-                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-red-100 shadow-2xl"
+                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
+                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
                         : accordion.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[500px]"
@@ -413,48 +738,403 @@ export default function Navbar2() {
                   >
                     <div className="flex items-center pt-10">
                       <TfiMenu className="mr-3 size-5 rotate-90" />
-                      <div className="text-lg">Game</div>
+                      <div className="text-lg">Services</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
                         <Image
                           alt=""
                           className="invert"
-                          src={logo}
+                          src={NetoShare}
                           width={0}
                           height={0}
                         />
                       </div>
-                      <div className="m-2 flex size-32 items-center hover:shadow-2xl">
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
                         <Image
                           alt=""
                           className="invert"
-                          src={logo}
+                          src={NetoPlayFusion}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className="invert"
+                          src={NetoMarketing}
                           width={0}
                           height={0}
                         />
                       </div>
                     </div>
-                    <div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          Browse by genre
-                        </a>
+                  </div>
+                </div>
+              </li>
+              <li className="pb-5">
+                <div
+                  className="flex cursor-pointer items-center justify-between text-black"
+                  onClick={() => {
+                    accordion.curr === "acc3"
+                      ? SetAccordion({ prev: "acc3", curr: "" })
+                      : SetAccordion({ prev: accordion.curr, curr: "acc3" });
+                  }}
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc3"
+                        ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
+                        : "w-2/12 cursor-pointer text-black hover:text-blue-600"
+                    }
+                  >
+                    <Image
+                      src={HyperGrip}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className=""
+                    />
+                  </div>
+                  <div className="hover:text-blue-500">Accessories</div>
+                  <div>{">"}</div>
+                </div>
+                <div
+                  className={
+                    accordion.curr === "" // add animation only when it's not open
+                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
+                      : accordion.curr === "acc3"
+                        ? accordion.prev === ""
+                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
+                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
+                        : accordion.prev === ""
+                          ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
+                          : "absolute z-10 hidden w-10/12 translate-x-[500px]"
+                  }
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc3"
+                        ? "px-5 text-black transition-opacity"
+                        : "px-5 opacity-0 transition-opacity"
+                    }
+                  >
+                    <div className="flex items-center pt-10">
+                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <div className="text-lg">Accessories</div>
+                    </div>
+                    <div className="flex flex-wrap border-b border-black pt-3">
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={HyperGrip}
+                          width={0}
+                          height={0}
+                        />
                       </div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          PlayStation indies
-                        </a>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={NetoVR}
+                          width={0}
+                          height={0}
+                        />
                       </div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          PlayStation indies
-                        </a>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={SkyTune}
+                          width={0}
+                          height={0}
+                        />
                       </div>
-                      <div className="pt-5">
-                        <a href="#" className="text-black hover:text-blue-600">
-                          PlayStation indies
-                        </a>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={ThunderBeat}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={NetoGear}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="pb-5">
+                <div
+                  className="flex cursor-pointer items-center justify-between text-black"
+                  onClick={() => {
+                    accordion.curr === "acc4"
+                      ? SetAccordion({ prev: "acc4", curr: "" })
+                      : SetAccordion({ prev: accordion.curr, curr: "acc4" });
+                  }}
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc4"
+                        ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
+                        : "w-2/12 cursor-pointer text-black hover:text-blue-600"
+                    }
+                  >
+                    <Image
+                      src={ThisMonth}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className=""
+                    />
+                  </div>
+                  <div className="hover:text-blue-500">News</div>
+                  <div>{">"}</div>
+                </div>
+                <div
+                  className={
+                    accordion.curr === "" // add animation only when it's not open
+                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
+                      : accordion.curr === "acc4"
+                        ? accordion.prev === ""
+                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
+                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
+                        : accordion.prev === ""
+                          ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
+                          : "absolute z-10 hidden w-10/12 translate-x-[500px]"
+                  }
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc4"
+                        ? "px-5 text-black transition-opacity"
+                        : "px-5 opacity-0 transition-opacity"
+                    }
+                  >
+                    <div className="flex items-center pt-10">
+                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <div className="text-lg">News</div>
+                    </div>
+                    <div className="flex flex-wrap border-b border-black pt-3">
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={ThisMonth}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={NetoBlog}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="pb-5">
+                <div
+                  className="flex cursor-pointer items-center justify-between text-black"
+                  onClick={() => {
+                    accordion.curr === "acc5"
+                      ? SetAccordion({ prev: "acc5", curr: "" })
+                      : SetAccordion({ prev: accordion.curr, curr: "acc5" });
+                  }}
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc5"
+                        ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
+                        : "w-2/12 cursor-pointer text-black hover:text-blue-600"
+                    }
+                  >
+                    <Image
+                      src={PlayFusion}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className=""
+                    />
+                  </div>
+                  <div className="hover:text-blue-500">Shop</div>
+                  <div>{">"}</div>
+                </div>
+                <div
+                  className={
+                    accordion.curr === "" // add animation only when it's not open
+                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
+                      : accordion.curr === "acc5"
+                        ? accordion.prev === ""
+                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
+                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
+                        : accordion.prev === ""
+                          ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
+                          : "absolute z-10 hidden w-10/12 translate-x-[500px]"
+                  }
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc5"
+                        ? "px-5 text-black transition-opacity"
+                        : "px-5 opacity-0 transition-opacity"
+                    }
+                  >
+                    <div className="flex items-center pt-10">
+                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <div className="text-lg">Shop</div>
+                    </div>
+                    <div className="flex flex-wrap border-b border-black pt-3">
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={PlayFusion}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={BuyAccessories}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={BuyMerchandies}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={BuyGames}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="pb-5">
+                <div
+                  className="flex cursor-pointer items-center justify-between text-black"
+                  onClick={() => {
+                    accordion.curr === "acc6"
+                      ? SetAccordion({ prev: "acc6", curr: "" })
+                      : SetAccordion({ prev: accordion.curr, curr: "acc6" });
+                  }}
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc6"
+                        ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
+                        : "w-2/12 cursor-pointer text-black hover:text-blue-600"
+                    }
+                  >
+                    <Image
+                      src={Accessories}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className=""
+                    />
+                  </div>
+                  <div className="hover:text-blue-500">Support</div>
+                  <div>{">"}</div>
+                </div>
+                <div
+                  className={
+                    accordion.curr === "" // add animation only when it's not open
+                      ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
+                      : accordion.curr === "acc6"
+                        ? accordion.prev === ""
+                          ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
+                          : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
+                        : accordion.prev === ""
+                          ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
+                          : "absolute z-10 hidden w-10/12 translate-x-[500px]"
+                  }
+                >
+                  <div
+                    className={
+                      accordion.curr === "acc6"
+                        ? "px-5 text-black transition-opacity"
+                        : "px-5 opacity-0 transition-opacity"
+                    }
+                  >
+                    <div className="flex items-center pt-10">
+                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <div className="text-lg">Support</div>
+                    </div>
+                    <div className="flex flex-wrap border-b border-black pt-3">
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Accessories}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Cloud}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Games}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Services}
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Store}
+                          width={0}
+                          height={0}
+                        />
                       </div>
                     </div>
                   </div>

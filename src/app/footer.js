@@ -47,21 +47,18 @@ export default function Footer() {
                     <div
                       className={
                         accordion.acc1
-                          ? "max-h-52 px-3 transition-all duration-300"
+                          ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }
                     >
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        GAMEPLAY
+                        About NETO
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Features and Modes
+                        Neto Studios
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        peresentation
-                      </div>
-                      <div className="border-b py-3 hover:text-[#ffffff99]">
-                        NT Playfusion membership
+                        Neto Token
                       </div>
                     </div>
                   </div>
@@ -70,53 +67,51 @@ export default function Footer() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                    SetAccordion({ ...accordion, acc1: !accordion.acc1 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
-                  <div className={accordion.acc2 ? "" : "border-b"}>
+                  <div className={accordion.acc1 ? "" : "border-b"}>
                     <div className="flex items-center uppercase">
-                      maps
+                      Prouct
                       <SlArrowDown
                         className={
-                          accordion.acc2
-                            ? "size-5 rotate-180 px-1 transition-all duration-300"
-                            : "size-5 px-1 transition-all duration-300"
+                          accordion.acc1
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
                         }
                       />
                     </div>
                     <div
                       className={
-                        accordion.acc2
-                          ? "max-h-[64rem] px-3 transition-all duration-300"
+                        accordion.acc1
+                          ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }
                     >
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Dust Storm
+                        Games
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Urban Siege
+                        HyperGrid
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Artic Blast
+                        Neto VR
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Jungle Havoc
+                        Neto Gear
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Desert Mirage
+                        Skytune
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Metro Mayhem
-                      </div>
-                      <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Devils Mountain
+                        ThunderBeat
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
+
               <li className="mb-1">
                 <div
                   onClick={() =>
@@ -126,7 +121,7 @@ export default function Footer() {
                 >
                   <div className={accordion.acc3 ? "" : "border-b"}>
                     <div className="flex items-center uppercase">
-                      game mode
+                      Games
                       <SlArrowDown
                         className={
                           accordion.acc3
@@ -138,21 +133,21 @@ export default function Footer() {
                     <div
                       className={
                         accordion.acc3
-                          ? "max-h-52 px-3 transition-all duration-300"
+                          ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }
                     >
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Capture the flag
+                        Console
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Dominitaion
+                        Neto VR
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Free for all
+                        Mobile
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Kill Confirmed
+                        Neto Gear
                       </div>
                     </div>
                   </div>
@@ -167,7 +162,7 @@ export default function Footer() {
                 >
                   <div className={accordion.acc4 ? "" : "border-b"}>
                     <div className="flex items-center uppercase">
-                      assistant tools
+                      Support
                       <SlArrowDown
                         className={
                           accordion.acc4
@@ -179,21 +174,24 @@ export default function Footer() {
                     <div
                       className={
                         accordion.acc4
-                          ? "max-h-52 px-3 transition-all duration-300"
+                          ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }
                     >
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        UAV
+                        Store
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Counter UAV
+                        Games
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Cruise Missile
+                        Cloud
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Remote Turret
+                        Services
+                      </div>
+                      <div className="border-b py-3 hover:text-[#ffffff99]">
+                        Accessories
                       </div>
                     </div>
                   </div>
@@ -208,7 +206,7 @@ export default function Footer() {
                 >
                   <div className={accordion.acc5 ? "" : "border-b"}>
                     <div className="flex items-center uppercase">
-                      news and media
+                      Resources
                       <SlArrowDown
                         className={
                           accordion.acc5
@@ -220,15 +218,21 @@ export default function Footer() {
                     <div
                       className={
                         accordion.acc5
-                          ? "max-h-52 px-3 transition-all duration-300"
+                          ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }
                     >
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        News
+                        Neto terms of services
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Trailer & Screenshots
+                        Age Ratings
+                      </div>
+                      <div className="border-b py-3 hover:text-[#ffffff99]">
+                        Health Warnings
+                      </div>
+                      <div className="border-b py-3 hover:text-[#ffffff99]">
+                        Developers
                       </div>
                     </div>
                   </div>
@@ -243,7 +247,7 @@ export default function Footer() {
                 >
                   <div className={accordion.acc6 ? "" : "border-b"}>
                     <div className="flex items-center uppercase">
-                      community
+                      Connect
                       <SlArrowDown
                         className={
                           accordion.acc6
@@ -255,15 +259,18 @@ export default function Footer() {
                     <div
                       className={
                         accordion.acc6
-                          ? "max-h-52 px-3 transition-all duration-300"
+                          ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }
                     >
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Forum
+                        App Store
                       </div>
                       <div className="border-b py-3 hover:text-[#ffffff99]">
-                        Newsletter Sign Up
+                        PlayStore
+                      </div>
+                      <div className="border-b py-3 hover:text-[#ffffff99]">
+                        Windows
                       </div>
                     </div>
                   </div>
@@ -291,36 +298,107 @@ export default function Footer() {
           </div>
         </div>
         <div className="hidden lg:block">
-          <div className="flex justify-between border-b border-white/30 py-3">
+          <div className="flex justify-between border-b border-white/30 pb-3">
             <div>
-              <div className="font-bold">about</div>
-              <div>about sie</div>
-              <div>careers</div>
+              <div className="pb-3 font-bold">About</div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                About NETO
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto Studios
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto Token
+              </div>
             </div>
             <div>
-              <div className="font-bold">about</div>
-              <div>about sie</div>
-              <div>careers</div>
+              <div className="pb-3 font-bold">Prouct</div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Games
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                HyperGrid
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto VR
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto Gear
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Skytune
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                ThunderBeat
+              </div>
             </div>
             <div>
-              <div className="font-bold">about</div>
-              <div>about sie</div>
-              <div>careers</div>
+              <div className="pb-3 font-bold">Games</div>
+
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Console
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto VR
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Mobile
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto Gear
+              </div>
             </div>
             <div>
-              <div className="font-bold">about</div>
-              <div>about sie</div>
-              <div>careers</div>
+              <div className="pb-3 font-bold">Support</div>
+
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Store
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Games
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Cloud
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Services
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Accessories
+              </div>
             </div>
             <div>
-              <div className="font-bold">about</div>
-              <div>about sie</div>
-              <div>careers</div>
+              <div className="pb-3 font-bold">Resources</div>
+
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Neto terms of services
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Age Ratings
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Health Warnings
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Developers
+              </div>
             </div>
             <div>
-              <div className="font-bold">about</div>
-              <div>about sie</div>
-              <div>careers</div>
+              <div className="pb-3 font-bold">Connect</div>
+              <div className="mx-auto flex items-center">
+                <div className="mr-4 cursor-pointer">icon</div>
+                <div className="mr-4 cursor-pointer">icon</div>
+                <div className="mr-4 cursor-pointer">icon</div>
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                App Store
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                PlayStore
+              </div>
+              <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
+                Windows
+              </div>
             </div>
           </div>
           <div className="w-full border-b border-white/30 py-5">

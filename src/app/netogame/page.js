@@ -1176,30 +1176,11 @@ const Carousel_2 = () => {
   return (
     <section>
       <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
-        <div className="netogame_H1 text-black lg:hidden">
+        <div className="netogame_H1 px-10 pt-20 text-center text-2xl text-black lg:hidden">
           Introducing the PS5 console and accessories
         </div>
       </div>
-      <div className={currentSlideNumber === 1 ? "relative" : "hidden"}>
-        <div className="netogame_H1 text-black lg:hidden">
-          Introducing the PS5 console and accessories
-        </div>
-      </div>
-      <div className={currentSlideNumber === 2 ? "relative" : "hidden"}>
-        <div className="netogame_H1 text-black lg:hidden">
-          Introducing the PS5 console and accessories
-        </div>
-      </div>
-      <div className={currentSlideNumber === 3 ? "relative" : "hidden"}>
-        <div className="netogame_H1 text-black lg:hidden">
-          Introducing the PS5 console and accessories
-        </div>
-      </div>
-      <div className={currentSlideNumber === 4 ? "relative" : "hidden"}>
-        <div className="netogame_H1 text-black lg:hidden">
-          Introducing the PS5 console and accessories
-        </div>
-      </div>
+
       <div className="flex flex-col-reverse py-20 text-black lg:flex-col">
         <div>
           <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
@@ -1214,7 +1195,7 @@ const Carousel_2 = () => {
               />
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-5 lg:block">
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
                 Introducing the PS5 console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
@@ -1243,7 +1224,7 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-5 lg:block">
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
                 Introducing the PS5 console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
@@ -1272,7 +1253,7 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-5 lg:block">
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
                 Introducing the PS5 console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
@@ -1301,7 +1282,7 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-5 lg:block">
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
                 Introducing the PS5 console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
@@ -1330,7 +1311,7 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-5 lg:block">
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
                 Introducing the PS5 console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
@@ -1490,250 +1471,6 @@ const Carousel_2 = () => {
             </div>
           </Slider>
         </div>
-        {/* <div className="flex flex-col sm:flex-col-reverse">
-          <div className="relative lg:px-6">
-            <button
-              // onClick={(controller_ref.current.style.transformX = "-50px")}
-              className="absolute -top-10 z-50 text-black"
-              onClick={() => {
-                onClickScroll(-2);
-                setIndex(1);
-              }}
-            >
-              left
-            </button>
-            <button
-              // onClick={(controller_ref.current.style.transformX = "-50px")}
-              className="absolute -top-10 right-0 z-50 text-black"
-              onClick={() => {
-                onClickScroll(2);
-                setIndex(1);
-              }}
-            >
-              right
-            </button>
-            <div
-              className="relative flex max-h-[250px] snap-x snap-mandatory overflow-hidden border border-black py-0"
-              ref={controller_ref}
-            >
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(1);
-                    setIndex(1);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="1"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(2);
-                    setIndex(2);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="2"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(2);
-                    setIndex(2);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="2"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(2);
-                    setIndex(2);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="2"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(2);
-                    setIndex(2);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="2"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(2);
-                    setIndex(2);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="2"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(3);
-                    setIndex(3);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="3"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-              <div className="overflow_scrolling h-full w-[300px] min-w-[300px]">
-                <Image placeholder="blur"
-                  onClick={() => {
-                    onClickScroll(1);
-                    setIndex(1);
-                  }}
-                  className="main_small_image relative m-auto h-full w-full cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:h-auto lg:hover:z-10 lg:hover:-translate-y-3"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  ref={img_1}
-                  id="1"
-                  alt=""
-                />
-                <div className="text-black">asdasd</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className={index === 1 ? "relative" : "hidden"}>
-              <div className="netogame_H1 text-black lg:hidden">
-                Join the crew og the Northstar
-              </div>
-              <div className="relative">
-                <Image placeholder="blur"
-                  src={carousel2_pic_1}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="relative lg:w-1/2 lg:translate-x-full"
-                />
-              </div>
-              <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-                <div className="lg:mb-5 netogame_H1 netogame_appear_animation_mobile hidden lg:block">
-                  Join the crew og the Northstar
-                </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
-                </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-blue-600 px-3 py-2 text-sm font-bold text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-              </div>
-            </div>
-            <div className={index === 2 ? "relative" : "hidden"}>
-              <div className="netogame_H1 text-black lg:hidden">
-                Join the crew og the Northstar
-              </div>
-              <div className="relative">
-                <div className="relative">
-                  <Image placeholder="blur"
-                    src={carousel2_pic_1}
-                    width={0}
-                    height={0}
-                    alt=""
-                    className="relative lg:w-1/2 lg:translate-x-full"
-                  />
-                </div>
-              </div>
-              <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-                <div className="lg:mb-5 netogame_H1 netogame_appear_animation_mobile hidden lg:block">
-                  Join the crew og the Northstar
-                </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
-                </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-blue-600 px-3 py-2 text-sm font-bold text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-              </div>
-            </div>
-            <div className={index === 3 ? "relative" : "hidden"}>
-              <div className="netogame_H1 text-black lg:hidden">
-                Join the crew og the Northstar
-              </div>
-              <div className="relative">
-                <div className="relative">
-                  <Image placeholder="blur"
-                    src={carousel2_pic_1}
-                    width={0}
-                    height={0}
-                    alt=""
-                    className="relative lg:w-1/2 lg:translate-x-full"
-                  />
-                </div>
-              </div>
-              <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-                <div className="lg:mb-5 netogame_H1 netogame_appear_animation_mobile hidden lg:block">
-                  Join the crew og the Northstar
-                </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
-                </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-blue-600 px-3 py-2 text-sm font-bold text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
@@ -2445,6 +2182,15 @@ export default function Home() {
         <Category_sec />
         <div className="carousel3_bg mx-auto w-full py-20">
           <Carousel_3 />
+        </div>
+        <div>
+          <div className="flex h-12 w-full items-center bg-black">
+            <div className="mx-auto flex items-center">
+              <div className="mr-4 cursor-pointer">insta_icon</div>
+              <div className="mr-4 cursor-pointer">telegram_icon</div>
+              <div className="mr-4 cursor-pointer">discord_icon</div>
+            </div>
+          </div>
         </div>
         <Carousel_2 />
         <Video_sec />
