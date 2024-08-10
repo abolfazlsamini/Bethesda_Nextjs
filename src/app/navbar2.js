@@ -109,14 +109,14 @@ export default function Navbar2() {
                   ? "max-h-0 transition-[max-height] duration-500"
                   : accordion.curr === "acc1"
                     ? "max-h-[200px] w-full transition-[max-height] duration-500"
-                    : "hidden max-h-0 transition-[max-height] duration-500"
+                    : "max-h-0 transition-[max-height] duration-500"
               }
             >
               <div
                 className={
                   accordion.curr === "acc1"
                     ? "px-5 text-black transition-opacity"
-                    : "hidden px-5 opacity-0 transition-opacity"
+                    : "px-5 opacity-0 transition-opacity"
                 }
               >
                 <div className="mx-auto flex w-max flex-wrap pt-3">
@@ -179,14 +179,14 @@ export default function Navbar2() {
                 ? "max-h-0 transition-[max-height] duration-500"
                 : accordion.curr === "acc2"
                   ? "max-h-[200px] w-full transition-[max-height] duration-500"
-                  : "hidden max-h-0 transition-[max-height] duration-500"
+                  : "max-h-0 transition-[max-height] duration-500"
             }
           >
             <div
               className={
                 accordion.curr === "acc2"
                   ? "px-5 text-black transition-opacity"
-                  : "hidden px-5 opacity-0 transition-opacity"
+                  : "px-5 opacity-0 transition-opacity"
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">

@@ -2432,15 +2432,15 @@ const Carousel_4 = () => {
 
 export default function Home() {
   return (
-    <main className="mt-20 bg-white">
+    <main className="mt-16 bg-white">
       <title>NetoGame</title>
 
       <Navbar2 />
-      <div className="!font-SST_Light">
+      {/* <div className="!font-SST_Light">
         <Navbar />
-      </div>
+      </div> */}
 
-      <div className="mt-32">
+      <div className="mt-0">
         <Main_sec />
         <Category_sec />
         <div className="carousel3_bg mx-auto w-full py-20">
