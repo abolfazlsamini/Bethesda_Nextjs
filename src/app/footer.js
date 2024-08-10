@@ -290,7 +290,7 @@ export default function Footer() {
               <Image src={esrb} alt="" width={0} height={0} className="h-14" />
             </div>
             <div className="mt-2 text-xs">
-              © 2024 Sony Interactive Entertainment LLC All content, games
+              © 2024 Neto Interactive Entertainment LLC All content, games
               titles, trade names and/or trade dress, trademarks, artwork and
               associated imagery are trademarks and/or copyright material of
               their respective owners. All rights reserved. More info
@@ -413,7 +413,7 @@ export default function Footer() {
               <Image src={esrb} alt="" width={0} height={0} className="h-16" />
             </div>
             <div className="mt-2 text-sm">
-              © 2024 Sony Interactive Entertainment LLC All content, games
+              © 2024 Neto Interactive Entertainment LLC All content, games
               titles, trade names and/or trade dress, trademarks, artwork and
               associated imagery are trademarks and/or copyright material of
               their respective owners. All rights reserved. More info

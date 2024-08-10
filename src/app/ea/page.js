@@ -143,10 +143,10 @@ export default function Ea() {
   return (
     <main>
       <Navbar2 />
-      <div className="!font-SST_Light">
+      {/* <div className="!font-SST_Light">
         <Navbar />
-      </div>
-      <div className="mt-32">
+      </div> */}
+      <div className="mt-16">
         <Sec1 />
         <Sec2 />
         <Sec3 />
