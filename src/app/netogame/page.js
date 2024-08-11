@@ -2289,6 +2289,39 @@ export default function Home() {
         <Sec1 />
 
         <Carousel_4 />
+        <div>
+          <div className="flex max-h-20 w-full items-center bg-black">
+            <div className="mx-auto flex items-center">
+              <div className="mr-4 cursor-pointer">
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-20"
+                  alt=""
+                  src={Windows}
+                />
+              </div>
+              <div className="mr-4 cursor-pointer">
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-20"
+                  alt=""
+                  src={AppStore}
+                />
+              </div>
+              <div className="mr-4 cursor-pointer">
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-20"
+                  alt=""
+                  src={PlayStore}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
