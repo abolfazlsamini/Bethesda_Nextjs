@@ -604,6 +604,11 @@ const Card_sec = () => {
             </div>
           </div>
         </section>
+        <section>
+          <div className="shadowstatic mx-auto mb-10 min-h-40 w-11/12 lg:flex">
+            <Gradient_sec />
+          </div>
+        </section>
       </div>
     </section>
   );
@@ -871,8 +876,8 @@ const Card_row_sec = () => {
 };
 const Gradient_sec = () => {
   return (
-    <section className="pb-10 md:px-5">
-      <div className="gradient_bg mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
+    <section className="pb-10">
+      <div className="gradient_bg mx-auto mt-4 flex w-11/12 flex-col items-center px-10 py-10 text-center md:w-full">
         <Image
           alt=""
           src={gradient_logo}
@@ -904,9 +909,7 @@ export default function HifiRush() {
           <BG_change_sec />
 
           <Card_sec />
-          <div className="w-full">
-            <Gradient_sec />
-          </div>
+          <div className="w-full"></div>
         </div>
       </div>
     </main>
