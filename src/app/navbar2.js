@@ -63,7 +63,7 @@ export default function Navbar2() {
           <a className="text-3xl font-bold leading-none md:hidden" href="/">
             <Image
               alt=""
-              className="w-24 px-3 py-1 invert"
+              className="w-24 px-3 py-1"
               src={logo}
               width={0}
               height={0}
@@ -80,7 +80,7 @@ export default function Navbar2() {
             <a className="m-0 w-max font-bold leading-none" href="/">
               <Image
                 alt=""
-                className="w-20 invert"
+                className="w-20"
                 src={logo}
                 width={0}
                 height={0}
@@ -623,13 +623,7 @@ export default function Navbar2() {
         >
           <div className="z-20 mb-8 flex items-center bg-white shadow-2xl">
             <a className="font-bold leading-none" href="/">
-              <Image
-                alt=""
-                className="w-32 invert"
-                src={logo}
-                width={0}
-                height={0}
-              />
+              <Image alt="" className="w-32" src={logo} width={0} height={0} />
             </a>
             <button className="navbar-close absolute right-7">
               <svg

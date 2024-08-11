@@ -23,7 +23,7 @@ export default function Footer() {
     <footer>
       <div className="bg-[#00439c] px-12">
         <div className="w-full border-b border-white/30 py-5">
-          <Image src={logo} alt="" width={0} height={0} className="invert" />
+          <Image src={logo} alt="" width={0} height={0} className="" />
         </div>
         <div className="w-full py-5 lg:hidden">
           <div>

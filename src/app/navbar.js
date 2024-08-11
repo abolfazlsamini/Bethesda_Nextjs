@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import logo from "../../public/ps.svg";
+import logo from "../../public/logo_main.png";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 export default function Navbar() {
@@ -34,24 +34,16 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        {/* <a className="text-3xl font-bold leading-none md:hidden" href="/">
-          <Image
-            alt=""
-            className="w-40 px-3 py-1"
-            src={logo}
-            width={0}
-            height={0}
-          ></Image>
-        </a> */}
+
         <a className="absolute right-5 m-auto md:hidden">
-          <div className="font-druk_text_medium relative m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 text-center sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
+          <div className="relative m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
             <div className="text-xs">
               BUY NOW
               <div className="absolute right-1 m-auto max-h-0 w-32 overflow-hidden bg-black px-2 text-white transition-all duration-500">
-                <button className="btn font-druk_text_medium mt-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+                <button className="btn mt-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Mobile</div>
                 </button>
-                <button className="btn font-druk_text_medium my-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+                <button className="btn my-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Console</div>
                 </button>
               </div>
@@ -63,7 +55,7 @@ export default function Navbar() {
             <a className="font-bold leading-none" href="/">
               <Image
                 alt=""
-                className="size-20"
+                className="w-32"
                 src={logo}
                 width={0}
                 height={0}
@@ -73,7 +65,7 @@ export default function Navbar() {
           <li className="text-gray-300"></li>
           <li className="flex pb-2">
             <a
-              className="font-druk_text_medium relative self-center text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
@@ -99,7 +91,7 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
-              className="font-druk_text_medium relative self-center text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
@@ -134,7 +126,7 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
-              className="font-druk_text_medium relative self-center text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
@@ -160,7 +152,7 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
-              className="font-druk_text_medium relative self-center text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
@@ -186,7 +178,7 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
-              className="font-druk_text_medium relative self-center text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
@@ -206,7 +198,7 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
-              className="font-druk_text_medium relative self-center text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
@@ -227,13 +219,13 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
         </ul>
         <a className="absolute right-5 hidden md:block">
-          <div className="font-druk_text_medium relative m-2 hidden w-full rounded-3xl bg-[#F04] p-5 py-3 text-center sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
+          <div className="relative m-2 hidden w-full rounded-3xl bg-[#F04] p-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
             BUY NOW
             <div className="absolute right-0 top-12 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500">
-              <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Mobile</div>
               </button>
-              <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Console</div>
               </button>
             </div>

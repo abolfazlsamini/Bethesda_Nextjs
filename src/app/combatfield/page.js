@@ -390,7 +390,9 @@ const SocialMedia_sec = () => {
 export default function Home() {
   return (
     <main className="relative">
-      <Navbar />
+      <div className="!font-SST_Light">
+        <Navbar />
+      </div>
       <div className="fixed_bg mt-32 overflow-hidden">
         <Main_sec />
         <Frostbite_sec />
