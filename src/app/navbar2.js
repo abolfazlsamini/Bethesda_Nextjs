@@ -599,6 +599,7 @@ export default function Navbar2() {
                 </div>
                 <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image alt="" className="" src={Store} width={0} height={0} />
+                  <div>Store</div>
                 </div>
               </div>
             </div>
