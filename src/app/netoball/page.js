@@ -608,7 +608,7 @@ const Card_sec = () => {
           <div className="mx-auto mb-10 min-h-40 w-11/12 lg:flex">
             <Gradient_sec />
           </div>
-          <div className="mx-auto mb-10 min-h-40 w-11/12 lg:flex">
+          <div className="mx-auto min-h-40 w-11/12 lg:flex">
             <SocialMedia_sec />
           </div>
         </section>
