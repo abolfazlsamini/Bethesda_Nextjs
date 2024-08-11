@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import {
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   MinusIcon,
 } from "@heroicons/react/16/solid";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -333,7 +331,10 @@ const Main_sec = () => {
                   Join the ultimate battle royale, where strategy, skill, and
                   teamwork determine your path to legendary victory
                 </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
+                <a
+                  href="/combatfield"
+                  className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                >
                   Find out more
                 </a>
               </div>
@@ -777,7 +778,8 @@ const Category_sec = () => {
                 />
                 <div className="ml-1">Orbit Explore</div>
               </div>
-              <div
+              <a
+                href="/combatfield"
                 className={
                   inCategoty(["console", "netogear"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
@@ -793,7 +795,7 @@ const Category_sec = () => {
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
                 <div className="ml-1">CombatField</div>
-              </div>
+              </a>
               <div
                 className={
                   inCategoty(["mobile"])

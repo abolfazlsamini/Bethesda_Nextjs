@@ -39,6 +39,18 @@
   .netogame_H3 {
     @apply font-SST_Light text-xs;
   }
+  .combarfield_H1 {
+    @apply font-druk_wide_super py-3 text-[21px] uppercase md:text-[27px] 2xl:text-[44px];
+  }
+  .combarfield_H2 {
+    @apply font-druk_wide_super py-3 text-[21px] uppercase md:text-[15px] 2xl:text-[18px];
+  }
+  .combarfield_P {
+    @apply font-druk_text_medium my-2 md:text-lg;
+  }
+  .btn:hover .btn_div {
+    @apply scale-[98%] sm:scale-95;
+  }
 }
 
 @layer base {
@@ -405,4 +417,58 @@ body {
 }
 .navbar2_shadow:hover {
   box-shadow: 0 0 5px 2px #31313157;
+}
+.gradient_bg {
+  background: linear-gradient(
+    60deg,
+    rgba(13, 16, 66, 1) 0%,
+    rgba(13, 16, 66, 1) 50%,
+    rgba(255, 71, 71, 1) 100%
+  );
+}
+.carousel_text_show {
+  animation: show 500ms linear forwards;
+  opacity: 20%;
+}
+.carousel_text_hide {
+  animation: hide 300ms linear forwards;
+  opacity: 20%;
+  display: none;
+}
+@keyframes hide {
+  100% {
+    transform: translateY(8px);
+    opacity: 10%;
+    display: none;
+  }
+  /* 100% {
+    display: none;
+  } */
+}
+@keyframes show {
+  to {
+    transform: translateY(-8px);
+    opacity: 100%;
+  }
+}
+
+.fixed_bg {
+  background-image: url(../../public/combatfield/fixed_bg_white.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.black_bg {
+  background-image: url(../../public/combatfield/second_sec_bg_pc.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+@media (max-width: 640.95px) {
+  .black_bg {
+    background-image: url(../../public/combatfield/second_sec_bg_mobile.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+  }
 }

@@ -24,6 +24,7 @@ import first_sec_pic_3 from "../../../public/hifi/first_sec_pic_3.png";
 import first_sec_pic_4 from "../../../public/hifi/first_sec_pic_4.png";
 import float_cat from "../../../public/hifi/float_cat.png";
 import collapsable_pic from "../../../public/hifi/collapsable_pic.png";
+import gradient_logo from "../../../public/combatfield/gradient_logo.png";
 
 const Main_sec = () => {
   return (
@@ -868,6 +869,30 @@ const Card_row_sec = () => {
     </section>
   );
 };
+const Gradient_sec = () => {
+  return (
+    <section className="pb-10 md:px-5">
+      <div className="gradient_bg mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
+        <Image
+          alt=""
+          src={gradient_logo}
+          width={0}
+          height={0}
+          className="my-2 w-10/12"
+        />
+        <div className="font-druk_wide_super my-2 uppercase lg:text-[27px]">
+          TRY NOW ON NETO PLAY FUSION
+        </div>
+        <a
+          href="/combatfield"
+          className="btn font-druk_text_medium mt-5 w-full cursor-pointer rounded-3xl bg-[#ff4747] p-5 py-3 uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105"
+        >
+          <div className="btn_div">Start Now</div>
+        </a>
+      </div>
+    </section>
+  );
+};
 export default function HifiRush() {
   return (
     <main className="bg-white">
@@ -879,6 +904,9 @@ export default function HifiRush() {
           <BG_change_sec />
 
           <Card_sec />
+          <div className="w-full">
+            <Gradient_sec />
+          </div>
         </div>
       </div>
     </main>

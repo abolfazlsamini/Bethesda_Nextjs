@@ -23,6 +23,8 @@ module.exports = {
         SST_Light: "var(--font-SST_Light)",
         SST_Bold: "var(--font-SST_Bold)",
         CruyffSansExpanded_Heavy: "var(--font-CruyffSansExpanded_Heavy)",
+        druk_text_medium: "var(--font-druk_text_medium)",
+        druk_wide_super: "var(--font-druk_wide_super)",
       },
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",

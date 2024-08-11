@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import Navbar2 from "./navbar2";
 
 export const furura = localFont({
   src: [
@@ -156,7 +157,26 @@ export const CruyffSansExpanded_Heavy = localFont({
   ],
   variable: "--font-CruyffSansExpanded_Heavy",
 });
-
+export const druk_text_medium = localFont({
+  src: [
+    {
+      path: "../../public/fonts/combatfield/druk_text_medium.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-druk_text_medium",
+});
+export const druk_wide_super = localFont({
+  src: [
+    {
+      path: "../../public/fonts/combatfield/druk_wide_super.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-druk_wide_super",
+});
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -168,8 +188,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} `}
       >
+        <Navbar2 />
         {children}
         <Footer />
       </body>

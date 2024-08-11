@@ -49,10 +49,10 @@ export default function Navbar() {
               BUY NOW
               <div className="absolute right-1 m-auto max-h-0 w-32 overflow-hidden bg-black px-2 text-white transition-all duration-500">
                 <button className="btn font-druk_text_medium mt-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
-                  <div className="btn_div">BUY NOW</div>
+                  <div className="btn_div">Mobile</div>
                 </button>
                 <button className="btn font-druk_text_medium my-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
-                  <div className="btn_div">BUY NOW</div>
+                  <div className="btn_div">Console</div>
                 </button>
               </div>
             </div>
@@ -231,10 +231,10 @@ export default function Navbar() {
             BUY NOW
             <div className="absolute right-0 top-12 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500">
               <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
-                <div className="btn_div">BUY NOW</div>
+                <div className="btn_div">Mobile</div>
               </button>
               <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
-                <div className="btn_div">BUY NOW</div>
+                <div className="btn_div">Console</div>
               </button>
             </div>
           </div>
