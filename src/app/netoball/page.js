@@ -891,10 +891,7 @@ const Gradient_sec = () => {
         <div className="font-druk_wide_super my-2 uppercase lg:text-[27px]">
           TRY NOW ON NETO PLAY FUSION
         </div>
-        <a
-          href="/combatfield"
-          className="btn font-druk_text_medium mt-5 w-full cursor-pointer rounded-3xl bg-[#ff4747] p-5 py-3 uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105"
-        >
+        <a className="btn font-druk_text_medium mt-5 w-full cursor-pointer rounded-3xl bg-[#ff4747] p-5 py-3 uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">Start Now</div>
         </a>
       </div>
