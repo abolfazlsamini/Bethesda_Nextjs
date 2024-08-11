@@ -410,7 +410,7 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Darkness calls upon you. Are you ready to conquer the light?
+                  Darkness calls upon you
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
                   What starts as a small-town murder investigation becomes a
@@ -942,11 +942,11 @@ const Carousel_3 = () => {
                     </div>
                   </div>
 
-                  <div className="netogame_gradientMainimage_pc absolute top-1/2 z-10 hidden h-full w-1/2 -translate-y-1/2 flex-col justify-end pb-10 pl-4 lg:flex">
+                  <div className="netogame_gradientMainimage_pc absolute top-0 z-10 hidden h-full w-1/2 flex-col justify-center pb-10 pl-4 lg:flex">
                     <a className="my-2 w-max border border-white/30 bg-white px-8 text-xs uppercase text-[#333333] xl:text-xl">
                       PREMIUM
                     </a>
-                    <div className="netogame_H2 my-5 xl:text-4xl">
+                    <div className="netogame_H2 my-2 xl:my-5 xl:text-4xl">
                       Neto PlayFusion Premium
                     </div>
                     <div className="netogame_H3 mt-1 lg:text-lg">
@@ -993,11 +993,11 @@ const Carousel_3 = () => {
                     </div>
                   </div>
 
-                  <div className="netogame_gradientMainimage_pc absolute top-1/2 z-10 hidden h-full w-1/2 -translate-y-1/2 flex-col justify-end pb-10 pl-4 lg:flex">
+                  <div className="netogame_gradientMainimage_pc absolute top-0 z-10 hidden h-full w-1/2 flex-col justify-center pb-10 pl-4 lg:flex">
                     <a className="my-2 w-max border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
                       ELITE
                     </a>
-                    <div className="netogame_H2 my-5 xl:text-4xl">
+                    <div className="netogame_H2 my-2 xl:my-5 xl:text-4xl">
                       Neto PlayFusion ELITE
                     </div>
                     <div className="netogame_H3 mt-1 lg:text-lg">
@@ -1045,11 +1045,11 @@ const Carousel_3 = () => {
                     </div>
                   </div>
 
-                  <div className="netogame_gradientMainimage_pc absolute top-1/2 z-10 hidden h-full w-1/2 -translate-y-1/2 flex-col justify-end pb-10 pl-4 lg:flex">
+                  <div className="netogame_gradientMainimage_pc absolute top-0 z-10 hidden h-full w-1/2 flex-col justify-center pb-10 pl-4 lg:flex">
                     <a className="my-2 w-max border border-white/30 bg-[#fdc100] px-8 text-xs uppercase text-[#333333] xl:text-xl">
                       ULTIMATE
                     </a>
-                    <div className="netogame_H2 my-5 xl:text-4xl">
+                    <div className="netogame_H2 my-2 xl:my-5 xl:text-4xl">
                       Neto PlayFusion Ultimate
                     </div>
                     <div className="netogame_H3 mt-1 lg:text-lg">
@@ -1699,11 +1699,11 @@ const Carousel_5 = () => {
       <div className="slider-container relative w-full pb-10">
         <div className="flex items-baseline justify-between">
           <div className="my-5 ml-8 w-max border-b-4 border-white hover:cursor-pointer hover:[&_*]:-translate-y-1">
-            <div className="font-SST_Bold text-5xl">Events</div>
+            <div className="font-SST_Bold text-5xl">MERCHANDISE</div>
           </div>
-          <a className="mb-5 mr-8 hidden h-max w-max cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1 lg:block">
+          {/* <a className="mb-5 mr-8 hidden h-max w-max cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1 lg:block">
             find out more
-          </a>
+          </a> */}
         </div>
         <Slider {...settings}>
           <div className="w-full">
@@ -1809,9 +1809,9 @@ const Carousel_5 = () => {
         </Slider>
       </div>
 
-      <a className="mx-auto my-5 block w-11/12 cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-center text-base uppercase text-white transition-transform hover:-translate-y-1 lg:hidden">
+      {/* <a className="mx-auto my-5 block w-11/12 cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-center text-base uppercase text-white transition-transform hover:-translate-y-1 lg:hidden">
         find out moree
-      </a>
+      </a> */}
     </div>
   );
 };

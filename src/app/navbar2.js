@@ -38,6 +38,10 @@ import { ArrowDownIcon } from "@heroicons/react/16/solid";
 export default function Navbar2() {
   const [toggle, setToggle] = useState("-translate-x-[32rem]");
   const [accordion, SetAccordion] = useState({ prev: "", curr: "" });
+  const [accordionMobile, SetAccordionMobile] = useState({
+    prev: "",
+    curr: "",
+  });
   function click() {
     if (toggle === "-translate-x-[32rem]") setToggle("translate-x-0");
     else setToggle("-translate-x-[32rem]");
@@ -649,14 +653,17 @@ export default function Navbar2() {
                 <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
-                    accordion.curr === "acc1"
-                      ? SetAccordion({ prev: "acc1", curr: "" })
-                      : SetAccordion({ prev: accordion.curr, curr: "acc1" });
+                    accordionMobile.curr === "acc1"
+                      ? SetAccordionMobile({ prev: "acc1", curr: "" })
+                      : SetAccordionMobile({
+                          prev: accordionMobile.curr,
+                          curr: "acc1",
+                        });
                   }}
                 >
                   <div
                     className={
-                      accordion.curr === "acc1"
+                      accordionMobile.curr === "acc1"
                         ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
                         : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
@@ -674,20 +681,20 @@ export default function Navbar2() {
                 </div>
                 <div
                   className={
-                    accordion.curr === "" // add animation only when it's not open
+                    accordionMobile.curr === "" // add animation only when it's not open
                       ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
-                      : accordion.curr === "acc1"
-                        ? accordion.prev === ""
+                      : accordionMobile.curr === "acc1"
+                        ? accordionMobile.prev === ""
                           ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
                           : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
-                        : accordion.prev === ""
+                        : accordionMobile.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[300px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[300px]"
                   }
                 >
                   <div
                     className={
-                      accordion.curr === "acc1"
+                      accordionMobile.curr === "acc1"
                         ? "px-5 text-black transition-opacity duration-1000"
                         : "px-5 opacity-0 transition-opacity"
                     }
@@ -755,14 +762,17 @@ export default function Navbar2() {
                 <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
-                    accordion.curr === "acc2"
-                      ? SetAccordion({ prev: "acc2", curr: "" })
-                      : SetAccordion({ prev: accordion.curr, curr: "acc2" });
+                    accordionMobile.curr === "acc2"
+                      ? SetAccordionMobile({ prev: "acc2", curr: "" })
+                      : SetAccordionMobile({
+                          prev: accordionMobile.curr,
+                          curr: "acc2",
+                        });
                   }}
                 >
                   <div
                     className={
-                      accordion.curr === "acc2"
+                      accordionMobile.curr === "acc2"
                         ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
                         : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
@@ -780,20 +790,20 @@ export default function Navbar2() {
                 </div>
                 <div
                   className={
-                    accordion.curr === "" // add animation only when it's not open
+                    accordionMobile.curr === "" // add animation only when it's not open
                       ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
-                      : accordion.curr === "acc2"
-                        ? accordion.prev === ""
+                      : accordionMobile.curr === "acc2"
+                        ? accordionMobile.prev === ""
                           ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
                           : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
-                        : accordion.prev === ""
+                        : accordionMobile.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[500px]"
                   }
                 >
                   <div
                     className={
-                      accordion.curr === "acc2"
+                      accordionMobile.curr === "acc2"
                         ? "px-5 text-black transition-opacity"
                         : "px-5 opacity-0 transition-opacity"
                     }
@@ -841,14 +851,17 @@ export default function Navbar2() {
                 <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
-                    accordion.curr === "acc3"
-                      ? SetAccordion({ prev: "acc3", curr: "" })
-                      : SetAccordion({ prev: accordion.curr, curr: "acc3" });
+                    accordionMobile.curr === "acc3"
+                      ? SetAccordionMobile({ prev: "acc3", curr: "" })
+                      : SetAccordionMobile({
+                          prev: accordionMobile.curr,
+                          curr: "acc3",
+                        });
                   }}
                 >
                   <div
                     className={
-                      accordion.curr === "acc3"
+                      accordionMobile.curr === "acc3"
                         ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
                         : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
@@ -866,20 +879,20 @@ export default function Navbar2() {
                 </div>
                 <div
                   className={
-                    accordion.curr === "" // add animation only when it's not open
+                    accordionMobile.curr === "" // add animation only when it's not open
                       ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
-                      : accordion.curr === "acc3"
-                        ? accordion.prev === ""
+                      : accordionMobile.curr === "acc3"
+                        ? accordionMobile.prev === ""
                           ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
                           : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
-                        : accordion.prev === ""
+                        : accordionMobile.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[500px]"
                   }
                 >
                   <div
                     className={
-                      accordion.curr === "acc3"
+                      accordionMobile.curr === "acc3"
                         ? "px-5 text-black transition-opacity"
                         : "px-5 opacity-0 transition-opacity"
                     }
@@ -947,14 +960,17 @@ export default function Navbar2() {
                 <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
-                    accordion.curr === "acc4"
-                      ? SetAccordion({ prev: "acc4", curr: "" })
-                      : SetAccordion({ prev: accordion.curr, curr: "acc4" });
+                    accordionMobile.curr === "acc4"
+                      ? SetAccordionMobile({ prev: "acc4", curr: "" })
+                      : SetAccordionMobile({
+                          prev: accordionMobile.curr,
+                          curr: "acc4",
+                        });
                   }}
                 >
                   <div
                     className={
-                      accordion.curr === "acc4"
+                      accordionMobile.curr === "acc4"
                         ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
                         : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
@@ -972,20 +988,20 @@ export default function Navbar2() {
                 </div>
                 <div
                   className={
-                    accordion.curr === "" // add animation only when it's not open
+                    accordionMobile.curr === "" // add animation only when it's not open
                       ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
-                      : accordion.curr === "acc4"
-                        ? accordion.prev === ""
+                      : accordionMobile.curr === "acc4"
+                        ? accordionMobile.prev === ""
                           ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
                           : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
-                        : accordion.prev === ""
+                        : accordionMobile.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[500px]"
                   }
                 >
                   <div
                     className={
-                      accordion.curr === "acc4"
+                      accordionMobile.curr === "acc4"
                         ? "px-5 text-black transition-opacity"
                         : "px-5 opacity-0 transition-opacity"
                     }
@@ -1023,14 +1039,17 @@ export default function Navbar2() {
                 <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
-                    accordion.curr === "acc5"
-                      ? SetAccordion({ prev: "acc5", curr: "" })
-                      : SetAccordion({ prev: accordion.curr, curr: "acc5" });
+                    accordionMobile.curr === "acc5"
+                      ? SetAccordionMobile({ prev: "acc5", curr: "" })
+                      : SetAccordionMobile({
+                          prev: accordionMobile.curr,
+                          curr: "acc5",
+                        });
                   }}
                 >
                   <div
                     className={
-                      accordion.curr === "acc5"
+                      accordionMobile.curr === "acc5"
                         ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
                         : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
@@ -1048,20 +1067,20 @@ export default function Navbar2() {
                 </div>
                 <div
                   className={
-                    accordion.curr === "" // add animation only when it's not open
+                    accordionMobile.curr === "" // add animation only when it's not open
                       ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
-                      : accordion.curr === "acc5"
-                        ? accordion.prev === ""
+                      : accordionMobile.curr === "acc5"
+                        ? accordionMobile.prev === ""
                           ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
                           : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
-                        : accordion.prev === ""
+                        : accordionMobile.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[500px]"
                   }
                 >
                   <div
                     className={
-                      accordion.curr === "acc5"
+                      accordionMobile.curr === "acc5"
                         ? "px-5 text-black transition-opacity"
                         : "px-5 opacity-0 transition-opacity"
                     }
@@ -1119,14 +1138,17 @@ export default function Navbar2() {
                 <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
-                    accordion.curr === "acc6"
-                      ? SetAccordion({ prev: "acc6", curr: "" })
-                      : SetAccordion({ prev: accordion.curr, curr: "acc6" });
+                    accordionMobile.curr === "acc6"
+                      ? SetAccordionMobile({ prev: "acc6", curr: "" })
+                      : SetAccordionMobile({
+                          prev: accordionMobile.curr,
+                          curr: "acc6",
+                        });
                   }}
                 >
                   <div
                     className={
-                      accordion.curr === "acc6"
+                      accordionMobile.curr === "acc6"
                         ? "text-blur-600 w-2/12 cursor-pointer text-blue-600"
                         : "w-2/12 cursor-pointer text-black hover:text-blue-600"
                     }
@@ -1144,20 +1166,20 @@ export default function Navbar2() {
                 </div>
                 <div
                   className={
-                    accordion.curr === "" // add animation only when it's not open
+                    accordionMobile.curr === "" // add animation only when it's not open
                       ? "absolute right-0 top-20 z-10 h-full w-0 bg-white shadow-2xl transition-all duration-500"
-                      : accordion.curr === "acc6"
-                        ? accordion.prev === ""
+                      : accordionMobile.curr === "acc6"
+                        ? accordionMobile.prev === ""
                           ? "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl transition-all duration-500"
                           : "absolute right-0 top-20 z-10 h-full w-10/12 bg-white shadow-2xl"
-                        : accordion.prev === ""
+                        : accordionMobile.prev === ""
                           ? "absolute z-10 hidden w-10/12 translate-x-[500px] transition-all duration-500"
                           : "absolute z-10 hidden w-10/12 translate-x-[500px]"
                   }
                 >
                   <div
                     className={
-                      accordion.curr === "acc6"
+                      accordionMobile.curr === "acc6"
                         ? "px-5 text-black transition-opacity"
                         : "px-5 opacity-0 transition-opacity"
                     }
@@ -1226,7 +1248,7 @@ export default function Navbar2() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc1: !accordion.acc1 })
+                    SetAccordionMobile({ ...accordionMobile, acc1: !accordion.acc1 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
