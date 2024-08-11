@@ -472,3 +472,6 @@ body {
     background-size: cover;
   }
 }
+.gradient_bg_netoball {
+  background: linear-gradient(60deg, #089caf 0%, #089caf 50%, #01e7f9 100%);
+}
