@@ -5,7 +5,7 @@ import logo2 from "../../public/logo_2.png";
 import esrb from "../../public/esrb.svg";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState } from "react";
-import Windows from "../../public/Windows.png";
+import windows from "../../public/windows.png";
 import PlayStore from "../../public/PlayStore.png";
 import AppStore from "../../public/AppStore.png";
 export default function Footer() {
@@ -387,21 +387,21 @@ export default function Footer() {
             </div>
             <div>
               <div className="pb-3 font-bold">Connect</div>
-              <div className="mx-auto flex items-center">
+              <div className="mx-auto mb-2 flex items-center">
                 <div className="cursor-pointer">
                   <Image
                     width={0}
                     height={0}
-                    className="w-12"
+                    className="w-7 pr-2"
                     alt=""
-                    src={Windows}
+                    src={windows}
                   />
                 </div>
                 <div className="cursor-pointer">
                   <Image
                     width={0}
                     height={0}
-                    className="w-12"
+                    className="w-7 pr-2"
                     alt=""
                     src={PlayStore}
                   />
@@ -410,7 +410,7 @@ export default function Footer() {
                   <Image
                     width={0}
                     height={0}
-                    className="w-12"
+                    className="w-7 pr-2"
                     alt=""
                     src={AppStore}
                   />

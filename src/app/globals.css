@@ -56,7 +56,9 @@
   /* * {
     outline: 1px solid red;
   } */
-
+  *:focus-visible {
+    outline: none;
+  }
   svg path {
     fill: currentcolor;
   }

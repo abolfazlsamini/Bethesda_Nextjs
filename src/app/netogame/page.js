@@ -85,9 +85,13 @@ import carousel5_pic_3 from "../../../public/netogame/carousel5_pic_3.png";
 import carousel5_pic_4 from "../../../public/netogame/carousel5_pic_4.png";
 import carousel5_pic_5 from "../../../public/netogame/carousel5_pic_5.png";
 
-import Windows from "../../../public/Windows.png";
-import PlayStore from "../../../public/PlayStore.png";
-import AppStore from "../../../public/AppStore.png";
+import x from "../../../public/netogame/X.png";
+import Ticktok from "../../../public/netogame/Tiktok.png";
+import TEl from "../../../public/netogame/TEl.png";
+import Discord from "../../../public/netogame/Discord.png";
+import yt from "../../../public/netogame/YT.png";
+import Facebook from "../../../public/netogame/Facebook.png";
+import Insta from "../../../public/netogame/Insta.png";
 
 import { useEffect, useRef, useState } from "react";
 import Navbar2 from "../navbar2";
@@ -281,7 +285,10 @@ const Main_sec = () => {
                   Experience the thrill of high-flying action and intense
                   competition in the ultimate head-to-head soccer showdown
                 </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
+                <a
+                  href="/netoball"
+                  className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                >
                   Find out more
                 </a>
               </div>
@@ -718,7 +725,8 @@ const Category_sec = () => {
           </div>
           <div className="relative overflow-hidden px-5 py-8">
             <div className="category_container z-10 flex flex-wrap">
-              <div
+              <a
+                href="/netoball"
                 className={
                   inCategoty(["console", "mobile", "netogear"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
@@ -734,7 +742,7 @@ const Category_sec = () => {
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
                 <div className="ml-1">Neto Ball</div>
-              </div>
+              </a>
               <div
                 className={
                   inCategoty(["console", "mobile"])
@@ -1131,7 +1139,7 @@ const Carousel_2 = () => {
     const { className, style, onClick } = props;
     return (
       <ChevronLeftIcon
-        className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 lg:block"
+        className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
         onClick={onClick}
       />
     );
@@ -1140,7 +1148,7 @@ const Carousel_2 = () => {
     const { className, style, onClick } = props;
     return (
       <ChevronRightIcon
-        className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 lg:block"
+        className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
         onClick={onClick}
       />
     );
@@ -2230,7 +2238,80 @@ const Carousel_4 = () => {
     </div>
   );
 };
-
+const Social_bar = () => {
+  return (
+    <div className="flex w-full items-center bg-black py-2">
+      <div className="left-5 hidden text-[#616161] md:block lg:absolute">
+        Visit Other NetoGame Channels
+      </div>
+      <div className="mx-auto flex items-center">
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Ticktok}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={TEl}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={x}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Discord}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Facebook}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Insta}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={yt}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 export default function Home() {
   return (
     <main className="mt-16 bg-white">
@@ -2247,39 +2328,7 @@ export default function Home() {
         <div className="carousel3_bg mx-auto w-full py-20">
           <Carousel_3 />
         </div>
-        <div>
-          <div className="flex max-h-20 w-full items-center bg-black">
-            <div className="mx-auto flex items-center">
-              <div className="mr-4 cursor-pointer">
-                <Image
-                  width={0}
-                  height={0}
-                  className="w-20"
-                  alt=""
-                  src={Windows}
-                />
-              </div>
-              <div className="mr-4 cursor-pointer">
-                <Image
-                  width={0}
-                  height={0}
-                  className="w-20"
-                  alt=""
-                  src={AppStore}
-                />
-              </div>
-              <div className="mr-4 cursor-pointer">
-                <Image
-                  width={0}
-                  height={0}
-                  className="w-20"
-                  alt=""
-                  src={PlayStore}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Social_bar />
         <Carousel_2 />
         <Video_sec />
         <div className="bg-[#18141a] py-16">
@@ -2289,39 +2338,7 @@ export default function Home() {
         <Sec1 />
 
         <Carousel_4 />
-        <div>
-          <div className="flex max-h-20 w-full items-center bg-black">
-            <div className="mx-auto flex items-center">
-              <div className="mr-4 cursor-pointer">
-                <Image
-                  width={0}
-                  height={0}
-                  className="w-20"
-                  alt=""
-                  src={Windows}
-                />
-              </div>
-              <div className="mr-4 cursor-pointer">
-                <Image
-                  width={0}
-                  height={0}
-                  className="w-20"
-                  alt=""
-                  src={AppStore}
-                />
-              </div>
-              <div className="mr-4 cursor-pointer">
-                <Image
-                  width={0}
-                  height={0}
-                  className="w-20"
-                  alt=""
-                  src={PlayStore}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Social_bar />
       </div>
     </main>
   );
