@@ -27,6 +27,9 @@ module.exports = {
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",
       },
+      boxShadowColor: {
+        navbar2_icons: "box-shadow: 0px 0px 5px 2px #888888",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

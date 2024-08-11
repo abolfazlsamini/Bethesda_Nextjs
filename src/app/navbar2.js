@@ -33,6 +33,7 @@ import Accessories from "../../public/navbar2/Accessories.png";
 import Games from "../../public/navbar2/Games.png";
 import Services from "../../public/navbar2/Services.png";
 import Store from "../../public/navbar2/Store.png";
+import { ArrowDownIcon } from "@heroicons/react/16/solid";
 
 export default function Navbar2() {
   const [toggle, setToggle] = useState("-translate-x-[32rem]");
@@ -66,7 +67,7 @@ export default function Navbar2() {
           </a>
           <a className="">
             <div className="font-druk_text_medium relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
-              <div className="text-xs">Sign In</div>
+              <div className="text-sm">Sign In</div>
             </div>
           </a>
         </div>
@@ -98,7 +99,16 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer text-black hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">Game</div>
+                <div className="flex items-center text-xl hover:text-blue-600">
+                  <div>Game</div>
+                  <div>
+                    {accordion.curr === "acc1" ? (
+                      <SlArrowUp className="ml-2 size-4" />
+                    ) : (
+                      <SlArrowDown className="ml-2 size-4" />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -118,7 +128,16 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">Services</div>
+                <div className="flex items-center text-xl hover:text-blue-600">
+                  <div>Services</div>
+                  <div>
+                    {accordion.curr === "acc1" ? (
+                      <SlArrowUp className="ml-2 size-4" />
+                    ) : (
+                      <SlArrowDown className="ml-2 size-4" />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -138,7 +157,16 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">Accessories</div>
+                <div className="flex items-center text-xl hover:text-blue-600">
+                  <div>Accessories</div>
+                  <div>
+                    {accordion.curr === "acc1" ? (
+                      <SlArrowUp className="ml-2 size-4" />
+                    ) : (
+                      <SlArrowDown className="ml-2 size-4" />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -158,7 +186,16 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">News</div>
+                <div className="flex items-center text-xl hover:text-blue-600">
+                  <div>News</div>
+                  <div>
+                    {accordion.curr === "acc1" ? (
+                      <SlArrowUp className="ml-2 size-4" />
+                    ) : (
+                      <SlArrowDown className="ml-2 size-4" />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -178,7 +215,16 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">Shop</div>
+                <div className="flex items-center text-xl hover:text-blue-600">
+                  <div>Shop</div>
+                  <div>
+                    {accordion.curr === "acc1" ? (
+                      <SlArrowUp className="ml-2 size-4" />
+                    ) : (
+                      <SlArrowDown className="ml-2 size-4" />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -198,13 +244,22 @@ export default function Navbar2() {
                     : "w-1/12 cursor-pointer hover:text-blue-600"
                 }
               >
-                <div className="text-xl hover:text-blue-600">Support</div>
+                <div className="flex items-center text-xl hover:text-blue-600">
+                  <div>Support</div>
+                  <div>
+                    {accordion.curr === "acc1" ? (
+                      <SlArrowUp className="ml-2 size-4" />
+                    ) : (
+                      <SlArrowDown className="ml-2 size-4" />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </li>
           <a className="absolute right-5">
             <div className="font-druk_text_medium relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
-              <div className="text-xs">Sign In</div>
+              <div className="text-sm">Sign In</div>
             </div>
           </a>
         </ul>
@@ -227,25 +282,7 @@ export default function Navbar2() {
                 }
               >
                 <div className="mx-auto flex w-max flex-wrap pt-3">
-                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
-                    <Image
-                      alt=""
-                      className=""
-                      src={NetoGear}
-                      width={0}
-                      height={0}
-                    />
-                  </div>
-                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
-                    <Image
-                      alt=""
-                      className=""
-                      src={Cloud}
-                      width={0}
-                      height={0}
-                    />
-                  </div>
-                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                  <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                     <Image
                       alt=""
                       className=""
@@ -253,17 +290,21 @@ export default function Navbar2() {
                       width={0}
                       height={0}
                     />
+                    <div>Console</div>
                   </div>
-                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
-                    <Image
-                      alt=""
-                      className=""
-                      src={Mobile}
-                      width={0}
-                      height={0}
-                    />
+                  <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
+                    <div>
+                      <Image
+                        alt=""
+                        className=""
+                        src={Mobile}
+                        width={0}
+                        height={0}
+                      />
+                      <div>Mobile</div>
+                    </div>
                   </div>
-                  <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                  <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                     <Image
                       alt=""
                       className=""
@@ -271,30 +312,29 @@ export default function Navbar2() {
                       width={0}
                       height={0}
                     />
+                    <div>Neto VR</div>
+                  </div>
+                  <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
+                    <Image
+                      alt=""
+                      className=""
+                      src={NetoGear}
+                      width={0}
+                      height={0}
+                    />
+                    <div>Neto Gear</div>
+                  </div>
+                  <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
+                    <Image
+                      alt=""
+                      className=""
+                      src={Cloud}
+                      width={0}
+                      height={0}
+                    />
+                    <div>Cloud</div>
                   </div>
                 </div>
-                {/* <div className="mx-auto flex w-max">
-                  <div className="pr-5">
-                    <a href="#" className="text-black hover:text-blue-600">
-                      Browse by genre
-                    </a>
-                  </div>
-                  <div className="pr-5">
-                    <a href="#" className="text-black hover:text-blue-600">
-                      PlayStation indies
-                    </a>
-                  </div>
-                  <div className="pr-5">
-                    <a href="#" className="text-black hover:text-blue-600">
-                      PlayStation indies
-                    </a>
-                  </div>
-                  <div className="pr-5">
-                    <a href="#" className="text-black hover:text-blue-600">
-                      PlayStation indies
-                    </a>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -315,32 +355,35 @@ export default function Navbar2() {
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
-                    className="invert"
+                    className=""
                     src={NetoShare}
                     width={0}
                     height={0}
                   />
+                  <div>Neto Share</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
-                    className="invert"
+                    className=""
                     src={NetoPlayFusion}
                     width={0}
                     height={0}
                   />
+                  <div>Neto PlayFusion</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
-                    className="invert"
+                    className=""
                     src={NetoMarketing}
                     width={0}
                     height={0}
                   />
+                  <div>Neto Marketing</div>
                 </div>
               </div>
             </div>
@@ -362,7 +405,7 @@ export default function Navbar2() {
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -370,8 +413,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Neto VR</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -379,8 +423,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>SkyTune</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -388,8 +433,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Thunder Beat</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -397,6 +443,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Neto Gear</div>
                 </div>
               </div>
             </div>
@@ -418,7 +465,7 @@ export default function Navbar2() {
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -426,8 +473,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>This Month</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -435,6 +483,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Neto Blog</div>
                 </div>
               </div>
             </div>
@@ -456,7 +505,7 @@ export default function Navbar2() {
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -464,8 +513,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Play Fusion</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -473,8 +523,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Buy Accessories</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -482,8 +533,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Buy Merchandies</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -491,6 +543,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Buy Games</div>
                 </div>
               </div>
             </div>
@@ -512,7 +565,7 @@ export default function Navbar2() {
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -520,14 +573,17 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Accessories</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image alt="" className="" src={Cloud} width={0} height={0} />
+                  <div>Cloud</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image alt="" className="" src={Games} width={0} height={0} />
+                  <div>Games</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -535,8 +591,9 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
+                  <div>Services</div>
                 </div>
-                <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image alt="" className="" src={Store} width={0} height={0} />
                 </div>
               </div>
@@ -640,25 +697,7 @@ export default function Navbar2() {
                       <div className="text-lg">Game</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
-                        <Image
-                          alt=""
-                          className=""
-                          src={NetoGear}
-                          width={0}
-                          height={0}
-                        />
-                      </div>
-                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
-                        <Image
-                          alt=""
-                          className=""
-                          src={Cloud}
-                          width={0}
-                          height={0}
-                        />
-                      </div>
-                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 flex max-w-28 flex-col items-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -666,8 +705,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Console</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 flex max-w-28 flex-col items-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -675,8 +715,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Console</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:cursor-pointer hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 flex max-w-28 flex-col items-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -684,6 +725,27 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>NetoVR</div>
+                      </div>
+                      <div className="navbar2_shadow m-2 flex max-w-28 flex-col items-center hover:cursor-pointer">
+                        <Image
+                          alt=""
+                          className=""
+                          src={NetoGear}
+                          width={0}
+                          height={0}
+                        />
+                        <div>Neto Gear</div>
+                      </div>
+                      <div className="navbar2_shadow m-2 flex max-w-28 flex-col items-center hover:cursor-pointer">
+                        <Image
+                          alt=""
+                          className=""
+                          src={Cloud}
+                          width={0}
+                          height={0}
+                        />
+                        <div>Cloud</div>
                       </div>
                     </div>
                   </div>
@@ -741,32 +803,35 @@ export default function Navbar2() {
                       <div className="text-lg">Services</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
-                          className="invert"
+                          className=""
                           src={NetoShare}
                           width={0}
                           height={0}
                         />
+                        <div>Neto VR</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
-                          className="invert"
+                          className=""
                           src={NetoPlayFusion}
                           width={0}
                           height={0}
                         />
+                        <div>Neto PlayFusion</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
-                          className="invert"
+                          className=""
                           src={NetoMarketing}
                           width={0}
                           height={0}
                         />
+                        <div>Neto Marketing</div>
                       </div>
                     </div>
                   </div>
@@ -824,7 +889,7 @@ export default function Navbar2() {
                       <div className="text-lg">Accessories</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -832,8 +897,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Hyper Grip</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -841,8 +907,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Neto VR</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -850,8 +917,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>SkyTune</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -859,8 +927,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Thunder Beat</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -868,6 +937,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Neto Gear</div>
                       </div>
                     </div>
                   </div>
@@ -925,7 +995,7 @@ export default function Navbar2() {
                       <div className="text-lg">News</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -933,8 +1003,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>This Month</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -942,6 +1013,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Neto Blog</div>
                       </div>
                     </div>
                   </div>
@@ -999,7 +1071,7 @@ export default function Navbar2() {
                       <div className="text-lg">Shop</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1007,8 +1079,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>PlayFusion</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1016,8 +1089,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Buy Accessories</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1025,8 +1099,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Buy Merchandies</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1034,6 +1109,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Buy Games</div>
                       </div>
                     </div>
                   </div>
@@ -1091,7 +1167,7 @@ export default function Navbar2() {
                       <div className="text-lg">Support</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1099,8 +1175,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Accessories</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1108,8 +1185,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Cloud</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1117,8 +1195,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Games</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1126,8 +1205,9 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Services</div>
                       </div>
-                      <div className="m-2 flex size-28 items-center hover:shadow-2xl">
+                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -1135,6 +1215,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
+                        <div>Store</div>
                       </div>
                     </div>
                   </div>

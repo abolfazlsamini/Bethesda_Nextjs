@@ -5,7 +5,9 @@ import logo2 from "../../public/logo_2.png";
 import esrb from "../../public/esrb.svg";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState } from "react";
-
+import Windows from "../../public/Windows.png";
+import PlayStore from "../../public/PlayStore.png";
+import AppStore from "../../public/AppStore.png";
 export default function Footer() {
   const [toggle, setToggle] = useState("-translate-x-96");
   const [accordion, SetAccordion] = useState({
@@ -386,9 +388,33 @@ export default function Footer() {
             <div>
               <div className="pb-3 font-bold">Connect</div>
               <div className="mx-auto flex items-center">
-                <div className="mr-4 cursor-pointer">icon</div>
-                <div className="mr-4 cursor-pointer">icon</div>
-                <div className="mr-4 cursor-pointer">icon</div>
+                <div className="cursor-pointer">
+                  <Image
+                    width={0}
+                    height={0}
+                    className="w-12"
+                    alt=""
+                    src={Windows}
+                  />
+                </div>
+                <div className="cursor-pointer">
+                  <Image
+                    width={0}
+                    height={0}
+                    className="w-12"
+                    alt=""
+                    src={PlayStore}
+                  />
+                </div>
+                <div className="cursor-pointer">
+                  <Image
+                    width={0}
+                    height={0}
+                    className="w-12"
+                    alt=""
+                    src={AppStore}
+                  />
+                </div>
               </div>
               <div className="pb-3 hover:cursor-pointer hover:text-[#ffffff99]">
                 App Store

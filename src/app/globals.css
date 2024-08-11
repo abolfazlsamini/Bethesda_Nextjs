@@ -28,7 +28,7 @@
     @apply pb-5 font-CCCutthroat text-xs leading-5 text-white sm:text-base;
   }
   .netogame_H1 {
-    @apply font-SST_Light text-4xl leading-[68px] xl:text-[56px];
+    @apply font-SST_Light text-4xl leading-[50px] xl:text-[56px];
   }
   .netogame_P {
     @apply font-SST_Light text-xl;
@@ -400,4 +400,7 @@ body {
 }
 .carousel5_gradient {
   background-image: linear-gradient(0deg, #000 -5.39%, transparent 104.31%);
+}
+.navbar2_shadow:hover {
+  box-shadow: 0 0 5px 2px #31313157;
 }

@@ -80,6 +80,14 @@ import category_pic_5 from "../../../public/netogame/category_pic_5.webp";
 import category_pic_6 from "../../../public/netogame/category_pic_6.webp";
 
 import carousel5_pic_1 from "../../../public/netogame/carousel5_pic_1.png";
+import carousel5_pic_2 from "../../../public/netogame/carousel5_pic_2.png";
+import carousel5_pic_3 from "../../../public/netogame/carousel5_pic_3.png";
+import carousel5_pic_4 from "../../../public/netogame/carousel5_pic_4.png";
+import carousel5_pic_5 from "../../../public/netogame/carousel5_pic_5.png";
+
+import Windows from "../../../public/Windows.png";
+import PlayStore from "../../../public/PlayStore.png";
+import AppStore from "../../../public/AppStore.png";
 
 import { useEffect, useRef, useState } from "react";
 import Navbar2 from "../navbar2";
@@ -177,12 +185,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  From the depths of darkness
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  From the depths of darkness, heroes rise to return the God Of
+                  Light to the earth . Who will you choose?
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -223,12 +230,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  Are you ready for real death ?
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  In Orbit Explore, experience the thrill of getting hit, kill
+                  your enemies, and enjoy an immersive VR game
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -269,12 +275,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  Join the crew of the NetoBall
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Experience the thrill of high-flying action and intense
+                  competition in the ultimate head-to-head soccer showdown
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -315,12 +320,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  Create Chaos in CombatField ™ Upheaval
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Join the ultimate battle royale, where strategy, skill, and
+                  teamwork determine your path to legendary victory
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -361,12 +365,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  Welcome to the new Basketball
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Step onto the court and dominate with skill, strategy, and
+                  style in the Hoops Heat
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -407,12 +410,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  Darkness calls upon you. Are you ready to conquer the light?
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  What starts as a small-town murder investigation becomes a
+                  living nightmare
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -453,12 +455,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  New savings on NetoGame Store
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Explore the latest discounts and seasonal sales on new games
+                  and accessories
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -499,12 +500,11 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Join the crew og the Northstar
+                  Discover Neto PlayFusion
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  By having a Neto PlayFusion account, you can benefit from
+                  special services
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -654,63 +654,73 @@ const Category_sec = () => {
           Great PS4 & PS5 games out now or coming soon
         </div>
         <div className="min-h-[55vh]">
-          <div className="mx-auto flex w-max rounded-3xl bg-[#1c1d21] text-sm text-black lg:text-base">
+          <div className="mx-auto flex w-max flex-wrap-reverse rounded-3xl bg-[#1c1d21] text-xs text-black sm:text-sm lg:text-base">
             <div
               onClick={() => setSelectedCategory("all")}
               className={
                 selectedCategoty === "all"
                   ? "cursor-pointer rounded-3xl bg-white px-4 py-2 transition-all duration-200 lg:mx-1"
-                  : "cursor-pointer rounded-3xl px-4 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
+                  : "cursor-pointer rounded-3xl px-2 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
               }
             >
               All
             </div>
             <div
-              onClick={() => setSelectedCategory("ps5")}
+              onClick={() => setSelectedCategory("console")}
               className={
-                selectedCategoty === "ps5"
+                selectedCategoty === "console"
                   ? "cursor-pointer rounded-3xl bg-white px-4 py-2 transition-all duration-200 lg:mx-1"
-                  : "cursor-pointer rounded-3xl px-4 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
+                  : "cursor-pointer rounded-3xl px-2 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
               }
             >
-              PS5
+              Console
             </div>
             <div
               onClick={() => setSelectedCategory("mobile")}
               className={
                 selectedCategoty === "mobile"
                   ? "cursor-pointer rounded-3xl bg-white px-4 py-2 transition-all duration-200 lg:mx-1"
-                  : "cursor-pointer rounded-3xl px-4 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
+                  : "cursor-pointer rounded-3xl px-2 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
               }
             >
               Mobile
             </div>
             <div
-              onClick={() => setSelectedCategory("action")}
+              onClick={() => setSelectedCategory("netogear")}
               className={
-                selectedCategoty === "action"
+                selectedCategoty === "netogear"
                   ? "cursor-pointer rounded-3xl bg-white px-4 py-2 transition-all duration-200 lg:mx-1"
-                  : "cursor-pointer rounded-3xl px-4 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
+                  : "cursor-pointer rounded-3xl px-2 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
               }
             >
-              Action
+              Neto Gear
             </div>
             <div
-              onClick={() => setSelectedCategory("adventure")}
+              onClick={() => setSelectedCategory("netovr")}
               className={
-                selectedCategoty === "adventure"
+                selectedCategoty === "netovr"
                   ? "cursor-pointer rounded-3xl bg-white px-4 py-2 transition-all duration-200 lg:mx-1"
-                  : "cursor-pointer rounded-3xl px-4 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
+                  : "cursor-pointer rounded-3xl px-2 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
               }
             >
-              Adventure
+              Neto VR
+            </div>
+            <div
+              onClick={() => setSelectedCategory("cloud")}
+              className={
+                selectedCategoty === "cloud"
+                  ? "cursor-pointer rounded-3xl bg-white px-4 py-2 transition-all duration-200 lg:mx-1"
+                  : "cursor-pointer rounded-3xl px-2 py-2 text-white transition-all duration-200 hover:text-blue-600 lg:mx-1"
+              }
+            >
+              Cloud
             </div>
           </div>
           <div className="relative overflow-hidden px-5 py-8">
             <div className="category_container z-10 flex flex-wrap">
               <div
                 className={
-                  inCategoty(["ps5"])
+                  inCategoty(["console", "mobile", "netogear"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
@@ -723,11 +733,11 @@ const Category_sec = () => {
                   alt=""
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
-                <div className="ml-1">helldivers</div>
+                <div className="ml-1">Neto Ball</div>
               </div>
               <div
                 className={
-                  inCategoty(["action"])
+                  inCategoty(["console", "mobile"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
@@ -740,11 +750,11 @@ const Category_sec = () => {
                   alt=""
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
-                <div className="ml-1">helldivers</div>
+                <div className="ml-1">Mythus Arena</div>
               </div>
               <div
                 className={
-                  inCategoty(["ps5", "action"])
+                  inCategoty(["netovr"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
@@ -757,11 +767,11 @@ const Category_sec = () => {
                   alt=""
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
-                <div className="ml-1">helldivers</div>
+                <div className="ml-1">Orbit Explore</div>
               </div>
               <div
                 className={
-                  inCategoty(["action"])
+                  inCategoty(["console", "netogear"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
@@ -774,11 +784,11 @@ const Category_sec = () => {
                   alt=""
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
-                <div className="ml-1">helldivers</div>
+                <div className="ml-1">CombatField</div>
               </div>
               <div
                 className={
-                  inCategoty(["action"])
+                  inCategoty(["mobile"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
@@ -791,11 +801,11 @@ const Category_sec = () => {
                   alt=""
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
-                <div className="ml-1">helldivers</div>
+                <div className="ml-1">Hoops Heat</div>
               </div>
               <div
                 className={
-                  inCategoty(["ps5", "action", "adventure", "mobile"])
+                  inCategoty(["console", "cloud"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
                     : "hidden"
                 }
@@ -808,7 +818,7 @@ const Category_sec = () => {
                   alt=""
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
-                <div className="ml-1">helldivers</div>
+                <div className="ml-1">Life Elevated</div>
               </div>
 
               {/* <div className="opacityhover absolute top-0 h-full max-h-0 w-full bg-[#1c1d21] opacity-0 transition-opacity duration-300"></div> */}
@@ -885,13 +895,12 @@ const Carousel_3 = () => {
           alt=""
           className="mx-auto h-auto w-1/2 lg:w-1/5"
         />
-        <div className="netogame_H1 p-10 pt-3 text-center text-2xl text-black lg:text-4xl xl:text-5xl">
-          Discover PlayStation Plus
+        <div className="netogame_H1 p-10 py-7 text-center text-2xl text-black lg:text-4xl xl:text-5xl">
+          Discover Neto PlayFusion
         </div>
-        <div className="netogame_P mb-5 px-10 text-center text-sm text-[#6b6b6b] lg:px-16 xl:text-lg">
-          Play hundreds of incredible PS5, PS4 and classic PlayStation games,
-          and discover epic adventures, unique indies, family favourites, and
-          everything in between.
+        <div className="netogame_P mb-7 px-10 text-center text-sm text-[#6b6b6b] lg:px-20 xl:text-lg">
+          By having a Neto PlayFusion account, you can benefit from special
+          services
         </div>
         <div className="">
           <div className="slider-container relative w-full">
@@ -919,32 +928,30 @@ const Carousel_3 = () => {
                     />
                   </picture>
                   <div className="relative h-24 bg-black lg:hidden">
-                    <div className="absolute -top-10 z-10 pl-4">
-                      <a className="my-2 border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
-                        premium
+                    <div className="absolute -top-3 z-10 pl-4">
+                      <a className="my-2 border border-white/30 bg-white px-8 text-xs uppercase text-[#333333] xl:text-xl">
+                        PREMIUM
                       </a>
                       <div className="netogame_H2 xl:text-4xl">
-                        Join the crew og the Northstar
+                        Neto PlayFusion Premium
                       </div>
                       <div className="netogame_H3 mt-1 lg:text-lg">
-                        Assemble your crew of Freegunner space outlaws and team
-                        up with friends online, in this new multiplayer hero
-                        shooter available August 23rd on PS5 and PC.¹
+                        Online Multiplayer for NetoGear Console , NetoStore
+                        Discound
                       </div>
                     </div>
                   </div>
 
                   <div className="netogame_gradientMainimage_pc absolute top-1/2 z-10 hidden h-full w-1/2 -translate-y-1/2 flex-col justify-end pb-10 pl-4 lg:flex">
-                    <a className="my-2 w-max border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
-                      premium
+                    <a className="my-2 w-max border border-white/30 bg-white px-8 text-xs uppercase text-[#333333] xl:text-xl">
+                      PREMIUM
                     </a>
-                    <div className="netogame_H2 xl:text-4xl">
-                      Join the crew og the Northstar
+                    <div className="netogame_H2 my-5 xl:text-4xl">
+                      Neto PlayFusion Premium
                     </div>
                     <div className="netogame_H3 mt-1 lg:text-lg">
-                      Assemble your crew of Freegunner space outlaws and team up
-                      with friends online, in this new multiplayer hero shooter
-                      available August 23rd on PS5 and PC.¹
+                      Online Multiplayer for NetoGear Console , NetoStore
+                      Discound
                     </div>
                   </div>
                 </div>
@@ -972,32 +979,30 @@ const Carousel_3 = () => {
                     />
                   </picture>
                   <div className="relative h-24 bg-black lg:hidden">
-                    <div className="absolute -top-10 z-10 pl-4">
+                    <div className="absolute -top-3 z-10 pl-4">
                       <a className="my-2 border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
-                        premium
+                        ELITE
                       </a>
                       <div className="netogame_H2 xl:text-4xl">
-                        Join the crew og the Northstar
+                        Neto PlayFusion ELITE
                       </div>
                       <div className="netogame_H3 mt-1 lg:text-lg">
-                        Assemble your crew of Freegunner space outlaws and team
-                        up with friends online, in this new multiplayer hero
-                        shooter available August 23rd on PS5 and PC.¹
+                        Online Multiplayer for NetoGear Console , NetoStore
+                        Discound , Early Access to unreleased Games
                       </div>
                     </div>
                   </div>
 
                   <div className="netogame_gradientMainimage_pc absolute top-1/2 z-10 hidden h-full w-1/2 -translate-y-1/2 flex-col justify-end pb-10 pl-4 lg:flex">
                     <a className="my-2 w-max border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
-                      premium
+                      ELITE
                     </a>
-                    <div className="netogame_H2 xl:text-4xl">
-                      Join the crew og the Northstar
+                    <div className="netogame_H2 my-5 xl:text-4xl">
+                      Neto PlayFusion ELITE
                     </div>
                     <div className="netogame_H3 mt-1 lg:text-lg">
-                      Assemble your crew of Freegunner space outlaws and team up
-                      with friends online, in this new multiplayer hero shooter
-                      available August 23rd on PS5 and PC.¹
+                      Online Multiplayer for NetoGear Console , NetoStore
+                      Discound , Early Access to unreleased Games
                     </div>
                   </div>
                 </div>
@@ -1025,32 +1030,32 @@ const Carousel_3 = () => {
                     />
                   </picture>
                   <div className="relative h-24 bg-black lg:hidden">
-                    <div className="absolute -top-10 z-10 pl-4">
-                      <a className="my-2 border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
-                        premium
+                    <div className="absolute -top-3 z-10 pl-4">
+                      <a className="my-2 border border-white/30 bg-[#fdc100] px-8 text-xs uppercase text-[#333333] xl:text-xl">
+                        ULTIMATE
                       </a>
                       <div className="netogame_H2 xl:text-4xl">
-                        Join the crew og the Northstar
+                        Neto PlayFusion Ultimate
                       </div>
                       <div className="netogame_H3 mt-1 lg:text-lg">
-                        Assemble your crew of Freegunner space outlaws and team
-                        up with friends online, in this new multiplayer hero
-                        shooter available August 23rd on PS5 and PC.¹
+                        Online Multiplayer for NetoGear Console , NetoStore
+                        Discound , Early Access to unreleased Games , increase
+                        earning in crypto game
                       </div>
                     </div>
                   </div>
 
                   <div className="netogame_gradientMainimage_pc absolute top-1/2 z-10 hidden h-full w-1/2 -translate-y-1/2 flex-col justify-end pb-10 pl-4 lg:flex">
-                    <a className="my-2 w-max border border-white/30 bg-[#333333] px-8 text-xs uppercase text-[#fdc100] xl:text-xl">
-                      premium
+                    <a className="my-2 w-max border border-white/30 bg-[#fdc100] px-8 text-xs uppercase text-[#333333] xl:text-xl">
+                      ULTIMATE
                     </a>
-                    <div className="netogame_H2 xl:text-4xl">
-                      Join the crew og the Northstar
+                    <div className="netogame_H2 my-5 xl:text-4xl">
+                      Neto PlayFusion Ultimate
                     </div>
                     <div className="netogame_H3 mt-1 lg:text-lg">
-                      Assemble your crew of Freegunner space outlaws and team up
-                      with friends online, in this new multiplayer hero shooter
-                      available August 23rd on PS5 and PC.¹
+                      Online Multiplayer for NetoGear Console , NetoStore
+                      Discound , Early Access to unreleased Games , increase
+                      earning in crypto game
                     </div>
                   </div>
                 </div>
@@ -1177,7 +1182,7 @@ const Carousel_2 = () => {
     <section>
       <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
         <div className="netogame_H1 px-10 pt-20 text-center text-2xl text-black lg:hidden">
-          Introducing the PS5 console and accessories
+          Introducing the Neto Game console and accessories
         </div>
       </div>
 
@@ -1195,19 +1200,27 @@ const Carousel_2 = () => {
               />
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
-                Introducing the PS5 console and accessories
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+                Introducing the Neto Game console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                PlayStation 5 Console
+                HyperGrip Wireless Controller
               </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-2 text-sm text-[#6b6b6b] lg:my-5">
-                Experience an all-new generation of incredible PlayStation
-                games.
+              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+                For gamers seeking complete mastery, HyperGrip is the only
+                choice. Your hands deserve the best , choose HyperGrip !
               </div>
-              <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                Find out more
-              </a>
+              <div>
+                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+                  Find out more
+                </a>
+                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+                  Buy Now
+                </a>
+              </div>
+              <div className="pt-5">
+                Buy from <span className="font-SST_Bold"> $79,99</span>
+              </div>
             </div>
           </div>
           <div className={currentSlideNumber === 1 ? "relative" : "hidden"}>
@@ -1224,19 +1237,26 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
-                Introducing the PS5 console and accessories
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+                Introducing the Neto Game console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                PlayStation 5 Console
+                NetoGear Console
               </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-2 text-sm text-[#6b6b6b] lg:my-5">
-                Experience an all-new generation of incredible PlayStation
-                games.
+              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+                Experience the next generation of handheld consoles
               </div>
-              <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                Find out more
-              </a>
+              <div>
+                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+                  Find out more
+                </a>
+                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+                  Buy Now
+                </a>
+              </div>
+              <div className="pt-5">
+                Buy from <span className="font-SST_Bold"> $899,99</span>
+              </div>
             </div>
           </div>
           <div className={currentSlideNumber === 2 ? "relative" : "hidden"}>
@@ -1253,19 +1273,27 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
-                Introducing the PS5 console and accessories
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+                Introducing the Neto Game console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                PlayStation 5 Console
+                SkyTune Wireless Earbuds
               </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-2 text-sm text-[#6b6b6b] lg:my-5">
-                Experience an all-new generation of incredible PlayStation
-                games.
+              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+                Experience the harmony of SkyTune, where every note meets the
+                sky
               </div>
-              <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                Find out more
-              </a>
+              <div>
+                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+                  Find out more
+                </a>
+                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+                  Buy Now
+                </a>
+              </div>
+              <div className="pt-5">
+                Buy from <span className="font-SST_Bold"> $299,99</span>
+              </div>
             </div>
           </div>
           <div className={currentSlideNumber === 3 ? "relative" : "hidden"}>
@@ -1282,19 +1310,27 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
-                Introducing the PS5 console and accessories
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+                Introducing the Neto Game console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                PlayStation 5 Console
+                Neto VR
               </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-2 text-sm text-[#6b6b6b] lg:my-5">
-                Experience an all-new generation of incredible PlayStation
-                games.
+              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+                Immerse yourself in the future of virtual reality with Neto VR ,
+                where limitless possibilities await your exploration
               </div>
-              <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                Find out more
-              </a>
+              <div>
+                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+                  Find out more
+                </a>
+                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+                  Buy Now
+                </a>
+              </div>
+              <div className="pt-5">
+                Buy from <span className="font-SST_Bold"> $1000,99</span>
+              </div>
             </div>
           </div>
           <div className={currentSlideNumber === 4 ? "relative" : "hidden"}>
@@ -1311,19 +1347,26 @@ const Carousel_2 = () => {
               </div>
             </div>
             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden leading-10 lg:mb-5 lg:block">
-                Introducing the PS5 console and accessories
+              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+                Introducing the Neto Game console and accessories
               </div>
               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                PlayStation 5 Console
+                ThunderBeat Wireless Headset
               </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-2 text-sm text-[#6b6b6b] lg:my-5">
-                Experience an all-new generation of incredible PlayStation
-                games.
+              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+                Feel the power of sound with ThunderBeat !
               </div>
-              <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                Find out more
-              </a>
+              <div>
+                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+                  Find out more
+                </a>
+                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+                  Buy Now
+                </a>
+              </div>
+              <div className="pt-5">
+                Buy from <span className="font-SST_Bold">$199,99</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1354,7 +1397,7 @@ const Carousel_2 = () => {
                     : "text-center font-SST_Light"
                 }
               >
-                asdasd
+                HyperGrip Wireless Controller
               </div>
             </div>
             <div
@@ -1382,7 +1425,7 @@ const Carousel_2 = () => {
                     : "text-center font-SST_Light"
                 }
               >
-                asdasd
+                NetoGear Console
               </div>
             </div>
             <div
@@ -1410,7 +1453,7 @@ const Carousel_2 = () => {
                     : "text-center font-SST_Light"
                 }
               >
-                asdasd
+                SkyTune Wireless Earbuds
               </div>
             </div>
             <div
@@ -1438,7 +1481,7 @@ const Carousel_2 = () => {
                     : "text-center font-SST_Light"
                 }
               >
-                asdasd
+                Neto VR
               </div>
             </div>
             <div
@@ -1466,7 +1509,7 @@ const Carousel_2 = () => {
                     : "text-center font-SST_Light"
                 }
               >
-                asdasd
+                ThunderBeat Wireless Headset
               </div>
             </div>
           </Slider>
@@ -1652,109 +1695,123 @@ const Carousel_5 = () => {
   };
 
   return (
-    <div className="slider-container relative w-full pb-10">
-      <Slider {...settings}>
-        <div className="w-full">
-          <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-            <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+    <div>
+      <div className="slider-container relative w-full pb-10">
+        <div className="flex items-baseline justify-between">
+          <div className="my-5 ml-8 w-max border-b-4 border-white hover:cursor-pointer hover:[&_*]:-translate-y-1">
+            <div className="font-SST_Bold text-5xl">Events</div>
+          </div>
+          <a className="mb-5 mr-8 hidden h-max w-max cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1 lg:block">
+            find out more
+          </a>
+        </div>
+        <Slider {...settings}>
+          <div className="w-full">
+            <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
+              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
 
-            <Image
-              placeholder="blur"
-              src={carousel5_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
-            />
+              <Image
+                placeholder="blur"
+                src={carousel5_pic_1}
+                width={0}
+                height={0}
+                alt=""
+                className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
+              />
 
-            <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
-              <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
-                find out more
-              </a>
+              <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
+                <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
+                  find out more
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-full">
-          <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-            <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+          <div className="w-full">
+            <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
+              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
 
-            <Image
-              placeholder="blur"
-              src={carousel5_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
-            />
+              <Image
+                placeholder="blur"
+                src={carousel5_pic_2}
+                width={0}
+                height={0}
+                alt=""
+                className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
+              />
 
-            <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
-              <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
-                find out more
-              </a>
+              <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
+                <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
+                  find out more
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-full">
-          <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-            <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+          <div className="w-full">
+            <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
+              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
 
-            <Image
-              placeholder="blur"
-              src={carousel5_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
-            />
+              <Image
+                placeholder="blur"
+                src={carousel5_pic_3}
+                width={0}
+                height={0}
+                alt=""
+                className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
+              />
 
-            <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
-              <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
-                find out more
-              </a>
+              <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
+                <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
+                  find out more
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-full">
-          <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-            <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+          <div className="w-full">
+            <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
+              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
 
-            <Image
-              placeholder="blur"
-              src={carousel5_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
-            />
+              <Image
+                placeholder="blur"
+                src={carousel5_pic_4}
+                width={0}
+                height={0}
+                alt=""
+                className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
+              />
 
-            <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
-              <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
-                find out more
-              </a>
+              <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
+                <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
+                  find out more
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-full">
-          <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-            <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+          <div className="w-full">
+            <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
+              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
 
-            <Image
-              placeholder="blur"
-              src={carousel5_pic_1}
-              width={0}
-              height={0}
-              alt=""
-              className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
-            />
+              <Image
+                placeholder="blur"
+                src={carousel5_pic_5}
+                width={0}
+                height={0}
+                alt=""
+                className="h-[50vh] object-cover sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]"
+              />
 
-            <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
-              <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
-                find out more
-              </a>
+              <div className="absolute bottom-10 right-10 z-10 flex-col justify-center pl-4 lg:flex">
+                <a className="w-max rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1">
+                  find out more
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </Slider>
+        </Slider>
+      </div>
+
+      <a className="mx-auto my-5 block w-11/12 cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-center text-base uppercase text-white transition-transform hover:-translate-y-1 lg:hidden">
+        find out moree
+      </a>
     </div>
   );
 };
@@ -1785,16 +1842,24 @@ const Sec2 = () => {
               />
             </picture>
           </div>
-          <div className="z-20 flex flex-col items-center bg-[#1f1f1f] px-5 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-            <div className="netogame_H1">Join the crew og the Northstar</div>
-            <div className="netogame_p my-2 lg:my-5">
-              Assemble your crew of Freegunner space outlaws and team up with
-              friends online, in this new multiplayer hero shooter available
-              August 23rd on PS5 and PC.¹
+          <div className="z-20 flex flex-col items-center bg-[#1f1f1f] px-5 pb-20 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+            <div className="netogame_H1">Feel the difference</div>
+            <div className="netogame_p my-2 lg:mt-5">
+              Explore the next frontier of virtual reality with Neto VR, where
+              cutting-edge technology meets immersive experiences that redefine
+              your perception of reality
             </div>
-            <a className="my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
-              Find out more
-            </a>
+            <div className="py-5 pb-8">
+              Buy from: <span className="font-SST_Bold"> $1000.99</span>
+            </div>
+            <div>
+              <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-white px-3 py-3 font-SST_Bold text-base text-black outline-none outline-2 delay-75 hover:bg-white hover:outline-offset-2 hover:outline-white">
+                Find out more
+              </a>
+              <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+                Buy Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1804,7 +1869,7 @@ const Sec2 = () => {
 const Sec1 = () => {
   return (
     <section>
-      <div className="bg-[#18141a]">
+      <div className="bg-[#18141a] pt-6">
         <div className="relative">
           <div className="relative h-[400px] overflow-hidden sm:h-[600px] lg:h-full">
             {/* <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div> */}
@@ -1829,11 +1894,10 @@ const Sec1 = () => {
             </picture>
           </div>
           <div className="z-20 flex flex-col items-center px-5 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-            <div className="netogame_H1">Join the crew og the Northstar</div>
-            <div className="netogame_p my-2 lg:my-5">
-              Assemble your crew of Freegunner space outlaws and team up with
-              friends online, in this new multiplayer hero shooter available
-              August 23rd on PS5 and PC.¹
+            <div className="netogame_H1">New saving on NetoStore</div>
+            <div className="netogame_p my-2 lg:my-8">
+              Explore our latest discounts and seasonal sales on games and
+              accessories
             </div>
             <a className="my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
               Find out more
@@ -2184,11 +2248,35 @@ export default function Home() {
           <Carousel_3 />
         </div>
         <div>
-          <div className="flex h-12 w-full items-center bg-black">
+          <div className="flex max-h-20 w-full items-center bg-black">
             <div className="mx-auto flex items-center">
-              <div className="mr-4 cursor-pointer">insta_icon</div>
-              <div className="mr-4 cursor-pointer">telegram_icon</div>
-              <div className="mr-4 cursor-pointer">discord_icon</div>
+              <div className="mr-4 cursor-pointer">
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-20"
+                  alt=""
+                  src={Windows}
+                />
+              </div>
+              <div className="mr-4 cursor-pointer">
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-20"
+                  alt=""
+                  src={AppStore}
+                />
+              </div>
+              <div className="mr-4 cursor-pointer">
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-20"
+                  alt=""
+                  src={PlayStore}
+                />
+              </div>
             </div>
           </div>
         </div>
