@@ -1,3 +1,4 @@
+"use client";
 import sec1_pic from "../../../public/orbit_explore/sec1_pic.jpg";
 import sec1_logo from "../../../public/orbit_explore/sec1_logo.png";
 import sec2_pic from "../../../public/orbit_explore/sec2_pic_pc.jpg";
@@ -15,6 +16,11 @@ import sec5_logo from "../../../public/orbit_explore/sec5_logo.png";
 import Image from "next/image";
 import Navbar from "../navbar_orbit_explore";
 import Navbar2 from "../navbar2";
+import { useEffect, useRef } from "react";
+import {
+  ArrowLeftCircleIcon,
+  ArrowRightCircleIcon,
+} from "@heroicons/react/16/solid";
 export default function Orbit_explore() {
   const Sec1 = () => {
     return (
@@ -221,6 +227,40 @@ export default function Orbit_explore() {
     );
   };
   const Row_sec = () => {
+    const ref = useRef();
+    var scrolledR = 0;
+    var scrolledL = 0;
+    var scrolledLLL = 0;
+
+    function onClickScrollRight() {
+      if (scrolledR < 4) scrolledR += 1;
+      if (scrolledL > 0) scrolledL -= 1;
+      scrolledLLL = scrolledR * 220;
+
+      if (ref.current) {
+        ref.current.scroll({
+          left: scrolledR * 220,
+          behavior: "smooth",
+        });
+      }
+    }
+    function onClickScrollLeft() {
+      // scrolled >= 0 ?? scrolled + 1;
+      if (scrolledL < 4) scrolledL += 1;
+      if (scrolledR > 0) scrolledR -= 1;
+
+      if (ref.current) {
+        ref.current.scroll({
+          left: scrolledLLL - scrolledL * 220,
+          behavior: "smooth",
+        });
+      }
+    }
+    useEffect(() => {
+      if (ref.current) {
+        // console.log(ref.current.scrollWidth);
+      }
+    }, []);
     return (
       <section>
         <div className="py-b">
@@ -229,7 +269,10 @@ export default function Orbit_explore() {
           </div>
           <div className="mx-auto w-2/3 xl:px-10">
             <div className="mx-auto">
-              <div className="flex overflow-x-auto overflow-y-hidden py-5">
+              <div
+                ref={ref}
+                className="flex overflow-x-auto overflow-y-hidden py-5 sm:overflow-x-hidden"
+              >
                 <div className="relative mx-8 h-[220px] w-[280px] min-w-[280px] bg-white p-10">
                   <div className="w-11/12">
                     <div className="font-CruyffSansExpanded_Heavy text-2xl uppercase text-black">
@@ -283,6 +326,21 @@ export default function Orbit_explore() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="py-10">
+            <div className="mx-auto flex w-max items-center">
+              <ArrowLeftCircleIcon
+                className="mr-5 w-10"
+                onClick={() => onClickScrollLeft()}
+              />
+              <div className="relative mx-auto h-5 w-64 rounded-3xl bg-gray-500">
+                <div className="absolute left-0 h-5 w-10 rounded-3xl bg-gray-700"></div>
+              </div>
+              <ArrowRightCircleIcon
+                className="ml-5 w-10"
+                onClick={() => onClickScrollRight()}
+              />
             </div>
           </div>
         </div>
