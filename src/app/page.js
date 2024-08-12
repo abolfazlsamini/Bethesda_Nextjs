@@ -2243,7 +2243,7 @@ const Carousel_4 = () => {
 const Social_bar = () => {
   return (
     <div className="flex w-full items-center bg-black py-2">
-      <div className="left-5 hidden text-[#616161] md:block lg:absolute">
+      <div className="left-5 hidden text-[#616161] sm:text-sm md:block lg:absolute">
         Visit Other NetoGame Channels
       </div>
       <div className="mx-auto flex items-center">

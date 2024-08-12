@@ -24,7 +24,7 @@ import first_sec_pic_3 from "../../../public/hifi/first_sec_pic_3.png";
 import first_sec_pic_4 from "../../../public/hifi/first_sec_pic_4.png";
 import float_cat from "../../../public/hifi/float_cat.png";
 import collapsable_pic from "../../../public/hifi/collapsable_pic.png";
-import gradient_logo from "../../../public/combatfield/gradient_logo.png";
+import gradient_logo from "../../../public/hifi/gradient_logo.png";
 
 const Main_sec = () => {
   return (
@@ -888,10 +888,10 @@ const Gradient_sec = () => {
           height={0}
           className="my-2 w-10/12"
         />
-        <div className="font-druk_wide_super my-2 uppercase lg:text-[27px]">
+        <div className="my-2 font-druk_wide_super uppercase lg:text-[27px]">
           TRY NOW ON NETO PLAY FUSION
         </div>
-        <a className="btn font-druk_text_medium mt-5 w-full cursor-pointer rounded-3xl bg-[#ff4747] p-5 py-3 uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+        <a className="btn mt-5 w-full cursor-pointer rounded-3xl bg-[#ff4747] p-5 py-3 font-druk_text_medium uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">Start Now</div>
         </a>
       </div>
@@ -900,7 +900,7 @@ const Gradient_sec = () => {
 };
 const SocialMedia_sec = () => {
   return (
-    <section>
+    <section className="mx-auto">
       <div className="overflow-hidden py-10 text-center">
         <div className="combarfield_H1 pb-5 text-black">
           FOLLOW US ON OUR SOCIAL MEDIA

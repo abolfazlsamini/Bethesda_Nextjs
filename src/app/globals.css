@@ -40,13 +40,13 @@
     @apply font-SST_Light text-xs;
   }
   .combarfield_H1 {
-    @apply font-druk_wide_super py-3 text-[21px] uppercase md:text-[27px] 2xl:text-[44px];
+    @apply py-3 font-druk_wide_super text-[21px] uppercase md:text-[27px] 2xl:text-[44px];
   }
   .combarfield_H2 {
-    @apply font-druk_wide_super py-3 text-[21px] uppercase md:text-[15px] 2xl:text-[18px];
+    @apply py-3 font-druk_wide_super text-[21px] uppercase md:text-[15px] 2xl:text-[18px];
   }
   .combarfield_P {
-    @apply font-druk_text_medium my-2 md:text-lg;
+    @apply my-2 font-druk_text_medium md:text-lg;
   }
   .btn:hover .btn_div {
     @apply scale-[98%] sm:scale-95;
@@ -290,6 +290,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .black_bg {
+    background-image: url(../../public/combatfield/second_sec_bg_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .edition {
   background-image: url("../../public/edition_bg.jpg");
@@ -461,17 +466,29 @@ body {
 .black_bg {
   background-image: url(../../public/combatfield/second_sec_bg_pc.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-size: cover;
 }
-@media (max-width: 640.95px) {
-  .black_bg {
-    background-image: url(../../public/combatfield/second_sec_bg_mobile.jpg);
+
+.gradient_bg_netoball {
+  background: linear-gradient(60deg, #089caf 0%, #089caf 50%, #01e7f9 100%);
+}
+
+@media (max-width: 767.95px) {
+  .orbitexplore_sec4_bg {
+    background-image: url(../../public/orbit_explore/sec4_pic_mobile.jpg);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
   }
 }
-.gradient_bg_netoball {
-  background: linear-gradient(60deg, #089caf 0%, #089caf 50%, #01e7f9 100%);
+@media (min-width: 768px) {
+  .orbitexplore_sec4_bg {
+    background-image: url(../../public/orbit_explore/sec4_pic_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .orbitexplore_sec5_bg {
+    background-image: url(../../public/orbit_explore/sec5_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

@@ -23,6 +23,7 @@ module.exports = {
         SST_Light: "var(--font-SST_Light)",
         SST_Bold: "var(--font-SST_Bold)",
         CruyffSansExpanded_Heavy: "var(--font-CruyffSansExpanded_Heavy)",
+        cruyffsans_medium: "var(--font-cruyffsans_medium)",
         druk_text_medium: "var(--font-druk_text_medium)",
         druk_wide_super: "var(--font-druk_wide_super)",
       },

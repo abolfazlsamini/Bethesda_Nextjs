@@ -20,7 +20,7 @@ export default function Navbar() {
     else setToggle("-translate-x-96");
   }
   return (
-    <div className="fixed top-16 z-20 min-h-16 w-full">
+    <div className="fixed top-16 z-30 min-h-16 w-full">
       <div className="flex min-h-16 items-center justify-start bg-black px-4 py-1">
         <div className="md:hidden">
           <button className="navbar-burger flex items-center p-3 text-white">
@@ -50,12 +50,12 @@ export default function Navbar() {
             </div>
           </div>
         </a>
-        <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-3 md:flex lg:mx-auto lg:w-auto lg:space-x-6">
-          <li>
+        <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-auto lg:space-x-4">
+          <li className="flex items-center pb-3">
             <a className="font-bold leading-none" href="/">
               <Image
                 alt=""
-                className="w-32"
+                className="w-32 sm:w-28"
                 src={logo}
                 width={0}
                 height={0}
@@ -68,7 +68,7 @@ export default function Navbar() {
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
                 About
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
                 maps
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -129,7 +129,7 @@ export default function Navbar() {
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
                 game mode
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -155,7 +155,7 @@ export default function Navbar() {
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
                 Assistant Tools
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -181,7 +181,7 @@ export default function Navbar() {
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
                 news and media
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -201,7 +201,7 @@ export default function Navbar() {
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
                 Community
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>

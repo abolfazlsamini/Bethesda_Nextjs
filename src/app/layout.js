@@ -157,6 +157,16 @@ export const CruyffSansExpanded_Heavy = localFont({
   ],
   variable: "--font-CruyffSansExpanded_Heavy",
 });
+export const cruyffsans_medium = localFont({
+  src: [
+    {
+      path: "../../public/fonts/ea/cruyffsans_medium.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-cruyffsans_medium",
+});
 export const druk_text_medium = localFont({
   src: [
     {
@@ -188,7 +198,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} `}
       >
         <Navbar2 />
         {children}

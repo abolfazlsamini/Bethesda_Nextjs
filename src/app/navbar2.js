@@ -47,7 +47,7 @@ export default function Navbar2() {
     else setToggle("-translate-x-[32rem]");
   }
   return (
-    <div className="fixed top-0 z-30 min-h-16 w-full">
+    <div className="fixed top-0 z-40 min-h-16 w-full">
       <div className="min-h-16 bg-white px-4 py-1">
         <div className="flex w-full items-center justify-between md:hidden">
           <button className="navbar-burger p-3 text-black">
@@ -70,8 +70,8 @@ export default function Navbar2() {
             ></Image>
           </a>
           <a className="">
-            <div className="font-druk_text_medium relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
-              <div className="text-sm">Sign In</div>
+            <div className="relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center font-druk_text_medium hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
+              <div className="font-SST_Light text-sm">Sign In</div>
             </div>
           </a>
         </div>
@@ -262,8 +262,8 @@ export default function Navbar2() {
             </div>
           </li>
           <a className="absolute right-5">
-            <div className="font-druk_text_medium relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
-              <div className="text-sm">Sign In</div>
+            <div className="relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center font-druk_text_medium hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
+              <div className="font-SST_Light text-sm">Sign In</div>
             </div>
           </a>
         </ul>
@@ -1239,249 +1239,6 @@ export default function Navbar2() {
                 </div>
               </li>
             </ul>
-            {/* <ul>
-              <li className="mb-1">
-                <div
-                  onClick={() =>
-                    SetAccordionMobile({ ...accordionMobile, acc1: !accordion.acc1 })
-                  }
-                  className="relative cursor-pointer py-3 transition-all duration-300"
-                >
-                  <div className={accordion.acc1 ? "" : "border-b"}>
-                    <div className="flex items-center uppercase">
-                      About
-                      <SlArrowDown
-                        className={
-                          accordion.acc1
-                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
-                            : "size-5 px-1 transition-transform duration-300"
-                        }
-                      />
-                    </div>
-                    <div
-                      className={
-                        accordion.acc1
-                          ? "max-h-52 px-3 transition-all duration-300"
-                          : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
-                      }
-                    >
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        GAMEPLAY
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Features and Modes
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        peresentation
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        NT Playfusion membership
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className="mb-1">
-                <div
-                  onClick={() =>
-                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
-                  }
-                  className="relative cursor-pointer py-3 transition-all duration-300"
-                >
-                  <div className={accordion.acc2 ? "" : "border-b"}>
-                    <div className="flex items-center uppercase">
-                      maps
-                      <SlArrowDown
-                        className={
-                          accordion.acc2
-                            ? "size-5 rotate-180 px-1 transition-all duration-300"
-                            : "size-5 px-1 transition-all duration-300"
-                        }
-                      />
-                    </div>
-                    <div
-                      className={
-                        accordion.acc2
-                          ? "max-h-[64rem] px-3 transition-all duration-300"
-                          : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
-                      }
-                    >
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Dust Storm
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Urban Siege
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Artic Blast
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Jungle Havoc
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Desert Mirage
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Metro Mayhem
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Devils Mountain
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className="mb-1">
-                <div
-                  onClick={() =>
-                    SetAccordion({ ...accordion, acc3: !accordion.acc3 })
-                  }
-                  className="relative cursor-pointer py-3 transition-all duration-300"
-                >
-                  <div className={accordion.acc3 ? "" : "border-b"}>
-                    <div className="flex items-center uppercase">
-                      game mode
-                      <SlArrowDown
-                        className={
-                          accordion.acc3
-                            ? "size-5 rotate-180 px-1 transition-all duration-300"
-                            : "size-5 px-1 transition-all duration-300"
-                        }
-                      />
-                    </div>
-                    <div
-                      className={
-                        accordion.acc3
-                          ? "max-h-52 px-3 transition-all duration-300"
-                          : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
-                      }
-                    >
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Capture the flag
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Dominitaion
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Free for all
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Kill Confirmed
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className="mb-1">
-                <div
-                  onClick={() =>
-                    SetAccordion({ ...accordion, acc4: !accordion.acc4 })
-                  }
-                  className="relative cursor-pointer py-3 transition-all duration-300"
-                >
-                  <div className={accordion.acc4 ? "" : "border-b"}>
-                    <div className="flex items-center uppercase">
-                      assistant tools
-                      <SlArrowDown
-                        className={
-                          accordion.acc4
-                            ? "size-5 rotate-180 px-1 transition-all duration-300"
-                            : "size-5 px-1 transition-all duration-300"
-                        }
-                      />
-                    </div>
-                    <div
-                      className={
-                        accordion.acc4
-                          ? "max-h-52 px-3 transition-all duration-300"
-                          : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
-                      }
-                    >
-                      <div className="border-b py-3 hover:text-[#f00]">UAV</div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Counter UAV
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Cruise Missile
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Remote Turret
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className="mb-1">
-                <div
-                  onClick={() =>
-                    SetAccordion({ ...accordion, acc5: !accordion.acc5 })
-                  }
-                  className="relative cursor-pointer py-3 transition-all duration-300"
-                >
-                  <div className={accordion.acc5 ? "" : "border-b"}>
-                    <div className="flex items-center uppercase">
-                      news and media
-                      <SlArrowDown
-                        className={
-                          accordion.acc5
-                            ? "size-5 rotate-180 px-1 transition-all duration-300"
-                            : "size-5 px-1 transition-all duration-300"
-                        }
-                      />
-                    </div>
-                    <div
-                      className={
-                        accordion.acc5
-                          ? "max-h-52 px-3 transition-all duration-300"
-                          : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
-                      }
-                    >
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        News
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Trailer & Screenshots
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className="mb-1">
-                <div
-                  onClick={() =>
-                    SetAccordion({ ...accordion, acc6: !accordion.acc6 })
-                  }
-                  className="relative cursor-pointer py-3 transition-all duration-300"
-                >
-                  <div className={accordion.acc6 ? "" : "border-b"}>
-                    <div className="flex items-center uppercase">
-                      community
-                      <SlArrowDown
-                        className={
-                          accordion.acc6
-                            ? "size-5 rotate-180 px-1 transition-all duration-300"
-                            : "size-5 px-1 transition-all duration-300"
-                        }
-                      />
-                    </div>
-                    <div
-                      className={
-                        accordion.acc6
-                          ? "max-h-52 px-3 transition-all duration-300"
-                          : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
-                      }
-                    >
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Forum
-                      </div>
-                      <div className="border-b py-3 hover:text-[#f00]">
-                        Newsletter Sign Up
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul> */}
           </div>
         </nav>
       </div>
