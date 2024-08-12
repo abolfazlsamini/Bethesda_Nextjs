@@ -84,7 +84,7 @@ export default function Orbit_explore() {
                 />
               </picture>
             </div>
-            <div className="z-20 flex flex-col items-center px-5 py-10 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+            <div className="z-20 flex flex-col items-center px-5 py-10 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-3/5 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32 xl:w-1/3">
               <Image src={sec2_logo} width={0} height={0} alt="" className="" />
               <div className="font-CruyffSansExpanded_Heavy text-4xl uppercase sm:text-3xl xl:text-5xl">
                 HOW CAN I WIN THE GAME ? PUT ON YOUT GLASSES AND DEFEAT YOUR
@@ -223,7 +223,7 @@ export default function Orbit_explore() {
   const Row_sec = () => {
     return (
       <section>
-        <div className="py-20">
+        <div className="py-b">
           <div className="py-9 text-center font-CruyffSansExpanded_Heavy text-5xl uppercase">
             MORE GAME MODES
           </div>
