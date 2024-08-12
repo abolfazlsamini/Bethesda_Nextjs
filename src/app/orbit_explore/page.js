@@ -381,7 +381,7 @@ export default function Orbit_explore() {
               >
                 <div
                   ref={progress_cursor}
-                  className="absolute left-0 z-10 h-5 w-16 rounded-3xl bg-gray-700"
+                  className="absolute left-0 z-10 h-5 w-16 rounded-3xl bg-gray-700 transition-transform duration-200"
                 ></div>
               </div>
               <ArrowRightCircleIcon
