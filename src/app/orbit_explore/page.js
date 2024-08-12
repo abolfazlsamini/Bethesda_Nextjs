@@ -399,7 +399,7 @@ export default function Orbit_explore() {
       <section>
         <div className="orbitexplore_sec4_bg">
           <div className="mx-auto flex w-11/12 flex-col items-center py-32 text-center sm:w-1/2">
-            <div className="font-CruyffSansExpanded_Heavy text-4xl uppercase sm:text-3xl lg:text-5xl">
+            <div className="font-CruyffSansExpanded_Heavy text-3xl uppercase sm:text-3xl lg:text-5xl">
               THE BEST PERSONALIZATION
             </div>
             <div className="netogame_p my-2 lg:my-5">
@@ -437,7 +437,7 @@ export default function Orbit_explore() {
                   alt=""
                   className="lg:w-full"
                 />
-                <div className="font-CruyffSansExpanded_Heavy text-5xl uppercase sm:text-3xl">
+                <div className="font-CruyffSansExpanded_Heavy text-3xl uppercase sm:text-3xl xl:text-5xl">
                   WELCOME TO THE ORBIT EXPLORE
                 </div>
                 <div className="netogame_p my-2 lg:my-5">
