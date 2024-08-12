@@ -16,7 +16,7 @@ import sec5_logo from "../../../public/orbit_explore/sec5_logo.png";
 import Image from "next/image";
 import Navbar from "../navbar_orbit_explore";
 import Navbar2 from "../navbar2";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeftCircleIcon,
   ArrowRightCircleIcon,
@@ -228,58 +228,94 @@ export default function Orbit_explore() {
   };
   const Row_sec = () => {
     const ref = useRef();
-    var scrolledR = 0;
-    var scrolledL = 0;
-    var scrolledLLL = 0;
+    const progress_ref = useRef();
+    const progress_cursor = useRef();
+    var scrolledAmount = 0;
+    var realscrolledAmount = 0;
 
-    function onClickScrollRight() {
-      if (scrolledR < 4) scrolledR += 1;
-      if (scrolledL > 0) scrolledL -= 1;
-      scrolledLLL = scrolledR * 220;
-
+    function onProgressbarClick(e) {
+      var rect = progress_ref.current.getBoundingClientRect();
+      var x = e.clientX - rect.left; //x position within the element.
+      realscrolledAmount =
+        ref.current.scrollLeft /
+        (ref.current.scrollWidth - ref.current.offsetWidth);
+      console.log(x);
       if (ref.current) {
+        scrolledAmount = ref.current.scrollLeft;
         ref.current.scroll({
-          left: scrolledR * 220,
+          left:
+            (x / progress_ref.current.offsetWidth) *
+              progress_ref.current.offsetWidth +
+            progress_ref.current.offsetWidth,
           behavior: "smooth",
         });
       }
+    }
+    var trans_x = 0;
+    function onClickScrollRight() {
+      if (ref.current) {
+        scrolledAmount = ref.current.scrollLeft;
+        ref.current.scroll({
+          left: scrolledAmount + 220,
+          behavior: "smooth",
+        });
+      }
+      realscrolledAmount =
+        ref.current.scrollLeft /
+        (ref.current.scrollWidth - ref.current.offsetWidth);
+      //scrollWidth 1593
+      //scrollLeft 0    910
+      //offsetWidth 683
+      scrolledAmount = (ref.current.scrollLeft + 200) / ref.current.scrollWidth; // 0 to 1
+      // 0 to 216
+      progress_ref.current.offsetWidth * scrolledAmount;
+      trans_x += 50;
+      trans_x = Math.min(trans_x, 256 - 64);
+      progress_cursor.current.style.transform = `translateX(${Math.min(trans_x, 256 - 64)}px)`;
+      // console.log(scrolledAmount);
+      // console.log(progress_ref.current.offsetWidth * scrolledAmount);
     }
     function onClickScrollLeft() {
-      // scrolled >= 0 ?? scrolled + 1;
-      if (scrolledL < 4) scrolledL += 1;
-      if (scrolledR > 0) scrolledR -= 1;
-
       if (ref.current) {
+        scrolledAmount = ref.current.scrollLeft;
         ref.current.scroll({
-          left: scrolledLLL - scrolledL * 220,
+          left: scrolledAmount - 220,
           behavior: "smooth",
         });
       }
+      trans_x -= 50;
+      trans_x = Math.max(trans_x, 0);
+      progress_cursor.current.style.transform = `translateX(${Math.max(trans_x, 0)}px)`;
+      // progress_cursor.current.style.transform = `translateX(${-64}px)`;
+
+      // console.log(ref.current.scrollLeft / ref.current.scrollWidth);
     }
-    useEffect(() => {
-      if (ref.current) {
-        // console.log(ref.current.scrollWidth);
-      }
-    }, []);
+    function mouseDown(e) {
+      var rect = progress_ref.current.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      // console.log(ref.current.scrollWidth);
+      // progress_cursor.current.style.transform = `translateX(${Math.max(0, x - 35)}px)`;
+    }
+
     return (
       <section>
         <div className="py-b">
           <div className="py-9 text-center font-CruyffSansExpanded_Heavy text-5xl uppercase">
             MORE GAME MODES
           </div>
-          <div className="mx-auto w-2/3 xl:px-10">
+          <div className="mx-auto w-4/5 sm:w-2/3 xl:px-10">
             <div className="mx-auto">
               <div
                 ref={ref}
                 className="flex overflow-x-auto overflow-y-hidden py-5 sm:overflow-x-hidden"
               >
-                <div className="relative mx-8 h-[220px] w-[280px] min-w-[280px] bg-white p-10">
+                <div className="relative mr-8 h-[220px] w-[280px] min-w-[280px] bg-white p-10 sm:mx-8">
                   <div className="w-11/12">
                     <div className="font-CruyffSansExpanded_Heavy text-2xl uppercase text-black">
                       Battle Royale Blitz
                     </div>
 
-                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
+                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full max-w-[60%] rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
                       <div className="btn_div">Learn More</div>
                     </button>
                   </div>
@@ -289,7 +325,7 @@ export default function Orbit_explore() {
                     <div className="font-CruyffSansExpanded_Heavy text-2xl uppercase text-black">
                       Team Deathmatch Mayhem
                     </div>
-                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
+                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full max-w-[60%] rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
                       <div className="btn_div">Learn More</div>
                     </button>
                   </div>
@@ -300,7 +336,7 @@ export default function Orbit_explore() {
                       Capture the Core
                     </div>
                     <br />
-                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
+                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full max-w-[60%] rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
                       <div className="btn_div">Learn More</div>
                     </button>
                   </div>
@@ -310,7 +346,7 @@ export default function Orbit_explore() {
                     <div className="font-CruyffSansExpanded_Heavy text-2xl uppercase text-black">
                       Sniper Showdown
                     </div>
-                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
+                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full max-w-[60%] rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
                       <div className="btn_div">Learn More</div>
                     </button>
                   </div>
@@ -320,7 +356,7 @@ export default function Orbit_explore() {
                     <div className="font-CruyffSansExpanded_Heavy text-2xl uppercase text-black">
                       Survival Siege
                     </div>
-                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
+                    <button className="btn sm:text-md absolute bottom-3 left-7 m-2 w-full max-w-[60%] rounded-3xl bg-[#ff9000] p-5 py-3 font-cruyffsans_medium text-black hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
                       <div className="btn_div">Learn More</div>
                     </button>
                   </div>
@@ -328,17 +364,28 @@ export default function Orbit_explore() {
               </div>
             </div>
           </div>
-          <div className="py-10">
+          <div className="hidden py-10 sm:block">
             <div className="mx-auto flex w-max items-center">
               <ArrowLeftCircleIcon
-                className="mr-5 w-10"
+                className="mr-5 w-10 cursor-pointer hover:scale-105 hover:text-white/80"
                 onClick={() => onClickScrollLeft()}
               />
-              <div className="relative mx-auto h-5 w-64 rounded-3xl bg-gray-500">
-                <div className="absolute left-0 h-5 w-10 rounded-3xl bg-gray-700"></div>
+              <div
+                ref={progress_ref}
+                onClick={(e) => {
+                  // onProgressbarClick(e);
+                  // mouseDown(e);
+                }}
+                // onMouseDown={(e) => mouseDown(e)}
+                className="relative mx-auto h-5 w-64 rounded-3xl bg-gray-400"
+              >
+                <div
+                  ref={progress_cursor}
+                  className="absolute left-0 z-10 h-5 w-16 rounded-3xl bg-gray-700"
+                ></div>
               </div>
               <ArrowRightCircleIcon
-                className="ml-5 w-10"
+                className="ml-5 w-10 cursor-pointer hover:scale-105 hover:text-white/80"
                 onClick={() => onClickScrollRight()}
               />
             </div>
