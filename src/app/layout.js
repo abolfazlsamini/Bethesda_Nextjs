@@ -190,8 +190,8 @@ export const druk_wide_super = localFont({
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "DeathLoop",
-  description: "DeathLoop",
+  title: "NetoGame",
+  description: "NetoGame",
 };
 
 export default function RootLayout({ children }) {

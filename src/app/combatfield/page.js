@@ -46,10 +46,10 @@ const Main_sec = () => {
               className="py-2"
             />
           </div>
-          <div className="font-druk_text_medium my-2 text-xl md:text-2xl">
+          <div className="my-2 font-druk_text_medium text-xl md:text-2xl">
             NETO GAMES STUDIO , COMBAT FIELD
           </div>
-          <div className="font-druk_text_medium my-2 md:text-lg">
+          <div className="my-2 font-druk_text_medium md:text-lg">
             Combat Field introduces a new and exciting style of online PTOE
             (Player-To-Objective Experience) shooters. This game stands out from
             similar titles thanks to its captivating destructible environments,
@@ -58,10 +58,10 @@ const Main_sec = () => {
             multi-stage dream sequence experienced by the main character
           </div>
           <div className="md:flex">
-            <button className="btn font-druk_text_medium m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+            <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
               <div className="btn_div">Watch Trailer</div>
             </button>
-            <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+            <button className="btn m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
               <div className="btn_div">BUY NOW</div>
             </button>
           </div>
@@ -111,7 +111,7 @@ const HalfPic_sec = () => {
             experience. Battles in Combat Field demand that you outskill and
             outsmart your opponents to emerge victorious
           </div>
-          <button className="btn font-druk_text_medium m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+          <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">LEARN MORE</div>
           </button>
         </div>
@@ -135,7 +135,7 @@ const HalfPic_sec = () => {
             use these weapons to demolish walls. Additionally, this class has
             more health
           </div>
-          <button className="btn font-druk_text_medium m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 hover:scale-[102%] sm:max-w-44 sm:text-lg md:hover:scale-105">
+          <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-44 sm:text-lg md:hover:scale-105">
             <div className="btn_div">SEE THE ALTER EGOS</div>
           </button>
         </div>
@@ -154,7 +154,7 @@ const Col1_sec = () => {
           <Image alt="" src={col_pic_1} width={0} height={0} className="" />
           <div>
             <div className="combarfield_H2 text-black">DOMINATION</div>
-            <div className="font-druk_text_medium combarfield_P my-2 text-black md:text-base">
+            <div className="combarfield_P my-2 font-druk_text_medium text-black md:text-base">
               To score points, capture objectives, hold them, and defend. The
               first team to reach the required score wins
             </div>
@@ -164,7 +164,7 @@ const Col1_sec = () => {
           <Image alt="" src={col_pic_2} width={0} height={0} className="" />
           <div>
             <div className="combarfield_H2 text-black">FREE FOR ALL</div>
-            <div className="font-druk_text_medium combarfield_P my-2 text-black md:text-base">
+            <div className="combarfield_P my-2 font-druk_text_medium text-black md:text-base">
               Eliminate all opponents. The first player to reach the target
               score ends the game. The top three players win
             </div>
@@ -174,7 +174,7 @@ const Col1_sec = () => {
           <Image alt="" src={col_pic_3} width={0} height={0} className="" />
           <div>
             <div className="combarfield_H2 text-black">KILL CONFIRMED</div>
-            <div className="font-druk_text_medium combarfield_P my-2 text-black md:text-base">
+            <div className="combarfield_P my-2 font-druk_text_medium text-black md:text-base">
               Eliminate enemies, collect their tags, and prevent your team's
               tags from being collected by the enemy
             </div>
@@ -182,7 +182,7 @@ const Col1_sec = () => {
         </div>
       </div>
       <div className="mx-auto flex justify-center pb-32 pt-20">
-        <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+        <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">MORE NEWS</div>
         </button>
       </div>
@@ -197,7 +197,7 @@ const Col2_sec = () => {
           <Image alt="" src={col2_pic_1} width={0} height={0} className="" />
           <div className="px-5 pb-8">
             <div className="combarfield_H2 text-black">RANDOM GAME</div>
-            <div className="font-druk_text_medium combarfield_P my-2 text-black md:text-base">
+            <div className="combarfield_P my-2 font-druk_text_medium text-black md:text-base">
               In the Random mode, you will connect with other online players and
               begin competing. In this mode, the system will form two teams from
               the players present in the lobby to compete against each other.
@@ -210,7 +210,7 @@ const Col2_sec = () => {
           <Image alt="" src={col2_pic_2} width={0} height={0} className="" />
           <div className="px-5 pb-8">
             <div className="combarfield_H2 text-black">FRIENDLY GAME</div>
-            <div className="font-druk_text_medium combarfield_P my-2 text-black md:text-base">
+            <div className="combarfield_P my-2 font-druk_text_medium text-black md:text-base">
               In the Friendly Game mode, you can send game requests to your
               friends (by searching their user ID, you can send a friend
               request) and play together. Additionally, you can also compete in
@@ -222,7 +222,7 @@ const Col2_sec = () => {
           <Image alt="" src={col2_pic_3} width={0} height={0} className="" />
           <div className="px-5 pb-8">
             <div className="combarfield_H2 text-black">WEEKLY REWARD</div>
-            <div className="font-druk_text_medium combarfield_P my-2 text-black md:text-base">
+            <div className="combarfield_P my-2 font-druk_text_medium text-black md:text-base">
               The game features weekly rewards distributed through loot boxes.
               These loot boxes contain tokens, weapon skins, character skins,
               and other similar prizes. The loot boxes are awarded based on the
@@ -232,7 +232,7 @@ const Col2_sec = () => {
         </div>
       </div>
       <div className="mx-auto flex justify-center py-20">
-        <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 uppercase text-black hover:scale-[102%] sm:w-max sm:text-lg md:hover:scale-105">
+        <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-druk_text_medium uppercase text-black hover:scale-[102%] sm:w-max sm:text-lg md:hover:scale-105">
           <div className="btn_div">Buy Now</div>
         </button>
       </div>
@@ -270,7 +270,7 @@ const Bottum_pic_sec = () => {
             through team collaboration, rather than competing against 100 other
             players for survival
           </div>
-          <button className="btn font-druk_text_medium m-2 w-full rounded-3xl border-2 bg-white p-5 py-3 text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+          <button className="btn m-2 w-full rounded-3xl border-2 bg-white p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">BUY NOW</div>
           </button>
         </div>
@@ -289,10 +289,10 @@ const Gradient_sec = () => {
           height={0}
           className="my-2 w-10/12"
         />
-        <div className="font-druk_wide_super my-2 uppercase lg:text-[27px]">
+        <div className="my-2 font-druk_wide_super uppercase lg:text-[27px]">
           TRY NOW ON NETO PLAY FUSION
         </div>
-        <button className="btn font-druk_text_medium mt-5 w-full rounded-3xl bg-[#ff4747] p-5 py-3 uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+        <button className="btn mt-5 w-full rounded-3xl bg-[#ff4747] p-5 py-3 font-druk_text_medium uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">Start Now</div>
         </button>
       </div>
@@ -390,6 +390,7 @@ const SocialMedia_sec = () => {
 export default function Home() {
   return (
     <main className="relative">
+      <title>COMBATFIELD</title>
       <div className="!font-SST_Light">
         <Navbar />
       </div>

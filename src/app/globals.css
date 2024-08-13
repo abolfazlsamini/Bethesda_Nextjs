@@ -254,59 +254,18 @@
   --background-end-rgb: 0, 0, 0;
 }
 
-@media (min-width: 640px) {
-  .xbox {
-    background-image: url("../../public/green-bg-pc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .goldloop {
-    background-image: url("../../public/goldenloop-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .outsiders {
-    background-image: url("../../public/outsiders_bg_pc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 @media (max-width: 640.95px) {
   .carousel.carousel-slider {
     height: 80vh;
   }
-  .xbox {
-    background-image: url("../../public/green-bg-mobile.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .goldloop {
-    background-image: url("../../public/goldenloop-bg-mobile.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .outsiders {
-    background-image: url("../../public/outsiders_bg_mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
   .black_bg {
     background-image: url(../../public/combatfield/second_sec_bg_mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
-.edition {
-  background-image: url("../../public/edition_bg.jpg");
-  background-size: 140% 140%;
-  background-position: 60% 60%;
-  background-repeat: no-repeat;
-}
-.media {
-  background-image: url("../../public/media_bg.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
