@@ -1495,21 +1495,8 @@ const Video_sec = () => {
     entry.target.play();
   }
 
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
   useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    var width = windowSize.width;
+    var width = window.innerWidth;
 
     const observer = new IntersectionObserver(callback, options);
     if (video_1.current) {
@@ -1528,41 +1515,35 @@ const Video_sec = () => {
       if (width > 1023) video_3.current.src = `netogame/video_sec_3.mp4`;
       else video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
     }
+
+    const handleResize = () => {
+      if (width > 1023) {
+        video_3.current.src = `netogame/video_sec_3.mp4`;
+        video_2.current.src = `netogame/video_sec_2.mp4`;
+        video_1.current.src = `netogame/video_sec_1.mp4`;
+      } else {
+        video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
+
+        video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
+
+        video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
       if (video_1.current) observer.unobserve(video_1.current);
       if (video_2.current) observer.unobserve(video_2.current);
       if (video_3.current) observer.unobserve(video_3.current);
+      window.removeEventListener("resize", handleResize);
     };
-
-    // const handleResize = () => {
-    //   if (width > 1023) {
-    //     video_3.current.src = `netogame/video_sec_3.mp4`;
-    //     video_2.current.src = `netogame/video_sec_2.mp4`;
-    //     video_1.current.src = `netogame/video_sec_1.mp4`;
-    //   } else {
-    //     video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
-
-    //     video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
-
-    //     video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
-    //   }
-    // };
-
-    // window.addEventListener("resize", handleResize);
-    // return () => {
-    //   if (video_1.current) observer.unobserve(video_1.current);
-    //   if (video_2.current) observer.unobserve(video_2.current);
-    //   if (video_3.current) observer.unobserve(video_3.current);
-    //   window.removeEventListener("resize", handleResize);
-    // };
   }, [options]);
 
   return (
     <section>
-      <div className="text-black">
+      <div className="bg-[#d8dee7] text-black">
         <div className="relative">
-          <div className="h-[60vh] overflow-hidden border lg:h-auto">
+          <div className="min-h-[60vh] overflow-hidden border lg:h-auto">
             <video
               ref={video_1}
               muted
@@ -1579,7 +1560,7 @@ const Video_sec = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="h-[60vh] overflow-hidden border lg:h-auto">
+          <div className="min-h-[60vh] overflow-hidden border lg:h-auto">
             <video
               ref={video_2}
               muted
@@ -1596,7 +1577,7 @@ const Video_sec = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="h-[60vh] overflow-hidden border lg:h-auto">
+          <div className="min-h-[60vh] overflow-hidden border lg:h-auto">
             <video
               ref={video_3}
               muted
