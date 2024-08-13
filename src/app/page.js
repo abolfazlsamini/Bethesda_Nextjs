@@ -1131,8 +1131,8 @@ const Carousel_2 = () => {
       {
         breakpoint: 1024,
         settings: {
-          centerPadding: "30px",
-          slidesToShow: 1,
+          centerPadding: "40px",
+          slidesToShow: 2,
           className: "center",
           centerMode: true,
         },
@@ -1141,10 +1141,8 @@ const Carousel_2 = () => {
   };
   return (
     <section>
-      <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
-        <div className="netogame_H1 px-10 pt-20 text-center text-2xl text-black lg:hidden">
-          Introducing the Neto Game console and accessories
-        </div>
+      <div className="netogame_H1 px-10 pt-20 text-center text-2xl text-black lg:hidden">
+        Introducing the Neto Game console and accessories
       </div>
 
       <div className="flex flex-col-reverse py-20 text-black lg:flex-col">
@@ -2198,7 +2196,7 @@ const Social_bar = () => {
         Visit Other NetoGame Channels
       </div>
       <div className="mx-auto flex items-center">
-        <div className="mr-4 cursor-pointer">
+        <div className="mx-4 cursor-pointer">
           <Image
             width={0}
             height={0}

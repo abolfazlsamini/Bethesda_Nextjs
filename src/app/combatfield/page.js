@@ -23,7 +23,7 @@ const Main_sec = () => {
         <div>
           <picture>
             <source
-              srcSet="./home/main_pic_mobile.jpg"
+              srcSet="./combatfield/main_pic_mobile.jpg"
               media="(max-width:767.95px)"
             ></source>
 

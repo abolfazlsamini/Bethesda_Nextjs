@@ -92,7 +92,7 @@ export default function Orbit_explore() {
             </div>
             <div className="z-20 flex flex-col items-center px-5 py-10 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-3/5 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32 xl:w-1/3">
               <Image src={sec2_logo} width={0} height={0} alt="" className="" />
-              <div className="font-CruyffSansExpanded_Heavy text-4xl uppercase sm:text-3xl xl:text-5xl">
+              <div className="font-CruyffSansExpanded_Heavy text-4xl uppercase sm:text-3xl 2xl:text-5xl">
                 HOW CAN I WIN THE GAME ? PUT ON YOUT GLASSES AND DEFEAT YOUR
                 ENEMIES
               </div>
@@ -303,7 +303,7 @@ export default function Orbit_explore() {
           <div className="py-9 text-center font-CruyffSansExpanded_Heavy text-5xl uppercase">
             MORE GAME MODES
           </div>
-          <div className="mx-auto w-4/5 sm:w-2/3 xl:px-10">
+          <div className="mx-auto w-11/12 sm:w-2/3 xl:px-10">
             <div className="mx-auto">
               <div
                 ref={ref}
