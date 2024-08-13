@@ -1087,59 +1087,6 @@ const Carousel_3 = () => {
   );
 };
 const Carousel_2 = () => {
-  // const controller_ref = useRef();
-  // const img_1 = useRef();
-  // const img_2 = useRef();
-  // const img_3 = useRef();
-  // const img_4 = useRef();
-  // const img_5 = useRef();
-  // const img_6 = useRef();
-  // const img_7 = useRef();
-  // const img_8 = useRef();
-  // const [index, setIndex] = useState(1);
-  // function callback(enteries) {
-  //   console.log(index);
-  //   const [entry] = enteries;
-
-  //   if (entry.isIntersecting && entry.target.id != index)
-  //     setIndex(Number(entry.target.id));
-  // }
-  // function onClickScroll(i) {
-  //   if (controller_ref.current) {
-  //     controller_ref.current.scroll({
-  //       left: (i - 1) * 300,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // }
-  // const options = {
-  //   root: null,
-  //   rootMargin: "300px",
-  //   threshold: 1,
-  // };
-  // useEffect(() => {
-  //   var width = window.innerWidth;
-  //   if (width > 1023) return;
-  //   const observer = new IntersectionObserver(callback, options);
-  //   if (img_1.current) observer.observe(img_1.current);
-  //   if (img_2.current) observer.observe(img_2.current);
-  //   if (img_3.current) observer.observe(img_3.current);
-  //   if (img_4.current) observer.observe(img_4.current);
-  //   if (img_5.current) observer.observe(img_5.current);
-  //   if (img_6.current) observer.observe(img_6.current);
-  //   if (img_7.current) observer.observe(img_7.current);
-  //   if (img_8.current) observer.observe(img_8.current);
-  //   return () => {
-  //     if (img_1.current) observer.unobserve(img_1.current);
-  //     if (img_2.current) observer.unobserve(img_2.current);
-  //     if (img_3.current) observer.unobserve(img_3.current);
-  //     if (img_4.current) observer.unobserve(img_4.current);
-  //     if (img_5.current) observer.unobserve(img_5.current);
-  //     if (img_6.current) observer.unobserve(img_6.current);
-  //     if (img_7.current) observer.unobserve(img_7.current);
-  //     if (img_8.current) observer.unobserve(img_8.current);
-  //   };
-  // }, [options]);
   const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
@@ -1201,7 +1148,7 @@ const Carousel_2 = () => {
       </div>
 
       <div className="flex flex-col-reverse py-20 text-black lg:flex-col">
-        <div>
+        <div className="sm:pb-20 xl:py-0">
           <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
             <div className="relative">
               <Image
@@ -1548,8 +1495,21 @@ const Video_sec = () => {
     entry.target.play();
   }
 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
   useEffect(() => {
-    var width = window.innerWidth;
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    var width = windowSize.width;
 
     const observer = new IntersectionObserver(callback, options);
     if (video_1.current) {
@@ -1568,28 +1528,34 @@ const Video_sec = () => {
       if (width > 1023) video_3.current.src = `netogame/video_sec_3.mp4`;
       else video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
     }
-
-    const handleResize = () => {
-      if (width > 1023) {
-        video_3.current.src = `netogame/video_sec_3.mp4`;
-        video_2.current.src = `netogame/video_sec_2.mp4`;
-        video_1.current.src = `netogame/video_sec_1.mp4`;
-      } else {
-        video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
-
-        video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
-
-        video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
     return () => {
+      window.removeEventListener("resize", handleResize);
       if (video_1.current) observer.unobserve(video_1.current);
       if (video_2.current) observer.unobserve(video_2.current);
       if (video_3.current) observer.unobserve(video_3.current);
-      window.removeEventListener("resize", handleResize);
     };
+
+    // const handleResize = () => {
+    //   if (width > 1023) {
+    //     video_3.current.src = `netogame/video_sec_3.mp4`;
+    //     video_2.current.src = `netogame/video_sec_2.mp4`;
+    //     video_1.current.src = `netogame/video_sec_1.mp4`;
+    //   } else {
+    //     video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
+
+    //     video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
+
+    //     video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
+    //   }
+    // };
+
+    // window.addEventListener("resize", handleResize);
+    // return () => {
+    //   if (video_1.current) observer.unobserve(video_1.current);
+    //   if (video_2.current) observer.unobserve(video_2.current);
+    //   if (video_3.current) observer.unobserve(video_3.current);
+    //   window.removeEventListener("resize", handleResize);
+    // };
   }, [options]);
 
   return (
