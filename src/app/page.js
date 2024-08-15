@@ -1657,7 +1657,7 @@ const Carousel_5 = () => {
     <div>
       <div className="slider-container relative w-full pb-10">
         <div className="flex items-baseline justify-between">
-          <div className="my-5 ml-8 w-max border-b-4 border-white hover:cursor-pointer hover:[&_*]:-translate-y-1">
+          <div className="relative left-1/2 my-5 w-max -translate-x-1/2 border-b-4 border-white hover:cursor-pointer sm:left-0 sm:ml-8 sm:translate-x-0 hover:[&_*]:-translate-y-1">
             <div className="font-SST_Bold text-5xl">MERCHANDISE</div>
           </div>
           {/* <a className="mb-5 mr-8 hidden h-max w-max cursor-pointer rounded-lg border bg-transparent px-8 py-3 text-base uppercase text-white transition-transform hover:-translate-y-1 lg:block">
@@ -1667,7 +1667,7 @@ const Carousel_5 = () => {
         <Slider {...settings}>
           <div className="w-full">
             <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+              <div className="absolute top-0 z-0 h-full w-full"></div>
 
               <Image
                 placeholder="blur"
@@ -1687,7 +1687,7 @@ const Carousel_5 = () => {
           </div>
           <div className="w-full">
             <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+              <div className="absolute top-0 z-0 h-full w-full"></div>
 
               <Image
                 placeholder="blur"
@@ -1707,7 +1707,7 @@ const Carousel_5 = () => {
           </div>
           <div className="w-full">
             <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+              <div className="absolute top-0 z-0 h-full w-full"></div>
 
               <Image
                 placeholder="blur"
@@ -1727,7 +1727,7 @@ const Carousel_5 = () => {
           </div>
           <div className="w-full">
             <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+              <div className="absolute top-0 z-0 h-full w-full"></div>
 
               <Image
                 placeholder="blur"
@@ -1747,7 +1747,7 @@ const Carousel_5 = () => {
           </div>
           <div className="w-full">
             <div className="relative mx-2 h-[50vh] cursor-pointer overflow-hidden rounded-xl sm:h-[45vh] md:h-[35vh] lg:h-[35vh] xl:h-[54vh]">
-              <div className="carousel5_gradient absolute top-0 z-0 h-full w-full"></div>
+              <div className="absolute top-0 z-0 h-full w-full"></div>
 
               <Image
                 placeholder="blur"

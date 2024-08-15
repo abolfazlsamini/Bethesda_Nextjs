@@ -69,16 +69,16 @@ export default function Footer() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc1: !accordion.acc1 })
+                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
-                  <div className={accordion.acc1 ? "" : "border-b"}>
+                  <div className={accordion.acc2 ? "" : "border-b"}>
                     <div className="flex items-center uppercase">
                       Prouct
                       <SlArrowDown
                         className={
-                          accordion.acc1
+                          accordion.acc2
                             ? "size-5 rotate-180 px-1 transition-transform duration-300"
                             : "size-5 px-1 transition-transform duration-300"
                         }
@@ -86,7 +86,7 @@ export default function Footer() {
                     </div>
                     <div
                       className={
-                        accordion.acc1
+                        accordion.acc2
                           ? "max-h-[9000px] px-3 transition-all duration-300"
                           : "max-h-0 overflow-hidden pb-3 opacity-10 transition-all duration-300"
                       }

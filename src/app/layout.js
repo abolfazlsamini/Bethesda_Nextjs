@@ -45,35 +45,35 @@ export const roboto = localFont({
   ],
   variable: "--font-roboto",
 });
-export const segoeuibold = localFont({
+export const ElectronicArtsDisplay_Bold = localFont({
   src: [
     {
-      path: "../../public/fonts/xbox/segoeuibold.woff2",
+      path: "../../public/fonts/fc25/ElectronicArtsDisplay_Bold.otf",
       weight: "400",
       style: "normal",
     },
   ],
-  variable: "--font-segoeuibold",
+  variable: "--font-ElectronicArtsDisplay_Bold",
 });
-export const segoeui = localFont({
+export const ElectronicArtsText_Bold = localFont({
   src: [
     {
-      path: "../../public/fonts/xbox/segoeui.woff",
+      path: "../../public/fonts/fc25/ElectronicArtsText_Bold.otf",
       weight: "400",
       style: "normal",
     },
   ],
-  variable: "--font-segoeui",
+  variable: "--font-ElectronicArtsText_Bold",
 });
-export const seoproblack = localFont({
+export const ElectronicArtsText_Regular = localFont({
   src: [
     {
-      path: "../../public/fonts/xbox/seoproblack.woff2",
+      path: "../../public/fonts/fc25/ElectronicArtsText_Regular.ttf",
       weight: "400",
       style: "normal",
     },
   ],
-  variable: "--font-seoproblack",
+  variable: "--font-ElectronicArtsText_Regular",
 });
 
 /*   hifi font */
@@ -198,7 +198,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${segoeuibold.variable} ${segoeui.variable} ${seoproblack.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} `}
       >
         <Navbar2 />
         {children}

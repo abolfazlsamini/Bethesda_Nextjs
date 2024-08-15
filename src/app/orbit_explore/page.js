@@ -58,7 +58,7 @@ export default function Orbit_explore() {
                   <div className="btn_div">Buy now</div>
                 </button>
                 <button className="btn sm:text-md m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-cruyffsans_medium hover:scale-[102%] sm:max-w-36 md:hover:scale-105">
-                  <div className="btn_div">LearnMore</div>
+                  <div className="btn_div">Watch Trailer</div>
                 </button>
               </div>
             </div>

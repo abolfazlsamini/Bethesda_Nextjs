@@ -451,3 +451,10 @@ body {
     background-size: cover;
   }
 }
+/* .slick-list {
+  overflow: visible !important;
+  overflow-x: hidden !important;
+} */
+/* .slick-dots {
+  bottom: 30% !important;
+} */
