@@ -71,7 +71,7 @@ export default function Navbar2() {
           </a>
           <a className="">
             <div className="relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center font-druk_text_medium hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
-              <div className="font-SST_Light text-sm">Sign In</div>
+              <div className="font-SST_Light text-base">Sign In</div>
             </div>
           </a>
         </div>
@@ -263,7 +263,7 @@ export default function Navbar2() {
           </li>
           <a className="absolute right-5">
             <div className="relative m-2 w-full rounded-3xl bg-blue-600 p-3 py-1 text-center font-druk_text_medium hover:cursor-pointer sm:max-w-36 sm:text-lg md:block">
-              <div className="font-SST_Light text-sm">Sign In</div>
+              <div className="font-SST_Light text-base">Sign In</div>
             </div>
           </a>
         </ul>

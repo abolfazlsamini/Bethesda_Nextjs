@@ -245,7 +245,7 @@ const Bottum_pic_sec = () => {
       <div className="relative max-h-[36rem] overflow-hidden md:max-h-max">
         <picture>
           <source
-            srcSet="./home/buttom_pic_mobile.jpg"
+            srcSet="./combatfield/buttom_pic_mobile.jpg"
             media="(max-width:767.95px)"
           ></source>
 
@@ -270,7 +270,7 @@ const Bottum_pic_sec = () => {
             through team collaboration, rather than competing against 100 other
             players for survival
           </div>
-          <button className="btn m-2 w-full rounded-3xl border-2 bg-white p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+          <button className="btn my-2 w-full rounded-3xl border-2 bg-white p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">BUY NOW</div>
           </button>
         </div>

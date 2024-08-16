@@ -35,11 +35,12 @@ export default function Navbar() {
           </button>
         </div>
 
-        <a className="absolute right-5 m-auto md:hidden">
-          <div className="relative m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
-            <div className="text-xs">
+        <a className="absolute right-2 m-auto md:hidden">
+          <div className="relative  w-full rounded-3xl [&_.up]:hover:rotate-180 bg-[#f04] px-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem]">
+            <div className="text-xs flex items-center">
               BUY NOW
-              <div className="absolute right-1 m-auto max-h-0 w-32 overflow-hidden bg-black px-2 text-white transition-all duration-500">
+              <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              <div className="absolute right-0 top-16 max-h-0 w-50 overflow-hidden bg-white/90 text-black transition-all duration-500">
                 <button className="btn mt-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Mobile</div>
                 </button>
@@ -51,7 +52,7 @@ export default function Navbar() {
           </div>
         </a>
         <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-auto lg:space-x-4">
-          <li className="flex items-center pb-3">
+          <li className="flex items-center pb-1">
             <a className="font-bold leading-none" href="/">
               <Image
                 alt=""
@@ -62,8 +63,8 @@ export default function Navbar() {
               ></Image>
             </a>
           </li>
-          <li className="text-gray-300"></li>
-          <li className="flex pb-2">
+
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -72,7 +73,7 @@ export default function Navbar() {
                 About
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   GamePlay
                 </div>
@@ -88,8 +89,7 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -98,7 +98,7 @@ export default function Navbar() {
                 maps
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Dust Storm
                 </div>
@@ -123,8 +123,7 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -133,7 +132,7 @@ export default function Navbar() {
                 game mode
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Capture the flag
                 </div>
@@ -149,8 +148,7 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -159,7 +157,7 @@ export default function Navbar() {
                 Assistant Tools
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   UAV
                 </div>
@@ -175,8 +173,7 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -185,7 +182,7 @@ export default function Navbar() {
                 news and media
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   News
                 </div>
@@ -195,8 +192,7 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -206,7 +202,7 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
 
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Forum
                 </div>
@@ -216,16 +212,16 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
         </ul>
-        <a className="absolute right-5 hidden md:block">
-          <div className="relative m-2 hidden w-full rounded-3xl bg-[#F04] p-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
+        <a className="absolute right-5 hidden md:block [&_.up]:hover:rotate-180">
+          <div className="relative  hidden w-max cursor-pointer justify-center rounded-3xl bg-[#f04] px-6 py-2 text-center font-SST_Light sm:max-w-42 sm:text-lg md:flex items-center [&_*]:hover:max-h-[20rem]">
             BUY NOW
-            <div className="absolute right-0 top-12 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500">
-              <button className="btn m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+            <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+            <div className="absolute right-0 top-16 max-h-0 w-60 overflow-hidden bg-black text-white transition-all duration-500">
+              <button className="btn m-2 w-full mt-4 rounded-3xl border border-white bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Mobile</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full mb-4 rounded-3xl border border-white bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Console</div>
               </button>
             </div>

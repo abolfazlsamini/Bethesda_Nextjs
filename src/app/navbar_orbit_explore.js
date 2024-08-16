@@ -35,11 +35,12 @@ export default function Navbar() {
           </button>
         </div>
 
-        <a className="absolute right-5 m-auto md:hidden">
-          <div className="relative m-2 w-full rounded-3xl bg-[#ff9000] p-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem]">
-            <div className="mx-5 text-xs">
+        <a className="absolute right-2 m-auto md:hidden">
+          <div className="relative  w-full rounded-3xl [&_.up]:hover:rotate-180 bg-[#ff9000] px-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem]">
+            <div className="text-xs flex items-center">
               BUY NOW
-              <div className="absolute right-0 top-12 max-h-0 w-48 overflow-hidden bg-white/90 text-black transition-all duration-500">
+              <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              <div className="absolute right-0 top-16 max-h-0 w-50 overflow-hidden bg-white/90 text-black transition-all duration-500">
                 <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Neto Store</div>
                 </button>
@@ -57,7 +58,7 @@ export default function Navbar() {
           </div>
         </a>
         <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-auto lg:space-x-4">
-          <li className="flex items-center pb-3">
+          <li className="flex items-center">
             <a className="font-bold leading-none" href="/">
               <Image
                 alt=""
@@ -68,8 +69,8 @@ export default function Navbar() {
               ></Image>
             </a>
           </li>
-          <li className="text-gray-300"></li>
-          <li className="flex pb-2">
+          {/* <li className="text-gray-300"></li> */}
+          <li className="flex">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -78,7 +79,7 @@ export default function Navbar() {
                 About
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Orbit Explore Story
                 </div>
@@ -91,8 +92,8 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+
+          <li className="flex ">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -101,7 +102,7 @@ export default function Navbar() {
                 Features
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   NetoGear Overview
                 </div>
@@ -111,8 +112,8 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+
+          <li className="flex ">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -121,24 +122,11 @@ export default function Navbar() {
                 Orbit Explore Ratings
                 {/* <SlArrowDown className="up size-5 px-1 transition-transform duration-300" /> */}
               </div>
-              {/* <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Capture the flag
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Dominitaion
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Free for all
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Kill Confirmed
-                </div>
-              </div> */}
+
             </a>
           </li>
-          {/* <li className="text-gray-300"></li> */}
-          <li className="flex pb-2">
+
+          <li className="flex ">
             <a
               className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
@@ -147,7 +135,7 @@ export default function Navbar() {
                 News & Community
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   All News
                 </div>
@@ -162,62 +150,23 @@ export default function Navbar() {
             </a>
           </li>
 
-          {/* <li className="flex pb-2">
-            <a
-              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
-            >
-              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
-                news and media
-                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
-              </div>
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  News
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Trailer & Screenshots
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <li className="flex pb-2">
-            <a
-              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
-            >
-              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
-                Community
-                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
-              </div>
-
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Forum
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Newsletter Sign Up
-                </div>
-              </div>
-            </a>
-          </li> */}
         </ul>
-        <a className="absolute right-5 hidden md:block">
-          <div className="relative m-2 hidden w-full cursor-pointer rounded-3xl bg-[#ff9000] p-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem]">
+        <a className="absolute right-5 hidden md:block [&_.up]:hover:rotate-180">
+          <div className="relative  hidden w-max cursor-pointer justify-center rounded-3xl bg-[#ff9000] px-6 py-2 text-center font-SST_Light sm:max-w-42 sm:text-lg md:flex items-center [&_*]:hover:max-h-[20rem]">
             BUY NOW
-            <div className="absolute right-0 top-12 max-h-0 w-48 overflow-hidden bg-white/90 text-black transition-all duration-500">
-              <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+            <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+            <div className="absolute right-0 top-16 max-h-0 w-60 overflow-hidden bg-white/90 text-black transition-all duration-500">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Neto Store</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Meta Quest</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">PS VR2</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
-                <div className="btn_div w-max">Apple Vision</div>
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
+                <div className="btn_div">Apple Vision</div>
               </button>
             </div>
           </div>

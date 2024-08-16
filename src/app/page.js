@@ -120,13 +120,28 @@ const Main_sec = () => {
       });
     }
   }
+  function next(){
+    if(index > 7){
+      setIndex(1)
+      onClickScroll(1)
+    }
+    else{
+      setIndex(index+1)
+      onClickScroll(index+1)
+    }
+  }
   const options = {
     root: null,
     rootMargin: "300px",
     threshold: 1,
   };
   useEffect(() => {
+    const interval = setInterval(() => {
+      next();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, 9000);
     var width = window.innerWidth;
+
     if (width > 1023) return;
     const observer = new IntersectionObserver(callback, options);
     if (img_1.current) observer.observe(img_1.current);
@@ -138,6 +153,7 @@ const Main_sec = () => {
     if (img_7.current) observer.observe(img_7.current);
     if (img_8.current) observer.observe(img_8.current);
     return () => {
+      clearInterval(interval)
       if (img_1.current) observer.unobserve(img_1.current);
       if (img_2.current) observer.unobserve(img_2.current);
       if (img_3.current) observer.unobserve(img_3.current);
@@ -147,14 +163,14 @@ const Main_sec = () => {
       if (img_7.current) observer.unobserve(img_7.current);
       if (img_8.current) observer.unobserve(img_8.current);
     };
-  }, [options]);
+  }, [index]);
   return (
     <section>
       <div className="">
         <div>
           <div>
             <div className={index === 1 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -174,7 +190,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -199,7 +215,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 2 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -219,7 +235,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -247,7 +263,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 3 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -267,7 +283,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -295,7 +311,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 4 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -315,7 +331,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -343,7 +359,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 5 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -363,7 +379,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -388,7 +404,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 6 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -408,7 +424,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -433,7 +449,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 7 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -453,7 +469,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
@@ -478,7 +494,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 8 ? "relative" : "hidden"}>
-              <div className="relative">
+              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -498,7 +514,7 @@ const Main_sec = () => {
                     width={0}
                     height={0}
                     alt=""
-                    className=""
+                    className="object-cover"
                   />
                 </picture>
               </div>
