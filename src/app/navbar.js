@@ -53,7 +53,7 @@ export default function Navbar() {
         </a>
         <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-auto lg:space-x-4">
           <li className="flex items-center pb-1">
-            <a className="font-bold leading-none" href="/">
+            <a className=" leading-none" href="/">
               <Image
                 alt=""
                 className="w-32 sm:w-40"
@@ -66,10 +66,10 @@ export default function Navbar() {
 
           <li className="flex">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm xl:text-lg [&_.up]:hover:rotate-180">
                 About
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -91,10 +91,10 @@ export default function Navbar() {
           </li>
           <li className="flex">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm xl:text-lg [&_.up]:hover:rotate-180">
                 maps
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -125,10 +125,10 @@ export default function Navbar() {
           </li>
           <li className="flex">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:w-min sm:text-sm xl:text-lg lg:w-auto [&_.up]:hover:rotate-180">
                 game mode
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -150,10 +150,10 @@ export default function Navbar() {
           </li>
           <li className="flex">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:w-min sm:text-sm xl:text-lg lg:w-auto [&_.up]:hover:rotate-180">
                 Assistant Tools
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -175,10 +175,10 @@ export default function Navbar() {
           </li>
           <li className="flex">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:w-min sm:text-sm xl:text-lg lg:w-auto [&_.up]:hover:rotate-180">
                 news and media
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -194,10 +194,10 @@ export default function Navbar() {
           </li>
           <li className="flex">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm xl:text-lg [&_.up]:hover:rotate-180">
                 Community
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
@@ -243,7 +243,7 @@ export default function Navbar() {
           className={`fixed bottom-0 left-0 top-16 ${toggle} flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-black px-6 py-6 duration-500`}
         >
           <div className="mb-8 flex items-center">
-            <a className="font-bold leading-none" href="/">
+            <a className=" leading-none" href="/">
               <Image
                 alt=""
                 className="w-32"

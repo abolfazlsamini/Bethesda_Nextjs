@@ -191,7 +191,7 @@ export const Inter_VariableFont_opsz = localFont({
   src: [
     {
       path: "../../public/fonts/Inter_VariableFont_opsz.ttf",
-      weight: "700",
+      weight: "300",
       style: "normal",
     },
   ],

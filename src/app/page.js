@@ -1855,7 +1855,7 @@ const Sec1 = () => {
     <section>
       <div className="bg-[#18141a] pt-6">
         <div className="relative">
-          <div className="relative h-[400px] overflow-hidden sm:h-[600px] lg:h-full">
+          <div className="relative h-[330px] overflow-hidden sm:h-[500px] md:h-[640px] lg:h-full">
             {/* <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div> */}
             <picture>
               <source

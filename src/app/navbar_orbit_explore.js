@@ -57,9 +57,9 @@ export default function Navbar() {
             </div>
           </div>
         </a>
-        <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-auto lg:space-x-4">
+        <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-max lg:space-x-4">
           <li className="flex items-center">
-            <a className="font-bold leading-none" href="/">
+            <a className=" leading-none" href="/">
               <Image
                 alt=""
                 className="w-32 sm:w-40"
@@ -72,21 +72,21 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex">
             <a
-              className="relative self-center  font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#ff9000] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm lg:text-lg [&_.up]:hover:rotate-180">
                 About
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   Orbit Explore Story
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   Play On NetoGear
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   Neto PlayFusion
                 </div>
               </div>
@@ -95,18 +95,18 @@ export default function Navbar() {
 
           <li className="flex ">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#ff9000] [&_*]:hover:max-h-52"
+              
             >
-              <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm lg:text-lg [&_.up]:hover:rotate-180">
                 Features
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   NetoGear Overview
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   Gameplay Features
                 </div>
               </div>
@@ -115,10 +115,11 @@ export default function Navbar() {
 
           <li className="flex ">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#ff9000] [&_*]:hover:max-h-52"
+              
+            href="/"
             >
-              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm lg:text-lg lg:w-max [&_.up]:hover:rotate-180">
                 Orbit Explore Ratings
                 {/* <SlArrowDown className="up size-5 px-1 transition-transform duration-300" /> */}
               </div>
@@ -128,22 +129,21 @@ export default function Navbar() {
 
           <li className="flex ">
             <a
-              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
+              className="relative self-center font-Inter_VariableFont_opsz cursor-pointer text-lg  text-white hover:text-[#ff9000] [&_*]:hover:max-h-52"
             >
-              <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
+              <div className="flex items-center uppercase sm:text-sm lg:text-lg lg:w-max [&_.up]:hover:rotate-180">
                 News & Community
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   All News
                 </div>
 
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   Newsletter Sign Up
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
                   Forum
                 </div>
               </div>
@@ -187,7 +187,7 @@ export default function Navbar() {
           className={`fixed bottom-0 left-0 top-16 ${toggle} flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-black px-6 py-6 duration-500`}
         >
           <div className="mb-8 flex items-center">
-            <a className="font-bold leading-none" href="/">
+            <a className=" leading-none" href="/">
               <Image
                 alt=""
                 className="w-32"
