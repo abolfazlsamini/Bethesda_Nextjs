@@ -187,6 +187,16 @@ export const druk_wide_super = localFont({
   ],
   variable: "--font-druk_wide_super",
 });
+export const Inter_VariableFont_opsz = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Inter_VariableFont_opsz.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-Inter_VariableFont_opsz",
+});
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -198,7 +208,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} 
+        ${cruyffsans_medium.variable} 
+        ${Inter_VariableFont_opsz.variable} 
+        `}
       >
         <Navbar2 />
         {children}

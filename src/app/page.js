@@ -110,20 +110,24 @@ const Main_sec = () => {
     const [entry] = enteries;
 
     if (entry.isIntersecting && entry.target.id != index)
-      setIndex(Number(entry.target.id));
+      
+
+        setIndex(Number(entry.target.id));
+
+
   }
   function onClickScroll(i) {
     if (controller_ref.current) {
       controller_ref.current.scroll({
-        left: (i - 1) * 300,
+        left: (i - 1) * 250,
         behavior: "smooth",
       });
     }
   }
   function next(){
     if(index > 7){
-      setIndex(1)
       onClickScroll(1)
+      setIndex(1)
     }
     else{
       setIndex(index+1)
@@ -139,12 +143,12 @@ const Main_sec = () => {
     const interval = setInterval(() => {
       next();
       // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, 9000);
+    }, 2000);
     var width = window.innerWidth;
 
+    const observer = new IntersectionObserver(callback, options);
     if (width < 1023) {
 
-      const observer = new IntersectionObserver(callback, options);
       if (img_1.current) observer.observe(img_1.current);
       if (img_2.current) observer.observe(img_2.current);
       if (img_3.current) observer.observe(img_3.current);

@@ -36,21 +36,21 @@ export default function Navbar() {
         </div>
 
         <a className="absolute right-2 m-auto md:hidden">
-          <div className="relative  w-full rounded-3xl [&_.up]:hover:rotate-180 bg-[#ff9000] px-5 py-3 text-center font-SST_Light sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem]">
+          <div className="relative  w-full rounded-3xl [&_.up]:hover:rotate-180 bg-[#ff9000] px-5 py-3 text-center font-Inter_VariableFont_opsz sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem]">
             <div className="text-xs flex items-center">
               BUY NOW
               <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               <div className="absolute right-0 top-16 max-h-0 w-50 overflow-hidden bg-white/90 text-black transition-all duration-500">
-                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Neto Store</div>
                 </button>
-                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Meta Quest</div>
                 </button>
-                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">PS VR2</div>
                 </button>
-                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 text-center font-SST_Light hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+                <button className="btn m-2 w-11/12 rounded-3xl border-2 border-black bg-transparent p-5 py-3 text-center font-Inter_VariableFont_opsz hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
                   <div className="btn_div">Apple Vision</div>
                 </button>
               </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
             <a className="font-bold leading-none" href="/">
               <Image
                 alt=""
-                className="w-32 sm:w-28"
+                className="w-32 sm:w-40"
                 src={logo}
                 width={0}
                 height={0}
@@ -72,7 +72,7 @@ export default function Navbar() {
           {/* <li className="text-gray-300"></li> */}
           <li className="flex">
             <a
-              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center  font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
@@ -95,7 +95,7 @@ export default function Navbar() {
 
           <li className="flex ">
             <a
-              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase sm:text-sm [&_.up]:hover:rotate-180">
@@ -115,7 +115,7 @@ export default function Navbar() {
 
           <li className="flex ">
             <a
-              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
@@ -128,7 +128,7 @@ export default function Navbar() {
 
           <li className="flex ">
             <a
-              className="relative self-center font-SST_Light text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              className="relative self-center font-Inter_VariableFont_opsz text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
               <div className="flex items-center uppercase sm:w-min sm:text-sm lg:w-auto [&_.up]:hover:rotate-180">
@@ -152,20 +152,20 @@ export default function Navbar() {
 
         </ul>
         <a className="absolute right-5 hidden md:block [&_.up]:hover:rotate-180">
-          <div className="relative  hidden w-max cursor-pointer justify-center rounded-3xl bg-[#ff9000] px-6 py-2 text-center font-SST_Light sm:max-w-42 sm:text-lg md:flex items-center [&_*]:hover:max-h-[20rem]">
+          <div className="relative  hidden w-max cursor-pointer justify-center rounded-3xl bg-[#ff9000] px-6 py-2 text-center font-Inter_VariableFont_opsz sm:max-w-42 sm:text-lg md:flex items-center [&_*]:hover:max-h-[20rem]">
             BUY NOW
             <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
             <div className="absolute right-0 top-16 max-h-0 w-60 overflow-hidden bg-white/90 text-black transition-all duration-500">
-              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Neto Store</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Meta Quest</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">PS VR2</div>
               </button>
-              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-SST_Light hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
+              <button className="btn m-2 w-full rounded-3xl border border-black bg-transparent p-5 py-3 font-Inter_VariableFont_opsz hover:scale-[102%] sm:w-11/12 sm:text-lg md:hover:scale-105">
                 <div className="btn_div">Apple Vision</div>
               </button>
             </div>

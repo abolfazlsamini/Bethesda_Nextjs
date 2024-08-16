@@ -460,7 +460,7 @@ export default function Orbit_explore() {
   const Gradient_sec = () => {
     return (
       <section className="pb-10 md:px-5">
-        <div className="gradient_bg mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
+        <div className="gradient_bg_orbitexplore mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
           <Image
             alt=""
             src={gradient_logo}
@@ -570,7 +570,7 @@ export default function Orbit_explore() {
     <main className="bg-[#161616]">
       <title>Orbit Explore</title>
       <Navbar2 />
-      <div className="!font-SST_Light">
+      <div className="!font-Inter_VariableFont_opsz">
         <Navbar />
       </div>
       <div className="mt-32">

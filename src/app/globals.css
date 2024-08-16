@@ -431,6 +431,9 @@ body {
 .gradient_bg_netoball {
   background: linear-gradient(60deg, #089caf 0%, #089caf 50%, #01e7f9 100%);
 }
+.gradient_bg_orbitexplore {
+  background: linear-gradient(60deg, #292829 0%, #292829 50%, #ff9100 100%);
+}
 
 @media (max-width: 767.95px) {
   .orbitexplore_sec4_bg {

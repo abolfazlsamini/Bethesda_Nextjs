@@ -26,6 +26,7 @@ module.exports = {
         cruyffsans_medium: "var(--font-cruyffsans_medium)",
         druk_text_medium: "var(--font-druk_text_medium)",
         druk_wide_super: "var(--font-druk_wide_super)",
+        Inter_VariableFont_opsz: "var(--font-Inter_VariableFont_opsz)",
       },
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",
