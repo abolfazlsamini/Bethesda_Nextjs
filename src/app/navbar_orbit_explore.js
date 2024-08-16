@@ -80,13 +80,13 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#ff9000]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   Orbit Explore Story
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   Play On NetoGear
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   Neto PlayFusion
                 </div>
               </div>
@@ -103,10 +103,10 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#ff9000]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   NetoGear Overview
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   Gameplay Features
                 </div>
               </div>
@@ -136,14 +136,14 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#ff9000]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   All News
                 </div>
 
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   Newsletter Sign Up
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#ff9000]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#ff9000]">
                   Forum
                 </div>
               </div>

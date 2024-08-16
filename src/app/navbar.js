@@ -74,16 +74,16 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base text-white hover:text-[#f04]">
                   GamePlay
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base text-white hover:text-[#f04]">
                   Features and Modes
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base text-white hover:text-[#f04]">
                   peresentation
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base text-white hover:text-[#f04]">
                   NT Playfusion membership
                 </div>
               </div>
@@ -99,25 +99,25 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Dust Storm
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Urban Siege
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Artic Blast
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Jungle Havoc
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Desert Mirage
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Metro Mayhem
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Devils Mountain
                 </div>
               </div>
@@ -133,16 +133,16 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Capture the flag
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Dominitaion
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Free for all
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Kill Confirmed
                 </div>
               </div>
@@ -158,16 +158,16 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#f04]">
                   UAV
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#f04]">
                   Counter UAV
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#f04]">
                   Cruise Missile
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2  text-sm lg:text-base  text-white hover:text-[#f04]">
                   Remote Turret
                 </div>
               </div>
@@ -183,10 +183,10 @@ export default function Navbar() {
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   News
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Trailer & Screenshots
                 </div>
               </div>
@@ -203,10 +203,10 @@ export default function Navbar() {
               </div>
 
               <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Forum
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm lg:text-base  text-white hover:text-[#f04]">
                   Newsletter Sign Up
                 </div>
               </div>
