@@ -142,26 +142,31 @@ const Main_sec = () => {
     }, 9000);
     var width = window.innerWidth;
 
-    if (width > 1023) return;
-    const observer = new IntersectionObserver(callback, options);
-    if (img_1.current) observer.observe(img_1.current);
-    if (img_2.current) observer.observe(img_2.current);
-    if (img_3.current) observer.observe(img_3.current);
-    if (img_4.current) observer.observe(img_4.current);
-    if (img_5.current) observer.observe(img_5.current);
-    if (img_6.current) observer.observe(img_6.current);
-    if (img_7.current) observer.observe(img_7.current);
-    if (img_8.current) observer.observe(img_8.current);
+    if (width < 1023) {
+
+      const observer = new IntersectionObserver(callback, options);
+      if (img_1.current) observer.observe(img_1.current);
+      if (img_2.current) observer.observe(img_2.current);
+      if (img_3.current) observer.observe(img_3.current);
+      if (img_4.current) observer.observe(img_4.current);
+      if (img_5.current) observer.observe(img_5.current);
+      if (img_6.current) observer.observe(img_6.current);
+      if (img_7.current) observer.observe(img_7.current);
+      if (img_8.current) observer.observe(img_8.current);
+    }
     return () => {
       clearInterval(interval)
-      if (img_1.current) observer.unobserve(img_1.current);
-      if (img_2.current) observer.unobserve(img_2.current);
-      if (img_3.current) observer.unobserve(img_3.current);
-      if (img_4.current) observer.unobserve(img_4.current);
-      if (img_5.current) observer.unobserve(img_5.current);
-      if (img_6.current) observer.unobserve(img_6.current);
-      if (img_7.current) observer.unobserve(img_7.current);
-      if (img_8.current) observer.unobserve(img_8.current);
+      if (width < 1023) {
+
+        if (img_1.current) observer.unobserve(img_1.current);
+        if (img_2.current) observer.unobserve(img_2.current);
+        if (img_3.current) observer.unobserve(img_3.current);
+        if (img_4.current) observer.unobserve(img_4.current);
+        if (img_5.current) observer.unobserve(img_5.current);
+        if (img_6.current) observer.unobserve(img_6.current);
+        if (img_7.current) observer.unobserve(img_7.current);
+        if (img_8.current) observer.unobserve(img_8.current);
+      }
     };
   }, [index]);
   return (
