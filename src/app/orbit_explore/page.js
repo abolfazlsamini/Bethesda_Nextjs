@@ -258,7 +258,7 @@ export default function Orbit_explore() {
       if (ref.current) {
         scrolledAmount = ref.current.scrollLeft;
         ref.current.scroll({
-          left: scrolledAmount + 220,
+          left: scrolledAmount + 195,
           behavior: "smooth",
         });
       }
@@ -273,6 +273,7 @@ export default function Orbit_explore() {
       progress_ref.current.offsetWidth * scrolledAmount;
       trans_x += 50;
       trans_x = Math.min(trans_x, 256 - 64);
+      // if( ref.current.offsetWidth > )
       progress_cursor.current.style.transform = `translateX(${Math.min(trans_x, 256 - 64)}px)`;
       // console.log(scrolledAmount);
       // console.log(progress_ref.current.offsetWidth * scrolledAmount);
@@ -281,7 +282,7 @@ export default function Orbit_explore() {
       if (ref.current) {
         scrolledAmount = ref.current.scrollLeft;
         ref.current.scroll({
-          left: scrolledAmount - 220,
+          left: scrolledAmount - 195,
           behavior: "smooth",
         });
       }
@@ -305,7 +306,7 @@ export default function Orbit_explore() {
           <div className="py-9 text-center font-CruyffSansExpanded_Heavy text-5xl uppercase">
             MORE GAME MODES
           </div>
-          <div className="mx-auto w-11/12 sm:w-2/3 xl:px-10">
+          <div className="mx-auto w-11/12 sm:max-w-[74%] sm:w-[1024px] xl:px-10">
             <div className="mx-auto">
               <div
                 ref={ref}
