@@ -143,7 +143,7 @@ const Main_sec = () => {
     const interval = setInterval(() => {
       next();
       // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, 2000);
+    }, 10000);
     var width = window.innerWidth;
 
     const observer = new IntersectionObserver(callback, options);
