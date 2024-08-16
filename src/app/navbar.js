@@ -52,7 +52,7 @@ export default function Navbar() {
           </div>
         </a>
         <ul className="absolute left-0 top-1/2 hidden -translate-y-1/2 translate-x-3 transform sm:space-x-2 md:flex lg:mx-auto lg:w-auto lg:space-x-4">
-          <li className="flex items-center pb-1">
+          <li className="flex items-center pb-1 md:mr-3">
             <a className=" leading-none" href="/">
               <Image
                 alt=""

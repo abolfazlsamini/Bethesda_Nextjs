@@ -391,7 +391,7 @@ export default function Home() {
   return (
     <main className="relative">
       <title>COMBATFIELD</title>
-      <div className="!font-SST_Light">
+      <div className="!font-Inter_VariableFont_opsz">
         <Navbar />
       </div>
       <div className="fixed_bg mt-32 overflow-hidden">
