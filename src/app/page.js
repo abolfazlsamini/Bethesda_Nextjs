@@ -110,11 +110,7 @@ const Main_sec = () => {
     const [entry] = enteries;
 
     if (entry.isIntersecting && entry.target.id != index)
-      
-
-        setIndex(Number(entry.target.id));
-
-
+      setIndex(Number(entry.target.id));
   }
   function onClickScroll(i) {
     if (controller_ref.current) {
@@ -124,14 +120,13 @@ const Main_sec = () => {
       });
     }
   }
-  function next(){
-    if(index > 7){
-      onClickScroll(1)
-      setIndex(1)
-    }
-    else{
-      setIndex(index+1)
-      onClickScroll(index+1)
+  function next() {
+    if (index > 7) {
+      onClickScroll(1);
+      setIndex(1);
+    } else {
+      setIndex(index + 1);
+      onClickScroll(index + 1);
     }
   }
   const options = {
@@ -148,7 +143,6 @@ const Main_sec = () => {
 
     const observer = new IntersectionObserver(callback, options);
     if (width < 1023) {
-
       if (img_1.current) observer.observe(img_1.current);
       if (img_2.current) observer.observe(img_2.current);
       if (img_3.current) observer.observe(img_3.current);
@@ -159,9 +153,8 @@ const Main_sec = () => {
       if (img_8.current) observer.observe(img_8.current);
     }
     return () => {
-      clearInterval(interval)
+      clearInterval(interval);
       if (width < 1023) {
-
         if (img_1.current) observer.unobserve(img_1.current);
         if (img_2.current) observer.unobserve(img_2.current);
         if (img_3.current) observer.unobserve(img_3.current);
@@ -179,7 +172,7 @@ const Main_sec = () => {
         <div>
           <div>
             <div className={index === 1 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -218,13 +211,16 @@ const Main_sec = () => {
                   From the depths of darkness, heroes rise to return the God Of
                   Light to the earth . Who will you choose?
                 </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
+                <a
+                  href="/mythus_arena"
+                  className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                >
                   Find out more
                 </a>
               </div>
             </div>
             <div className={index === 2 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -272,7 +268,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 3 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -320,7 +316,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 4 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -368,7 +364,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 5 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -413,7 +409,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 6 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -458,7 +454,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 7 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -503,7 +499,7 @@ const Main_sec = () => {
               </div>
             </div>
             <div className={index === 8 ? "relative" : "hidden"}>
-              <div className="relative max-h-[40vh] sm:max-h-max overflow-hidden">
+              <div className="relative max-h-[40vh] overflow-hidden sm:max-h-max">
                 <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
                 <div className="netogame_gradientMainimage_pc absolute bottom-0 z-10 hidden h-full w-full lg:block"></div>
                 <picture>
@@ -772,7 +768,8 @@ const Category_sec = () => {
                 />
                 <div className="ml-1">Neto Ball</div>
               </a>
-              <div
+              <a
+                href="/mythus_arena"
                 className={
                   inCategoty(["console", "mobile"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
@@ -788,7 +785,7 @@ const Category_sec = () => {
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
                 <div className="ml-1">Mythus Arena</div>
-              </div>
+              </a>
               <a
                 href="/orbit_explore"
                 className={
