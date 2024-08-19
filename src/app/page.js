@@ -601,7 +601,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(1);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 1
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_1_controller}
                 width={0}
                 height={0}
@@ -612,7 +616,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(2);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 2
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_2_controller}
                 width={0}
                 height={0}
@@ -623,7 +631,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(3);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 3
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_3_controller}
                 width={0}
                 height={0}
@@ -634,7 +646,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(4);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 4
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_4_controller}
                 width={0}
                 height={0}
@@ -645,7 +661,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(5);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 5
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_5_controller}
                 width={0}
                 height={0}
@@ -656,7 +676,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(6);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 6
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_6_controller}
                 width={0}
                 height={0}
@@ -667,7 +691,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(7);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 7
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_7_controller}
                 width={0}
                 height={0}
@@ -678,7 +706,11 @@ const Main_sec = () => {
                 onClick={() => {
                   setIndex(8);
                 }}
-                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                className={
+                  index === 8
+                    ? "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl p-1 outline-none outline-2 outline-offset-0 outline-blue-600 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                    : "main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 opacity-70 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                }
                 src={main_pic_8_controller}
                 width={0}
                 height={0}
@@ -1235,6 +1267,7 @@ const Carousel_3 = () => {
 };
 const Carousel_2 = () => {
   const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
+  const ref = useRef();
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -1253,13 +1286,14 @@ const Carousel_2 = () => {
       />
     );
   }
+  console.log(currentSlideNumber);
   const settings = {
     className: "",
     centerMode: false,
-    infinite: false,
-    swipeToSlide: true,
-    centerPadding: "60px",
-    slidesToShow: 7,
+    infinite: true,
+    swipeToSlide: false,
+    centerPadding: "900px",
+    slidesToShow: 2,
     speed: 300,
     dots: true,
     prevArrow: <SamplePrevArrow />,
@@ -1272,7 +1306,12 @@ const Carousel_2 = () => {
       />
     ),
     beforeChange: (oldIndex, newIndex) => {
-      setCurrentSlideNumber(newIndex);
+      if (newIndex > 4 || newIndex < 0) {
+        ref.current.slickGoTo(0);
+        setCurrentSlideNumber(0);
+      } else {
+        setCurrentSlideNumber(newIndex);
+      }
     },
     responsive: [
       {
@@ -1280,8 +1319,9 @@ const Carousel_2 = () => {
         settings: {
           centerPadding: "10px",
           slidesToShow: 2,
-          className: "center",
+
           centerMode: false,
+          swipeToSlide: false,
         },
       },
       {
@@ -1289,9 +1329,22 @@ const Carousel_2 = () => {
         settings: {
           dots: false,
           centerPadding: "10px",
-          slidesToShow: 5,
+          slidesToShow: 2,
           className: "center",
           centerMode: false,
+        },
+      },
+      {
+        breakpoint: 4048,
+        settings: {
+          dots: false,
+          centerPadding: "400px",
+          padding: "400px",
+          slidesToShow: 5,
+          className: "center",
+          infinite: true,
+          centerMode: false,
+          swipeToSlide: false,
         },
       },
     ],
@@ -1486,8 +1539,162 @@ const Carousel_2 = () => {
             </div>
           </div>
         </div>
-        <div className="slider-container relative w-full pb-10">
-          <Slider {...settings}>
+        <div className="relative hidden justify-center lg:flex">
+          <ChevronLeftIcon
+            className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+            onClick={() =>
+              setCurrentSlideNumber(Math.max(0, currentSlideNumber - 1))
+            }
+          />
+          <ChevronRightIcon
+            className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+            onClick={() =>
+              setCurrentSlideNumber(Math.min(4, currentSlideNumber + 1))
+            }
+          />
+          <div
+            className="p-1 xl:w-[12.5%]"
+            onClick={() => {
+              setCurrentSlideNumber(0);
+            }}
+          >
+            <Image
+              placeholder="blur"
+              className={
+                currentSlideNumber === 0
+                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+              }
+              src={carousel2_pic_1}
+              width={0}
+              height={0}
+              alt=""
+            />
+            <div
+              className={
+                currentSlideNumber === 0
+                  ? "text-center font-SST_Light text-blue-600"
+                  : "text-center font-SST_Light"
+              }
+            >
+              HyperGrip Wireless Controller
+            </div>
+          </div>
+          <div
+            className="p-1 xl:w-[12.5%]"
+            onClick={() => {
+              setCurrentSlideNumber(1);
+            }}
+          >
+            <Image
+              placeholder="blur"
+              className={
+                currentSlideNumber === 1
+                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+              }
+              src={carousel2_pic_2}
+              width={0}
+              height={0}
+              alt=""
+            />
+            <div
+              className={
+                currentSlideNumber === 1
+                  ? "text-center font-SST_Light text-blue-600"
+                  : "text-center font-SST_Light"
+              }
+            >
+              NetoGear Console
+            </div>
+          </div>
+          <div
+            className="p-1 xl:w-[12.5%]"
+            onClick={() => {
+              setCurrentSlideNumber(2);
+            }}
+          >
+            <Image
+              placeholder="blur"
+              className={
+                currentSlideNumber === 2
+                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+              }
+              src={carousel2_pic_3}
+              width={0}
+              height={0}
+              alt=""
+            />
+            <div
+              className={
+                currentSlideNumber === 2
+                  ? "text-center font-SST_Light text-blue-600"
+                  : "text-center font-SST_Light"
+              }
+            >
+              SkyTune Wireless Earbuds
+            </div>
+          </div>
+          <div
+            className="p-1 xl:w-[12.5%]"
+            onClick={() => {
+              setCurrentSlideNumber(3);
+            }}
+          >
+            <Image
+              placeholder="blur"
+              className={
+                currentSlideNumber === 3
+                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+              }
+              src={carousel2_pic_4}
+              width={0}
+              height={0}
+              alt=""
+            />
+            <div
+              className={
+                currentSlideNumber === 3
+                  ? "text-center font-SST_Light text-blue-600"
+                  : "text-center font-SST_Light"
+              }
+            >
+              Neto VR
+            </div>
+          </div>
+          <div
+            className="p-1 xl:w-[12.5%]"
+            onClick={() => {
+              setCurrentSlideNumber(4);
+            }}
+          >
+            <Image
+              placeholder="blur"
+              className={
+                currentSlideNumber === 4
+                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+              }
+              src={carousel2_pic_5}
+              width={0}
+              height={0}
+              alt=""
+            />
+            <div
+              className={
+                currentSlideNumber === 4
+                  ? "text-center font-SST_Light text-blue-600"
+                  : "text-center font-SST_Light"
+              }
+            >
+              ThunderBeat Wireless Headset
+            </div>
+          </div>
+        </div>
+        <div className="slider-container relative w-full pb-10 lg:hidden">
+          <Slider {...settings} ref={ref}>
             <div
               className="p-1"
               onClick={() => {

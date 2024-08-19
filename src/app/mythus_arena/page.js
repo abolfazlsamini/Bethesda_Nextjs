@@ -649,7 +649,7 @@ const Carousel_2 = () => {
               {...settings}
             >
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl px-3 py-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -688,7 +688,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -729,7 +729,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -770,7 +770,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -811,7 +811,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -852,7 +852,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
