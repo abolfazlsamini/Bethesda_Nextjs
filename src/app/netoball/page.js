@@ -60,7 +60,7 @@ const Main_sec = () => {
                   d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
                 />
               </svg>
-              <div className="absolute bottom-1/2 right-1/2 top-0 mb-2 translate-x-1/2 translate-y-1/2 font-A2Beckett text-base italic text-white sm:mb-3 sm:text-sm md:mb-3 md:text-lg xl:text-2xl 2xl:mb-0">
+              <div className="absolute bottom-1/2 right-1/2 top-0 mb-2 w-max translate-x-1/2 translate-y-1/2 font-A2Beckett text-base italic text-white sm:mb-3 sm:text-sm md:mb-3 md:text-lg xl:text-2xl 2xl:mb-0">
                 TO WATCH VIDEO
               </div>
             </div>
@@ -73,7 +73,7 @@ const Main_sec = () => {
                   d="M 407.5,-0.5 C 435.167,-0.5 462.833,-0.5 490.5,-0.5C 474.448,31.27 458.114,62.9367 441.5,94.5C 425.833,94.8333 410.167,95.1667 394.5,95.5C 329.834,94.8798 265.168,94.3798 200.5,94C 192.139,93.7743 183.805,93.2743 175.5,92.5C 116.856,93.4922 58.1895,93.8255 -0.5,93.5C -0.5,90.8333 -0.5,88.1667 -0.5,85.5C 7.07438,60.0928 14.0744,34.4261 20.5,8.5C 98.5007,8.66666 176.501,8.5 254.5,8C 255.743,6.84555 256.743,5.51221 257.5,4C 307.666,2.63507 357.666,1.13507 407.5,-0.5 Z"
                 />
               </svg>
-              <div className="absolute bottom-1/2 right-1/2 top-0 mb-2 translate-x-1/2 translate-y-1/2 font-A2Beckett text-base italic text-black sm:mb-3 sm:text-sm md:mb-3 md:text-lg xl:text-2xl 2xl:mb-0">
+              <div className="absolute bottom-1/2 right-1/2 top-0 mb-2 w-max translate-x-1/2 translate-y-1/2 font-A2Beckett text-base italic text-black sm:mb-3 sm:text-sm md:mb-3 md:text-lg xl:text-2xl 2xl:mb-0">
                 DOWNLOAD NOW
               </div>
             </div>
@@ -991,7 +991,7 @@ export default function HifiRush() {
   return (
     <main className="bg-white">
       <title>NETOBALL</title>
-      <div className="main_bg">
+      <div className="main_bg mt-16">
         <div className="shadowstaticborder mx-auto max-w-[80rem] items-center sm:w-11/12 lg:w-4/5">
           <Main_sec />
           <Collapsable />

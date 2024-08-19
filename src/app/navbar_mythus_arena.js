@@ -36,10 +36,9 @@ export default function Navbar() {
         </div>
 
         <a className="absolute right-2 m-auto md:hidden">
-          <div className="relative w-full rounded-3xl bg-[#abddd7] px-5 py-3 text-center font-Inter_VariableFont_opsz sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem] [&_.up]:hover:rotate-180">
-            <div className="flex items-center text-xs">
-              Pre-Order Now
-              <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+          <div className="relative w-full rounded-3xl bg-[#abddd7] px-5 py-3 text-center font-Inter_VariableFont_opsz text-black sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-[20rem] [&_.up]:hover:rotate-180">
+            <div className="flex w-max items-center text-xs">
+              Pre-Order Now*
             </div>
           </div>
         </a>
@@ -56,44 +55,44 @@ export default function Navbar() {
             </a>
           </li>
           {/* <li className="text-gray-300"></li> */}
-          <li className="flex hover:border-b-2 hover:border-b-[#abddd7]">
+          <li className="flex px-1 hover:border-b-2 hover:border-b-[#abddd7] hover:bg-[#eaeaea14]">
             <a className="relative cursor-pointer self-center font-Inter_VariableFont_opsz text-lg text-white hover:text-[#abddd7] [&_*]:hover:max-h-52">
               <div className="flex items-center uppercase sm:text-sm lg:text-lg [&_.up]:hover:rotate-180">
                 About
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#abddd7]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+              <div className="absolute top-12 max-h-0 w-max overflow-hidden rounded-md bg-black/80 px-2 text-white transition-all duration-500 hover:text-[#abddd7]">
+                <div className="mt-2 w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   Orbit Explore Story
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+                <div className="w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   Play On NetoGear
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+                <div className="mb-2 w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   Neto PlayFusion
                 </div>
               </div>
             </a>
           </li>
 
-          <li className="flex hover:border-b-2 hover:border-b-[#abddd7]">
+          <li className="flex px-1 hover:border-b-2 hover:border-b-[#abddd7] hover:bg-[#eaeaea14]">
             <a className="relative cursor-pointer self-center font-Inter_VariableFont_opsz text-lg text-white hover:text-[#abddd7] [&_*]:hover:max-h-52">
               <div className="flex items-center uppercase sm:text-sm lg:text-lg [&_.up]:hover:rotate-180">
                 Features
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#abddd7]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+              <div className="absolute top-12 max-h-0 w-max overflow-hidden rounded-md bg-black/80 px-2 text-white transition-all duration-500 hover:text-[#abddd7]">
+                <div className="mt-2 w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   NetoGear Overview
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+                <div className="mb-2 w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   Gameplay Features
                 </div>
               </div>
             </a>
           </li>
 
-          <li className="flex hover:border-b-2 hover:border-b-[#abddd7]">
+          <li className="flex px-1 hover:border-b-2 hover:border-b-[#abddd7] hover:bg-[#eaeaea14]">
             <a
               className="relative cursor-pointer self-center font-Inter_VariableFont_opsz text-lg text-white hover:text-[#abddd7] [&_*]:hover:max-h-52"
               href="/"
@@ -105,21 +104,21 @@ export default function Navbar() {
             </a>
           </li>
 
-          <li className="flex hover:border-b-2 hover:border-b-[#abddd7]">
+          <li className="flex px-1 hover:border-b-2 hover:border-b-[#abddd7] hover:bg-[#eaeaea14]">
             <a className="relative cursor-pointer self-center font-Inter_VariableFont_opsz text-lg text-white hover:text-[#abddd7] [&_*]:hover:max-h-52">
               <div className="flex items-center uppercase sm:text-sm lg:w-max lg:text-lg [&_.up]:hover:rotate-180">
                 News & Community
                 <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
               </div>
-              <div className="absolute top-12 max-h-0 w-52 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#abddd7]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+              <div className="absolute top-12 max-h-0 w-max overflow-hidden rounded-md bg-black/80 px-2 text-white transition-all duration-500 hover:text-[#abddd7]">
+                <div className="mt-2 w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   All News
                 </div>
 
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+                <div className="w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   Newsletter Sign Up
                 </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#abddd7] lg:text-base">
+                <div className="mb-2 w-full cursor-pointer px-10 py-2 text-sm text-white hover:bg-[#eaeaea14] hover:text-[#abddd7] lg:text-base">
                   Forum
                 </div>
               </div>

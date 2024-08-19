@@ -36,15 +36,15 @@ import Store from "../../public/navbar2/Store.png";
 import { ArrowDownIcon } from "@heroicons/react/16/solid";
 
 export default function Navbar2() {
-  const [toggle, setToggle] = useState("-translate-x-[32rem]");
+  const [toggle, setToggle] = useState("-translate-x-[33rem]");
   const [accordion, SetAccordion] = useState({ prev: "", curr: "" });
   const [accordionMobile, SetAccordionMobile] = useState({
     prev: "",
     curr: "",
   });
   function click() {
-    if (toggle === "-translate-x-[32rem]") setToggle("translate-x-0");
-    else setToggle("-translate-x-[32rem]");
+    if (toggle === "-translate-x-[33rem]") setToggle("translate-x-0");
+    else setToggle("-translate-x-[33rem]");
   }
   return (
     <div className="fixed top-0 z-40 min-h-16 w-full">
@@ -619,7 +619,7 @@ export default function Navbar2() {
           }
         ></div>
         <nav
-          className={`fixed bottom-0 left-0 top-0 ${toggle} z-40 flex w-full max-w-lg flex-col overflow-hidden border-r bg-white pb-6 duration-500`}
+          className={`fixed bottom-0 left-0 top-0 ${toggle} z-40 flex w-full max-w-lg flex-col overflow-hidden bg-white pb-6 duration-500`}
         >
           <div className="z-20 mb-8 flex items-center bg-white shadow-2xl">
             <a className="font-bold leading-none" href="/">
@@ -695,7 +695,15 @@ export default function Navbar2() {
                     }
                   >
                     <div className="flex items-center pt-12">
-                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <TfiMenu
+                        onClick={() => {
+                          SetAccordionMobile({
+                            prev: accordionMobile.curr,
+                            curr: "",
+                          });
+                        }}
+                        className="mr-3 size-5 rotate-90 cursor-pointer"
+                      />
                       <div className="text-lg">Game</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
@@ -717,7 +725,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
-                        <div>Console</div>
+                        <div>Mobile</div>
                       </div>
                       <div className="navbar2_shadow m-2 flex max-w-28 flex-col items-center hover:cursor-pointer">
                         <Image
@@ -804,7 +812,15 @@ export default function Navbar2() {
                     }
                   >
                     <div className="flex items-center pt-10">
-                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <TfiMenu
+                        onClick={() => {
+                          SetAccordionMobile({
+                            prev: accordionMobile.curr,
+                            curr: "",
+                          });
+                        }}
+                        className="mr-3 size-5 rotate-90 cursor-pointer"
+                      />
                       <div className="text-lg">Services</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
@@ -893,7 +909,15 @@ export default function Navbar2() {
                     }
                   >
                     <div className="flex items-center pt-10">
-                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <TfiMenu
+                        onClick={() => {
+                          SetAccordionMobile({
+                            prev: accordionMobile.curr,
+                            curr: "",
+                          });
+                        }}
+                        className="mr-3 size-5 rotate-90 cursor-pointer"
+                      />
                       <div className="text-lg">Accessories</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
@@ -1002,7 +1026,15 @@ export default function Navbar2() {
                     }
                   >
                     <div className="flex items-center pt-10">
-                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <TfiMenu
+                        onClick={() => {
+                          SetAccordionMobile({
+                            prev: accordionMobile.curr,
+                            curr: "",
+                          });
+                        }}
+                        className="mr-3 size-5 rotate-90 cursor-pointer"
+                      />
                       <div className="text-lg">News</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
@@ -1081,7 +1113,15 @@ export default function Navbar2() {
                     }
                   >
                     <div className="flex items-center pt-10">
-                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <TfiMenu
+                        onClick={() => {
+                          SetAccordionMobile({
+                            prev: accordionMobile.curr,
+                            curr: "",
+                          });
+                        }}
+                        className="mr-3 size-5 rotate-90 cursor-pointer"
+                      />
                       <div className="text-lg">Shop</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
@@ -1180,7 +1220,15 @@ export default function Navbar2() {
                     }
                   >
                     <div className="flex items-center pt-10">
-                      <TfiMenu className="mr-3 size-5 rotate-90" />
+                      <TfiMenu
+                        onClick={() => {
+                          SetAccordionMobile({
+                            prev: accordionMobile.curr,
+                            curr: "",
+                          });
+                        }}
+                        className="mr-3 size-5 rotate-90 cursor-pointer"
+                      />
                       <div className="text-lg">Support</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">

@@ -97,75 +97,125 @@ import Navbar from "./navbar";
 
 const Main_sec = () => {
   const controller_ref = useRef();
-  const img_1 = useRef();
-  const img_2 = useRef();
-  const img_3 = useRef();
-  const img_4 = useRef();
-  const img_5 = useRef();
-  const img_6 = useRef();
-  const img_7 = useRef();
-  const img_8 = useRef();
+  const ref = useRef();
+  // const img_2 = useRef();
+  // const img_3 = useRef();
+  // const img_4 = useRef();
+  // const img_5 = useRef();
+  // const img_6 = useRef();
+  // const img_7 = useRef();
+  // const img_8 = useRef();
   const [index, setIndex] = useState(1);
-  function callback(enteries) {
-    const [entry] = enteries;
 
-    if (entry.isIntersecting && entry.target.id != index)
-      setIndex(Number(entry.target.id));
-  }
-  function onClickScroll(i) {
-    if (controller_ref.current) {
-      controller_ref.current.scroll({
-        left: (i - 1) * 250,
-        behavior: "smooth",
-      });
-    }
-  }
+  // function callback(enteries) {
+  //   const [entry] = enteries;
+
+  //   if (entry.isIntersecting && entry.target.id != index)
+  //     setIndex(Number(entry.target.id));
+  // }
+  // function onClickScroll(i) {
+  //   if (controller_ref.current) {
+  //     if (i === 7)
+  //       controller_ref.current.scroll({
+  //         left: (i - 1) * 250,
+  //       });
+  //     else
+  //       controller_ref.current.scroll({
+  //         left: (i - 1) * 300,
+  //         behavior: "smooth",
+  //       });
+  //   }
+  // }
   function next() {
     if (index > 7) {
-      onClickScroll(1);
+      // onClickScroll(1);
       setIndex(1);
     } else {
       setIndex(index + 1);
-      onClickScroll(index + 1);
+      // onClickScroll(index + 1);
     }
   }
-  const options = {
-    root: null,
-    rootMargin: "300px",
-    threshold: 1,
-  };
+  // var options = {
+  //   root: null,
+  //   rootMargin: "300px",
+  //   threshold: 1,
+  // };
   useEffect(() => {
-    const interval = setInterval(() => {
-      next();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, 10000);
-    var width = window.innerWidth;
+    // const interval = setInterval(() => {
+    //   next();
+    //   // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, 2000);
+    // var width = window.innerWidth;
 
-    const observer = new IntersectionObserver(callback, options);
-    if (width < 1023) {
-      if (img_1.current) observer.observe(img_1.current);
-      if (img_2.current) observer.observe(img_2.current);
-      if (img_3.current) observer.observe(img_3.current);
-      if (img_4.current) observer.observe(img_4.current);
-      if (img_5.current) observer.observe(img_5.current);
-      if (img_6.current) observer.observe(img_6.current);
-      if (img_7.current) observer.observe(img_7.current);
-      if (img_8.current) observer.observe(img_8.current);
-    }
+    // const observer = new IntersectionObserver(callback, options);
+    // if (width < 1023) {
+    //   if (img_1.current) observer.observe(img_1.current);
+    //   if (img_2.current) observer.observe(img_2.current);
+    //   if (img_3.current) observer.observe(img_3.current);
+    //   if (img_4.current) observer.observe(img_4.current);
+    //   if (img_5.current) observer.observe(img_5.current);
+    //   if (img_6.current) observer.observe(img_6.current);
+    //   if (img_7.current) observer.observe(img_7.current);
+    //   if (img_8.current) observer.observe(img_8.current);
+    // }
     return () => {
-      clearInterval(interval);
-      if (width < 1023) {
-        if (img_1.current) observer.unobserve(img_1.current);
-        if (img_2.current) observer.unobserve(img_2.current);
-        if (img_3.current) observer.unobserve(img_3.current);
-        if (img_4.current) observer.unobserve(img_4.current);
-        if (img_5.current) observer.unobserve(img_5.current);
-        if (img_6.current) observer.unobserve(img_6.current);
-        if (img_7.current) observer.unobserve(img_7.current);
-        if (img_8.current) observer.unobserve(img_8.current);
-      }
+      // clearInterval(interval);
+      // if (width < 1023) {
+      //   if (img_1.current) observer.unobserve(img_1.current);
+      //   if (img_2.current) observer.unobserve(img_2.current);
+      //   if (img_3.current) observer.unobserve(img_3.current);
+      //   if (img_4.current) observer.unobserve(img_4.current);
+      //   if (img_5.current) observer.unobserve(img_5.current);
+      //   if (img_6.current) observer.unobserve(img_6.current);
+      //   if (img_7.current) observer.unobserve(img_7.current);
+      //   if (img_8.current) observer.unobserve(img_8.current);
+      // }
     };
   }, [index]);
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "1px",
+    slidesToShow: 1,
+    // variableWidth: true,
+    speed: 300,
+    pauseOnHover: false,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    dots: false,
+    arrows: false,
+
+    beforeChange: (oldIndex, newIndex) => {
+      setIndex(newIndex + 1);
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          centerPadding: "120px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "160px",
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: "260px",
+        },
+      },
+    ],
+  };
   return (
     <section>
       <div className="">
@@ -544,126 +594,201 @@ const Main_sec = () => {
               </div>
             </div>
           </div>
-          <div className="lg:px-6">
-            <div
-              className="main_small_image_container relative flex max-h-52 snap-x snap-mandatory overflow-x-auto overflow-y-hidden py-6 lg:overflow-hidden"
-              ref={controller_ref}
-            >
+          <div className="hidden lg:block lg:px-6">
+            <div className="main_small_image_container relative flex max-h-52 snap-x snap-mandatory overflow-x-auto overflow-y-hidden py-6 lg:overflow-hidden">
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(1);
                   setIndex(1);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_1_controller}
                 width={0}
                 height={0}
-                ref={img_1}
-                id="1"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(2);
                   setIndex(2);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_2_controller}
                 width={0}
                 height={0}
-                ref={img_2}
-                id="2"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(3);
                   setIndex(3);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_3_controller}
                 width={0}
                 height={0}
-                ref={img_3}
-                id="3"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(4);
                   setIndex(4);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_4_controller}
                 width={0}
                 height={0}
-                ref={img_4}
-                id="4"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(5);
                   setIndex(5);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_5_controller}
                 width={0}
                 height={0}
-                ref={img_5}
-                id="5"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(6);
                   setIndex(6);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_6_controller}
                 width={0}
                 height={0}
-                ref={img_6}
-                id="6"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(7);
                   setIndex(7);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_7_controller}
                 width={0}
                 height={0}
-                ref={img_7}
-                id="7"
                 alt=""
               />
               <Image
                 placeholder="blur"
                 onClick={() => {
-                  onClickScroll(8);
                   setIndex(8);
                 }}
                 className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
                 src={main_pic_8_controller}
                 width={0}
                 height={0}
-                ref={img_8}
-                id="8"
                 alt=""
               />
 
               {/* <div className="opacityhover absolute top-0 h-full max-h-0 w-full bg-white opacity-0 transition-opacity duration-300"></div> */}
             </div>
+          </div>
+          <div className="block py-5 lg:hidden">
+            <Slider {...settings} ref={ref}>
+              <Image
+                onClick={() => {
+                  // setIndex(1);
+                  if (index === 8) ref.current.slickGoTo(9);
+                  else ref.current.slickGoTo(0);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_1_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(2);
+                  ref.current.slickGoTo(1);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_2_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(3);
+                  ref.current.slickGoTo(2);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_3_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(4);
+                  ref.current.slickGoTo(3);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_4_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(5);
+                  ref.current.slickGoTo(4);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_5_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(6);
+                  ref.current.slickGoTo(5);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_6_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(7);
+                  ref.current.slickGoTo(6);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_7_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+              <Image
+                onClick={() => {
+                  // setIndex(8);
+                  if (index === 1) ref.current.slickGoTo(-1);
+                  else ref.current.slickGoTo(7);
+                }}
+                placeholder="blur"
+                className="main_small_image relative m-auto h-full w-[300px] cursor-pointer snap-center rounded-xl px-1 transition-transform duration-200 lg:w-[12%] lg:hover:z-10 lg:hover:-translate-y-3"
+                src={main_pic_8_controller}
+                width={0}
+                height={0}
+                alt=""
+              />
+            </Slider>
           </div>
         </div>
       </div>
@@ -1131,10 +1256,10 @@ const Carousel_2 = () => {
   const settings = {
     className: "",
     centerMode: false,
-    infinite: true,
+    infinite: false,
     swipeToSlide: true,
     centerPadding: "60px",
-    slidesToShow: 5,
+    slidesToShow: 7,
     speed: 300,
     dots: true,
     prevArrow: <SamplePrevArrow />,
@@ -1153,10 +1278,20 @@ const Carousel_2 = () => {
       {
         breakpoint: 1024,
         settings: {
-          centerPadding: "40px",
+          centerPadding: "10px",
           slidesToShow: 2,
           className: "center",
-          centerMode: true,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          dots: false,
+          centerPadding: "10px",
+          slidesToShow: 5,
+          className: "center",
+          centerMode: false,
         },
       },
     ],
@@ -1363,8 +1498,8 @@ const Carousel_2 = () => {
                 placeholder="blur"
                 className={
                   currentSlideNumber === 0
-                    ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "main_small_image m-1 cursor-pointer rounded-xl p-1"
+                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
                 }
                 src={carousel2_pic_1}
                 width={0}
@@ -1391,8 +1526,8 @@ const Carousel_2 = () => {
                 placeholder="blur"
                 className={
                   currentSlideNumber === 1
-                    ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "main_small_image m-1 cursor-pointer rounded-xl p-1"
+                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
                 }
                 src={carousel2_pic_2}
                 width={0}
@@ -1419,8 +1554,8 @@ const Carousel_2 = () => {
                 placeholder="blur"
                 className={
                   currentSlideNumber === 2
-                    ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "main_small_image m-1 cursor-pointer rounded-xl p-1"
+                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
                 }
                 src={carousel2_pic_3}
                 width={0}
@@ -1447,8 +1582,8 @@ const Carousel_2 = () => {
                 placeholder="blur"
                 className={
                   currentSlideNumber === 3
-                    ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "main_small_image m-1 cursor-pointer rounded-xl p-1"
+                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
                 }
                 src={carousel2_pic_4}
                 width={0}
@@ -1475,8 +1610,8 @@ const Carousel_2 = () => {
                 placeholder="blur"
                 className={
                   currentSlideNumber === 4
-                    ? "main_small_image m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "main_small_image m-1 cursor-pointer rounded-xl p-1"
+                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
                 }
                 src={carousel2_pic_5}
                 width={0}
@@ -2301,7 +2436,7 @@ export default function Home() {
         <div className="carousel3_bg mx-auto w-full py-20">
           <Carousel_3 />
         </div>
-        <Social_bar />
+        {/* <Social_bar /> */}
         <Carousel_2 />
         <Video_sec />
         <div className="bg-[#18141a] py-16">

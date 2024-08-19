@@ -247,7 +247,9 @@
     }
   }
 }
-
+.home_carousel2_boxshhadow {
+  box-shadow: 0 4px 7px 0 #00000029;
+}
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -434,6 +436,9 @@ body {
 .gradient_bg_orbitexplore {
   background: linear-gradient(60deg, #292829 0%, #292829 50%, #ff9100 100%);
 }
+.gradient_bg_mythus_arena {
+  background: linear-gradient(60deg, #263130 0%, #263130 50%, #abddd7 100%);
+}
 
 @media (max-width: 767.95px) {
   .orbitexplore_sec4_bg {
@@ -465,6 +470,14 @@ body {
   display: -webkit-box;
   max-width: 400px;
   -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.textEllipsis7line {
+  display: -webkit-box;
+  max-width: 400px;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

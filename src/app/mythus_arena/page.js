@@ -229,10 +229,26 @@ const Carousel_1 = () => {
 
     responsive: [
       {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+          centerPadding: "10px",
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1.5,
           slidesToScroll: 1,
+          centerPadding: "90px",
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
           centerPadding: "90px",
         },
       },
@@ -243,8 +259,8 @@ const Carousel_1 = () => {
     <section className="bg-[#323232]">
       <div className="mx-auto max-w-[1440px]">
         <div className="relative my-40 px-5 py-20">
-          <div className="p-5 lg:flex">
-            <div className="lg:w-1/2">
+          <div className="p-5 lg:flex lg:flex-col xl:flex-row">
+            <div className="xl:w-1/2 xl:pr-16">
               <div className="py-6 font-ElectronicArtsDisplay_Bold text-4xl uppercase text-white sm:text-4xl">
                 Pre-order the Ultimate Edition by 20 August 2027 for
                 limited-time rewards
@@ -259,26 +275,28 @@ const Carousel_1 = () => {
                 <div className="">Pre-Order</div>
               </button>
             </div>
-            <div className="lg:w-1/2">
-              <div className="flex flex-col lg:flex-row">
+            <div className="ml-auto lg:w-2/3 xl:w-1/2 xl:pl-16">
+              <div className="relative flex flex-col lg:flex-row">
                 <Image
                   placeholder="blur"
                   src={carousel_1_pic_header}
                   width={0}
                   height={0}
                   alt=""
-                  className="z-20 w-full lg:translate-x-32"
+                  className="absolute left-1/2 top-0 z-20 -translate-x-1/2 lg:-left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-1/2"
                 />
-                <div className="-translate-y-32 rounded-xl bg-[#1e1f1f] p-3 pt-32 lg:translate-y-0 lg:pl-48 lg:pr-10 lg:pt-10">
-                  <div className="w-max border border-white/30 p-2 text-sm">
-                    Limited-Time Offer
-                  </div>
-                  <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
-                    Mythus Arena
-                  </div>
-                  <div className="font-ElectronicArtsText_Regular text-lg text-white">
-                    Mythus arena have a Seven Unique Worlds . Enjoy the
-                    fantastic graphics of Mythus arena on all platforms
+                <div className="mt-32 rounded-xl bg-[#1e1f1f] p-3 pt-32 lg:mt-0 lg:py-16 xl:pl-48 xl:pr-10 xl:pt-10">
+                  <div className="ml-auto lg:w-2/3">
+                    <div className="w-max border border-white/30 p-2 text-sm">
+                      Limited-Time Offer
+                    </div>
+                    <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      Mythus Arena
+                    </div>
+                    <div className="font-ElectronicArtsText_Regular text-lg text-white">
+                      Mythus arena have a Seven Unique Worlds . Enjoy the
+                      fantastic graphics of Mythus arena on all platforms
+                    </div>
                   </div>
                 </div>
               </div>
@@ -295,8 +313,8 @@ const Carousel_1 = () => {
               }}
               {...settings}
             >
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -304,11 +322,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -325,8 +343,8 @@ const Carousel_1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -334,11 +352,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -355,8 +373,8 @@ const Carousel_1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -364,11 +382,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -385,8 +403,8 @@ const Carousel_1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -394,11 +412,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -416,8 +434,8 @@ const Carousel_1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -425,11 +443,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -445,8 +463,8 @@ const Carousel_1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -454,11 +472,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -475,8 +493,8 @@ const Carousel_1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-32">
-                <div className="mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
+              <div className="w-full pt-44">
+                <div className="relative mx-2 min-h-[390px] cursor-pointer rounded-xl bg-[#1e1f1f] lg:min-h-[420px]">
                   <div>
                     <Image
                       placeholder="blur"
@@ -484,11 +502,11 @@ const Carousel_1 = () => {
                       width={0}
                       height={0}
                       alt=""
-                      className="w-full -translate-y-1/2"
+                      className="absolute -top-1/4 sm:-top-1/3 md:-top-1/2 lg:-top-1/4"
                     />
                   </div>
 
-                  <div className="relative -top-28">
+                  <div className="pt-32 sm:pt-36">
                     <div className="pl-4">
                       {/* <div className="w-max border border-white/30 p-2 text-sm">
                         Ultimate Edition only
@@ -580,19 +598,37 @@ const Carousel_2 = () => {
       {
         breakpoint: 768,
         settings: {
-          centerPadding: "100px",
+          centerPadding: "50px",
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          centerPadding: "100px",
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          centerPadding: "200px",
+        },
+      },
+      {
+        breakpoint: 1750,
+        settings: {
+          centerPadding: "250px",
         },
       },
       {
         breakpoint: 1920,
         settings: {
-          centerPadding: "350px",
+          centerPadding: "400px",
+        },
+      },
+      {
+        breakpoint: 4034,
+        settings: {
+          centerPadding: "500px",
         },
       },
     ],
@@ -612,8 +648,8 @@ const Carousel_2 = () => {
               }}
               {...settings}
             >
-              <div className="w-full pt-20">
-                <div className="mx-2 h-full cursor-pointer rounded-xl pb-8">
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -623,8 +659,8 @@ const Carousel_2 = () => {
                       alt=""
                       className={
                         currentSlideNumber === 0
-                          ? "w-full rounded-xl transition-all duration-300"
-                          : "w-full rounded-xl transition-all duration-300 md:scale-75"
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
                       }
                     />
                   </div>
@@ -651,8 +687,8 @@ const Carousel_2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-20">
-                <div className="mx-2 h-full cursor-pointer rounded-xl pb-8">
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -662,8 +698,8 @@ const Carousel_2 = () => {
                       alt=""
                       className={
                         currentSlideNumber === 1
-                          ? "w-full rounded-xl transition-all duration-300"
-                          : "w-full rounded-xl transition-all duration-300 md:scale-75"
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
                       }
                     />
                   </div>
@@ -692,8 +728,8 @@ const Carousel_2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-20">
-                <div className="mx-2 h-full cursor-pointer rounded-xl pb-8">
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -703,8 +739,8 @@ const Carousel_2 = () => {
                       alt=""
                       className={
                         currentSlideNumber === 2
-                          ? "w-full rounded-xl transition-all duration-300"
-                          : "w-full rounded-xl transition-all duration-300 md:scale-75"
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
                       }
                     />
                   </div>
@@ -733,8 +769,8 @@ const Carousel_2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-20">
-                <div className="mx-2 h-full cursor-pointer rounded-xl pb-8">
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -744,8 +780,8 @@ const Carousel_2 = () => {
                       alt=""
                       className={
                         currentSlideNumber === 3
-                          ? "w-full rounded-xl transition-all duration-300"
-                          : "w-full rounded-xl transition-all duration-300 md:scale-75"
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
                       }
                     />
                   </div>
@@ -774,8 +810,8 @@ const Carousel_2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-20">
-                <div className="mx-2 h-full cursor-pointer rounded-xl pb-8">
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -785,8 +821,8 @@ const Carousel_2 = () => {
                       alt=""
                       className={
                         currentSlideNumber === 4
-                          ? "w-full rounded-xl transition-all duration-300"
-                          : "w-full rounded-xl transition-all duration-300 md:scale-75"
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
                       }
                     />
                   </div>
@@ -815,8 +851,8 @@ const Carousel_2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full pt-20">
-                <div className="mx-2 h-full cursor-pointer rounded-xl pb-8">
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -826,8 +862,8 @@ const Carousel_2 = () => {
                       alt=""
                       className={
                         currentSlideNumber === 5
-                          ? "w-full rounded-xl transition-all duration-300"
-                          : "w-full rounded-xl transition-all duration-300 md:scale-75"
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
                       }
                     />
                   </div>
@@ -976,7 +1012,7 @@ const Carousel_2 = () => {
 //                       className={
 //                         currentSlideNumber === 0
 //                           ? "w-full rounded-xl transition-all duration-300"
-//                           : "w-full rounded-xl transition-all duration-300 md:scale-75"
+//                           : "w-full rounded-xl transition-all duration-300 md:scale-90"
 //                       }
 //                     />
 //                   </div>
@@ -1019,7 +1055,7 @@ const Carousel_2 = () => {
 //                       className={
 //                         currentSlideNumber === 1
 //                           ? "w-full rounded-xl transition-all duration-300"
-//                           : "w-full rounded-xl transition-all duration-300 md:scale-75"
+//                           : "w-full rounded-xl transition-all duration-300 md:scale-90"
 //                       }
 //                     />
 //                   </div>
@@ -1086,7 +1122,7 @@ const Sec_3 = () => {
 const Gradient_sec = () => {
   return (
     <section className="pb-10 md:px-5">
-      <div className="gradient_bg_orbitexplore mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
+      <div className="gradient_bg_mythus_arena mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
         <Image
           alt=""
           src={gradient_logo}
@@ -1097,7 +1133,7 @@ const Gradient_sec = () => {
         <div className="my-2 font-druk_wide_super uppercase lg:text-[27px]">
           TRY NOW ON NETO PLAY FUSION
         </div>
-        <button className="btn mt-5 w-full rounded-3xl bg-[#ff4747] p-5 py-3 font-druk_text_medium uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+        <button className="btn mt-5 w-full rounded-3xl bg-[#abddd7] p-5 py-3 font-druk_text_medium uppercase text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">Start Now</div>
         </button>
       </div>
