@@ -874,7 +874,7 @@ const Category_sec = () => {
             </div>
           </div>
           <div className="relative overflow-hidden px-5 py-8">
-            <div className="category_container z-10 flex flex-wrap">
+            <div className="category_container z-10 mx-auto flex flex-wrap xl:w-max">
               <a
                 href="/netoball"
                 className={
