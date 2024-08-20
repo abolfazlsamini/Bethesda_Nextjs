@@ -482,3 +482,34 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.zau_discord_bg {
+  background-image: url(../../public/zau/discord.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.zau_src_2_bg_1 {
+  background-image: url(../../public/zau/sec2_bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.zau_src_2_bg_2 {
+  background-image: url(../../public/zau/sec2_bg_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.zau_src_2_bg_3 {
+  background-image: url(../../public/zau/sec2_bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.zau_src_3_bg {
+  background-image: url(../../public/zau/sec3_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.zau_card_shadow {
+  box-shadow: 0 3px 10px -2px #00000080;
+}
+.zau_card_shadow:hover {
+  box-shadow: 2px 30px 28px -2px #00000080;
+}

@@ -197,6 +197,36 @@ export const Inter_VariableFont_opsz = localFont({
   ],
   variable: "--font-Inter_VariableFont_opsz",
 });
+export const neueplaktext_regular = localFont({
+  src: [
+    {
+      path: "../../public/fonts/zau/neueplaktext_regular.otf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-neueplaktext_regular",
+});
+export const t1korium = localFont({
+  src: [
+    {
+      path: "../../public/fonts/zau/t1korium.otf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-t1korium",
+});
+export const zau = localFont({
+  src: [
+    {
+      path: "../../public/fonts/zau/zau.otf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-zau",
+});
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -208,10 +238,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} 
-        ${cruyffsans_medium.variable} 
-        ${Inter_VariableFont_opsz.variable} 
-        `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} ${Inter_VariableFont_opsz.variable} ${neueplaktext_regular.variable} ${t1korium.variable} ${zau.variable} `}
       >
         <Navbar2 />
         {children}
