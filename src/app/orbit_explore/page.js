@@ -306,7 +306,7 @@ export default function Orbit_explore() {
           <div className="py-9 text-center font-CruyffSansExpanded_Heavy text-5xl uppercase">
             MORE GAME MODES
           </div>
-          <div className="mx-auto w-11/12 sm:max-w-[74%] sm:w-[1024px] xl:px-10">
+          <div className="mx-auto w-11/12 sm:w-[1024px] sm:max-w-[74%] xl:px-10">
             <div className="mx-auto">
               <div
                 ref={ref}
@@ -569,7 +569,6 @@ export default function Orbit_explore() {
   return (
     <main className="bg-[#161616]">
       <title>Orbit Explore</title>
-      <Navbar2 />
       <div className="!font-Inter_VariableFont_opsz">
         <Navbar />
       </div>
@@ -582,10 +581,10 @@ export default function Orbit_explore() {
         <Sec4 />
         <Sec5 />
         <section className="fixed_bg pt-5">
-          <div className="mx-auto mb-10 min-h-40  lg:flex">
+          <div className="mx-auto mb-10 min-h-40 lg:flex">
             <Gradient_sec />
           </div>
-          <div className="mx-auto min-h-40  lg:flex">
+          <div className="mx-auto min-h-40 lg:flex">
             <SocialMedia_sec />
           </div>
         </section>
