@@ -13,7 +13,7 @@ import Console from "../../public/navbar2/Console.png";
 import Mobile from "../../public/navbar2/Mobile.png";
 import NetoVR from "../../public/navbar2/Neto VR.png";
 
-import NetoShare from "../../public/navbar2/NetoShare.png";
+// import NetoShare from "../../public/navbar2/NetoShare.png";
 import NetoPlayFusion from "../../public/navbar2/Neto PlayFusion.png";
 import NetoMarketing from "../../public/navbar2/Neto Marketing.png";
 
@@ -359,7 +359,7 @@ export default function Navbar2() {
               }
             >
               <div className="mx-auto flex w-max flex-wrap pt-3">
-                <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
+                {/* <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
                     className=""
@@ -368,7 +368,7 @@ export default function Navbar2() {
                     height={0}
                   />
                   <div>Neto Share</div>
-                </div>
+                </div> */}
                 <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
                     alt=""
@@ -377,7 +377,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
-                  <div>Neto PlayFusion</div>
+                  <div>PlayFusion</div>
                 </div>
                 <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
@@ -387,7 +387,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
-                  <div>Neto Marketing</div>
+                  <div>Affiliate</div>
                 </div>
               </div>
             </div>
@@ -527,7 +527,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
-                  <div>Buy Accessories</div>
+                  <div>Accessories</div>
                 </div>
                 <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
@@ -537,7 +537,7 @@ export default function Navbar2() {
                     width={0}
                     height={0}
                   />
-                  <div>Buy Merchandies</div>
+                  <div>Merchandies</div>
                 </div>
                 <div className="navbar2_shadow m-2 max-w-32 flex-col items-center px-3 text-center hover:cursor-pointer">
                   <Image
@@ -762,7 +762,7 @@ export default function Navbar2() {
                 </div>
               </li>
               <li className="pb-5">
-                <div
+                {/* <div
                   className="flex cursor-pointer items-center justify-between text-black"
                   onClick={() => {
                     accordionMobile.curr === "acc2"
@@ -790,7 +790,7 @@ export default function Navbar2() {
                   </div>
                   <div className="hover:text-blue-500">Services</div>
                   <div>{">"}</div>
-                </div>
+                </div> */}
                 <div
                   className={
                     accordionMobile.curr === "" // add animation only when it's not open
@@ -824,7 +824,7 @@ export default function Navbar2() {
                       <div className="text-lg">Services</div>
                     </div>
                     <div className="flex flex-wrap border-b border-black pt-3">
-                      <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
+                      {/* <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
                           className=""
@@ -833,7 +833,7 @@ export default function Navbar2() {
                           height={0}
                         />
                         <div>Neto VR</div>
-                      </div>
+                      </div> */}
                       <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
                           alt=""
@@ -842,7 +842,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
-                        <div>Neto PlayFusion</div>
+                        <div>PlayFusion</div>
                       </div>
                       <div className="navbar2_shadow m-2 max-w-28 flex-col items-center px-3 text-center hover:cursor-pointer">
                         <Image
@@ -852,7 +852,7 @@ export default function Navbar2() {
                           width={0}
                           height={0}
                         />
-                        <div>Neto Marketing</div>
+                        <div>Affiliate</div>
                       </div>
                     </div>
                   </div>
