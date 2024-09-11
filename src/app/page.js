@@ -3100,7 +3100,7 @@ export default function Home() {
   return (
     <main className="mt-16 bg-white">
       <title>NetoGame</title>
-
+      <link rel="icon" href="/icon.ico" sizes="any" />
       <Navbar2 />
       {/* <div className="!font-SST_Light">
         <Navbar />
