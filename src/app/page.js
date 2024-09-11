@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -42,11 +44,18 @@ import main_pic_8_logo from "../../public/netogame/main_pic_8_logo.webp";
 import main_pic_8_pc from "../../public/netogame/main_pic_8_pc.webp";
 import main_pic_8_controller from "../../public/netogame/main_pic_8_controller.webp";
 
-import carousel2_pic_1 from "../../public/netogame/carousel2_pic_1.webp";
-import carousel2_pic_2 from "../../public/netogame/carousel2_pic_2.webp";
-import carousel2_pic_3 from "../../public/netogame/carousel2_pic_3.webp";
-import carousel2_pic_4 from "../../public/netogame/carousel2_pic_4.webp";
-import carousel2_pic_5 from "../../public/netogame/carousel2_pic_5.webp";
+// import carousel2_pic_1 from "../../public/netogame/carousel2_pic_1.webp";
+// import carousel2_pic_2 from "../../public/netogame/carousel2_pic_2.webp";
+// import carousel2_pic_3 from "../../public/netogame/carousel2_pic_3.webp";
+// import carousel2_pic_4 from "../../public/netogame/carousel2_pic_4.webp";
+// import carousel2_pic_5 from "../../public/netogame/carousel2_pic_5.webp";
+
+import carousel_2_pic_1 from "../../public/mythus_arena/carousel_2_pic_1.jpg";
+import carousel_2_pic_2 from "../../public/mythus_arena/carousel_2_pic_2.jpg";
+import carousel_2_pic_3 from "../../public/mythus_arena/carousel_2_pic_3.jpg";
+import carousel_2_pic_4 from "../../public/mythus_arena/carousel_2_pic_4.jpg";
+import carousel_2_pic_5 from "../../public/mythus_arena/carousel_2_pic_5.jpg";
+import carousel_2_pic_6 from "../../public/mythus_arena/carousel_2_pic_6.jpg";
 
 import carousel3_pic_1_pc from "../../public/netogame/carousel3_pic_1_pc.webp";
 import carousel3_pic_2_pc from "../../public/netogame/carousel3_pic_2_pc.webp";
@@ -66,7 +75,12 @@ import carousel4_logo_5 from "../../public/netogame/carousel4_logo_5.webp";
 import carousel4_pic_6 from "../../public/netogame/carousel4_pic_6.webp";
 import carousel4_logo_6 from "../../public/netogame/carousel4_logo_6.webp";
 
-import sec2_pc from "../../public/netogame/sec2_pc.webp";
+// import sec2_pc from "../../public/netogame/sec2_pc.webp";
+
+import jiggle_1 from "../../public/netogame/jiggle_1.png";
+import jiggle_2 from "../../public/netogame/jiggle_2.png";
+import jiggle_3 from "../../public/netogame/jiggle_3.png";
+import jiggle_4 from "../../public/netogame/jiggle_4.png";
 
 import sec1_pc from "../../public/netogame/sec1_pic_pc.webp";
 
@@ -1265,14 +1279,593 @@ const Carousel_3 = () => {
     </section>
   );
 };
+// const Carousel_2 = () => {
+//   const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
+//   const ref = useRef();
+//   function SamplePrevArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//       <ChevronLeftIcon
+//         className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+//         onClick={onClick}
+//       />
+//     );
+//   }
+//   function SampleNextArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//       <ChevronRightIcon
+//         className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+//         onClick={onClick}
+//       />
+//     );
+//   }
+//   console.log(currentSlideNumber);
+//   const settings = {
+//     className: "",
+//     centerMode: false,
+//     infinite: true,
+//     swipeToSlide: false,
+//     centerPadding: "900px",
+//     slidesToShow: 2,
+//     speed: 300,
+//     dots: true,
+//     prevArrow: <SamplePrevArrow />,
+//     nextArrow: <SampleNextArrow />,
+//     customPaging: (i) => (
+//       <MinusIcon
+//         className={
+//           i === currentSlideNumber ? "h-8 text-blue-500" : "h-8 text-gray-500"
+//         }
+//       />
+//     ),
+//     beforeChange: (oldIndex, newIndex) => {
+//       if (newIndex > 4 || newIndex < 0) {
+//         ref.current.slickGoTo(0);
+//         setCurrentSlideNumber(0);
+//       } else {
+//         setCurrentSlideNumber(newIndex);
+//       }
+//     },
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           centerPadding: "10px",
+//           slidesToShow: 2,
+
+//           centerMode: false,
+//           swipeToSlide: false,
+//         },
+//       },
+//       {
+//         breakpoint: 1280,
+//         settings: {
+//           dots: false,
+//           centerPadding: "10px",
+//           slidesToShow: 2,
+//           className: "center",
+//           centerMode: false,
+//         },
+//       },
+//       {
+//         breakpoint: 4048,
+//         settings: {
+//           dots: false,
+//           centerPadding: "400px",
+//           padding: "400px",
+//           slidesToShow: 5,
+//           className: "center",
+//           infinite: true,
+//           centerMode: false,
+//           swipeToSlide: false,
+//         },
+//       },
+//     ],
+//   };
+//   return (
+//     <section>
+//       <div className="netogame_H1 px-10 pt-20 text-center text-2xl text-black lg:hidden">
+//         Introducing the Neto Game console and accessories
+//       </div>
+
+//       <div className="flex flex-col-reverse py-20 text-black lg:flex-col">
+//         <div className="sm:pb-20 xl:py-0">
+//           <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
+//             <div className="relative">
+//               <Image
+//                 placeholder="blur"
+//                 src={carousel2_pic_1}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//                 className="relative lg:w-1/2 lg:translate-x-full"
+//               />
+//             </div>
+//             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+//               <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+//                 Introducing the Neto Game console and accessories
+//               </div>
+//               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
+//                 HyperGrip Wireless Controller
+//               </div>
+//               <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+//                 For gamers seeking complete mastery, HyperGrip is the only
+//                 choice. Your hands deserve the best , choose HyperGrip !
+//               </div>
+//               <div>
+//                 <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+//                   Find out more
+//                 </a>
+//                 <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+//                   Buy Now
+//                 </a>
+//               </div>
+//               <div className="pt-5">
+//                 Buy from <span className="font-SST_Bold"> $79,99</span>
+//               </div>
+//             </div>
+//           </div>
+//           <div className={currentSlideNumber === 1 ? "relative" : "hidden"}>
+//             <div className="relative">
+//               <div className="relative">
+//                 <Image
+//                   placeholder="blur"
+//                   src={carousel2_pic_2}
+//                   width={0}
+//                   height={0}
+//                   alt=""
+//                   className="relative lg:w-1/2 lg:translate-x-full"
+//                 />
+//               </div>
+//             </div>
+//             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+//               <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+//                 Introducing the Neto Game console and accessories
+//               </div>
+//               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
+//                 NetoGear Console
+//               </div>
+//               <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+//                 Experience the next generation of handheld consoles
+//               </div>
+//               <div>
+//                 <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+//                   Find out more
+//                 </a>
+//                 <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+//                   Buy Now
+//                 </a>
+//               </div>
+//               <div className="pt-5">
+//                 Buy from <span className="font-SST_Bold"> $899,99</span>
+//               </div>
+//             </div>
+//           </div>
+//           <div className={currentSlideNumber === 2 ? "relative" : "hidden"}>
+//             <div className="relative">
+//               <div className="relative">
+//                 <Image
+//                   placeholder="blur"
+//                   src={carousel2_pic_3}
+//                   width={0}
+//                   height={0}
+//                   alt=""
+//                   className="relative lg:w-1/2 lg:translate-x-full"
+//                 />
+//               </div>
+//             </div>
+//             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+//               <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+//                 Introducing the Neto Game console and accessories
+//               </div>
+//               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
+//                 SkyTune Wireless Earbuds
+//               </div>
+//               <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+//                 Experience the harmony of SkyTune, where every note meets the
+//                 sky
+//               </div>
+//               <div>
+//                 <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+//                   Find out more
+//                 </a>
+//                 <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+//                   Buy Now
+//                 </a>
+//               </div>
+//               <div className="pt-5">
+//                 Buy from <span className="font-SST_Bold"> $299,99</span>
+//               </div>
+//             </div>
+//           </div>
+//           <div className={currentSlideNumber === 3 ? "relative" : "hidden"}>
+//             <div className="relative">
+//               <div className="relative">
+//                 <Image
+//                   placeholder="blur"
+//                   src={carousel2_pic_4}
+//                   width={0}
+//                   height={0}
+//                   alt=""
+//                   className="relative lg:w-1/2 lg:translate-x-full"
+//                 />
+//               </div>
+//             </div>
+//             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+//               <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+//                 Introducing the Neto Game console and accessories
+//               </div>
+//               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
+//                 Neto VR
+//               </div>
+//               <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+//                 Immerse yourself in the future of virtual reality with Neto VR ,
+//                 where limitless possibilities await your exploration
+//               </div>
+//               <div>
+//                 <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+//                   Find out more
+//                 </a>
+//                 <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+//                   Buy Now
+//                 </a>
+//               </div>
+//               <div className="pt-5">
+//                 Buy from <span className="font-SST_Bold"> $1000,99</span>
+//               </div>
+//             </div>
+//           </div>
+//           <div className={currentSlideNumber === 4 ? "relative" : "hidden"}>
+//             <div className="relative">
+//               <div className="relative">
+//                 <Image
+//                   placeholder="blur"
+//                   src={carousel2_pic_5}
+//                   width={0}
+//                   height={0}
+//                   alt=""
+//                   className="relative lg:w-1/2 lg:translate-x-full"
+//                 />
+//               </div>
+//             </div>
+//             <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+//               <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
+//                 Introducing the Neto Game console and accessories
+//               </div>
+//               <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
+//                 ThunderBeat Wireless Headset
+//               </div>
+//               <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
+//                 Feel the power of sound with ThunderBeat !
+//               </div>
+//               <div>
+//                 <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
+//                   Find out more
+//                 </a>
+//                 <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+//                   Buy Now
+//                 </a>
+//               </div>
+//               <div className="pt-5">
+//                 Buy from <span className="font-SST_Bold">$199,99</span>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="relative hidden justify-center lg:flex">
+//           <ChevronLeftIcon
+//             className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+//             onClick={() =>
+//               setCurrentSlideNumber(Math.max(0, currentSlideNumber - 1))
+//             }
+//           />
+//           <ChevronRightIcon
+//             className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+//             onClick={() =>
+//               setCurrentSlideNumber(Math.min(4, currentSlideNumber + 1))
+//             }
+//           />
+//           <div
+//             className="p-1 xl:w-[12.5%]"
+//             onClick={() => {
+//               setCurrentSlideNumber(0);
+//             }}
+//           >
+//             <Image
+//               placeholder="blur"
+//               className={
+//                 currentSlideNumber === 0
+//                   ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                   : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//               }
+//               src={carousel2_pic_1}
+//               width={0}
+//               height={0}
+//               alt=""
+//             />
+//             <div
+//               className={
+//                 currentSlideNumber === 0
+//                   ? "text-center font-SST_Light text-blue-600"
+//                   : "text-center font-SST_Light"
+//               }
+//             >
+//               HyperGrip Wireless Controller
+//             </div>
+//           </div>
+//           <div
+//             className="p-1 xl:w-[12.5%]"
+//             onClick={() => {
+//               setCurrentSlideNumber(1);
+//             }}
+//           >
+//             <Image
+//               placeholder="blur"
+//               className={
+//                 currentSlideNumber === 1
+//                   ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                   : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//               }
+//               src={carousel2_pic_2}
+//               width={0}
+//               height={0}
+//               alt=""
+//             />
+//             <div
+//               className={
+//                 currentSlideNumber === 1
+//                   ? "text-center font-SST_Light text-blue-600"
+//                   : "text-center font-SST_Light"
+//               }
+//             >
+//               NetoGear Console
+//             </div>
+//           </div>
+//           <div
+//             className="p-1 xl:w-[12.5%]"
+//             onClick={() => {
+//               setCurrentSlideNumber(2);
+//             }}
+//           >
+//             <Image
+//               placeholder="blur"
+//               className={
+//                 currentSlideNumber === 2
+//                   ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                   : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//               }
+//               src={carousel2_pic_3}
+//               width={0}
+//               height={0}
+//               alt=""
+//             />
+//             <div
+//               className={
+//                 currentSlideNumber === 2
+//                   ? "text-center font-SST_Light text-blue-600"
+//                   : "text-center font-SST_Light"
+//               }
+//             >
+//               SkyTune Wireless Earbuds
+//             </div>
+//           </div>
+//           <div
+//             className="p-1 xl:w-[12.5%]"
+//             onClick={() => {
+//               setCurrentSlideNumber(3);
+//             }}
+//           >
+//             <Image
+//               placeholder="blur"
+//               className={
+//                 currentSlideNumber === 3
+//                   ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                   : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//               }
+//               src={carousel2_pic_4}
+//               width={0}
+//               height={0}
+//               alt=""
+//             />
+//             <div
+//               className={
+//                 currentSlideNumber === 3
+//                   ? "text-center font-SST_Light text-blue-600"
+//                   : "text-center font-SST_Light"
+//               }
+//             >
+//               Neto VR
+//             </div>
+//           </div>
+//           <div
+//             className="p-1 xl:w-[12.5%]"
+//             onClick={() => {
+//               setCurrentSlideNumber(4);
+//             }}
+//           >
+//             <Image
+//               placeholder="blur"
+//               className={
+//                 currentSlideNumber === 4
+//                   ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                   : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//               }
+//               src={carousel2_pic_5}
+//               width={0}
+//               height={0}
+//               alt=""
+//             />
+//             <div
+//               className={
+//                 currentSlideNumber === 4
+//                   ? "text-center font-SST_Light text-blue-600"
+//                   : "text-center font-SST_Light"
+//               }
+//             >
+//               ThunderBeat Wireless Headset
+//             </div>
+//           </div>
+//         </div>
+//         <div className="slider-container relative w-full pb-10 lg:hidden">
+//           <Slider {...settings} ref={ref}>
+//             <div
+//               className="p-1"
+//               onClick={() => {
+//                 setCurrentSlideNumber(0);
+//               }}
+//             >
+//               <Image
+//                 placeholder="blur"
+//                 className={
+//                   currentSlideNumber === 0
+//                     ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                     : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//                 }
+//                 src={carousel2_pic_1}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//               />
+//               <div
+//                 className={
+//                   currentSlideNumber === 0
+//                     ? "text-center font-SST_Light text-blue-600"
+//                     : "text-center font-SST_Light"
+//                 }
+//               >
+//                 HyperGrip Wireless Controller
+//               </div>
+//             </div>
+//             <div
+//               className="p-1"
+//               onClick={() => {
+//                 setCurrentSlideNumber(1);
+//               }}
+//             >
+//               <Image
+//                 placeholder="blur"
+//                 className={
+//                   currentSlideNumber === 1
+//                     ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                     : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//                 }
+//                 src={carousel2_pic_2}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//               />
+//               <div
+//                 className={
+//                   currentSlideNumber === 1
+//                     ? "text-center font-SST_Light text-blue-600"
+//                     : "text-center font-SST_Light"
+//                 }
+//               >
+//                 NetoGear Console
+//               </div>
+//             </div>
+//             <div
+//               className="p-1"
+//               onClick={() => {
+//                 setCurrentSlideNumber(2);
+//               }}
+//             >
+//               <Image
+//                 placeholder="blur"
+//                 className={
+//                   currentSlideNumber === 2
+//                     ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                     : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//                 }
+//                 src={carousel2_pic_3}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//               />
+//               <div
+//                 className={
+//                   currentSlideNumber === 2
+//                     ? "text-center font-SST_Light text-blue-600"
+//                     : "text-center font-SST_Light"
+//                 }
+//               >
+//                 SkyTune Wireless Earbuds
+//               </div>
+//             </div>
+//             <div
+//               className="p-1"
+//               onClick={() => {
+//                 setCurrentSlideNumber(3);
+//               }}
+//             >
+//               <Image
+//                 placeholder="blur"
+//                 className={
+//                   currentSlideNumber === 3
+//                     ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                     : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//                 }
+//                 src={carousel2_pic_4}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//               />
+//               <div
+//                 className={
+//                   currentSlideNumber === 3
+//                     ? "text-center font-SST_Light text-blue-600"
+//                     : "text-center font-SST_Light"
+//                 }
+//               >
+//                 Neto VR
+//               </div>
+//             </div>
+//             <div
+//               className="p-1"
+//               onClick={() => {
+//                 setCurrentSlideNumber(4);
+//               }}
+//             >
+//               <Image
+//                 placeholder="blur"
+//                 className={
+//                   currentSlideNumber === 4
+//                     ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
+//                     : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
+//                 }
+//                 src={carousel2_pic_5}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//               />
+//               <div
+//                 className={
+//                   currentSlideNumber === 4
+//                     ? "text-center font-SST_Light text-blue-600"
+//                     : "text-center font-SST_Light"
+//                 }
+//               >
+//                 ThunderBeat Wireless Headset
+//               </div>
+//             </div>
+//           </Slider>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 const Carousel_2 = () => {
   const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
-  const ref = useRef();
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <ChevronLeftIcon
-        className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+      <ArrowLeftIcon
+        className={
+          currentSlideNumber === 0
+            ? "absolute bottom-10 left-[18%] z-10 hidden size-9 rounded-full border p-1 opacity-35 lg:block"
+            : "absolute bottom-10 left-[18%] z-10 hidden size-9 cursor-pointer rounded-full border p-1 lg:block"
+        }
         onClick={onClick}
       />
     );
@@ -1280,562 +1873,351 @@ const Carousel_2 = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <ChevronRightIcon
-        className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
+      <ArrowRightIcon
+        className={
+          currentSlideNumber === 5
+            ? "absolute bottom-10 right-[18%] z-10 hidden size-9 rounded-full border p-1 opacity-35 lg:block"
+            : "absolute bottom-10 right-[18%] z-10 hidden size-9 cursor-pointer rounded-full border p-1 lg:block"
+        }
         onClick={onClick}
       />
     );
   }
-  console.log(currentSlideNumber);
+  let sliderRef = useRef(null);
   const settings = {
-    className: "",
-    centerMode: false,
-    infinite: true,
-    swipeToSlide: false,
-    centerPadding: "900px",
-    slidesToShow: 2,
-    speed: 300,
-    dots: true,
+    className: "center",
+    infinite: false,
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
-    customPaging: (i) => (
-      <MinusIcon
-        className={
-          i === currentSlideNumber ? "h-8 text-blue-500" : "h-8 text-gray-500"
-        }
-      />
-    ),
+    centerPadding: "350px",
+    className: "center",
+    centerMode: true,
+    slidesToShow: 1,
+    speed: 500,
+    dots: true,
+    slidesToScroll: 1,
+    // swipeToSlide: true,
+    arrows: true,
     beforeChange: (oldIndex, newIndex) => {
-      if (newIndex > 4 || newIndex < 0) {
-        ref.current.slickGoTo(0);
-        setCurrentSlideNumber(0);
-      } else {
-        setCurrentSlideNumber(newIndex);
-      }
+      setCurrentSlideNumber(newIndex);
     },
+    customPaging: (i) => (
+      <div
+        className={
+          i === currentSlideNumber
+            ? "size-3 rounded-full border bg-white hover:opacity-85"
+            : "size-3 rounded-full border hover:bg-slate-400 hover:opacity-85"
+        }
+      ></div>
+    ),
+    // prevArrow: <SamplePrevArrow />,
+    // nextArrow: <SampleNextArrow />,
+    mobileFirst: true,
     responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "50px",
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
-          centerPadding: "10px",
-          slidesToShow: 2,
-
-          centerMode: false,
-          swipeToSlide: false,
+          centerPadding: "80px",
         },
       },
       {
-        breakpoint: 1280,
+        breakpoint: 1440,
         settings: {
-          dots: false,
-          centerPadding: "10px",
-          slidesToShow: 2,
-          className: "center",
-          centerMode: false,
+          centerPadding: "200px",
         },
       },
       {
-        breakpoint: 4048,
+        breakpoint: 1750,
         settings: {
-          dots: false,
+          centerPadding: "250px",
+        },
+      },
+      {
+        breakpoint: 1920,
+        settings: {
           centerPadding: "400px",
-          padding: "400px",
-          slidesToShow: 5,
-          className: "center",
-          infinite: true,
-          centerMode: false,
-          swipeToSlide: false,
+        },
+      },
+      {
+        breakpoint: 4034,
+        settings: {
+          centerPadding: "500px",
         },
       },
     ],
   };
   return (
     <section>
-      <div className="netogame_H1 px-10 pt-20 text-center text-2xl text-black lg:hidden">
-        Introducing the Neto Game console and accessories
-      </div>
+      <div>
+        <div className="text-center font-ElectronicArtsDisplay_Bold text-4xl uppercase text-white sm:text-4xl">
+          Features
+        </div>
+        <div className="relative py-10">
+          <div className="absolute bottom-0 h-2/3 w-full bg-[#323232] md:h-1/2"></div>
+          <div className="slider-container mx-auto">
+            <Slider
+              ref={(slider) => {
+                sliderRef = slider;
+              }}
+              {...settings}
+            >
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl px-3 py-8 md:px-0">
+                  <div>
+                    <Image
+                      placeholder="blur"
+                      src={carousel_2_pic_1}
+                      width={0}
+                      height={0}
+                      alt=""
+                      className={
+                        currentSlideNumber === 0
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
+                      }
+                    />
+                  </div>
 
-      <div className="flex flex-col-reverse py-20 text-black lg:flex-col">
-        <div className="sm:pb-20 xl:py-0">
-          <div className={currentSlideNumber === 0 ? "relative" : "hidden"}>
-            <div className="relative">
-              <Image
-                placeholder="blur"
-                src={carousel2_pic_1}
-                width={0}
-                height={0}
-                alt=""
-                className="relative lg:w-1/2 lg:translate-x-full"
-              />
-            </div>
-            <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
-                Introducing the Neto Game console and accessories
+                  <div
+                    className={
+                      currentSlideNumber === 0
+                        ? "relative px-10 pt-4 text-center transition-opacity duration-500 md:pt-10"
+                        : "relative px-10 pt-4 text-center opacity-0 transition-opacity duration-500 md:pt-10"
+                    }
+                  >
+                    <div className="">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                        Mythus Arena
+                      </div>
+                      <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
+                        Mythus Arena is an exciting and engaging strategy game
+                        set to be released for both consoles and mobile devices
+                      </div>
+                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Watch Trailer</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                HyperGrip Wireless Controller
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                  <div>
+                    <Image
+                      placeholder="blur"
+                      src={carousel_2_pic_2}
+                      width={0}
+                      height={0}
+                      alt=""
+                      className={
+                        currentSlideNumber === 1
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
+                      }
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      currentSlideNumber === 1
+                        ? "relative px-10 pt-4 text-center transition-opacity duration-500 md:pt-10"
+                        : "relative px-10 pt-4 text-center opacity-0 transition-opacity duration-500 md:pt-10"
+                    }
+                  >
+                    <div className="">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                        Legendary Lands
+                      </div>
+                      <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
+                        In Mythus Arena, players will explore seven distinct and
+                        mysterious lands, each inspired by ancient and legendary
+                        civilizations such as the Egyptian Pyramids, Persepolis,
+                        the Hanging Gardens of Babylon, and more
+                      </div>
+                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Watch Trailer</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
-                For gamers seeking complete mastery, HyperGrip is the only
-                choice. Your hands deserve the best , choose HyperGrip !
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                  <div>
+                    <Image
+                      placeholder="blur"
+                      src={carousel_2_pic_3}
+                      width={0}
+                      height={0}
+                      alt=""
+                      className={
+                        currentSlideNumber === 2
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
+                      }
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      currentSlideNumber === 2
+                        ? "relative px-10 pt-4 text-center transition-opacity duration-500 md:pt-10"
+                        : "relative px-10 pt-4 text-center opacity-0 transition-opacity duration-500 md:pt-10"
+                    }
+                  >
+                    <div className="">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                        Characters and Updates
+                      </div>
+                      <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
+                        Mythus Arena will feature a vast array of unique
+                        characters. Each character comes with their own special
+                        abilities and traits, allowing players to craft a wide
+                        range of strategies
+                      </div>
+                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Watch Trailer</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
-                  Buy Now
-                </a>
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                  <div>
+                    <Image
+                      placeholder="blur"
+                      src={carousel_2_pic_4}
+                      width={0}
+                      height={0}
+                      alt=""
+                      className={
+                        currentSlideNumber === 3
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
+                      }
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      currentSlideNumber === 3
+                        ? "relative px-10 pt-4 text-center transition-opacity duration-500 md:pt-10"
+                        : "relative px-10 pt-4 text-center opacity-0 transition-opacity duration-500 md:pt-10"
+                    }
+                  >
+                    <div className="">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                        Smooth Controls and 3D Graphics
+                      </div>
+                      <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
+                        One of the standout features of Mythus Arena is its
+                        incredibly smooth and precise controls on consoles.
+                        Additionally, the 3D mode on mobile offers players a
+                        stunning visual experience
+                      </div>
+                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Watch Trailer</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="pt-5">
-                Buy from <span className="font-SST_Bold"> $79,99</span>
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                  <div>
+                    <Image
+                      placeholder="blur"
+                      src={carousel_2_pic_5}
+                      width={0}
+                      height={0}
+                      alt=""
+                      className={
+                        currentSlideNumber === 4
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
+                      }
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      currentSlideNumber === 4
+                        ? "relative px-10 pt-4 text-center transition-opacity duration-500 md:pt-10"
+                        : "relative px-10 pt-4 text-center opacity-0 transition-opacity duration-500 md:pt-10"
+                    }
+                  >
+                    <div className="">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                        Sound and Music
+                      </div>
+                      <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
+                        This unique combination of sound and music transforms
+                        Mythus Arena into an artistic masterpiece, taking you on
+                        an exciting journey through history and legends with
+                        every moment
+                      </div>
+                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Watch Trailer</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div className="w-full">
+                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                  <div>
+                    <Image
+                      placeholder="blur"
+                      src={carousel_2_pic_6}
+                      width={0}
+                      height={0}
+                      alt=""
+                      className={
+                        currentSlideNumber === 5
+                          ? "w-full rounded-xl transition-all duration-300 md:scale-105"
+                          : "w-full rounded-xl transition-all duration-300 md:scale-90"
+                      }
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      currentSlideNumber === 5
+                        ? "relative px-10 pt-4 text-center transition-opacity duration-500 md:pt-10"
+                        : "relative px-10 pt-4 text-center opacity-0 transition-opacity duration-500 md:pt-10"
+                    }
+                  >
+                    <div className="">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                        Smooth Gameplay and Professional Control
+                      </div>
+                      <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
+                        The gameplay of Mythus Arena is designed to provide
+                        players with a smooth and enjoyable experience right
+                        from the start
+                      </div>
+                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Watch Trailer</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Slider>
           </div>
-          <div className={currentSlideNumber === 1 ? "relative" : "hidden"}>
-            <div className="relative">
-              <div className="relative">
-                <Image
-                  placeholder="blur"
-                  src={carousel2_pic_2}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="relative lg:w-1/2 lg:translate-x-full"
-                />
-              </div>
-            </div>
-            <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
-                Introducing the Neto Game console and accessories
-              </div>
-              <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                NetoGear Console
-              </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
-                Experience the next generation of handheld consoles
-              </div>
-              <div>
-                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
-                  Buy Now
-                </a>
-              </div>
-              <div className="pt-5">
-                Buy from <span className="font-SST_Bold"> $899,99</span>
-              </div>
-            </div>
-          </div>
-          <div className={currentSlideNumber === 2 ? "relative" : "hidden"}>
-            <div className="relative">
-              <div className="relative">
-                <Image
-                  placeholder="blur"
-                  src={carousel2_pic_3}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="relative lg:w-1/2 lg:translate-x-full"
-                />
-              </div>
-            </div>
-            <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
-                Introducing the Neto Game console and accessories
-              </div>
-              <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                SkyTune Wireless Earbuds
-              </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
-                Experience the harmony of SkyTune, where every note meets the
-                sky
-              </div>
-              <div>
-                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
-                  Buy Now
-                </a>
-              </div>
-              <div className="pt-5">
-                Buy from <span className="font-SST_Bold"> $299,99</span>
-              </div>
-            </div>
-          </div>
-          <div className={currentSlideNumber === 3 ? "relative" : "hidden"}>
-            <div className="relative">
-              <div className="relative">
-                <Image
-                  placeholder="blur"
-                  src={carousel2_pic_4}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="relative lg:w-1/2 lg:translate-x-full"
-                />
-              </div>
-            </div>
-            <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
-                Introducing the Neto Game console and accessories
-              </div>
-              <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                Neto VR
-              </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
-                Immerse yourself in the future of virtual reality with Neto VR ,
-                where limitless possibilities await your exploration
-              </div>
-              <div>
-                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
-                  Buy Now
-                </a>
-              </div>
-              <div className="pt-5">
-                Buy from <span className="font-SST_Bold"> $1000,99</span>
-              </div>
-            </div>
-          </div>
-          <div className={currentSlideNumber === 4 ? "relative" : "hidden"}>
-            <div className="relative">
-              <div className="relative">
-                <Image
-                  placeholder="blur"
-                  src={carousel2_pic_5}
-                  width={0}
-                  height={0}
-                  alt=""
-                  className="relative lg:w-1/2 lg:translate-x-full"
-                />
-              </div>
-            </div>
-            <div className="netogame_appear_animation z-20 flex flex-col items-center px-5 text-center text-black lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-              <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:mb-16 lg:block">
-                Introducing the Neto Game console and accessories
-              </div>
-              <div className="font-SST_Light text-xl text-[#0068bd] lg:text-2xl xl:text-3xl">
-                ThunderBeat Wireless Headset
-              </div>
-              <div className="netogame_p netogame_appear_animation_mobile my-5 text-sm text-[#6b6b6b] lg:mb-6">
-                Feel the power of sound with ThunderBeat !
-              </div>
-              <div>
-                <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-blue-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-blue-700 hover:outline-offset-2 hover:outline-blue-500">
-                  Find out more
-                </a>
-                <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
-                  Buy Now
-                </a>
-              </div>
-              <div className="pt-5">
-                Buy from <span className="font-SST_Bold">$199,99</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="relative hidden justify-center lg:flex">
-          <ChevronLeftIcon
-            className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
-            onClick={() =>
-              setCurrentSlideNumber(Math.max(0, currentSlideNumber - 1))
-            }
-          />
-          <ChevronRightIcon
-            className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 text-white lg:block"
-            onClick={() =>
-              setCurrentSlideNumber(Math.min(4, currentSlideNumber + 1))
-            }
-          />
-          <div
-            className="p-1 xl:w-[12.5%]"
-            onClick={() => {
-              setCurrentSlideNumber(0);
-            }}
-          >
-            <Image
-              placeholder="blur"
-              className={
-                currentSlideNumber === 0
-                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-              }
-              src={carousel2_pic_1}
-              width={0}
-              height={0}
-              alt=""
-            />
-            <div
-              className={
-                currentSlideNumber === 0
-                  ? "text-center font-SST_Light text-blue-600"
-                  : "text-center font-SST_Light"
-              }
-            >
-              HyperGrip Wireless Controller
-            </div>
-          </div>
-          <div
-            className="p-1 xl:w-[12.5%]"
-            onClick={() => {
-              setCurrentSlideNumber(1);
-            }}
-          >
-            <Image
-              placeholder="blur"
-              className={
-                currentSlideNumber === 1
-                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-              }
-              src={carousel2_pic_2}
-              width={0}
-              height={0}
-              alt=""
-            />
-            <div
-              className={
-                currentSlideNumber === 1
-                  ? "text-center font-SST_Light text-blue-600"
-                  : "text-center font-SST_Light"
-              }
-            >
-              NetoGear Console
-            </div>
-          </div>
-          <div
-            className="p-1 xl:w-[12.5%]"
-            onClick={() => {
-              setCurrentSlideNumber(2);
-            }}
-          >
-            <Image
-              placeholder="blur"
-              className={
-                currentSlideNumber === 2
-                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-              }
-              src={carousel2_pic_3}
-              width={0}
-              height={0}
-              alt=""
-            />
-            <div
-              className={
-                currentSlideNumber === 2
-                  ? "text-center font-SST_Light text-blue-600"
-                  : "text-center font-SST_Light"
-              }
-            >
-              SkyTune Wireless Earbuds
-            </div>
-          </div>
-          <div
-            className="p-1 xl:w-[12.5%]"
-            onClick={() => {
-              setCurrentSlideNumber(3);
-            }}
-          >
-            <Image
-              placeholder="blur"
-              className={
-                currentSlideNumber === 3
-                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-              }
-              src={carousel2_pic_4}
-              width={0}
-              height={0}
-              alt=""
-            />
-            <div
-              className={
-                currentSlideNumber === 3
-                  ? "text-center font-SST_Light text-blue-600"
-                  : "text-center font-SST_Light"
-              }
-            >
-              Neto VR
-            </div>
-          </div>
-          <div
-            className="p-1 xl:w-[12.5%]"
-            onClick={() => {
-              setCurrentSlideNumber(4);
-            }}
-          >
-            <Image
-              placeholder="blur"
-              className={
-                currentSlideNumber === 4
-                  ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                  : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-              }
-              src={carousel2_pic_5}
-              width={0}
-              height={0}
-              alt=""
-            />
-            <div
-              className={
-                currentSlideNumber === 4
-                  ? "text-center font-SST_Light text-blue-600"
-                  : "text-center font-SST_Light"
-              }
-            >
-              ThunderBeat Wireless Headset
-            </div>
-          </div>
-        </div>
-        <div className="slider-container relative w-full pb-10 lg:hidden">
-          <Slider {...settings} ref={ref}>
-            <div
-              className="p-1"
-              onClick={() => {
-                setCurrentSlideNumber(0);
-              }}
-            >
-              <Image
-                placeholder="blur"
-                className={
-                  currentSlideNumber === 0
-                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-                }
-                src={carousel2_pic_1}
-                width={0}
-                height={0}
-                alt=""
-              />
-              <div
-                className={
-                  currentSlideNumber === 0
-                    ? "text-center font-SST_Light text-blue-600"
-                    : "text-center font-SST_Light"
-                }
-              >
-                HyperGrip Wireless Controller
-              </div>
-            </div>
-            <div
-              className="p-1"
-              onClick={() => {
-                setCurrentSlideNumber(1);
-              }}
-            >
-              <Image
-                placeholder="blur"
-                className={
-                  currentSlideNumber === 1
-                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-                }
-                src={carousel2_pic_2}
-                width={0}
-                height={0}
-                alt=""
-              />
-              <div
-                className={
-                  currentSlideNumber === 1
-                    ? "text-center font-SST_Light text-blue-600"
-                    : "text-center font-SST_Light"
-                }
-              >
-                NetoGear Console
-              </div>
-            </div>
-            <div
-              className="p-1"
-              onClick={() => {
-                setCurrentSlideNumber(2);
-              }}
-            >
-              <Image
-                placeholder="blur"
-                className={
-                  currentSlideNumber === 2
-                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-                }
-                src={carousel2_pic_3}
-                width={0}
-                height={0}
-                alt=""
-              />
-              <div
-                className={
-                  currentSlideNumber === 2
-                    ? "text-center font-SST_Light text-blue-600"
-                    : "text-center font-SST_Light"
-                }
-              >
-                SkyTune Wireless Earbuds
-              </div>
-            </div>
-            <div
-              className="p-1"
-              onClick={() => {
-                setCurrentSlideNumber(3);
-              }}
-            >
-              <Image
-                placeholder="blur"
-                className={
-                  currentSlideNumber === 3
-                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-                }
-                src={carousel2_pic_4}
-                width={0}
-                height={0}
-                alt=""
-              />
-              <div
-                className={
-                  currentSlideNumber === 3
-                    ? "text-center font-SST_Light text-blue-600"
-                    : "text-center font-SST_Light"
-                }
-              >
-                Neto VR
-              </div>
-            </div>
-            <div
-              className="p-1"
-              onClick={() => {
-                setCurrentSlideNumber(4);
-              }}
-            >
-              <Image
-                placeholder="blur"
-                className={
-                  currentSlideNumber === 4
-                    ? "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1 outline-none outline-2 outline-offset-2 outline-blue-600"
-                    : "home_carousel2_boxshhadow m-1 cursor-pointer rounded-xl p-1"
-                }
-                src={carousel2_pic_5}
-                width={0}
-                height={0}
-                alt=""
-              />
-              <div
-                className={
-                  currentSlideNumber === 4
-                    ? "text-center font-SST_Light text-blue-600"
-                    : "text-center font-SST_Light"
-                }
-              >
-                ThunderBeat Wireless Headset
-              </div>
-            </div>
-          </Slider>
         </div>
       </div>
     </section>
@@ -2138,57 +2520,143 @@ const Carousel_5 = () => {
     </div>
   );
 };
-const Sec2 = () => {
+// const Sec2 = () => {
+//   return (
+//     <section>
+//       <div>
+//         <div className="relative">
+//           <div className="relative h-[400px] overflow-hidden sm:h-[600px] lg:h-full">
+//             <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
+//             <picture>
+//               <source
+//                 srcSet="./netogame/sec2_mobile.webp"
+//                 media="(max-width:1023.95px)"
+//               ></source>
+//               <source
+//                 srcSet="./netogame/sec2_pc.webp"
+//                 media="(min-width:1024px)"
+//               ></source>
+
+//               <Image
+//                 placeholder="blur"
+//                 src={sec2_pc}
+//                 width={0}
+//                 height={0}
+//                 alt=""
+//                 className=""
+//               />
+//             </picture>
+//           </div>
+//           <div className="z-20 flex flex-col items-center bg-[#1f1f1f] px-5 pb-20 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
+//             <div className="netogame_H1">Feel the difference</div>
+//             <div className="netogame_p my-2 lg:mt-5">
+//               Explore the next frontier of virtual reality with Neto VR, where
+//               cutting-edge technology meets immersive experiences that redefine
+//               your perception of reality
+//             </div>
+//             <div className="py-5 pb-8">
+//               Buy from: <span className="font-SST_Bold"> $1000.99</span>
+//             </div>
+//             <div>
+//               <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-white px-3 py-3 font-SST_Bold text-base text-black outline-none outline-2 delay-75 hover:bg-white hover:outline-offset-2 hover:outline-white">
+//                 Find out more
+//               </a>
+//               <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
+//                 Buy Now
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+const Jiggle = () => {
+  const jiggle_container = useRef();
+  const jiggle_1_ref = useRef();
+  const jiggle_2_ref = useRef();
+  const jiggle_3_ref = useRef();
+  const jiggle_4_ref = useRef();
+  useEffect(() => {
+    jiggle_container.current.addEventListener("mousemove", (event) => {
+      const mouse_x = event.clientX;
+      const mouse_y = event.clientY;
+      //-3 to +3 deg
+      var windows_width = window.innerWidth;
+      var windows_height = window.innerHeight;
+
+      var rotate_z = (mouse_x / windows_width) * 6 - 3;
+      var translate_y = ((mouse_y / windows_height) * 6 - 3) * 5;
+      jiggle_1_ref.current.style.transform = `translateY(${-translate_y}px) rotateZ(${rotate_z}deg) translateX(${rotate_z * 20}px)`;
+      jiggle_2_ref.current.style.transform = `translateY(${translate_y}px) rotateZ(${-rotate_z}deg) translateX(${rotate_z * -10}px)`;
+      jiggle_3_ref.current.style.transform = `translateY(${translate_y}px) rotateZ(${rotate_z}deg) translateX(${rotate_z * -10}px)`;
+      jiggle_4_ref.current.style.transform = `translateY(${translate_y}px) rotateZ(${-rotate_z}deg) translateX(${rotate_z * -10}px)`;
+    });
+    jiggle_container.current.addEventListener("mouseleave", (event) => {
+      jiggle_1_ref.current.style.transform =
+        "translateY(0px) translateX(0px) rotateZ(0deg)";
+      jiggle_2_ref.current.style.transform =
+        "translateY(0px) translateX(0px) rotateZ(0deg)";
+      jiggle_3_ref.current.style.transform =
+        "translateY(0px) translateX(0px) rotateZ(0deg)";
+      jiggle_4_ref.current.style.transform =
+        "translateY(0px) translateX(0px) rotateZ(0deg)";
+    });
+  });
   return (
     <section>
-      <div>
-        <div className="relative">
-          <div className="relative h-[400px] overflow-hidden sm:h-[600px] lg:h-full">
-            <div className="netogame_gradientMainimage_mobile absolute bottom-0 z-10 h-full w-full lg:hidden"></div>
-            <picture>
-              <source
-                srcSet="./netogame/sec2_mobile.webp"
-                media="(max-width:1023.95px)"
-              ></source>
-              <source
-                srcSet="./netogame/sec2_pc.webp"
-                media="(min-width:1024px)"
-              ></source>
-
-              <Image
-                placeholder="blur"
-                src={sec2_pc}
-                width={0}
-                height={0}
-                alt=""
-                className=""
-              />
-            </picture>
+      <div
+        ref={jiggle_container}
+        className="overflow-hidden bg-[url(../../public/netogame/jiggle_bg.png)] bg-cover bg-center bg-no-repeat pb-64 pt-20"
+      >
+        <div className="mx-auto w-1/3 pb-20 text-center text-black">
+          <div className="netogame_H1">Feel the difference</div>
+          <div className="netogame_p my-2 lg:mt-5">
+            Explore the next frontier of virtual reality with Neto VR, where
+            cutting-edge technology meets immersive experiences that redefine
+            your perception of reality
           </div>
-          <div className="z-20 flex flex-col items-center bg-[#1f1f1f] px-5 pb-20 text-center text-white lg:absolute lg:left-10 lg:top-1/2 lg:block lg:w-1/3 lg:-translate-y-1/2 lg:bg-transparent lg:px-0 lg:text-start xl:left-32">
-            <div className="netogame_H1">Feel the difference</div>
-            <div className="netogame_p my-2 lg:mt-5">
-              Explore the next frontier of virtual reality with Neto VR, where
-              cutting-edge technology meets immersive experiences that redefine
-              your perception of reality
-            </div>
-            <div className="py-5 pb-8">
-              Buy from: <span className="font-SST_Bold"> $1000.99</span>
-            </div>
-            <div>
-              <a className="netogame_appear_animation_mobile my-6 mr-1 cursor-pointer rounded-3xl bg-white px-3 py-3 font-SST_Bold text-base text-black outline-none outline-2 delay-75 hover:bg-white hover:outline-offset-2 hover:outline-white">
-                Find out more
-              </a>
-              <a className="netogame_appear_animation_mobile my-6 ml-1 cursor-pointer rounded-3xl bg-red-600 px-3 py-3 font-SST_Bold text-base text-white outline-none outline-2 delay-75 hover:bg-red-700 hover:outline-offset-2 hover:outline-red-500">
-                Buy Now
-              </a>
-            </div>
-          </div>
+        </div>
+        <div className="relative mx-auto w-9/12 max-w-4xl">
+          <Image
+            src={jiggle_1}
+            alt=""
+            width={0}
+            height={0}
+            className="transition ease-out"
+            ref={jiggle_1_ref}
+          />
+          <Image
+            src={jiggle_2}
+            alt=""
+            width={0}
+            height={0}
+            className="absolute -right-10 -top-10 w-1/2 rounded-2xl backdrop-blur-lg transition ease-out md:-right-20"
+            ref={jiggle_2_ref}
+          />
+          <Image
+            src={jiggle_3}
+            alt=""
+            width={0}
+            height={0}
+            className="absolute -bottom-10 -right-10 w-1/2 transition ease-out md:-right-20"
+            ref={jiggle_3_ref}
+          />
+          <Image
+            src={jiggle_4}
+            alt=""
+            width={0}
+            height={0}
+            className="absolute -left-9 top-1/2 w-1/2 -translate-y-1/2 rounded-2xl backdrop-blur-lg transition ease-out md:-left-20"
+            ref={jiggle_4_ref}
+          />
         </div>
       </div>
     </section>
   );
 };
+
 const Sec1 = () => {
   return (
     <section>
@@ -2231,6 +2699,7 @@ const Sec1 = () => {
     </section>
   );
 };
+
 const Carousel_4 = () => {
   const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
   function SamplePrevArrow(props) {
@@ -2649,7 +3118,8 @@ export default function Home() {
         <div className="bg-[#18141a] py-16">
           <Carousel_5 />
         </div>
-        <Sec2 />
+        {/* <Sec2 /> */}
+        <Jiggle />
         <Sec1 />
 
         <Carousel_4 />
