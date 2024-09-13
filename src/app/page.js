@@ -50,12 +50,12 @@ import main_pic_8_controller from "../../public/netogame/main_pic_8_controller.w
 // import carousel2_pic_4 from "../../public/netogame/carousel2_pic_4.webp";
 // import carousel2_pic_5 from "../../public/netogame/carousel2_pic_5.webp";
 
-import carousel_2_pic_1 from "../../public/mythus_arena/carousel_2_pic_1.jpg";
-import carousel_2_pic_2 from "../../public/mythus_arena/carousel_2_pic_2.jpg";
-import carousel_2_pic_3 from "../../public/mythus_arena/carousel_2_pic_3.jpg";
-import carousel_2_pic_4 from "../../public/mythus_arena/carousel_2_pic_4.jpg";
-import carousel_2_pic_5 from "../../public/mythus_arena/carousel_2_pic_5.jpg";
-import carousel_2_pic_6 from "../../public/mythus_arena/carousel_2_pic_6.jpg";
+import carousel_2_pic_1 from "../../public/netogame/carousel_2_pic_1.webp";
+import carousel_2_pic_2 from "../../public/netogame/carousel_2_pic_2.webp";
+import carousel_2_pic_3 from "../../public/netogame/carousel_2_pic_3.webp";
+import carousel_2_pic_4 from "../../public/netogame/carousel_2_pic_4.webp";
+import carousel_2_pic_5 from "../../public/netogame/carousel_2_pic_5.webp";
+// import carousel_2_pic_6 from "../../public/netogame/carousel_2_pic_6.jpg";
 
 import carousel3_pic_1_pc from "../../public/netogame/carousel3_pic_1_pc.webp";
 import carousel3_pic_2_pc from "../../public/netogame/carousel3_pic_2_pc.webp";
@@ -1102,10 +1102,10 @@ const Carousel_3 = () => {
           alt=""
           className="mx-auto h-auto w-1/2 lg:w-1/5"
         />
-        <div className="netogame_H1 p-10 py-7 text-center text-2xl text-black lg:text-4xl xl:text-5xl">
+        <div className="netogame_H1 font-FuturaNowHeadlineBlack p-10 py-7 text-center text-2xl uppercase text-white lg:text-4xl xl:text-5xl">
           Discover Neto PlayFusion
         </div>
-        <div className="netogame_P mb-7 px-10 text-center text-sm text-[#6b6b6b] lg:px-20 xl:text-lg">
+        <div className="netogame_P mb-7 px-10 text-center text-sm text-white lg:px-20 xl:text-lg">
           By having a Neto PlayFusion account, you can benefit from special
           services
         </div>
@@ -1875,7 +1875,7 @@ const Carousel_2 = () => {
     return (
       <ArrowRightIcon
         className={
-          currentSlideNumber === 5
+          currentSlideNumber === 4
             ? "absolute bottom-10 right-[18%] z-10 hidden size-9 rounded-full border p-1 opacity-35 lg:block"
             : "absolute bottom-10 right-[18%] z-10 hidden size-9 cursor-pointer rounded-full border p-1 lg:block"
         }
@@ -1965,7 +1965,7 @@ const Carousel_2 = () => {
           Features
         </div>
         <div className="relative py-10">
-          <div className="absolute bottom-0 h-2/3 w-full bg-[#323232] md:h-1/2"></div>
+          <div className="absolute bottom-0 h-2/3 w-full bg-[#3761e8] md:h-1/2"></div>
           <div className="slider-container mx-auto">
             <Slider
               ref={(slider) => {
@@ -1999,14 +1999,15 @@ const Carousel_2 = () => {
                   >
                     <div className="">
                       <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
-                        Mythus Arena
+                        Hyper Grip Wireless Controller
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
-                        Mythus Arena is an exciting and engaging strategy game
-                        set to be released for both consoles and mobile devices
+                        For Gamers seeking complete mastery , HyperGrip is only
+                        choice . Your hands deserve the best , choose HyperGrip
+                        !
                       </div>
-                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
-                        <div className="">Watch Trailer</div>
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Buy Now</div>
                       </button>
                     </div>
                   </div>
@@ -2038,16 +2039,13 @@ const Carousel_2 = () => {
                   >
                     <div className="">
                       <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
-                        Legendary Lands
+                        Neto Gear Console
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
-                        In Mythus Arena, players will explore seven distinct and
-                        mysterious lands, each inspired by ancient and legendary
-                        civilizations such as the Egyptian Pyramids, Persepolis,
-                        the Hanging Gardens of Babylon, and more
+                        Experience the next generation of handheld consoles
                       </div>
-                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
-                        <div className="">Watch Trailer</div>
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Buy Now</div>
                       </button>
                     </div>
                   </div>
@@ -2079,16 +2077,14 @@ const Carousel_2 = () => {
                   >
                     <div className="">
                       <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
-                        Characters and Updates
+                        SkyTune Wireless Earbuds
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
-                        Mythus Arena will feature a vast array of unique
-                        characters. Each character comes with their own special
-                        abilities and traits, allowing players to craft a wide
-                        range of strategies
+                        Experience the harmony of SkyTune , where every note
+                        meets the sky
                       </div>
-                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
-                        <div className="">Watch Trailer</div>
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Buy Now</div>
                       </button>
                     </div>
                   </div>
@@ -2120,16 +2116,15 @@ const Carousel_2 = () => {
                   >
                     <div className="">
                       <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
-                        Smooth Controls and 3D Graphics
+                        NETO VR
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
-                        One of the standout features of Mythus Arena is its
-                        incredibly smooth and precise controls on consoles.
-                        Additionally, the 3D mode on mobile offers players a
-                        stunning visual experience
+                        Immerse yourself in the future of virtual reality with
+                        Neto VR , where limitless possibilities await your
+                        exploration
                       </div>
-                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
-                        <div className="">Watch Trailer</div>
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Buy Now</div>
                       </button>
                     </div>
                   </div>
@@ -2161,22 +2156,19 @@ const Carousel_2 = () => {
                   >
                     <div className="">
                       <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
-                        Sound and Music
+                        ThunderBear Wireless Headset
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
-                        This unique combination of sound and music transforms
-                        Mythus Arena into an artistic masterpiece, taking you on
-                        an exciting journey through history and legends with
-                        every moment
+                        Feel the power of sound with Thunderbeat !
                       </div>
-                      <button className="ml-2 rounded-3xl border border-white bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
-                        <div className="">Watch Trailer</div>
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                        <div className="">Buy Now</div>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="w-full">
+              {/* <div className="w-full">
                 <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
                   <div>
                     <Image
@@ -2215,7 +2207,7 @@ const Carousel_2 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Slider>
           </div>
         </div>
@@ -2255,22 +2247,19 @@ const Video_sec = () => {
     }
     if (video_3.current) {
       observer.observe(video_3.current);
-
       if (width > 1023) video_3.current.src = `netogame/video_sec_3.mp4`;
       else video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
     }
 
     const handleResize = () => {
       if (width > 1023) {
-        video_3.current.src = `netogame/video_sec_3.mp4`;
-        video_2.current.src = `netogame/video_sec_2.mp4`;
         video_1.current.src = `netogame/video_sec_1.mp4`;
+        video_2.current.src = `netogame/video_sec_2.mp4`;
+        video_3.current.src = `netogame/video_sec_3.mp4`;
       } else {
-        video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
-
-        video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
-
         video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
+        video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
+        video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
       }
     };
 
@@ -2287,14 +2276,14 @@ const Video_sec = () => {
     <section>
       <div className="bg-[#d8dee7] text-black">
         <div className="relative">
-          <div className="min-h-[60vh] overflow-hidden border lg:h-auto">
+          <div className="min-h-[40vh] overflow-hidden border lg:h-auto">
             <video
               ref={video_1}
               muted
               src="netogame/video_sec_1_mobile.mp4"
             ></video>
           </div>
-          <div className="absolute top-1/2 z-10 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
+          <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
             <div className="netogame_H1 font-SST_Bold">Designed for speed</div>
             <div className="netogame_P">
               The fast, optimized platform makes it easier than ever to download
@@ -2304,14 +2293,14 @@ const Video_sec = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="min-h-[60vh] overflow-hidden border lg:h-auto">
+          <div className="min-h-[40vh] overflow-hidden border lg:h-auto">
             <video
               ref={video_2}
               muted
               src="netogame/video_sec_2_mobile.mp4"
             ></video>
           </div>
-          <div className="absolute top-1/2 z-10 lg:left-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
+          <div className="absolute top-1/2 z-10 px-3 lg:left-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
             <div className="netogame_H1 font-SST_Bold">Designed for speed</div>
             <div className="netogame_P">
               The fast, optimized platform makes it easier than ever to download
@@ -2321,14 +2310,14 @@ const Video_sec = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="min-h-[60vh] overflow-hidden border lg:h-auto">
+          <div className="min-h-[40vh] overflow-hidden border lg:h-auto">
             <video
               ref={video_3}
               muted
               src="netogame/video_sec_3_mobile.mp4"
             ></video>
           </div>
-          <div className="absolute top-1/2 z-10 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
+          <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
             <div className="netogame_H1 font-SST_Bold">Designed for speed</div>
             <div className="netogame_P">
               The fast, optimized platform makes it easier than ever to download
@@ -2610,7 +2599,7 @@ const Jiggle = () => {
         ref={jiggle_container}
         className="overflow-hidden bg-[url(../../public/netogame/jiggle_bg.png)] bg-cover bg-center bg-no-repeat pb-64 pt-20"
       >
-        <div className="mx-auto w-1/3 pb-20 text-center text-black">
+        <div className="mx-auto w-2/3 pb-20 text-center text-black">
           <div className="netogame_H1">Feel the difference</div>
           <div className="netogame_p my-2 lg:mt-5">
             Explore the next frontier of virtual reality with Neto VR, where

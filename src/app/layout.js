@@ -147,6 +147,16 @@ export const SST_Bold = localFont({
   ],
   variable: "--font-SST_Bold",
 });
+export const FuturaNowHeadlineBlack = localFont({
+  src: [
+    {
+      path: "../../public/fonts/netogame/FuturaNowHeadlineBlack.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-FuturaNowHeadlineBlack",
+});
 export const CruyffSansExpanded_Heavy = localFont({
   src: [
     {
@@ -209,7 +219,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} ${Inter_VariableFont_opsz.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} ${Inter_VariableFont_opsz.variable} ${FuturaNowHeadlineBlack.variable} `}
       >
         <Navbar2 />
         {children}
