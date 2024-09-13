@@ -1961,9 +1961,9 @@ const Carousel_2 = () => {
   return (
     <section>
       <div>
-        <div className="text-center font-ElectronicArtsDisplay_Bold text-4xl uppercase text-white sm:text-4xl">
+        {/* <div className="text-center font-ElectronicArtsDisplay_Bold text-4xl uppercase text-black sm:text-4xl">
           Features
-        </div>
+        </div> */}
         <div className="relative py-10">
           <div className="absolute bottom-0 h-2/3 w-full bg-[#3761e8] md:h-1/2"></div>
           <div className="slider-container mx-auto">
