@@ -343,6 +343,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .textEllipsis2line {
+    display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .netogame_gradientMainimage_pc {
   display: none;

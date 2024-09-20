@@ -112,87 +112,15 @@ import Navbar from "./navbar";
 const Main_sec = () => {
   const controller_ref = useRef();
   const ref = useRef();
-  // const img_2 = useRef();
-  // const img_3 = useRef();
-  // const img_4 = useRef();
-  // const img_5 = useRef();
-  // const img_6 = useRef();
-  // const img_7 = useRef();
-  // const img_8 = useRef();
+
   const [index, setIndex] = useState(1);
 
-  // function callback(enteries) {
-  //   const [entry] = enteries;
-
-  //   if (entry.isIntersecting && entry.target.id != index)
-  //     setIndex(Number(entry.target.id));
-  // }
-  // function onClickScroll(i) {
-  //   if (controller_ref.current) {
-  //     if (i === 7)
-  //       controller_ref.current.scroll({
-  //         left: (i - 1) * 250,
-  //       });
-  //     else
-  //       controller_ref.current.scroll({
-  //         left: (i - 1) * 300,
-  //         behavior: "smooth",
-  //       });
-  //   }
-  // }
-  function next() {
-    if (index > 7) {
-      // onClickScroll(1);
-      setIndex(1);
-    } else {
-      setIndex(index + 1);
-      // onClickScroll(index + 1);
-    }
-  }
-  // var options = {
-  //   root: null,
-  //   rootMargin: "300px",
-  //   threshold: 1,
-  // };
-  useEffect(() => {
-    // const interval = setInterval(() => {
-    //   next();
-    //   // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, 2000);
-    // var width = window.innerWidth;
-
-    // const observer = new IntersectionObserver(callback, options);
-    // if (width < 1023) {
-    //   if (img_1.current) observer.observe(img_1.current);
-    //   if (img_2.current) observer.observe(img_2.current);
-    //   if (img_3.current) observer.observe(img_3.current);
-    //   if (img_4.current) observer.observe(img_4.current);
-    //   if (img_5.current) observer.observe(img_5.current);
-    //   if (img_6.current) observer.observe(img_6.current);
-    //   if (img_7.current) observer.observe(img_7.current);
-    //   if (img_8.current) observer.observe(img_8.current);
-    // }
-    return () => {
-      // clearInterval(interval);
-      // if (width < 1023) {
-      //   if (img_1.current) observer.unobserve(img_1.current);
-      //   if (img_2.current) observer.unobserve(img_2.current);
-      //   if (img_3.current) observer.unobserve(img_3.current);
-      //   if (img_4.current) observer.unobserve(img_4.current);
-      //   if (img_5.current) observer.unobserve(img_5.current);
-      //   if (img_6.current) observer.unobserve(img_6.current);
-      //   if (img_7.current) observer.unobserve(img_7.current);
-      //   if (img_8.current) observer.unobserve(img_8.current);
-      // }
-    };
-  }, [index]);
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
     centerPadding: "1px",
     slidesToShow: 1,
-    // variableWidth: true,
     speed: 300,
     pauseOnHover: false,
     autoplay: true,
@@ -412,7 +340,7 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile textEllipsis2line">
                   Create Chaos in CombatField ™ Upheaval
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
@@ -506,7 +434,8 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Darkness calls upon you
+                  Darkness calls <br />
+                  upon you
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
                   What starts as a small-town murder investigation becomes a
@@ -596,7 +525,8 @@ const Main_sec = () => {
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
                 <div className="netogame_H1 netogame_appear_animation_mobile">
-                  Discover Neto PlayFusion
+                  Discover <br />
+                  Neto PlayFusion
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
                   By having a Neto PlayFusion account, you can benefit from
@@ -1102,7 +1032,7 @@ const Carousel_3 = () => {
           alt=""
           className="mx-auto h-auto w-1/2 lg:w-1/5"
         />
-        <div className="netogame_H1 font-FuturaNowHeadlineBlack p-10 py-7 text-center text-2xl uppercase text-white lg:text-4xl xl:text-5xl">
+        <div className="netogame_H1 p-10 py-7 text-center font-FuturaNowHeadlineBlack text-2xl uppercase text-white lg:text-4xl xl:text-5xl">
           Discover Neto PlayFusion
         </div>
         <div className="netogame_P mb-7 px-10 text-center text-sm text-white lg:px-20 xl:text-lg">
@@ -1998,7 +1928,7 @@ const Carousel_2 = () => {
                     }
                   >
                     <div className="">
-                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      <div className="pb-5 pt-3 font-ElectronicArtsDisplay_Bold text-2xl uppercase text-white sm:text-3xl xl:text-4xl">
                         Hyper Grip Wireless Controller
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
@@ -2006,7 +1936,7 @@ const Carousel_2 = () => {
                         choice . Your hands deserve the best , choose HyperGrip
                         !
                       </div>
-                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-[#d7292c] p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
                         <div className="">Buy Now</div>
                       </button>
                     </div>
@@ -2014,7 +1944,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl px-3 py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -2038,13 +1968,13 @@ const Carousel_2 = () => {
                     }
                   >
                     <div className="">
-                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      <div className="pb-5 pt-3 font-ElectronicArtsDisplay_Bold text-2xl uppercase text-white sm:text-3xl xl:text-4xl">
                         Neto Gear Console
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
                         Experience the next generation of handheld consoles
                       </div>
-                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-[#d7292c] p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
                         <div className="">Buy Now</div>
                       </button>
                     </div>
@@ -2052,7 +1982,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl px-3 py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -2076,14 +2006,14 @@ const Carousel_2 = () => {
                     }
                   >
                     <div className="">
-                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      <div className="pb-5 pt-3 font-ElectronicArtsDisplay_Bold text-2xl uppercase text-white sm:text-3xl xl:text-4xl">
                         SkyTune Wireless Earbuds
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
                         Experience the harmony of SkyTune , where every note
                         meets the sky
                       </div>
-                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-[#d7292c] p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
                         <div className="">Buy Now</div>
                       </button>
                     </div>
@@ -2091,7 +2021,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl px-3 py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -2115,7 +2045,7 @@ const Carousel_2 = () => {
                     }
                   >
                     <div className="">
-                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      <div className="pb-5 pt-3 font-ElectronicArtsDisplay_Bold text-2xl uppercase text-white sm:text-3xl xl:text-4xl">
                         NETO VR
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
@@ -2123,7 +2053,7 @@ const Carousel_2 = () => {
                         Neto VR , where limitless possibilities await your
                         exploration
                       </div>
-                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-[#d7292c] p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
                         <div className="">Buy Now</div>
                       </button>
                     </div>
@@ -2131,7 +2061,7 @@ const Carousel_2 = () => {
                 </div>
               </div>
               <div className="w-full">
-                <div className="h-full cursor-pointer rounded-xl py-8 pb-8 md:px-0">
+                <div className="h-full cursor-pointer rounded-xl px-3 py-8 pb-8 md:px-0">
                   <div>
                     <Image
                       placeholder="blur"
@@ -2155,13 +2085,13 @@ const Carousel_2 = () => {
                     }
                   >
                     <div className="">
-                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      <div className="pb-5 pt-3 font-ElectronicArtsDisplay_Bold text-2xl uppercase text-white sm:text-3xl xl:text-4xl">
                         ThunderBear Wireless Headset
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
                         Feel the power of sound with Thunderbeat !
                       </div>
-                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-transparent p-5 py-3 font-ElectronicArtsText_Regular text-[#d7292c] hover:scale-[95%] sm:max-w-44 sm:text-base">
+                      <button className="ml-2 rounded-3xl border border-[#d7292c] bg-[#d7292c] p-5 py-3 font-ElectronicArtsText_Regular text-white hover:scale-[95%] sm:max-w-44 sm:text-base">
                         <div className="">Buy Now</div>
                       </button>
                     </div>
@@ -2193,7 +2123,7 @@ const Carousel_2 = () => {
                     }
                   >
                     <div className="">
-                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-xl uppercase text-white sm:text-xl">
+                      <div className="pt-3 font-ElectronicArtsDisplay_Bold text-2xl uppercase text-white sm:text-3xl xl:text-4xl pb-5">
                         Smooth Gameplay and Professional Control
                       </div>
                       <div className="pb-10 font-ElectronicArtsText_Regular text-lg text-white">
@@ -2284,11 +2214,17 @@ const Video_sec = () => {
             ></video>
           </div>
           <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
-            <div className="netogame_H1 font-SST_Bold">Designed for speed</div>
-            <div className="netogame_P">
-              The fast, optimized platform makes it easier than ever to download
-              and play. So jumping into your game takes less time and fewer
-              clicks.
+            <div className="netogame_H1 font-SST_Bold">Designed to Rule</div>
+            <div className="netogame_P pt-3">
+              Today, the Neto token, utilizing an innovative and unique
+              algorithm, has succeeded in surpassing its major competitors in
+              the highly competitive cryptocurrency market and has become one of
+              the top tokens
+            </div>
+            <div className="flex flex-wrap pt-5">
+              <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
+                Find out more
+              </a>
             </div>
           </div>
         </div>
@@ -2301,11 +2237,18 @@ const Video_sec = () => {
             ></video>
           </div>
           <div className="absolute top-1/2 z-10 px-3 lg:left-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
-            <div className="netogame_H1 font-SST_Bold">Designed for speed</div>
-            <div className="netogame_P">
-              The fast, optimized platform makes it easier than ever to download
-              and play. So jumping into your game takes less time and fewer
-              clicks.
+            <div className="netogame_H1 font-SST_Bold">
+              Become a Partner of NetoGame
+            </div>
+            <div className="netogame_P pt-3">
+              Additionally, Neto has also begun activities in producing
+              accessories and products related to the company, each of which has
+              the potential to create significant wealth for Neto's shareholders
+            </div>
+            <div className="flex flex-wrap pt-5">
+              <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
+                Find out more
+              </a>
             </div>
           </div>
         </div>
@@ -2318,11 +2261,18 @@ const Video_sec = () => {
             ></video>
           </div>
           <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
-            <div className="netogame_H1 font-SST_Bold">Designed for speed</div>
-            <div className="netogame_P">
-              The fast, optimized platform makes it easier than ever to download
-              and play. So jumping into your game takes less time and fewer
-              clicks.
+            <div className="netogame_H1 font-SST_Bold">
+              Our Affiliate Program
+            </div>
+            <div className="netogame_P pt-3">
+              You can join the Neto family with a free initial registration. If
+              you are among the first 10,000 registrants, you will receive 1,000
+              Neto tokens as a gift, which you can sell at any time
+            </div>
+            <div className="flex flex-wrap pt-5">
+              <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
+                Find out more
+              </a>
             </div>
           </div>
         </div>
@@ -2597,9 +2547,9 @@ const Jiggle = () => {
     <section>
       <div
         ref={jiggle_container}
-        className="overflow-hidden bg-[url(../../public/netogame/jiggle_bg.png)] bg-cover bg-center bg-no-repeat pb-64 pt-20"
+        className="overflow-hidden bg-[url(../../public/netogame/jiggle_bg.png)] bg-cover bg-center bg-no-repeat pb-32 pt-20"
       >
-        <div className="mx-auto w-2/3 pb-20 text-center text-black">
+        <div className="mx-auto w-2/3 pb-5 text-center text-black">
           <div className="netogame_H1">Feel the difference</div>
           <div className="netogame_p my-2 lg:mt-5">
             Explore the next frontier of virtual reality with Neto VR, where
@@ -2758,6 +2708,46 @@ const Carousel_4 = () => {
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
+                src={carousel4_pic_1}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">NetoBall Release Date</div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  NetoBall will be released in the second quarter of 2025.
+                  According to our schedule, a demo version of the game will be
+                  available on the store two months before the official release
+                </div>
+              </div>
+              <div className="relative bottom-0 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_1}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full rounded-xl">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
                 src={carousel4_pic_2}
                 width={0}
                 height={0}
@@ -2767,12 +2757,13 @@ const Carousel_4 = () => {
 
               <div className="text-black">
                 <div className="netogame_H2 mt-5">
-                  Share of the Week: Games Within Games
+                  Netoball Release on Consoles
                 </div>
                 <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Netoball will be available for Xbox Series X and PlayStation 5
+                  in the second half of 2025. The PC version will also be
+                  released simultaneously on Steam alongside the console
+                  versions
                 </div>
               </div>
               <div className="relative bottom-0 text-black">
@@ -2786,9 +2777,9 @@ const Carousel_4 = () => {
                     className="size-12"
                   />
                   <div className="ml-2">
-                    <div className="">adam michel</div>
+                    <div className="">Neto Reporter</div>
                     <div className="text-xs text-black/50">
-                      Content Communications Specialist, Sony Interactive
+                      Content Communications Specialist, Neto Interactive
                       Entertainment
                     </div>
                   </div>
@@ -2809,12 +2800,12 @@ const Carousel_4 = () => {
 
               <div className="text-black">
                 <div className="netogame_H2 mt-5">
-                  Share of the Week: Games Within Games
+                  Mythus Arena: A Unique Strategy Game Experience
                 </div>
                 <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  You'll have to wait until 2026 for Mythus Arena. The Neto team
+                  is working tirelessly on this game, and we aim to deliver the
+                  best strategy game experience for our users
                 </div>
               </div>
               <div className="relative bottom-0 text-black">
@@ -2828,9 +2819,9 @@ const Carousel_4 = () => {
                     className="size-12"
                   />
                   <div className="ml-2">
-                    <div className="">adam michel</div>
+                    <div className="">Neto Reporter</div>
                     <div className="text-xs text-black/50">
-                      Content Communications Specialist, Sony Interactive
+                      Content Communications Specialist, Neto Interactive
                       Entertainment
                     </div>
                   </div>
@@ -2851,12 +2842,13 @@ const Carousel_4 = () => {
 
               <div className="text-black">
                 <div className="netogame_H2 mt-5">
-                  Share of the Week: Games Within Games
+                  Stay Tuned for Neto Affiliate
                 </div>
                 <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  You can join the large Neto family with an initial free
+                  registration. If you're among the first 10,000 members, you'll
+                  receive 1,000 Neto tokens as a gift for signing up, which you
+                  can sell anytime you wish
                 </div>
               </div>
               <div className="relative bottom-0 text-black">
@@ -2870,9 +2862,9 @@ const Carousel_4 = () => {
                     className="size-12"
                   />
                   <div className="ml-2">
-                    <div className="">adam michel</div>
+                    <div className="">Neto Reporter</div>
                     <div className="text-xs text-black/50">
-                      Content Communications Specialist, Sony Interactive
+                      Content Communications Specialist, Neto Interactive
                       Entertainment
                     </div>
                   </div>
@@ -2893,12 +2885,15 @@ const Carousel_4 = () => {
 
               <div className="text-black">
                 <div className="netogame_H2 mt-5">
-                  Share of the Week: Games Within Games
+                  You Can Be a Part of NetoBall
                 </div>
                 <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Neto's first game to offer shares is NetoBall. The pre-sale or
+                  initial offering of revenue and partnership shares for
+                  NetoBall works in such a way that each user must pay the
+                  equivalent of 330,000 Neto tokens per share. The number of
+                  shares is limited, and once 5,000 shares are reached, no
+                  further shares of NetoBall will be available to the public
                 </div>
               </div>
               <div className="relative bottom-0 text-black">
@@ -2912,9 +2907,9 @@ const Carousel_4 = () => {
                     className="size-12"
                   />
                   <div className="ml-2">
-                    <div className="">adam michel</div>
+                    <div className="">Neto Reporter</div>
                     <div className="text-xs text-black/50">
-                      Content Communications Specialist, Sony Interactive
+                      Content Communications Specialist, Neto Interactive
                       Entertainment
                     </div>
                   </div>
@@ -2935,12 +2930,13 @@ const Carousel_4 = () => {
 
               <div className="text-black">
                 <div className="netogame_H2 mt-5">
-                  Share of the Week: Games Within Games
+                  The Combat Field game engine will be Unreal Engine
                 </div>
                 <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
+                  Combat Field offers an unparalleled experience of a
+                  first-person shooter, thanks to the Unreal Engine, which will
+                  provide realistic graphics and physics. A specific release
+                  date for the game has not yet been determined
                 </div>
               </div>
               <div className="relative bottom-0 text-black">
@@ -2954,51 +2950,9 @@ const Carousel_4 = () => {
                     className="size-12"
                   />
                   <div className="ml-2">
-                    <div className="">adam michel</div>
+                    <div className="">Neto Reporter</div>
                     <div className="text-xs text-black/50">
-                      Content Communications Specialist, Sony Interactive
-                      Entertainment
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full rounded-xl">
-            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
-              <Image
-                placeholder="blur"
-                src={carousel4_pic_1}
-                width={0}
-                height={0}
-                alt=""
-                className="carouselimg h-auto w-full rounded-xl"
-              />
-
-              <div className="text-black">
-                <div className="netogame_H2 mt-5">
-                  Share of the Week: Games Within Games
-                </div>
-                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
-                  Assemble your crew of Freegunner space outlaws and team up
-                  with friends online, in this new multiplayer hero shooter
-                  available August 23rd on PS5 and PC.¹
-                </div>
-              </div>
-              <div className="relative bottom-0 text-black">
-                <div className="flex">
-                  <Image
-                    placeholder="blur"
-                    src={carousel4_logo_1}
-                    width={0}
-                    height={0}
-                    alt=""
-                    className="size-12"
-                  />
-                  <div className="ml-2">
-                    <div className="">adam michel</div>
-                    <div className="text-xs text-black/50">
-                      Content Communications Specialist, Sony Interactive
+                      Content Communications Specialist, Neto Interactive
                       Entertainment
                     </div>
                   </div>
@@ -3091,26 +3045,19 @@ export default function Home() {
       <title>NetoGame</title>
       <link rel="icon" href="/icon.ico" sizes="any" />
       <Navbar2 />
-      {/* <div className="!font-SST_Light">
-        <Navbar />
-      </div> */}
-
       <div className="mt-0">
         <Main_sec />
         <Category_sec />
-        <div className="carousel3_bg mx-auto w-full py-20">
+        <div className="carousel3_bg mx-auto w-full py-5">
           <Carousel_3 />
         </div>
-        {/* <Social_bar /> */}
         <Carousel_2 />
         <Video_sec />
         <div className="bg-[#18141a] py-16">
           <Carousel_5 />
         </div>
-        {/* <Sec2 /> */}
         <Jiggle />
         <Sec1 />
-
         <Carousel_4 />
         <Social_bar />
       </div>
