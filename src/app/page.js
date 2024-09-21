@@ -179,7 +179,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_1_pc}
                     width={0}
                     height={0}
@@ -235,7 +234,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_2_pc}
                     width={0}
                     height={0}
@@ -290,7 +288,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_3_pc}
                     width={0}
                     height={0}
@@ -346,7 +343,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_4_pc}
                     width={0}
                     height={0}
@@ -394,7 +390,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_5_pc}
                     width={0}
                     height={0}
@@ -448,7 +443,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_6_pc}
                     width={0}
                     height={0}
@@ -502,7 +496,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_7_pc}
                     width={0}
                     height={0}
@@ -556,7 +549,6 @@ const Main_sec = () => {
 
                   <Image
                     placeholder="blur"
-                    priority
                     src={main_pic_8_pc}
                     width={0}
                     height={0}
