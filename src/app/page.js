@@ -2243,12 +2243,12 @@ const Video_sec = () => {
       }
     };
 
-    // window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
       if (video_1.current) observer.unobserve(video_1.current);
       if (video_2.current) observer.unobserve(video_2.current);
       if (video_3.current) observer.unobserve(video_3.current);
-      // window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, [options]);
 
