@@ -196,10 +196,18 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
                   From the depths of darkness
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
+                  From the depths of darkness, heroes rise to return the God Of
+                  Light to the earth . Who will you choose?
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
+                  From the depths
+                  <br /> of darkness
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
                   From the depths of darkness, heroes rise to return the God Of
                   Light to the earth . Who will you choose?
                 </div>
@@ -244,12 +252,19 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
                   Are you ready for real death ?
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
                   In Orbit Explore, experience the thrill of getting hit, kill
                   your enemies, and enjoy an immersive VR game
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
+                  Are you ready <br /> for real death ?
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
+                  In Orbit Explore, experience the thrill <br /> of getting hit,
+                  kill your enemies, <br /> and enjoy an immersive VR game
                 </div>
                 <a
                   href="/orbit_explore"
@@ -292,12 +307,20 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
                   Join the crew of the NetoBall
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
                   Experience the thrill of high-flying action and intense
                   competition in the ultimate head-to-head soccer showdown
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
+                  Join the crew of <br /> the NetoBall
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
+                  Experience the thrill of high-flying <br /> action and intense
+                  competition in the ultimate <br />
+                  head-to-head soccer showdown
                 </div>
                 <a
                   href="/netoball"
@@ -388,11 +411,20 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
                   Welcome to the new Basketball
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
                   Step onto the court and dominate with skill, strategy, and
+                  style in the Hoops Heat
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
+                  Welcome to the <br /> new Basketball
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
+                  Step onto the court and <br />
+                  dominate with skill, strategy, and
+                  <br />
                   style in the Hoops Heat
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
@@ -433,12 +465,20 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
+                  Darkness calls upon you
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
+                  What starts as a small-town murder investigation becomes a
+                  living nightmare
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
                   Darkness calls <br />
                   upon you
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  What starts as a small-town murder investigation becomes a
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
+                  What starts as a small-town
+                  <br /> murder investigation becomes a<br />
                   living nightmare
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
@@ -479,12 +519,21 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
                   New savings on NetoGame Store
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
                   Explore the latest discounts and seasonal sales on new games
                   and accessories
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
+                  New savings on
+                  <br /> NetoGame Store
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
+                  Explore the latest discounts
+                  <br /> and seasonal sales on
+                  <br /> new games and accessories
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
                   Find out more
@@ -524,12 +573,21 @@ const Main_sec = () => {
                   alt=""
                   className="netogame_appear_animation_mobile w-2/3 lg:w-40 xl:w-full"
                 />
-                <div className="netogame_H1 netogame_appear_animation_mobile">
+                <div className="netogame_H1 netogame_appear_animation_mobile hidden lg:block">
+                  Discover Neto PlayFusion
+                </div>
+                <div className="netogame_p netogame_appear_animation_mobile my-2 hidden lg:my-5 lg:block">
+                  By having a Neto PlayFusion account, you can benefit from
+                  special services
+                </div>
+                <div className="netogame_H1 netogame_appear_animation_mobile lg:hidden">
                   Discover <br />
                   Neto PlayFusion
                 </div>
-                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5">
-                  By having a Neto PlayFusion account, you can benefit from
+                <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
+                  By having a Neto PlayFusion account,
+                  <br /> you can benefit from
+                  <br />
                   special services
                 </div>
                 <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
@@ -786,7 +844,7 @@ const Category_sec = () => {
         <div className="netogame_H1 p-10 text-center text-2xl lg:text-4xl">
           Great PS4 & PS5 games out now or coming soon
         </div>
-        <div className="min-h-[55vh]">
+        <div className="min-h-[55vh] lg:h-[66vh]">
           <div className="mx-auto flex w-max flex-wrap-reverse rounded-3xl bg-[#1c1d21] text-xs text-black sm:text-sm lg:text-base">
             <div
               onClick={() => setSelectedCategory("all")}
@@ -2193,12 +2251,12 @@ const Video_sec = () => {
       }
     };
 
-    window.addEventListener("resize", handleResize);
+    // window.addEventListener("resize", handleResize);
     return () => {
       if (video_1.current) observer.unobserve(video_1.current);
       if (video_2.current) observer.unobserve(video_2.current);
       if (video_3.current) observer.unobserve(video_3.current);
-      window.removeEventListener("resize", handleResize);
+      // window.removeEventListener("resize", handleResize);
     };
   }, [options]);
 
@@ -2206,10 +2264,12 @@ const Video_sec = () => {
     <section>
       <div className="bg-[#d8dee7] text-black">
         <div className="relative">
-          <div className="min-h-[40vh] overflow-hidden border lg:h-auto">
+          <div className="h-[776px] overflow-hidden sm:h-auto">
             <video
               ref={video_1}
               muted
+              autoPlay
+              className="w-full object-fill"
               src="netogame/video_sec_1_mobile.mp4"
             ></video>
           </div>
@@ -2229,10 +2289,12 @@ const Video_sec = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="min-h-[40vh] overflow-hidden border lg:h-auto">
+          <div className="h-[776px] overflow-hidden sm:h-auto">
             <video
               ref={video_2}
               muted
+              autoPlay
+              className="w-full object-fill"
               src="netogame/video_sec_2_mobile.mp4"
             ></video>
           </div>
@@ -2253,10 +2315,12 @@ const Video_sec = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="min-h-[40vh] overflow-hidden border lg:h-auto">
+          <div className="h-[776px] overflow-hidden sm:h-auto">
             <video
               ref={video_3}
               muted
+              autoPlay
+              className="w-full object-fill"
               src="netogame/video_sec_3_mobile.mp4"
             ></video>
           </div>
@@ -2542,7 +2606,23 @@ const Jiggle = () => {
       jiggle_4_ref.current.style.transform =
         "translateY(0px) translateX(0px) rotateZ(0deg)";
     });
-  });
+    jiggle_container.current.addEventListener("touchmove", (event) => {
+      var mouse_x = event.targetTouches[0].clientX;
+      var mouse_y = event.targetTouches[0].clientY;
+      mouse_x = Math.floor(mouse_x);
+      mouse_y = Math.floor(mouse_y);
+      //-3 to +3 deg
+      var windows_width = window.innerWidth;
+      var windows_height = window.innerHeight;
+
+      var rotate_z = (mouse_x / windows_width) * 6 - 3;
+      var translate_y = ((mouse_y / windows_height) * 6 - 3) * 5;
+      jiggle_1_ref.current.style.transform = `translateY(${-translate_y}px) rotateZ(${rotate_z}deg) translateX(${rotate_z * 20}px)`;
+      jiggle_2_ref.current.style.transform = `translateY(${translate_y}px) rotateZ(${-rotate_z}deg) translateX(${rotate_z * -10}px)`;
+      jiggle_3_ref.current.style.transform = `translateY(${translate_y}px) rotateZ(${rotate_z}deg) translateX(${rotate_z * -10}px)`;
+      jiggle_4_ref.current.style.transform = `translateY(${translate_y}px) rotateZ(${-rotate_z}deg) translateX(${rotate_z * -10}px)`;
+    });
+  }, []);
   return (
     <section>
       <div
@@ -2704,7 +2784,7 @@ const Carousel_4 = () => {
 
       <div className="slider-container relative w-full pb-10">
         <Slider {...settings}>
-          <div className="w-full rounded-xl">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2723,7 +2803,7 @@ const Carousel_4 = () => {
                   available on the store two months before the official release
                 </div>
               </div>
-              <div className="relative bottom-0 text-black">
+              <div className="absolute bottom-3 text-black">
                 <div className="flex">
                   <Image
                     placeholder="blur"
@@ -2744,7 +2824,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2766,7 +2846,7 @@ const Carousel_4 = () => {
                   versions
                 </div>
               </div>
-              <div className="relative bottom-0 text-black">
+              <div className="absolute bottom-3 text-black">
                 <div className="flex">
                   <Image
                     placeholder="blur"
@@ -2787,7 +2867,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2808,7 +2888,7 @@ const Carousel_4 = () => {
                   best strategy game experience for our users
                 </div>
               </div>
-              <div className="relative bottom-0 text-black">
+              <div className="absolute bottom-3 text-black">
                 <div className="flex">
                   <Image
                     placeholder="blur"
@@ -2829,7 +2909,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2851,7 +2931,7 @@ const Carousel_4 = () => {
                   can sell anytime you wish
                 </div>
               </div>
-              <div className="relative bottom-0 text-black">
+              <div className="absolute bottom-3 text-black">
                 <div className="flex">
                   <Image
                     placeholder="blur"
@@ -2872,7 +2952,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2896,7 +2976,7 @@ const Carousel_4 = () => {
                   further shares of NetoBall will be available to the public
                 </div>
               </div>
-              <div className="relative bottom-0 text-black">
+              <div className="absolute bottom-3 text-black">
                 <div className="flex">
                   <Image
                     placeholder="blur"
@@ -2917,7 +2997,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-xl">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2939,7 +3019,7 @@ const Carousel_4 = () => {
                   date for the game has not yet been determined
                 </div>
               </div>
-              <div className="relative bottom-0 text-black">
+              <div className="absolute bottom-3 text-black">
                 <div className="flex">
                   <Image
                     placeholder="blur"

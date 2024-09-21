@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Navbar2 from "./navbar2";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const furura = localFont({
   src: [
@@ -218,6 +219,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <SpeedInsights />
       <body
         className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} ${Inter_VariableFont_opsz.variable} ${FuturaNowHeadlineBlack.variable} `}
       >
