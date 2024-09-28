@@ -2398,7 +2398,7 @@ const Video_sec_2 = () => {
                     loop
                     muted
                     autoPlay
-                    src="netogame/video_sec2_1.mp4"
+                    src="netogame/video_sec2_2.mp4"
                     className="rounded-[40px]"
                   />
                 </div>
@@ -2433,7 +2433,7 @@ const Video_sec_2 = () => {
                     loop
                     muted
                     autoPlay
-                    src="netogame/video_sec2_1.mp4"
+                    src="netogame/video_sec2_3.mp4"
                     className="rounded-[40px]"
                   />
                 </div>
