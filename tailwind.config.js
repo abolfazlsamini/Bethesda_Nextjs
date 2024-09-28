@@ -28,6 +28,7 @@ module.exports = {
         druk_wide_super: "var(--font-druk_wide_super)",
         Inter_VariableFont_opsz: "var(--font-Inter_VariableFont_opsz)",
         FuturaNowHeadlineBlack: "var(--font-FuturaNowHeadlineBlack)",
+        abcgintonord_extrabold: "var(--font-abcgintonord_extrabold)",
       },
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",

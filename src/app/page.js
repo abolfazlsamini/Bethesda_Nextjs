@@ -77,6 +77,9 @@ import carousel4_logo_6 from "../../public/netogame/carousel4_logo_6.webp";
 
 // import sec2_pc from "../../public/netogame/sec2_pc.webp";
 
+import video_header_1 from "../../public/netogame/video_header_1.gif";
+import video_header_2 from "../../public/netogame/video_header_2.webp";
+
 import jiggle_1 from "../../public/netogame/jiggle_1.png";
 import jiggle_2 from "../../public/netogame/jiggle_2.png";
 import jiggle_3 from "../../public/netogame/jiggle_3.png";
@@ -2195,140 +2198,246 @@ const Carousel_2 = () => {
     </section>
   );
 };
-const Video_sec = () => {
-  const video_1 = useRef();
-  const video_2 = useRef();
-  const video_3 = useRef();
+// const Video_sec = () => {
+//   const video_1 = useRef();
+//   const video_2 = useRef();
+//   const video_3 = useRef();
 
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  function callback(enteries) {
-    const [entry] = enteries;
-    //* if (entry.isIntersecting && !entry.ended) */
-    entry.target.play();
-  }
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.1,
+//   };
+//   function callback(enteries) {
+//     const [entry] = enteries;
+//     //* if (entry.isIntersecting && !entry.ended) */
+//     entry.target.play();
+//   }
 
-  useEffect(() => {
-    var width = window.innerWidth;
+//   useEffect(() => {
+//     var width = window.innerWidth;
 
-    const observer = new IntersectionObserver(callback, options);
-    if (video_1.current) {
-      observer.observe(video_1.current);
-      if (width > 1023) video_1.current.src = `netogame/video_sec_1.mp4`;
-      else video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
-    }
-    if (video_2.current) {
-      observer.observe(video_2.current);
-      if (width > 1023) video_2.current.src = `netogame/video_sec_2.mp4`;
-      else video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
-    }
-    if (video_3.current) {
-      observer.observe(video_3.current);
-      if (width > 1023) video_3.current.src = `netogame/video_sec_3.mp4`;
-      else video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
-    }
+//     const observer = new IntersectionObserver(callback, options);
+//     if (video_1.current) {
+//       observer.observe(video_1.current);
+//       if (width > 1023) video_1.current.src = `netogame/video_sec_1.mp4`;
+//       else video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
+//     }
+//     if (video_2.current) {
+//       observer.observe(video_2.current);
+//       if (width > 1023) video_2.current.src = `netogame/video_sec_2.mp4`;
+//       else video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
+//     }
+//     if (video_3.current) {
+//       observer.observe(video_3.current);
+//       if (width > 1023) video_3.current.src = `netogame/video_sec_3.mp4`;
+//       else video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
+//     }
 
-    const handleResize = () => {
-      if (width > 1023) {
-        video_1.current.src = `netogame/video_sec_1.mp4`;
-        video_2.current.src = `netogame/video_sec_2.mp4`;
-        video_3.current.src = `netogame/video_sec_3.mp4`;
-      } else {
-        video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
-        video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
-        video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
-      }
-    };
+//     const handleResize = () => {
+//       if (width > 1023) {
+//         video_1.current.src = `netogame/video_sec_1.mp4`;
+//         video_2.current.src = `netogame/video_sec_2.mp4`;
+//         video_3.current.src = `netogame/video_sec_3.mp4`;
+//       } else {
+//         video_1.current.src = `netogame/video_sec_1_mobile.mp4`;
+//         video_2.current.src = `netogame/video_sec_2_mobile.mp4`;
+//         video_3.current.src = `netogame/video_sec_3_mobile.mp4`;
+//       }
+//     };
 
-    // window.addEventListener("resize", handleResize);
-    return () => {
-      if (video_1.current) observer.unobserve(video_1.current);
-      if (video_2.current) observer.unobserve(video_2.current);
-      if (video_3.current) observer.unobserve(video_3.current);
-      // window.removeEventListener("resize", handleResize);
-    };
-  }, [options]);
+//     // window.addEventListener("resize", handleResize);
+//     return () => {
+//       if (video_1.current) observer.unobserve(video_1.current);
+//       if (video_2.current) observer.unobserve(video_2.current);
+//       if (video_3.current) observer.unobserve(video_3.current);
+//       // window.removeEventListener("resize", handleResize);
+//     };
+//   }, [options]);
 
+//   return (
+//     <section>
+//       <div className="bg-[#d8dee7] text-black">
+//         <div className="relative">
+//           <div className="h-[776px] overflow-hidden sm:h-auto">
+//             <video
+//               ref={video_1}
+//               muted
+//               autoPlay
+//               className="w-full object-fill"
+//               src="netogame/video_sec_1_mobile.mp4"
+//             ></video>
+//           </div>
+//           <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
+//             <div className="netogame_H1 font-SST_Bold">Designed to Rule</div>
+//             <div className="netogame_P pt-3">
+//               Today, the Neto token, utilizing an innovative and unique
+//               algorithm, has succeeded in surpassing its major competitors in
+//               the highly competitive cryptocurrency market and has become one of
+//               the top tokens
+//             </div>
+//             <div className="flex flex-wrap pt-5">
+//               <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
+//                 Find out more
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="relative">
+//           <div className="h-[776px] overflow-hidden sm:h-auto">
+//             <video
+//               ref={video_2}
+//               muted
+//               autoPlay
+//               className="w-full object-fill"
+//               src="netogame/video_sec_2_mobile.mp4"
+//             ></video>
+//           </div>
+//           <div className="absolute top-1/2 z-10 px-3 lg:left-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
+//             <div className="netogame_H1 font-SST_Bold">
+//               Become a Partner of NetoGame
+//             </div>
+//             <div className="netogame_P pt-3">
+//               Additionally, Neto has also begun activities in producing
+//               accessories and products related to the company, each of which has
+//               the potential to create significant wealth for Neto's shareholders
+//             </div>
+//             <div className="flex flex-wrap pt-5">
+//               <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
+//                 Find out more
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="relative">
+//           <div className="h-[776px] overflow-hidden sm:h-auto">
+//             <video
+//               ref={video_3}
+//               muted
+//               autoPlay
+//               className="w-full object-fill"
+//               src="netogame/video_sec_3_mobile.mp4"
+//             ></video>
+//           </div>
+//           <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
+//             <div className="netogame_H1 font-SST_Bold">
+//               Our Affiliate Program
+//             </div>
+//             <div className="netogame_P pt-3">
+//               You can join the Neto family with a free initial registration. If
+//               you are among the first 10,000 registrants, you will receive 1,000
+//               Neto tokens as a gift, which you can sell at any time
+//             </div>
+//             <div className="flex flex-wrap pt-5">
+//               <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
+//                 Find out more
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+const Video_sec_2 = () => {
   return (
     <section>
-      <div className="bg-[#d8dee7] text-black">
-        <div className="relative">
-          <div className="h-[776px] overflow-hidden sm:h-auto">
-            <video
-              ref={video_1}
-              muted
-              autoPlay
-              className="w-full object-fill"
-              src="netogame/video_sec_1_mobile.mp4"
-            ></video>
-          </div>
-          <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
-            <div className="netogame_H1 font-SST_Bold">Designed to Rule</div>
-            <div className="netogame_P pt-3">
-              Today, the Neto token, utilizing an innovative and unique
-              algorithm, has succeeded in surpassing its major competitors in
-              the highly competitive cryptocurrency market and has become one of
-              the top tokens
-            </div>
-            <div className="flex flex-wrap pt-5">
-              <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
-                Find out more
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="h-[776px] overflow-hidden sm:h-auto">
-            <video
-              ref={video_2}
-              muted
-              autoPlay
-              className="w-full object-fill"
-              src="netogame/video_sec_2_mobile.mp4"
-            ></video>
-          </div>
-          <div className="absolute top-1/2 z-10 px-3 lg:left-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
-            <div className="netogame_H1 font-SST_Bold">
-              Become a Partner of NetoGame
-            </div>
-            <div className="netogame_P pt-3">
-              Additionally, Neto has also begun activities in producing
-              accessories and products related to the company, each of which has
-              the potential to create significant wealth for Neto's shareholders
-            </div>
-            <div className="flex flex-wrap pt-5">
-              <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
-                Find out more
-              </a>
+      <div className="video_bg py-10">
+        <div className="px-8 pt-32 md:px-16">
+          <div className="relative mx-auto w-fit">
+            <Image
+              width={0}
+              height={0}
+              alt=""
+              src={video_header_1}
+              className="absolute right-10 top-0 w-32 -translate-y-[96%] md:w-40"
+            />
+            <div className="relative z-20 max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
+              <div className="flex flex-col items-center md:flex-row-reverse">
+                <div className="p-8 md:w-[40%]">
+                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-4xl">
+                    Designed to Rule
+                  </div>
+                  <div className="pb-10 pt-3 font-ElectronicArtsText_Regular text-xl text-white">
+                    Today, the Neto token, utilizing an innovative and unique
+                    algorithm, has succeeded in surpassing its major competitors
+                    in the highly competitive cryptocurrency market and has
+                    become one of the top tokens
+                  </div>
+                </div>
+                <div className="p-2 md:w-[60%]">
+                  <video
+                    loop
+                    muted
+                    autoPlay
+                    src="netogame/video_sec2_1.mp4"
+                    className="rounded-[40px]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="relative">
-          <div className="h-[776px] overflow-hidden sm:h-auto">
-            <video
-              ref={video_3}
-              muted
-              autoPlay
-              className="w-full object-fill"
-              src="netogame/video_sec_3_mobile.mp4"
-            ></video>
+        <div className="px-8 pt-32 md:px-16">
+          <div className="relative mx-auto w-fit">
+            <div className="relative z-20 max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
+              <div className="flex flex-col items-center md:flex-row">
+                <div className="p-8 md:w-[40%]">
+                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-4xl">
+                    Become a Partner of NetoGame
+                  </div>
+                  <div className="pb-10 pt-3 font-ElectronicArtsText_Regular text-xl text-white">
+                    Additionally, Neto has also begun activities in producing
+                    accessories and products related to the company, each of
+                    which has the potential to create significant wealth for
+                    Neto's shareholders
+                  </div>
+                </div>
+                <div className="p-2 md:w-[60%]">
+                  <video
+                    loop
+                    muted
+                    autoPlay
+                    src="netogame/video_sec2_1.mp4"
+                    className="rounded-[40px]"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="absolute top-1/2 z-10 px-3 lg:right-10 lg:top-1/2 lg:w-2/5 lg:-translate-y-1/2">
-            <div className="netogame_H1 font-SST_Bold">
-              Our Affiliate Program
-            </div>
-            <div className="netogame_P pt-3">
-              You can join the Neto family with a free initial registration. If
-              you are among the first 10,000 registrants, you will receive 1,000
-              Neto tokens as a gift, which you can sell at any time
-            </div>
-            <div className="flex flex-wrap pt-5">
-              <a className="cursor-pointer rounded-2xl bg-black px-3 py-2 font-SST_Bold text-base font-bold text-[#9fa4ac] outline-none outline-2 delay-75 hover:bg-black hover:outline-offset-2 hover:outline-black xl:text-lg">
-                Find out more
-              </a>
+        </div>
+        <div className="px-8 pt-32 md:px-16">
+          <div className="relative mx-auto w-fit">
+            <Image
+              width={0}
+              height={0}
+              alt=""
+              src={video_header_2}
+              className="absolute right-0 top-0 z-20 w-40 -translate-y-[45%] translate-x-[18%] md:w-60 xl:w-64"
+            />
+            <div className="relative max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
+              <div className="flex flex-col items-center md:flex-row-reverse">
+                <div className="p-8 md:w-[40%]">
+                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-4xl">
+                    Our Affiliate Program
+                  </div>
+                  <div className="pb-10 pt-3 font-ElectronicArtsText_Regular text-xl text-white">
+                    You can join the Neto family with a free initial
+                    registration. If you are among the first 10,000 registrants,
+                    you will receive 1,000 Neto tokens as a gift, which you can
+                    sell at any time
+                  </div>
+                </div>
+                <div className="p-2 md:w-[60%]">
+                  <video
+                    loop
+                    muted
+                    autoPlay
+                    src="netogame/video_sec2_1.mp4"
+                    className="rounded-[40px]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -3124,7 +3233,7 @@ export default function Home() {
           <Carousel_3 />
         </div>
         <Carousel_2 />
-        <Video_sec />
+        <Video_sec_2 />
         <div className="bg-[#18141a] py-16">
           <Carousel_5 />
         </div>

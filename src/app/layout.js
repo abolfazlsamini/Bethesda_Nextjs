@@ -207,6 +207,16 @@ export const Inter_VariableFont_opsz = localFont({
   ],
   variable: "--font-Inter_VariableFont_opsz",
 });
+export const abcgintonord_extrabold = localFont({
+  src: [
+    {
+      path: "../../public/fonts/netogame/abcgintonord_extrabold.woff2",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-abcgintonord_extrabold",
+});
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -219,7 +229,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} ${Inter_VariableFont_opsz.variable} ${FuturaNowHeadlineBlack.variable} `}
+        className={` ${furura.variable} ${univers55.variable} ${montera.variable} ${roboto.variable} ${ElectronicArtsDisplay_Bold.variable} ${ElectronicArtsText_Bold.variable} ${ElectronicArtsText_Regular.variable} ${A2Beckett.variable} ${montserrat.variable} ${CCCutthroat.variable} ${Purista.variable} ${PuristaItalic.variable} ${SST_Light.variable} ${SST_Bold.variable} ${CruyffSansExpanded_Heavy.variable} ${druk_text_medium.variable} ${druk_wide_super.variable} ${cruyffsans_medium.variable} ${Inter_VariableFont_opsz.variable} ${FuturaNowHeadlineBlack.variable} ${abcgintonord_extrabold.variable} `}
       >
         <Navbar2 />
         {children}
