@@ -2355,15 +2355,21 @@ const Video_sec_2 = () => {
             <div className="relative z-20 max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
               <div className="flex flex-col items-center md:flex-row-reverse">
                 <div className="p-8 md:w-[40%]">
-                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-4xl">
+                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-5xl">
                     Designed to Rule
                   </div>
-                  <div className="pb-10 pt-3 font-ElectronicArtsText_Regular text-xl text-white">
+                  <div className="py-4 font-ElectronicArtsText_Regular text-xl text-white xl:text-2xl">
                     Today, the Neto token, utilizing an innovative and unique
                     algorithm, has succeeded in surpassing its major competitors
                     in the highly competitive cryptocurrency market and has
                     become one of the top tokens
                   </div>
+                  <a
+                    href="/mythus_arena"
+                    className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                  >
+                    Visit Website
+                  </a>
                 </div>
                 <div className="p-2 md:w-[60%]">
                   <video
@@ -2383,15 +2389,21 @@ const Video_sec_2 = () => {
             <div className="relative z-20 max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
               <div className="flex flex-col items-center md:flex-row">
                 <div className="p-8 md:w-[40%]">
-                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-4xl">
+                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-5xl">
                     Become a Partner of NetoGame
                   </div>
-                  <div className="pb-10 pt-3 font-ElectronicArtsText_Regular text-xl text-white">
+                  <div className="py-4 font-ElectronicArtsText_Regular text-xl text-white xl:text-2xl">
                     Additionally, Neto has also begun activities in producing
                     accessories and products related to the company, each of
                     which has the potential to create significant wealth for
                     Neto's shareholders
                   </div>
+                  <a
+                    href="/mythus_arena"
+                    className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                  >
+                    Visit Website
+                  </a>
                 </div>
                 <div className="p-2 md:w-[60%]">
                   <video
@@ -2418,15 +2430,21 @@ const Video_sec_2 = () => {
             <div className="relative max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
               <div className="flex flex-col items-center md:flex-row-reverse">
                 <div className="p-8 md:w-[40%]">
-                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-4xl">
+                  <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-5xl">
                     Our Affiliate Program
                   </div>
-                  <div className="pb-10 pt-3 font-ElectronicArtsText_Regular text-xl text-white">
+                  <div className="py-4 font-ElectronicArtsText_Regular text-xl text-white xl:text-2xl">
                     You can join the Neto family with a free initial
                     registration. If you are among the first 10,000 registrants,
                     you will receive 1,000 Neto tokens as a gift, which you can
                     sell at any time
                   </div>
+                  <a
+                    href="/mythus_arena"
+                    className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                  >
+                    Visit Website
+                  </a>
                 </div>
                 <div className="p-2 md:w-[60%]">
                   <video
