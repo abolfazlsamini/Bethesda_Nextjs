@@ -2365,7 +2365,7 @@ const Video_sec_2 = () => {
                     become one of the top tokens
                   </div>
                   <a
-                    href="/mythus_arena"
+                    href="#"
                     className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
                   >
                     Visit Website
@@ -2399,7 +2399,7 @@ const Video_sec_2 = () => {
                     Neto's shareholders
                   </div>
                   <a
-                    href="/mythus_arena"
+                    href="#"
                     className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
                   >
                     Visit Website
@@ -2440,7 +2440,7 @@ const Video_sec_2 = () => {
                     sell at any time
                   </div>
                   <a
-                    href="/mythus_arena"
+                    href="#"
                     className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
                   >
                     Visit Website
