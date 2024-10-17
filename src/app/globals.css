@@ -495,3 +495,107 @@ body {
   background-image: url(../../public/netogame/video_main_bg.png);
   background-size: cover;
 }
+
+.hoops_heat_sec3_bg {
+  background-image: url(../../public/hoops_heat/sec3_bg.svg);
+  background-size: contain;
+  background-size: 100%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+.hoops_heat_sec5_bg {
+  background-image: url(../../public/hoops_heat/sec5_bg.svg);
+  background-size: contain;
+  background-size: 70%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.hoops_heat_sec2_bg {
+  background-image: url(../../public/hoops_heat/sec2_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+  .hoops_heat_sec3_bg {
+    background-image: url(../../public/hoops_heat/sec3_bg.svg);
+    background-size: contain;
+    background-size: 70%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  .hoops_heat_sec5_bg {
+    background-image: url(../../public/hoops_heat/sec5_bg_pc.svg);
+    background-size: contain;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  .life_elevated_sec2_bg_1 {
+    background-image: url(../../public/life_elevated/bg_cover_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1023.95px) {
+  .life_elevated_sec2_bg_1 {
+    background-image: url(../../public/life_elevated/bg_cover_1_mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.slick-dots {
+  position: static !important;
+}
+
+.life_elevated_btn_bg {
+  background-image: url(../../public/life_elevated/button_bg_yellow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.life_elevated_btn_bg:hover {
+  background-image: none;
+  background-color: #a08b00;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.life_elevated_sec2_bg_2 {
+  background-image: url(../../public/life_elevated/bg_cover_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.life_elevated_sec2_bg_3 {
+  background-image: url(../../public/life_elevated/bg_cover_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.life_elevated_sec5_imgappear {
+  opacity: 0;
+  max-height: 0px;
+  animation: appearimage 2s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes appearimage {
+  0% {
+    max-height: 999px;
+  }
+  100% {
+    max-height: 999px;
+    opacity: 1;
+  }
+}
+.life_elevated_sec5_imgdisappear {
+  animation: disappearimage 2s linear forwards;
+}
+
+@keyframes disappearimage {
+  90% {
+    opacity: 0;
+  }
+  100% {
+    max-height: 0px;
+  }
+}

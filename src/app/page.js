@@ -210,8 +210,9 @@ const Main_sec = () => {
                   <br /> of darkness
                 </div>
                 <div className="netogame_p netogame_appear_animation_mobile my-2 lg:my-5 lg:hidden">
-                  From the depths of darkness, heroes rise to return the God Of
-                  Light to the earth . Who will you choose?
+                  From the depths of darkness,
+                  <br /> heroes rise to return the God Of Light to the earth .
+                  Who will you choose?
                 </div>
                 <a
                   href="/mythus_arena"
@@ -425,7 +426,10 @@ const Main_sec = () => {
                   <br />
                   style in the Hoops Heat
                 </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
+                <a
+                  href="/hoops_heat"
+                  className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                >
                   Find out more
                 </a>
               </div>
@@ -478,7 +482,10 @@ const Main_sec = () => {
                   <br /> murder investigation becomes a<br />
                   living nightmare
                 </div>
-                <a className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white">
+                <a
+                  href="/life_elevated"
+                  className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
+                >
                   Find out more
                 </a>
               </div>
@@ -976,7 +983,8 @@ const Category_sec = () => {
                 />
                 <div className="ml-1">CombatField</div>
               </a>
-              <div
+              <a
+                href="/hoops_heat"
                 className={
                   inCategoty(["mobile"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
@@ -992,8 +1000,9 @@ const Category_sec = () => {
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
                 <div className="ml-1">Hoops Heat</div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/life_elevated"
                 className={
                   inCategoty(["console", "cloud"])
                     ? "main_small_image duration-50 max-w-[29vw] cursor-pointer overflow-hidden rounded-md p-1 transition-transform hover:z-10 lg:max-w-[15.7vw] xl:max-w-[15.7vw] hover:[&_.carouselimg]:scale-105"
@@ -1009,7 +1018,7 @@ const Category_sec = () => {
                   className="carouselimg mx-auto h-[17vh] cursor-pointer rounded-md object-cover lg:h-[25vh]"
                 />
                 <div className="ml-1">Life Elevated</div>
-              </div>
+              </a>
 
               {/* <div className="opacityhover absolute top-0 h-full max-h-0 w-full bg-[#1c1d21] opacity-0 transition-opacity duration-300"></div> */}
             </div>
@@ -2349,6 +2358,7 @@ const Video_sec_2 = () => {
               width={0}
               height={0}
               alt=""
+              unoptimized
               src={video_header_1}
               className="absolute right-10 top-0 w-32 -translate-y-[96%] md:w-40"
             />

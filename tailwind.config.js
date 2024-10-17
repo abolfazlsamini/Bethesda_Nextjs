@@ -29,6 +29,10 @@ module.exports = {
         Inter_VariableFont_opsz: "var(--font-Inter_VariableFont_opsz)",
         FuturaNowHeadlineBlack: "var(--font-FuturaNowHeadlineBlack)",
         abcgintonord_extrabold: "var(--font-abcgintonord_extrabold)",
+        SharpGroteskBold: "var(--font-SharpGroteskBold)",
+        SharpGroteskMed: "var(--font-SharpGroteskMed)",
+        Boxed_BoldItalic_webfont: "var(--font-Boxed_BoldItalic_webfont)",
+        Sofia_Pro_Regular: "var(--font-Sofia_Pro_Regular)",
       },
       dropShadow: {
         hifilogoshadow: "8px 8px 0px rgba(0,0,0,.85)",
