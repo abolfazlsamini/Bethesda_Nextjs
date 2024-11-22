@@ -183,6 +183,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_1_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -239,6 +240,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_2_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -293,6 +295,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_3_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -348,6 +351,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_4_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -395,6 +399,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_5_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -451,6 +456,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_6_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -507,6 +513,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_7_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""
@@ -560,6 +567,7 @@ const Main_sec = () => {
                   <Image
                     placeholder="blur"
                     src={main_pic_8_pc}
+                    priority
                     width={0}
                     height={0}
                     alt=""

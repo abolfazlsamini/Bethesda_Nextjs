@@ -1,20 +1,21 @@
 "use client";
 import Image from "next/image";
-import sec1_pc from "../../../public/hoops_heat/sec1_pc.avif";
+import sec1_pc from "../../../public/hoops_heat/sec1_pc.png";
 import sec2_1 from "../../../public/hoops_heat/sec2_1.jpg";
-import sec3_1 from "../../../public/hoops_heat/sec3_1.avif";
-import sec3_2 from "../../../public/hoops_heat/sec3_2.avif";
-import sec3_3 from "../../../public/hoops_heat/sec3_3.avif";
+import sec3_1 from "../../../public/hoops_heat/sec3_1.png";
+import sec3_2 from "../../../public/hoops_heat/sec3_2.png";
+import sec3_3 from "../../../public/hoops_heat/sec3_3.png";
 
-import sec4_1 from "../../../public/hoops_heat/sec4_1.avif";
-import sec4_2 from "../../../public/hoops_heat/sec4_2.avif";
-import sec4_3 from "../../../public/hoops_heat/sec4_3.avif";
-import sec4_4 from "../../../public/hoops_heat/sec4_4.avif";
-import sec4_5 from "../../../public/hoops_heat/sec4_5.avif";
-import sec4_6 from "../../../public/hoops_heat/sec4_6.avif";
-import sec4_7 from "../../../public/hoops_heat/sec4_7.avif";
-import sec4_8 from "../../../public/hoops_heat/sec4_8.avif";
-import logo from "../../../public/hoops_heat/logo.avif";
+import sec4_1 from "../../../public/hoops_heat/sec4_1.png";
+import sec4_2 from "../../../public/hoops_heat/sec4_2.png";
+import sec4_3 from "../../../public/hoops_heat/sec4_3.png";
+import sec4_4 from "../../../public/hoops_heat/sec4_4.png";
+import sec4_5 from "../../../public/hoops_heat/sec4_5.png";
+import sec4_6 from "../../../public/hoops_heat/sec4_6.png";
+import sec4_7 from "../../../public/hoops_heat/sec4_7.png";
+import sec4_8 from "../../../public/hoops_heat/sec4_8.png";
+import logo from "../../../public/hoops_heat/logo.webp";
+import ytlogo from "../../../public/hoops_heat/ytlogo.png";
 import gradient_logo from "../../../public/hoops_heat/gradient_logo.png";
 
 import { useState, useRef } from "react";
@@ -40,14 +41,20 @@ export default function Hoops_Heat() {
     return (
       <section>
         <div className="relative">
-          <div>
+          <div className="max-h-[90vh] overflow-hidden md:max-h-max">
             <picture>
               <source
-                srcSet="./hoops_heat/sec1_mobile.jpg"
+                srcSet="./hoops_heat/sec1_mobile.png"
                 media="(max-width:1023.95px)"
               ></source>
 
-              <Image src={sec1_pc} alt="" width={0} height={0} />
+              <Image
+                src={sec1_pc}
+                alt=""
+                width={0}
+                height={0}
+                className="w-full object-cover"
+              />
             </picture>
           </div>
           <div>
@@ -66,8 +73,16 @@ export default function Hoops_Heat() {
     return (
       <section>
         <div className="bg-black p-8">
-          <div className="hoops_heat_sec2_bg mx-auto h-[30vh] max-w-6xl md:h-[75vh]">
-            <iframe
+          <div className="relative mx-auto flex justify-center">
+            <Image
+              src={ytlogo}
+              alt=""
+              width={0}
+              height={0}
+              className="absolute left-1/2 top-1/2 z-30 size-16 -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:opacity-90"
+            />
+            <Image src={sec2_1} alt="" width={0} height={0} />
+            {/* <iframe
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/G1Qo0mYKDEc?wmode=opaque"
@@ -76,7 +91,7 @@ export default function Hoops_Heat() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
       </section>
@@ -221,7 +236,7 @@ export default function Hoops_Heat() {
                       >
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
-                            NBA 2K25 ALL-STAR EDITION
+                            HOOPS HEAT ALL-STAR EDITION
                           </div>
                           <a
                             href="#"
@@ -230,8 +245,8 @@ export default function Hoops_Heat() {
                             BUY NOW
                           </a>
                           <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
-                            Showcase your All-Star talent with the NBA 2K25
-                            All-Star Edition.
+                            Showcase your All-Star talent with the Hoops Heat
+                            All-Star Edition
                           </div>
                         </div>
                       </div>
@@ -263,7 +278,7 @@ export default function Hoops_Heat() {
                       >
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
-                            NBA 2K25 ALL-STAR EDITION
+                            HOOPS HEAT TOURNAMENT EDITION
                           </div>
                           <a
                             href="#"
@@ -272,8 +287,8 @@ export default function Hoops_Heat() {
                             BUY NOW
                           </a>
                           <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
-                            Showcase your All-Star talent with the NBA 2K25
-                            All-Star Edition.
+                            Inspire the next generation of NBA stars with the
+                            HOOPS HEAT Tournament Edition
                           </div>
                         </div>
                       </div>
@@ -305,7 +320,7 @@ export default function Hoops_Heat() {
                       >
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
-                            NBA 2K25 ALL-STAR EDITION
+                            HOOPS HEAT STANDARD EDITION
                           </div>
                           <a
                             href="#"
@@ -314,8 +329,8 @@ export default function Hoops_Heat() {
                             BUY NOW
                           </a>
                           <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
-                            Showcase your All-Star talent with the NBA 2K25
-                            All-Star Edition.
+                            Raise banners and define your NBA legacy with the
+                            HOOPS HEAT Standard Edition
                           </div>
                         </div>
                       </div>
@@ -325,13 +340,13 @@ export default function Hoops_Heat() {
               </div>
             </div>
             <div className="mx-auto hidden max-w-6xl py-32 md:flex">
-              <div className="px-8">
+              <div className="w-1/3 px-8">
                 <div className="p-5">
                   <Image src={sec3_1} alt="" width={0} height={0} />
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
-                    NBA 2K25 ALL-STAR EDITION
+                    HOOPS HEAT ALL-STAR EDITION
                   </div>
                   <a
                     href="#"
@@ -340,18 +355,18 @@ export default function Hoops_Heat() {
                     BUY NOW
                   </a>
                   <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
-                    Raise banners and define your NBA legacy with the NBA 2K25
-                    Standard Edition.
+                    Showcase your All-Star talent with the Hoops Heat All-Star
+                    Edition
                   </div>
                 </div>
               </div>
-              <div className="px-8">
+              <div className="w-1/3 px-8">
                 <div className="p-5">
                   <Image src={sec3_2} alt="" width={0} height={0} />
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
-                    NBA 2K25 ALL-STAR EDITION
+                    HOOPS HEAT TOURNAMENT EDITION
                   </div>
                   <a
                     href="#"
@@ -360,18 +375,18 @@ export default function Hoops_Heat() {
                     BUY NOW
                   </a>
                   <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
-                    Raise banners and define your NBA legacy with the NBA 2K25
-                    Standard Edition.
+                    Inspire the next generation of NBA stars with the HOOPS HEAT
+                    Tournament Edition
                   </div>
                 </div>
               </div>
-              <div className="px-8">
+              <div className="w-1/3 px-8">
                 <div className="p-5">
                   <Image src={sec3_3} alt="" width={0} height={0} />
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
-                    NBA 2K25 ALL-STAR EDITION
+                    HOOPS HEAT STANDARD EDITION
                   </div>
                   <a
                     href="#"
@@ -380,8 +395,8 @@ export default function Hoops_Heat() {
                     BUY NOW
                   </a>
                   <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
-                    Raise banners and define your NBA legacy with the NBA 2K25
-                    Standard Edition.
+                    Raise banners and define your NBA legacy with the HOOPS HEAT
+                    Standard Edition
                   </div>
                 </div>
               </div>
@@ -400,15 +415,17 @@ export default function Hoops_Heat() {
               <Image src={sec4_1} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                Gravity Ball
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                The game Hoops Heat is a fantasy, competitive, and sports
+                experience. In this game, you'll witness all sorts of outlandish
+                ways to play basketball—ranging from setting opponents and the
+                ball on fire, to destroying the opposing team's hoop, performing
+                high-flying dunks, and making unbelievable long-range
+                three-point shots. This game promises to be incredibly
+                entertaining and highly addictive
               </div>
             </div>
           </div>
@@ -417,15 +434,14 @@ export default function Hoops_Heat() {
               <Image src={sec4_2} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                HOOPS HEAT will be a multi-platform game
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                Our game studio, WarpStudio, is responsible for developing this
+                title. The initial version will be released for mobile
+                platforms. Once the mobile version is complete, work on porting
+                the game to consoles will immediately begin
               </div>
             </div>
           </div>
@@ -434,15 +450,15 @@ export default function Hoops_Heat() {
               <Image src={sec4_3} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                HOOPS HEAT RANKING SYSTEM
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                In the game's ranking system, players earn 3 points for each win
+                and 1 point for a draw. Losing a match deducts 1 point from the
+                player's total. If the player has no points, negative points are
+                recorded. Additionally, placements achieved in events and
+                leagues will also influence the player's score and ranking
               </div>
             </div>
           </div>
@@ -451,15 +467,16 @@ export default function Hoops_Heat() {
               <Image src={sec4_4} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                HOOPS HEAT LEAGUE MATCH
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                In the LEAGUE MATCH mode, you will be matched with another
+                online player. At the end of the match, you can select the
+                Rematch option, and if the opponent agrees, you can play again.
+                You also have the option to send them a friend request. Points
+                earned or lost in this mode will directly affect your ranking
+                score
               </div>
             </div>
           </div>
@@ -468,15 +485,14 @@ export default function Hoops_Heat() {
               <Image src={sec4_5} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                HOOPS HEAT LOOT BOX
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                These loot boxes contain items such as coins, upgrade cards, and
+                similar rewards. They are awarded based on the time spent
+                playing the game. For example, players need to spend around 4
+                hours in the game within 24 hours to unlock the daily loot box
               </div>
             </div>
           </div>
@@ -485,15 +501,19 @@ export default function Hoops_Heat() {
               <Image src={sec4_6} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                60 characters divided into 6 tiers
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                The game will feature 60 characters divided into 6 tiers, each
+                containing 10 characters. Each character will have 12 upgrade
+                levels, achieved through upgrade cards that can either be earned
+                or purchased. The character's appearance will change every 4
+                levels, giving each one 3 unique looks as they progress.To
+                upgrade a character from level 1 to level 2, 10 upgrade cards
+                are required. These cards can be obtained through victories,
+                loot boxes, and mission rewards, or purchased directly from the
+                in-game store
               </div>
             </div>
           </div>
@@ -502,15 +522,19 @@ export default function Hoops_Heat() {
               <Image src={sec4_7} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                60 characters divided into 6 tiers
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                During gameplay, users can activate special abilities, depending
+                on their upgrade level. These abilities can be used one or
+                multiple times, with activation durations and effects lasting
+                between 2 to 4 seconds. For example: Freeze Ability: Freezes the
+                opponent's character for 2 to 4 seconds, preventing them from
+                moving.One Shot, One Goal Ability: Guarantees that your shot
+                will score 100% during its activation. These abilities add
+                strategic depth to the game and can turn the tide of a match
+                when used effectively
               </div>
             </div>
           </div>
@@ -519,15 +543,19 @@ export default function Hoops_Heat() {
               <Image src={sec4_8} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                PLAY ANYWHERE, WIN EVERYWHERE
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                The initial version of the game will include 7 stadiums. As
+                players progress, the stadiums will become more visually
+                appealing, crowded, and have larger audiences, which will
+                influence the cheer and fireworks during goals and game starts.
+                The home and away system is randomized, with no fixed algorithm,
+                but it will be designed to ensure that players are not hosting
+                more than two consecutive games. However, the home and away
+                setup will differ in leagues and tournaments, following a
+                specific algorithm
               </div>
             </div>
           </div>
@@ -544,22 +572,24 @@ export default function Hoops_Heat() {
               <Image src={sec4_1} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black xl:text-5xl">
-                PLAY ANYWHERE, WIN EVERYWHERE IN THE CITY
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+                IT'S GAME TIME
               </div>
-              <div className="pt-5 font-SharpGroteskMed font-thin text-black md:text-lg xl:pt-8 xl:text-xl">
-                Explore an all-new vibrant City on PlayStation®5, Xbox Series
-                X|S, or PC in NBA 2K25. Live and breathe basketball in The City
-                this year, and enjoy a variety of features, including the return
-                of MyCOURT, iconic NBA 2K MyPARKs, and the Boulevard of the
-                Stars at the heart of it all.
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+                Various game modes with time-limited challenges will be designed
+                for the game. One example is the "Zombie Mode," where characters
+                will have a zombie-like appearance. In this mode, the basketball
+                will be altered, and the hoops will have a bloody, meat-like
+                appearance. Although the gameplay itself will remain the same,
+                the visual aesthetics and in-game abilities will undergo
+                significant changes to match the zombie theme
               </div>
-              <a
+              {/* <a
                 href="#"
                 className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-white hover:bg-white hover:text-black"
               >
                 LEARN MORE
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

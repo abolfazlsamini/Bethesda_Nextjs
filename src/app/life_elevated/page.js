@@ -1,19 +1,42 @@
 "use client";
 
-import sec1_pc from "../../../public/life_elevated/sec1_pc.avif";
+import sec1_pc from "../../../public/life_elevated/sec1_pc.png";
 import divider from "../../../public/life_elevated/divider.png";
-import sec2_pic1 from "../../../public/life_elevated/sec2_pic1.avif";
-import sec2_pic2 from "../../../public/life_elevated/sec2_pic2.avif";
-import sec2_pic3 from "../../../public/life_elevated/sec2_pic3.avif";
-import sec3_pic1 from "../../../public/life_elevated/sec3_pic1.avif";
-import sec3_pic2 from "../../../public/life_elevated/sec3_pic2.avif";
-import sec4_pic1 from "../../../public/life_elevated/sec4_pic1.avif";
-import logo from "../../../public/life_elevated/logo.avif";
-import sec5_pic_1 from "../../../public/life_elevated/sec5_pic_1.avif";
-import sec5_pic_2 from "../../../public/life_elevated/sec5_pic_2.avif";
-import sec5_paging_1_active from "../../../public/life_elevated/sec5_paging_1_active.avif";
-import sec5_paging_1_notactive from "../../../public/life_elevated/sec5_paging_1_notactive.avif";
-import sec6_pic_1 from "../../../public/life_elevated/sec6_pic_1.avif";
+import sec2_pic1 from "../../../public/life_elevated/sec2_pic1.png";
+import sec2_pic2 from "../../../public/life_elevated/sec2_pic2.png";
+import sec2_pic3 from "../../../public/life_elevated/sec2_pic3.png";
+import sec3_pic1 from "../../../public/life_elevated/sec3_pic1.png";
+import sec3_pic2 from "../../../public/life_elevated/sec3_pic2.png";
+import sec4_pic1 from "../../../public/life_elevated/sec4_pic1.png";
+import sec4_pic2 from "../../../public/life_elevated/sec4_pic2.png";
+import sec4_pic3 from "../../../public/life_elevated/sec4_pic3.png";
+import sec4_pic4 from "../../../public/life_elevated/sec4_pic4.png";
+import sec4_pic5 from "../../../public/life_elevated/sec4_pic5.png";
+import sec4_pic6 from "../../../public/life_elevated/sec4_pic6.png";
+import sec4_pic7 from "../../../public/life_elevated/sec4_pic7.png";
+import sec4_pic8 from "../../../public/life_elevated/sec4_pic8.png";
+import logo from "../../../public/life_elevated/logo.png";
+import sec5_pic_1 from "../../../public/life_elevated/sec5_pic_1.png";
+import sec5_pic_2 from "../../../public/life_elevated/sec5_pic_2.png";
+import sec5_pic_3 from "../../../public/life_elevated/sec5_pic_3.png";
+import sec5_pic_4 from "../../../public/life_elevated/sec5_pic_4.png";
+import sec5_pic_5 from "../../../public/life_elevated/sec5_pic_5.png";
+import sec5_pic_6 from "../../../public/life_elevated/sec5_pic_6.png";
+import sec5_paging_1_active from "../../../public/life_elevated/sec5_paging_1_active.png";
+import sec5_paging_2_active from "../../../public/life_elevated/sec5_paging_2_active.png";
+import sec5_paging_3_active from "../../../public/life_elevated/sec5_paging_3_active.png";
+import sec5_paging_4_active from "../../../public/life_elevated/sec5_paging_4_active.png";
+import sec5_paging_5_active from "../../../public/life_elevated/sec5_paging_5_active.png";
+import sec5_paging_6_active from "../../../public/life_elevated/sec5_paging_6_active.png";
+import sec5_paging_1_notactive from "../../../public/life_elevated/sec5_paging_1_notactive.png";
+import sec5_paging_2_notactive from "../../../public/life_elevated/sec5_paging_2_notactive.png";
+import sec5_paging_3_notactive from "../../../public/life_elevated/sec5_paging_3_notactive.png";
+import sec5_paging_4_notactive from "../../../public/life_elevated/sec5_paging_4_notactive.png";
+import sec5_paging_5_notactive from "../../../public/life_elevated/sec5_paging_5_notactive.png";
+import sec5_paging_6_notactive from "../../../public/life_elevated/sec5_paging_6_notactive.png";
+import sec6_pic_1 from "../../../public/life_elevated/sec6_pic_1.png";
+import sec6_pic_2 from "../../../public/life_elevated/sec6_pic_2.png";
+import sec6_pic_3 from "../../../public/life_elevated/sec6_pic_3.png";
 
 import gradient_logo from "../../../public/life_elevated/gradient_logo.png";
 
@@ -22,7 +45,7 @@ import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 
 export default function LifeElevated() {
@@ -41,10 +64,10 @@ export default function LifeElevated() {
     return (
       <section>
         <div className="relative">
-          <div>
+          <div className="max-h-max md:max-h-[90vh]">
             <picture>
               <source
-                srcSet="./life_elevated/sec1_mobile.avif"
+                srcSet="./life_elevated/sec1_mobile.png"
                 media="(max-width:1023.95px)"
               ></source>
 
@@ -53,18 +76,18 @@ export default function LifeElevated() {
           </div>
           <div className="absolute bottom-10 flex w-full flex-col items-center px-5 md:right-10 md:w-auto">
             <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl md:pb-10">
-              MAKE MAYHEM YOUR BUSINESS
+              LEGENDARY ACTION RETURNS
             </div>
-            <div>
+            <div className="flex flex-col md:flex-row">
               <a
                 href="#"
-                className="life_elevated_btn_bg mx-2 px-7 py-1 font-Boxed_BoldItalic_webfont text-2xl uppercase text-black"
+                className="life_elevated_btn_bg mx-2 mt-2 size-max px-7 py-1 font-Boxed_BoldItalic_webfont text-2xl uppercase text-black"
               >
                 Watch trailer
               </a>
               <a
                 href="#"
-                className="life_elevated_btn_bg mx-2 px-7 py-1 font-Boxed_BoldItalic_webfont text-2xl uppercase text-black"
+                className="life_elevated_btn_bg mx-2 mt-2 size-max px-7 py-1 font-Boxed_BoldItalic_webfont text-2xl uppercase text-black"
               >
                 buy now
               </a>
@@ -114,7 +137,7 @@ export default function LifeElevated() {
       slidesToShow: 1,
       speed: 300,
       swipeToSlide: false,
-      swipe: false,
+      swipe: true,
       dots: true,
       slidesToScroll: 1,
       arrows: true,
@@ -159,17 +182,14 @@ export default function LifeElevated() {
           <div className="mx-auto max-w-7xl pt-14">
             <div className="px-4 pb-16">
               <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-5xl text-[#f9da01] md:pb-10 lg:text-6xl">
-                MAKE MAYHEM YOUR BUSINESS
+                Play Four Unsung Heroes
               </div>
               <div className="font-Sofia_Pro_Regular lg:text-lg 2xl:text-xl">
-                Within the perpetually war-torn metropolis of Promethea, you'll
-                control Anu, Octavio, and Fran on the worst day of their lives.
-                Help these three lovable losers as they endeavor to change the
-                world (and maybe even save it)! Face down a planetary invasion,
-                vicious vault monster, and cold-hearted capitalist in this
-                cinematic thrill ride where what happens next is up to you! Meet
-                a motley cast full of misfits, assassin bots, and talking guns
-                in this race to the top!
+                From the dawn of creation, the council has maintained the
+                Balance across existence. Carrying out their orders are the
+                Horsemen, Nephilim (powerful beings spawned from the unnatural
+                union of angels and demons) who have pledged themselves to the
+                Council and been granted immense power
               </div>
             </div>
             <div>
@@ -275,7 +295,7 @@ export default function LifeElevated() {
       slidesToShow: 1,
       speed: 300,
       swipeToSlide: false,
-      swipe: false,
+      swipe: true,
       dots: true,
       slidesToScroll: 1,
       arrows: true,
@@ -321,7 +341,7 @@ export default function LifeElevated() {
             <div>
               <div>
                 <div className="hidden justify-between px-20 pb-20 md:flex">
-                  <div className="flex flex-col items-center px-5 md:w-[40%]">
+                  <div className="flex flex-col items-center px-2 md:w-[40%]">
                     <Image
                       src={sec3_pic1}
                       alt=""
@@ -330,8 +350,8 @@ export default function LifeElevated() {
                       className="p-3"
                     />
                     <div className="flex flex-col items-center">
-                      <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                        NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                      <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-3xl md:pb-10">
+                        LIFE ELEVATED STANDARD EDITION
                       </div>
                       <a
                         href="#"
@@ -341,7 +361,7 @@ export default function LifeElevated() {
                       </a>
                     </div>
                     <div className="self-start pb-3 pt-5 font-Sofia_Pro_Regular text-xl font-bold">
-                      Standard Includes:
+                      Standard Include :
                     </div>
                     <ul
                       style={{ paddingInlineStart: "50px" }}
@@ -352,7 +372,7 @@ export default function LifeElevated() {
                       </li>
                     </ul>
                   </div>
-                  <div className="flex flex-col items-center px-5 md:w-[40%]">
+                  <div className="flex flex-col items-center px-2 md:w-[40%]">
                     <Image
                       src={sec3_pic2}
                       alt=""
@@ -361,8 +381,8 @@ export default function LifeElevated() {
                       className="p-3"
                     />
                     <div className="flex flex-col items-center">
-                      <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                        NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                      <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-3xl md:pb-10">
+                        LIFE ELEVATED DELUXE EDITION
                       </div>
                       <a
                         href="#"
@@ -382,7 +402,7 @@ export default function LifeElevated() {
                         Full Game
                       </li>
                       <li className="pb-3 font-Sofia_Pro_Regular text-xl">
-                        Tales from the Borderlands Full Game
+                        Early Access
                       </li>
                     </ul>
                   </div>
@@ -405,7 +425,7 @@ export default function LifeElevated() {
                           className=""
                         />
                         <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                          NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          LIFE ELEVATED STANDARD EDITION
                         </div>
                         <a
                           href="#"
@@ -415,7 +435,7 @@ export default function LifeElevated() {
                         </a>
                       </div>
                       <div className="pb-3 pt-5 font-Sofia_Pro_Regular text-xl font-bold md:pb-10">
-                        Deluxe Includes:
+                        Standard Include :
                       </div>
                       <ul
                         style={{ paddingInlineStart: "50px" }}
@@ -436,7 +456,7 @@ export default function LifeElevated() {
                           className=""
                         />
                         <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                          NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          LIFE ELEVATED DELUXE EDITION
                         </div>
                         <a
                           href="#"
@@ -446,7 +466,7 @@ export default function LifeElevated() {
                         </a>
                       </div>
                       <div className="pb-3 pt-5 font-Sofia_Pro_Regular text-xl font-bold md:pb-10">
-                        Deluxe Includes:
+                        Deluxe Include :
                       </div>
                       <ul
                         style={{ paddingInlineStart: "50px" }}
@@ -456,7 +476,7 @@ export default function LifeElevated() {
                           Full Game
                         </li>
                         <li className="pb-3 font-Sofia_Pro_Regular text-xl">
-                          Tales from the Borderlands Full Game
+                          Early Access
                         </li>
                       </ul>
                     </div>
@@ -477,8 +497,8 @@ export default function LifeElevated() {
         <ChevronLeftIcon
           className={
             currentSlideNumber === 0
-              ? "absolute -bottom-3 left-[12%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:left-[35%] lg:block"
-              : "absolute -bottom-3 left-[12%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:left-[35%] lg:block"
+              ? "absolute -bottom-3 left-[7%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:left-[35%] lg:block"
+              : "absolute -bottom-3 left-[7%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:left-[35%] lg:block"
           }
           onClick={onClick}
         />
@@ -490,8 +510,8 @@ export default function LifeElevated() {
         <ChevronRightIcon
           className={
             currentSlideNumber === 4
-              ? "absolute -bottom-3 right-[12%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:right-[35%] lg:block"
-              : "absolute -bottom-3 right-[12%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:right-[35%] lg:block"
+              ? "absolute -bottom-3 right-[7%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:right-[35%] lg:block"
+              : "absolute -bottom-3 right-[7%] z-10 size-14 cursor-pointer rounded-full p-1 text-[#f9da01] md:right-[35%] lg:block"
           }
           onClick={onClick}
         />
@@ -507,11 +527,12 @@ export default function LifeElevated() {
       slidesToShow: 3,
       speed: 300,
       swipeToSlide: false,
-      swipe: false,
+      swipe: true,
       slidesToScroll: 3,
       dots: true,
       arrows: true,
       beforeChange: (oldIndex, newIndex) => {
+        console.log(newIndex);
         setCurrentSlideNumber(newIndex);
       },
       customPaging: (i) => {
@@ -541,7 +562,7 @@ export default function LifeElevated() {
             </div>
             <div
               className={
-                i === currentSlideNumber / 3
+                i === Math.ceil(currentSlideNumber / 3)
                   ? "absolute -bottom-3 hidden size-3 cursor-default rounded-full border border-black text-[#389cb1] md:block"
                   : "absolute -bottom-3 hidden size-3 cursor-default rounded-full border border-black text-white md:block"
               }
@@ -625,7 +646,7 @@ export default function LifeElevated() {
             height={0}
             alt=""
             src={divider}
-            className="absolute top-0 z-50 h-8 w-full"
+            className="absolute top-0 z-10 h-8 w-full"
           />
           <div className="mx-auto max-w-6xl pt-14">
             <div>
@@ -638,8 +659,8 @@ export default function LifeElevated() {
                     {...settings}
                     className="pb-5"
                   >
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
                           src={sec4_pic1}
                           alt=""
@@ -648,164 +669,154 @@ export default function LifeElevated() {
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            The epic battle between good and evil at its most
+                            intense
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic2}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            An epic action-packed run-and-gun adventure
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic3}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            Choose between a sword or a gun to slaughter your
+                            enemies
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic4}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            Don't hesitate , there's no time for second-guessing
+                            in this game. Just focus on your goal and keep
+                            moving forward
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic5}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            Set your emotions aside, or face the dire
+                            consequences that await
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic6}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            Family is everything, but here, to survive, you must
+                            be willing to sacrifice it all
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic7}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            This world has no place for the weak, so fight to
+                            survive or become the prey
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
+                    <div className="px-2">
+                      <div className="flex min-h-[600px] flex-col items-center bg-black md:min-h-[580px]">
                         <Image
-                          src={sec4_pic1}
+                          src={sec4_pic8}
                           alt=""
                           width={0}
                           height={0}
                           className=""
                         />
                         <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
+                          <div className="py-3 pb-5 font-Boxed_BoldItalic_webfont text-2xl uppercase">
+                            A first-person action game fused with hack-and-slash
+                            elements , your screen will be painted with nothing
+                            but blood
                           </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
+                          {/* <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
                             LEARN MORE
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="px-8">
-                      <div className="flex flex-col items-center bg-black">
-                        <Image
-                          src={sec4_pic1}
-                          alt=""
-                          width={0}
-                          height={0}
-                          className=""
-                        />
-                        <div className="flex flex-col px-4">
-                          <div className="py-3 text-center font-Boxed_BoldItalic_webfont text-2xl md:pb-10">
-                            NEW TALES FROM THE BORDERLANDS STANDARD EDITION
-                          </div>
-                          <a className="cursor-pointer pb-6 pl-3 pt-32 font-Sofia_Pro_Regular text-xl font-bold uppercase italic text-[#4bd1ed] hover:text-white md:pb-10">
-                            LEARN MORE
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
@@ -819,7 +830,12 @@ export default function LifeElevated() {
     );
   };
   const Sec5 = () => {
+    let sliderRef = useRef(null);
+    let sliderRef2 = useRef(null);
     const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
+    useEffect(() => {
+      sliderRef.slickGoTo(currentSlideNumber);
+    }, [currentSlideNumber]);
     function SamplePrevArrow(props) {
       const { className, style, onClick } = props;
       return (
@@ -846,8 +862,6 @@ export default function LifeElevated() {
         />
       );
     }
-    let sliderRef = useRef(null);
-    let sliderRef2 = useRef(null);
     const settings = {
       infinite: false,
       // prevArrow: <SamplePrevArrow />,
@@ -855,7 +869,7 @@ export default function LifeElevated() {
       centerPadding: "0px",
       centerMode: false,
       slidesToShow: 1,
-      speed: 900,
+      speed: 600,
       fade: true,
       swipeToSlide: false,
       swipe: false,
@@ -925,11 +939,11 @@ export default function LifeElevated() {
       nextArrow: <SampleNextArrow />,
       centerPadding: "0px",
       centerMode: false,
-      slidesToShow: 4,
+      slidesToShow: 3,
       speed: 400,
       swipeToSlide: false,
-      swipe: false,
-      slidesToScroll: 4,
+      swipe: true,
+      slidesToScroll: 3,
       dots: true,
       arrows: true,
       beforeChange: (oldIndex, newIndex) => {
@@ -939,7 +953,7 @@ export default function LifeElevated() {
         return (
           <div
             className={
-              i === currentSlideNumber / 4
+              i === Math.floor(currentSlideNumber / 3)
                 ? "absolute -bottom-3 size-3 cursor-default rounded-full border border-black text-[#389cb1] md:hidden"
                 : "absolute -bottom-3 size-3 cursor-default rounded-full border border-black text-white md:hidden"
             }
@@ -962,57 +976,57 @@ export default function LifeElevated() {
         );
       },
       mobileFirst: true,
-      responsive: [
-        {
-          breakpoint: 640,
-          settings: {
-            slidesToScroll: 4,
-            slidesToShow: 4,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToScroll: 4,
-            slidesToShow: 4,
-          },
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-          },
-        },
-        {
-          breakpoint: 1440,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-          },
-        },
-        {
-          breakpoint: 1750,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-          },
-        },
-        {
-          breakpoint: 1920,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-          },
-        },
-        {
-          breakpoint: 4034,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-          },
-        },
-      ],
+      // responsive: [
+      //   {
+      //     breakpoint: 640,
+      //     settings: {
+      //       slidesToScroll: 4,
+      //       slidesToShow: 4,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       slidesToScroll: 4,
+      //       slidesToShow: 4,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 1024,
+      //     settings: {
+      //       slidesToShow: 4,
+      //       slidesToScroll: 4,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 1440,
+      //     settings: {
+      //       slidesToShow: 4,
+      //       slidesToScroll: 4,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 1750,
+      //     settings: {
+      //       slidesToShow: 4,
+      //       slidesToScroll: 4,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 1920,
+      //     settings: {
+      //       slidesToShow: 4,
+      //       slidesToScroll: 4,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 4034,
+      //     settings: {
+      //       slidesToShow: 4,
+      //       slidesToScroll: 4,
+      //     },
+      //   },
+      // ],
     };
     return (
       <section>
@@ -1043,17 +1057,20 @@ export default function LifeElevated() {
                       className="h-full object-cover"
                     />
                     <div className="absolute bottom-0 max-w-4xl px-4 md:bottom-10">
-                      <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
+                      {/* <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
                         ANU
-                      </div>
+                      </div> */}
                       <div className="font-Sofia_Pro_Regular text-lg">
-                        Dr. Anuradha Dhar is an enthusiastic-but-tense genius
-                        who abhors violence and killing. Despite being prone to
-                        panic attacks when things get hectic, Anu always trusts
-                        in the power of science to somehow make it all better.
-                        Did we mention she works for Atlas? Well, you know what
-                        they say: "If you can't beat 'em, join the company and
-                        try to make positive change internally!"
+                        In a world on the edge of destruction, the Seven Riders
+                        of the Apocalypse represent the forces of different
+                        powers, who for years have fought side by side to
+                        maintain the balance between good and evil. They were
+                        once the guardians of creation in a dark and mythical
+                        realm known as Aldora. But with the passage of time, a
+                        great event occurred that turned these once-allied
+                        figures into enemies. They are now locked in a battle
+                        for survival, and the player gets to choose one of them
+                        to control
                       </div>
                     </div>
                   </div>
@@ -1068,17 +1085,116 @@ export default function LifeElevated() {
                       className="h-full object-cover"
                     />
                     <div className="absolute bottom-0 max-w-4xl px-4 md:bottom-10">
-                      <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
+                      {/* <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
                         ANU
-                      </div>
+                      </div> */}
                       <div className="font-Sofia_Pro_Regular text-lg">
-                        Dr. Anuradha Dhar is an enthusiastic-but-tense genius
-                        who abhors violence and killing. Despite being prone to
-                        panic attacks when things get hectic, Anu always trusts
-                        in the power of science to somehow make it all better.
-                        Did we mention she works for Atlas? Well, you know what
-                        they say: "If you can't beat 'em, join the company and
-                        try to make positive change internally!"
+                        It all began when a mysterious Prophecy Scroll,
+                        containing the fates of the Seven Riders, was broken.
+                        This scroll had magical powers that controlled every
+                        decision and path of their lives. When the prophecy was
+                        torn, each of the Riders, once united, went down
+                        different paths
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative pb-10">
+                  <div className="flex h-[600px] flex-col items-center bg-black md:h-auto">
+                    <Image
+                      src={sec5_pic_3}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className="h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 max-w-4xl px-4 md:bottom-10">
+                      {/* <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
+                        ANU
+                      </div> */}
+                      <div className="font-Sofia_Pro_Regular text-lg">
+                        Azrael , once known as the Rider of Wrath, wielded fire
+                        as his weapon and vowed to burn the earth to create a
+                        new world for a new race of humans, born from ashes and
+                        destruction. Lilith, the Rider of Deception, once an
+                        ally, now turned to the belief that the world should be
+                        free of rules and moral constraints, leading her to
+                        challenge her comrades in the pursuit of a new era built
+                        on chaos
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative pb-10">
+                  <div className="flex h-[600px] flex-col items-center bg-black md:h-auto">
+                    <Image
+                      src={sec5_pic_4}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className="h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 max-w-4xl px-4 md:bottom-10">
+                      {/* <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
+                        ANU
+                      </div> */}
+                      <div className="font-Sofia_Pro_Regular text-lg">
+                        Kairos , the Rider of Time, had the power to manipulate
+                        moments and futures. He decided to alter time
+                        completely, but in doing so, unknowingly wiped out the
+                        lives of his fellow Riders. Ragnar, the Rider of Death,
+                        was once known as a protector. However, over time, he
+                        believed that only through death could a new world be
+                        created, leading him to slay his allies, one by one, in
+                        cold blood
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative pb-10">
+                  <div className="flex h-[600px] flex-col items-center bg-black md:h-auto">
+                    <Image
+                      src={sec5_pic_5}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className="h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 max-w-4xl px-4 md:bottom-10">
+                      {/* <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
+                        ANU
+                      </div> */}
+                      <div className="font-Sofia_Pro_Regular text-lg">
+                        Alator , the Rider of Light, once a symbol of hope and
+                        illumination, now sought to wage war on his fellow
+                        Riders in an attempt to bring about justice in the
+                        world, no matter the cost. Nocta, the Rider of Night,
+                        believed in the power of darkness and silence. He sought
+                        to bury the truth in shadows, thinking that only in
+                        eternal night would the true world reveal itself
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative pb-10">
+                  <div className="flex h-[600px] flex-col items-center bg-black md:h-auto">
+                    <Image
+                      src={sec5_pic_6}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className="h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 max-w-4xl px-4 md:bottom-10">
+                      {/* <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-4xl text-[#f9da01] md:pb-10">
+                        ANU
+                      </div> */}
+                      <div className="font-Sofia_Pro_Regular text-lg">
+                        Finally, Sigma, the Rider of Balance, was the first to
+                        fall into the trap of betrayal. Neither fully alive nor
+                        dead, he watches from the shadows as everything unfolds.
+                        But is he truly gone, or is he still pulling the strings
+                        in the background ?
                       </div>
                     </div>
                   </div>
@@ -1106,8 +1222,8 @@ export default function LifeElevated() {
                 <Image
                   src={
                     currentSlideNumber === 1
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
+                      ? sec5_paging_2_active
+                      : sec5_paging_2_notactive
                   }
                   width={0}
                   height={0}
@@ -1122,13 +1238,13 @@ export default function LifeElevated() {
                 <Image
                   src={
                     currentSlideNumber === 2
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
+                      ? sec5_paging_3_active
+                      : sec5_paging_3_notactive
                   }
                   width={0}
                   height={0}
                   alt=""
-                  onClick={() => setCurrentSlideNumber(2)}
+                  onClick={() => sliderRef.slickGoTo(2)}
                   className={
                     currentSlideNumber === 2
                       ? "w-1/12 border-2"
@@ -1138,13 +1254,13 @@ export default function LifeElevated() {
                 <Image
                   src={
                     currentSlideNumber === 3
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
+                      ? sec5_paging_4_active
+                      : sec5_paging_4_notactive
                   }
                   width={0}
                   height={0}
                   alt=""
-                  onClick={() => setCurrentSlideNumber(3)}
+                  onClick={() => sliderRef.slickGoTo(3)}
                   className={
                     currentSlideNumber === 3
                       ? "w-1/12 border-2"
@@ -1154,13 +1270,13 @@ export default function LifeElevated() {
                 <Image
                   src={
                     currentSlideNumber === 4
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
+                      ? sec5_paging_5_active
+                      : sec5_paging_5_notactive
                   }
                   width={0}
                   height={0}
                   alt=""
-                  onClick={() => setCurrentSlideNumber(4)}
+                  onClick={() => sliderRef.slickGoTo(4)}
                   className={
                     currentSlideNumber === 4
                       ? "w-1/12 border-2"
@@ -1170,47 +1286,15 @@ export default function LifeElevated() {
                 <Image
                   src={
                     currentSlideNumber === 5
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
+                      ? sec5_paging_6_active
+                      : sec5_paging_6_notactive
                   }
                   width={0}
                   height={0}
                   alt=""
-                  onClick={() => setCurrentSlideNumber(5)}
+                  onClick={() => sliderRef.slickGoTo(5)}
                   className={
                     currentSlideNumber === 5
-                      ? "w-1/12 border-2"
-                      : "w-1/12 cursor-pointer hover:border-2"
-                  }
-                />
-                <Image
-                  src={
-                    currentSlideNumber === 6
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
-                  }
-                  width={0}
-                  height={0}
-                  alt=""
-                  onClick={() => setCurrentSlideNumber(6)}
-                  className={
-                    currentSlideNumber === 6
-                      ? "w-1/12 border-2"
-                      : "w-1/12 cursor-pointer hover:border-2"
-                  }
-                />
-                <Image
-                  src={
-                    currentSlideNumber === 7
-                      ? sec5_paging_1_active
-                      : sec5_paging_1_notactive
-                  }
-                  width={0}
-                  height={0}
-                  alt=""
-                  onClick={() => setCurrentSlideNumber(7)}
-                  className={
-                    currentSlideNumber === 7
                       ? "w-1/12 border-2"
                       : "w-1/12 cursor-pointer hover:border-2"
                   }
@@ -1235,7 +1319,10 @@ export default function LifeElevated() {
                         width={0}
                         height={0}
                         alt=""
-                        onClick={() => sliderRef.slickGoTo(0)}
+                        onClick={() => {
+                          sliderRef.slickGoTo(0);
+                          setCurrentSlideNumber(0);
+                        }}
                         className={currentSlideNumber === 0 ? "border-2" : ""}
                       />
                     </div>
@@ -1243,13 +1330,16 @@ export default function LifeElevated() {
                       <Image
                         src={
                           currentSlideNumber === 1
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
+                            ? sec5_paging_2_active
+                            : sec5_paging_2_notactive
                         }
                         width={0}
                         height={0}
                         alt=""
-                        onClick={() => sliderRef.slickGoTo(1)}
+                        onClick={() => {
+                          sliderRef.slickGoTo(1);
+                          setCurrentSlideNumber(1);
+                        }}
                         className={currentSlideNumber === 1 ? "border-2" : ""}
                       />
                     </div>
@@ -1257,13 +1347,16 @@ export default function LifeElevated() {
                       <Image
                         src={
                           currentSlideNumber === 2
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
+                            ? sec5_paging_3_active
+                            : sec5_paging_3_notactive
                         }
                         width={0}
                         height={0}
                         alt=""
-                        onClick={() => sliderRef.slickGoTo(2)}
+                        onClick={() => {
+                          sliderRef.slickGoTo(2);
+                          setCurrentSlideNumber(2);
+                        }}
                         className={currentSlideNumber === 2 ? "border-2" : ""}
                       />
                     </div>
@@ -1271,13 +1364,16 @@ export default function LifeElevated() {
                       <Image
                         src={
                           currentSlideNumber === 3
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
+                            ? sec5_paging_4_active
+                            : sec5_paging_4_notactive
                         }
                         width={0}
                         height={0}
                         alt=""
-                        onClick={() => sliderRef.slickGoTo(3)}
+                        onClick={() => {
+                          sliderRef.slickGoTo(3);
+                          setCurrentSlideNumber(3);
+                        }}
                         className={currentSlideNumber === 3 ? "border-2" : ""}
                       />
                     </div>
@@ -1285,13 +1381,16 @@ export default function LifeElevated() {
                       <Image
                         src={
                           currentSlideNumber === 4
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
+                            ? sec5_paging_5_active
+                            : sec5_paging_5_notactive
                         }
                         width={0}
                         height={0}
                         alt=""
-                        onClick={() => sliderRef.slickGoTo(4)}
+                        onClick={() => {
+                          sliderRef.slickGoTo(4);
+                          setCurrentSlideNumber(4);
+                        }}
                         className={currentSlideNumber === 4 ? "border-2" : ""}
                       />
                     </div>
@@ -1299,42 +1398,17 @@ export default function LifeElevated() {
                       <Image
                         src={
                           currentSlideNumber === 5
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
+                            ? sec5_paging_6_active
+                            : sec5_paging_6_notactive
                         }
                         width={0}
                         height={0}
                         alt=""
-                        onClick={() => sliderRef.slickGoTo(5)}
+                        onClick={() => {
+                          sliderRef.slickGoTo(5);
+                          setCurrentSlideNumber(5);
+                        }}
                         className={currentSlideNumber === 5 ? "border-2" : ""}
-                      />
-                    </div>
-                    <div className="w-1/12 p-2">
-                      <Image
-                        src={
-                          currentSlideNumber === 6
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
-                        }
-                        width={0}
-                        height={0}
-                        alt=""
-                        onClick={() => sliderRef.slickGoTo(6)}
-                        className={currentSlideNumber === 6 ? "border-2" : ""}
-                      />
-                    </div>
-                    <div className="w-1/12 p-2">
-                      <Image
-                        src={
-                          currentSlideNumber === 7
-                            ? sec5_paging_1_active
-                            : sec5_paging_1_notactive
-                        }
-                        width={0}
-                        height={0}
-                        alt=""
-                        onClick={() => sliderRef.slickGoTo(7)}
-                        className={currentSlideNumber === 7 ? "border-2" : ""}
                       />
                     </div>
                   </Slider>
@@ -1349,7 +1423,7 @@ export default function LifeElevated() {
   const Sec6 = () => {
     return (
       <section>
-        <div className="life_elevated_sec2_bg_1 relative pt-10">
+        <div className="life_elevated_sec2_bg_1 relative py-20">
           <Image
             width={0}
             height={0}
@@ -1358,11 +1432,11 @@ export default function LifeElevated() {
             className="absolute top-0 h-8 w-full"
           />
           <div>
-            <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-5xl text-[#f9da01] md:pb-10 md:text-6xl">
-              IT'S TIME TO FIGHT BACK
+            <div className="pb-3 text-center font-Boxed_BoldItalic_webfont text-5xl uppercase text-[#f9da01] md:pb-10 md:text-6xl">
+              the world shall be reborn from my ashes
             </div>
             <div className="mx-auto max-w-7xl justify-between px-5 pb-20 md:flex">
-              <div className="flex flex-col items-center px-5 md:w-[40%]">
+              <div className="flex flex-col items-center px-2 md:w-[40%]">
                 <Image
                   src={sec6_pic_1}
                   alt=""
@@ -1371,63 +1445,57 @@ export default function LifeElevated() {
                   className="p-3"
                 />
                 <div className="flex flex-col items-center">
-                  <div className="self-start pb-3 font-Boxed_BoldItalic_webfont text-3xl text-[#f9da01] md:pb-10 md:text-xl md:leading-10">
-                    THE UNDERDOG STORY OF THREE LOVABLE LOSERS
+                  <div className="self-start pb-3 font-Boxed_BoldItalic_webfont text-3xl text-[#f9da01] md:text-xl md:leading-10">
+                    The Fateful Shattering of Destiny
                   </div>
 
                   <div className="pb-3 pt-5 text-center font-Sofia_Pro_Regular text-xl">
-                    Decide the fates of altruistic scientist Anu, her ambitious,
-                    "streetwise" brother Octavio, and the fierce,
-                    frogurt-slinging Fran. With nothing left to lose and
-                    everything to gain, you'll claw and con your way through
-                    this thrilling five-part story full of gun-toting goons,
-                    otherworldly beasts, and delicious tacos.
+                    It all began when a mysterious Prophecy Scroll, containing
+                    the fates of the Seven Riders, was broken. This scroll had
+                    magical powers that controlled every decision and path of
+                    their lives. When the prophecy was torn, each of the Riders,
+                    once united, went down different paths
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center px-5 md:w-[40%]">
+              <div className="flex flex-col items-center px-2 md:w-[40%]">
                 <Image
-                  src={sec6_pic_1}
+                  src={sec6_pic_2}
                   alt=""
                   width={0}
                   height={0}
                   className="p-3"
                 />
                 <div className="flex flex-col items-center">
-                  <div className="self-start pb-3 font-Boxed_BoldItalic_webfont text-3xl text-[#f9da01] md:pb-10 md:text-xl md:leading-10">
-                    THE UNDERDOG STORY OF THREE LOVABLE LOSERS
+                  <div className="self-start pb-3 font-Boxed_BoldItalic_webfont text-3xl text-[#f9da01] md:text-xl md:leading-10">
+                    he Rider of Wrath's Destructive Vision
                   </div>
 
                   <div className="pb-3 pt-5 text-center font-Sofia_Pro_Regular text-xl">
-                    Decide the fates of altruistic scientist Anu, her ambitious,
-                    "streetwise" brother Octavio, and the fierce,
-                    frogurt-slinging Fran. With nothing left to lose and
-                    everything to gain, you'll claw and con your way through
-                    this thrilling five-part story full of gun-toting goons,
-                    otherworldly beasts, and delicious tacos.
+                    Azrael, once known as the Rider of Wrath, wielded fire as
+                    his weapon and vowed to burn the earth to create a new world
+                    for a new race of humans, born from ashes and destruction
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center px-5 md:w-[40%]">
+              <div className="flex flex-col items-center px-2 md:w-[40%]">
                 <Image
-                  src={sec6_pic_1}
+                  src={sec6_pic_3}
                   alt=""
                   width={0}
                   height={0}
                   className="p-3"
                 />
                 <div className="flex flex-col items-center">
-                  <div className="self-start pb-3 font-Boxed_BoldItalic_webfont text-3xl text-[#f9da01] md:pb-10 md:text-xl md:leading-10">
-                    THE UNDERDOG STORY OF THREE LOVABLE LOSERS
+                  <div className="self-start pb-3 font-Boxed_BoldItalic_webfont text-3xl text-[#f9da01] md:text-xl md:leading-10">
+                    Lilith's Rebellion: Breaking Free of Moral Chains
                   </div>
 
                   <div className="pb-3 pt-5 text-center font-Sofia_Pro_Regular text-xl">
-                    Decide the fates of altruistic scientist Anu, her ambitious,
-                    "streetwise" brother Octavio, and the fierce,
-                    frogurt-slinging Fran. With nothing left to lose and
-                    everything to gain, you'll claw and con your way through
-                    this thrilling five-part story full of gun-toting goons,
-                    otherworldly beasts, and delicious tacos.
+                    Lilith, the Rider of Deception, once an ally, now turned to
+                    the belief that the world should be free of rules and moral
+                    constraints, leading her to challenge her comrades in the
+                    pursuit of a new era built on chaos
                   </div>
                 </div>
               </div>
