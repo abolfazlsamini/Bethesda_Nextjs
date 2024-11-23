@@ -510,11 +510,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.hoops_heat_sec2_bg {
-  background-image: url(../../public/hoops_heat/sec2_1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 @media (min-width: 1024px) {
   .hoops_heat_sec3_bg {
     background-image: url(../../public/hoops_heat/sec3_bg.svg);

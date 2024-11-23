@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import sec1_pc from "../../../public/hoops_heat/sec1_pc.png";
-import sec2_1 from "../../../public/hoops_heat/sec2_1.jpg";
+import sec2_1 from "../../../public/hoops_heat/sec2_1.png";
 import sec3_1 from "../../../public/hoops_heat/sec3_1.png";
 import sec3_2 from "../../../public/hoops_heat/sec3_2.png";
 import sec3_3 from "../../../public/hoops_heat/sec3_3.png";
@@ -29,7 +29,7 @@ export default function Hoops_Heat() {
   const Navbar = () => {
     return (
       <section>
-        <div className="fixed top-16 z-20 flex h-16 w-full items-center bg-[#FA0000] px-4">
+        <div className="fixed top-16 z-20 flex h-16 w-full items-center bg-[#194461] px-4">
           <a href="/hoops_heat">
             <Image src={logo} alt="" width={0} height={0} className="w-32" />
           </a>
@@ -60,7 +60,7 @@ export default function Hoops_Heat() {
           <div>
             <a
               href="#"
-              className="absolute bottom-16 left-1/2 block -translate-x-1/2 rounded-xl bg-[#FA0000] px-7 py-3 text-2xl font-bold text-white hover:bg-white hover:text-black"
+              className="absolute bottom-16 left-1/2 block -translate-x-1/2 rounded-xl bg-white px-7 py-3 text-2xl font-bold text-black hover:bg-gray-300"
             >
               BUY NOW
             </a>
@@ -200,7 +200,7 @@ export default function Hoops_Heat() {
     };
     return (
       <section>
-        <div className="bg-[#FA0000]">
+        <div className="bg-[#194461]">
           <div className="hoops_heat_sec3_bg">
             <div className="block md:hidden">
               <div className="slider-container mx-auto py-20">
@@ -240,7 +240,7 @@ export default function Hoops_Heat() {
                           </div>
                           <a
                             href="#"
-                            className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-white hover:bg-white hover:text-black"
+                            className="my-4 block w-fit rounded-xl bg-white px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-black hover:bg-gray-300"
                           >
                             BUY NOW
                           </a>
@@ -277,16 +277,16 @@ export default function Hoops_Heat() {
                         }
                       >
                         <div className="flex flex-col items-center pt-3">
-                          <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
+                          <div className="text-center font-SharpGroteskBold text-xl font-bold text-white">
                             HOOPS HEAT TOURNAMENT EDITION
                           </div>
                           <a
                             href="#"
-                            className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-white hover:bg-white hover:text-black"
+                            className="my-4 block w-fit rounded-xl bg-white px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-black hover:bg-gray-300"
                           >
                             BUY NOW
                           </a>
-                          <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
+                          <div className="text-center font-SharpGroteskMed text-xl font-thin text-white">
                             Inspire the next generation of NBA stars with the
                             HOOPS HEAT Tournament Edition
                           </div>
@@ -319,16 +319,16 @@ export default function Hoops_Heat() {
                         }
                       >
                         <div className="flex flex-col items-center pt-3">
-                          <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
+                          <div className="text-center font-SharpGroteskBold text-xl font-bold text-white">
                             HOOPS HEAT STANDARD EDITION
                           </div>
                           <a
                             href="#"
-                            className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-white hover:bg-white hover:text-black"
+                            className="my-4 block w-fit rounded-xl bg-white px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-black hover:bg-gray-300"
                           >
                             BUY NOW
                           </a>
-                          <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
+                          <div className="text-center font-SharpGroteskMed text-xl font-thin text-white">
                             Raise banners and define your NBA legacy with the
                             HOOPS HEAT Standard Edition
                           </div>
@@ -345,16 +345,16 @@ export default function Hoops_Heat() {
                   <Image src={sec3_1} alt="" width={0} height={0} />
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
+                  <div className="text-center font-SharpGroteskBold text-xl font-bold text-white">
                     HOOPS HEAT ALL-STAR EDITION
                   </div>
                   <a
                     href="#"
-                    className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-3xl font-bold text-white hover:bg-white hover:text-black"
+                    className="my-4 block w-fit rounded-xl bg-white px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-black hover:bg-gray-300"
                   >
                     BUY NOW
                   </a>
-                  <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
+                  <div className="text-center font-SharpGroteskMed text-xl font-thin text-white">
                     Showcase your All-Star talent with the Hoops Heat All-Star
                     Edition
                   </div>
@@ -365,16 +365,16 @@ export default function Hoops_Heat() {
                   <Image src={sec3_2} alt="" width={0} height={0} />
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
+                  <div className="text-center font-SharpGroteskBold text-xl font-bold text-white">
                     HOOPS HEAT TOURNAMENT EDITION
                   </div>
                   <a
                     href="#"
-                    className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-3xl font-bold text-white hover:bg-white hover:text-black"
+                    className="my-4 block w-fit rounded-xl bg-white px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-black hover:bg-gray-300"
                   >
                     BUY NOW
                   </a>
-                  <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
+                  <div className="text-center font-SharpGroteskMed text-xl font-thin text-white">
                     Inspire the next generation of NBA stars with the HOOPS HEAT
                     Tournament Edition
                   </div>
@@ -385,16 +385,16 @@ export default function Hoops_Heat() {
                   <Image src={sec3_3} alt="" width={0} height={0} />
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="text-center font-SharpGroteskBold text-xl font-bold text-black">
+                  <div className="text-center font-SharpGroteskBold text-xl font-bold text-white">
                     HOOPS HEAT STANDARD EDITION
                   </div>
                   <a
                     href="#"
-                    className="my-4 block w-fit rounded-xl bg-black px-7 py-3 font-SharpGroteskBold text-3xl font-bold text-white hover:bg-white hover:text-black"
+                    className="my-4 block w-fit rounded-xl bg-white px-7 py-3 font-SharpGroteskBold text-2xl font-bold text-black hover:bg-gray-300"
                   >
                     BUY NOW
                   </a>
-                  <div className="text-center font-SharpGroteskMed text-xl font-thin text-black">
+                  <div className="text-center font-SharpGroteskMed text-xl font-thin text-white">
                     Raise banners and define your NBA legacy with the HOOPS HEAT
                     Standard Edition
                   </div>
@@ -415,7 +415,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_1} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 Gravity Ball
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -434,7 +434,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_2} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 HOOPS HEAT will be a multi-platform game
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -450,7 +450,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_3} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 HOOPS HEAT RANKING SYSTEM
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -467,7 +467,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_4} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 HOOPS HEAT LEAGUE MATCH
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -485,7 +485,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_5} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 HOOPS HEAT LOOT BOX
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -501,7 +501,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_6} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 60 characters divided into 6 tiers
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -522,7 +522,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_7} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 60 characters divided into 6 tiers
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -543,7 +543,7 @@ export default function Hoops_Heat() {
               <Image src={sec4_8} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-black md:text-5xl xl:text-6xl">
                 PLAY ANYWHERE, WIN EVERYWHERE
               </div>
               <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
@@ -566,16 +566,16 @@ export default function Hoops_Heat() {
   const Sec_5 = () => {
     return (
       <section>
-        <div className="hoops_heat_sec5_bg bg-[#FA0000]">
+        <div className="hoops_heat_sec5_bg bg-[#194461]">
           <div className="mx-auto flex max-w-7xl flex-col-reverse items-center py-16 md:flex-row">
             <div className="px-3 md:w-1/2">
               <Image src={sec4_1} alt="" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center px-3 md:w-1/2">
-              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold text-black md:text-5xl xl:text-6xl">
+              <div className="px-10 text-center font-SharpGroteskBold text-3xl font-bold uppercase text-white md:text-5xl xl:text-6xl">
                 IT'S GAME TIME
               </div>
-              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-black md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
+              <div className="pb-3 pt-5 font-SharpGroteskMed font-thin text-white md:pb-0 md:text-lg xl:pt-8 xl:text-xl">
                 Various game modes with time-limited challenges will be designed
                 for the game. One example is the "Zombie Mode," where characters
                 will have a zombie-like appearance. In this mode, the basketball
