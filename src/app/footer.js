@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logo from "../../public/logo_long.png";
-import logo2 from "../../public/logo_2.png";
+import logo2 from "../../public/logo_2.webp";
 import esrb from "../../public/esrb.svg";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState } from "react";
@@ -21,7 +21,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="bg-[#00439c] px-12">
+      <div className="bg-[#0f1628] px-12">
         <div className="w-full border-b border-white/30 py-5">
           <Image src={logo} alt="" width={0} height={0} className="" />
         </div>

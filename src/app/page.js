@@ -2921,7 +2921,7 @@ const Carousel_4 = () => {
 
       <div className="slider-container relative w-full pb-10">
         <Slider {...settings}>
-          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -2961,7 +2961,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -3004,7 +3004,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -3046,7 +3046,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -3089,7 +3089,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"
@@ -3134,7 +3134,7 @@ const Carousel_4 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[76vh] xl:h-[66vh]">
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
             <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
               <Image
                 placeholder="blur"

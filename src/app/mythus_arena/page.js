@@ -29,12 +29,34 @@ import sec_3_pic from "../../../public/mythus_arena/sec_3_pic.jpg";
 
 import gradient_logo from "../../../public/mythus_arena/gradient_logo.png";
 
+import carousel4_pic_1 from "../../../public/carousel4_pic_1.webp";
+import carousel4_logo_1 from "../../../public/carousel4_logo_1.webp";
+import carousel4_pic_2 from "../../../public/carousel4_pic_2.webp";
+import carousel4_logo_2 from "../../../public/carousel4_logo_2.webp";
+import carousel4_pic_3 from "../../../public/carousel4_pic_3.webp";
+import carousel4_logo_3 from "../../../public/carousel4_logo_3.webp";
+import carousel4_pic_4 from "../../../public/carousel4_pic_4.webp";
+import carousel4_logo_4 from "../../../public/carousel4_logo_4.webp";
+import carousel4_pic_5 from "../../../public/carousel4_pic_5.webp";
+import carousel4_logo_5 from "../../../public/carousel4_logo_5.webp";
+import carousel4_pic_6 from "../../../public/carousel4_pic_6.webp";
+import carousel4_logo_6 from "../../../public/carousel4_logo_6.webp";
+
+import x from "../../../public/X.png";
+import Ticktok from "../../../public/Tiktok.png";
+import TEl from "../../../public/TEl.png";
+import Discord from "../../../public/Discord.png";
+import yt from "../../../public/YT.png";
+import Facebook from "../../../public/Facebook.png";
+import Insta from "../../../public/Insta.png";
+
 import Navbar from "../navbar_mythus_arena";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
+  MinusIcon,
 } from "@heroicons/react/16/solid";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -1595,14 +1617,414 @@ const Sec_4 = () => {
     </section>
   );
 };
+const Carousel_4 = () => {
+  const [currentSlideNumber, setCurrentSlideNumber] = useState(0);
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <ChevronLeftIcon
+        className="absolute left-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 lg:block"
+        onClick={onClick}
+      />
+    );
+  }
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <ChevronRightIcon
+        className="absolute right-5 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer rounded-full bg-blue-700 lg:block"
+        onClick={onClick}
+      />
+    );
+  }
+  const settings = {
+    // className: "center",
+    centerMode: true,
+    swipeToSlide: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 300,
+    dots: true,
+    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
+    // appendDots: (dots) => (
+    //   <div className="pt-">
+    //     <ul> {dots} </ul>
+    //   </div>
+    // ),
+    customPaging: (i) => (
+      <MinusIcon
+        className={
+          i === currentSlideNumber ? "h-8 text-blue-500" : "h-8 text-gray-500"
+        }
+      />
+    ),
+    beforeChange: (oldIndex, newIndex) => {
+      setCurrentSlideNumber(newIndex);
+    },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: "30px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div>
+      <div className="netogame_H1 px-10 py-16 text-center text-2xl text-black lg:text-4xl">
+        The latest news from PlayStation Blog
+      </div>
+
+      <div className="slider-container relative w-full pb-10">
+        <Slider {...settings}>
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_1}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">NetoBall Release Date</div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  NetoBall will be released in the second quarter of 2025.
+                  According to our schedule, a demo version of the game will be
+                  available on the store two months before the official release
+                </div>
+              </div>
+              <div className="absolute bottom-3 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_1}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_2}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Netoball Release on Consoles
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Netoball will be available for Xbox Series X and PlayStation 5
+                  in the second half of 2025. The PC version will also be
+                  released simultaneously on Steam alongside the console
+                  versions
+                </div>
+              </div>
+              <div className="absolute bottom-3 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_2}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_3}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Mythus Arena: A Unique Strategy Game Experience
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  You'll have to wait until 2026 for Mythus Arena. The Neto team
+                  is working tirelessly on this game, and we aim to deliver the
+                  best strategy game experience for our users
+                </div>
+              </div>
+              <div className="absolute bottom-3 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_3}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_4}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  Stay Tuned for Neto Affiliate
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  You can join the large Neto family with an initial free
+                  registration. If you're among the first 10,000 members, you'll
+                  receive 1,000 Neto tokens as a gift for signing up, which you
+                  can sell anytime you wish
+                </div>
+              </div>
+              <div className="absolute bottom-3 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_4}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_5}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  You Can Be a Part of NetoBall
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Neto's first game to offer shares is NetoBall. The pre-sale or
+                  initial offering of revenue and partnership shares for
+                  NetoBall works in such a way that each user must pay the
+                  equivalent of 330,000 Neto tokens per share. The number of
+                  shares is limited, and once 5,000 shares are reached, no
+                  further shares of NetoBall will be available to the public
+                </div>
+              </div>
+              <div className="absolute bottom-3 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_5}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="h-[55vh] rounded-xl sm:h-[70vh] lg:h-[50vh] xl:h-[66vh]">
+            <div className="carousel4_card_shadow relative mx-2 h-full cursor-pointer overflow-hidden rounded-xl bg-[#fcfcfc] p-1 px-4">
+              <Image
+                placeholder="blur"
+                src={carousel4_pic_6}
+                width={0}
+                height={0}
+                alt=""
+                className="carouselimg h-auto w-full rounded-xl"
+              />
+
+              <div className="text-black">
+                <div className="netogame_H2 mt-5">
+                  The Combat Field game engine will be Unreal Engine
+                </div>
+                <div className="netogame_H3 mt-3 pb-20 lg:my-5">
+                  Combat Field offers an unparalleled experience of a
+                  first-person shooter, thanks to the Unreal Engine, which will
+                  provide realistic graphics and physics. A specific release
+                  date for the game has not yet been determined
+                </div>
+              </div>
+              <div className="absolute bottom-3 text-black">
+                <div className="flex">
+                  <Image
+                    placeholder="blur"
+                    src={carousel4_logo_6}
+                    width={0}
+                    height={0}
+                    alt=""
+                    className="size-12"
+                  />
+                  <div className="ml-2">
+                    <div className="">Neto Reporter</div>
+                    <div className="text-xs text-black/50">
+                      Content Communications Specialist, Neto Interactive
+                      Entertainment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </div>
+  );
+};
+const Social_bar = () => {
+  return (
+    <div className="flex w-full items-center bg-black py-2">
+      <div className="left-5 hidden text-[#616161] sm:text-sm md:block lg:absolute">
+        Visit Other NetoGame Channels
+      </div>
+      <div className="mx-auto flex items-center">
+        <div className="mx-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Ticktok}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={TEl}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={x}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Discord}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Facebook}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={Insta}
+          />
+        </div>
+        <div className="mr-4 cursor-pointer">
+          <Image
+            width={0}
+            height={0}
+            className="w-16 hover:opacity-70"
+            alt=""
+            src={yt}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 export default function mythus_arena() {
   return (
     <main className="relative">
       <title>Mythus Arena</title>
-      <div className="!font-SST_Light">
+      {/* <div className="!font-SST_Light">
         <Navbar />
-      </div>
-      <div className="mt-32 overflow-hidden bg-[#151616]">
+      </div> */}
+      <div className="mt-16 overflow-hidden bg-[#151616]">
         <Sec_1 />
         <Sec_2 />
         <Carousel_1 />
@@ -1613,7 +2035,7 @@ export default function mythus_arena() {
         <div className="mx-auto max-w-[1440px] pb-28">
           <Sec_3 />
         </div>
-        <section className="fixed_bg pt-5">
+        {/* <section className="fixed_bg pt-5">
           <div className="mx-auto max-w-[1440px] pb-28">
             <div className="mx-auto mb-10 min-h-40 lg:flex">
               <Gradient_sec />
@@ -1622,7 +2044,11 @@ export default function mythus_arena() {
               <SocialMedia_sec />
             </div>
           </div>
+        </section> */}
+        <section className="fixed_bg pt-5">
+          <Carousel_4 />
         </section>
+        <Social_bar />
       </div>
     </main>
   );
