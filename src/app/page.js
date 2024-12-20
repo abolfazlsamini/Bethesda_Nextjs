@@ -3,7 +3,7 @@ import Image from "next/image";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
-  ChevronDownIcon,
+  // ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   MinusIcon,
@@ -110,7 +110,7 @@ import Insta from "../../public/netogame/Insta.png";
 
 import { useEffect, useRef, useState } from "react";
 import Navbar2 from "./navbar2";
-import Navbar from "./navbar";
+// import Navbar from "./navbar";
 
 const Main_sec = () => {
   const controller_ref = useRef();
