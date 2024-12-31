@@ -2362,19 +2362,19 @@ const Video_sec_2 = () => {
       <div className="video_bg py-10">
         <div className="px-8 pt-32 md:px-16">
           <div className="relative mx-auto w-fit">
-            <Image
+            {/* <Image
               width={0}
               height={0}
               alt=""
               unoptimized
               src={video_header_1}
               className="absolute right-10 top-0 w-32 -translate-y-[96%] md:w-40"
-            />
+            /> */}
             <div className="relative z-20 max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
               <div className="flex flex-col items-center md:flex-row-reverse">
                 <div className="p-8 md:w-[40%]">
                   <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-5xl">
-                    Designed to Rule
+                    NETO TOKEN
                   </div>
                   <div className="py-4 font-ElectronicArtsText_Regular text-xl text-white xl:text-2xl">
                     Today, the Neto token, utilizing an innovative and unique
@@ -2408,7 +2408,7 @@ const Video_sec_2 = () => {
               <div className="flex flex-col items-center md:flex-row">
                 <div className="p-8 md:w-[40%]">
                   <div className="font-abcgintonord_extrabold text-3xl uppercase xl:text-5xl">
-                    Become a Partner of NetoGame
+                    NETO SHARE
                   </div>
                   <div className="py-4 font-ElectronicArtsText_Regular text-xl text-white xl:text-2xl">
                     Additionally, Neto has also begun activities in producing
@@ -2420,7 +2420,7 @@ const Video_sec_2 = () => {
                     href="#"
                     className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
                   >
-                    Visit Website
+                    Comming Soon
                   </a>
                 </div>
                 <div className="p-2 md:w-[60%]">
@@ -2438,13 +2438,13 @@ const Video_sec_2 = () => {
         </div>
         <div className="px-8 pt-32 md:px-16">
           <div className="relative mx-auto w-fit">
-            <Image
+            {/* <Image
               width={0}
               height={0}
               alt=""
               src={video_header_2}
               className="absolute right-0 top-0 z-20 w-40 -translate-y-[45%] translate-x-[18%] md:w-60 xl:w-64"
-            />
+            /> */}
             <div className="relative max-w-7xl rounded-[40px] border-4 border-white/40 bg-[linear-gradient(135deg,#fff6,#ffffff12)] p-2">
               <div className="flex flex-col items-center md:flex-row-reverse">
                 <div className="p-8 md:w-[40%]">
@@ -2461,7 +2461,7 @@ const Video_sec_2 = () => {
                     href="#"
                     className="netogame_appear_animation_mobile my-6 cursor-pointer rounded-2xl bg-white px-3 py-2 text-sm font-bold text-black outline-none outline-2 delay-75 hover:bg-gray-200 hover:outline-offset-2 hover:outline-white"
                   >
-                    Visit Website
+                    Comming Soon
                   </a>
                 </div>
                 <div className="p-2 md:w-[60%]">
